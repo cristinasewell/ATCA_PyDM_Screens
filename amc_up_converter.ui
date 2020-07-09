@@ -1,0 +1,1706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>daqMux</class>
+ <widget class="QWidget" name="daqMux">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>525</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>229</red>
+        <green>229</green>
+        <blue>229</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>102</red>
+        <green>102</green>
+        <blue>102</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>136</red>
+        <green>136</green>
+        <blue>136</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>229</red>
+        <green>229</green>
+        <blue>229</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="128">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>229</red>
+        <green>229</green>
+        <blue>229</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>102</red>
+        <green>102</green>
+        <blue>102</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>136</red>
+        <green>136</green>
+        <blue>136</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>229</red>
+        <green>229</green>
+        <blue>229</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="128">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>102</red>
+        <green>102</green>
+        <blue>102</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>229</red>
+        <green>229</green>
+        <blue>229</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>102</red>
+        <green>102</green>
+        <blue>102</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>136</red>
+        <green>136</green>
+        <blue>136</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>102</red>
+        <green>102</green>
+        <blue>102</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>102</red>
+        <green>102</green>
+        <blue>102</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="128">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="font">
+   <font>
+    <family>Sans Serif</family>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Input Mux Select</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+   <property name="spacing">
+    <number>4</number>
+   </property>
+   <property name="sizeConstraint">
+    <enum>QLayout::SetDefaultConstraint</enum>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <item>
+    <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="filename" stdset="0">
+      <string>docs/_static/upconverter.png</string>
+     </property>
+     <property name="aspectRatioMode" stdset="0">
+      <enum>Qt::KeepAspectRatio</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout" columnstretch="0,0,1" columnminimumwidth="1,0,1">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="leftMargin">
+      <number>4</number>
+     </property>
+     <property name="topMargin">
+      <number>4</number>
+     </property>
+     <property name="rightMargin">
+      <number>4</number>
+     </property>
+     <property name="bottomMargin">
+      <number>4</number>
+     </property>
+     <item row="38" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_14">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>debugValues(2)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="16" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_8">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch5 - DC IN 1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="28" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_14">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch11</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="3">
+      <widget class="Line" name="line_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_10">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch7 - RF OUT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="24" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>dacValues(2)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_5">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>adcValues(1)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="32" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_16">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>dacValues(6)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="17" column="0" colspan="3">
+      <widget class="Line" name="line_8">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="41" column="0" colspan="3">
+      <widget class="Line" name="line_20">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="3">
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>Test</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="35" column="0" colspan="3">
+      <widget class="Line" name="line_17">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_5">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch2 - RF IN 3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="29" column="0" colspan="3">
+      <widget class="Line" name="line_14">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="24" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_12">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>10</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="12" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_9">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>adcValues(3)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="13" column="0" colspan="3">
+      <widget class="Line" name="line_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_11">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>adcValues(4)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="34" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_17">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch14</string>
+       </property>
+      </widget>
+     </item>
+     <item row="36" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_18">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch15</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0" colspan="3">
+      <widget class="Line" name="line_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="37" column="0" colspan="3">
+      <widget class="Line" name="line_18">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0" colspan="3">
+      <widget class="Line" name="line_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_7">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch4 - TRIG MON</string>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_8">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>dacValues(0)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="40" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_20">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>debugValues(0)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="32" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_16">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch13</string>
+       </property>
+      </widget>
+     </item>
+     <item row="22" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_11">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_6">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>adcValues(2)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="26" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_13">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_9">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0" colspan="3">
+      <widget class="Line" name="line_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+ font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch0 - RF IN 2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="27" column="0" colspan="3">
+      <widget class="Line" name="line_13">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="26" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_19">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>dacValues(3)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_22">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Select Input:</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::PlainText</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="38" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_19">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch16</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_12">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>adcValues(5)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="15" column="0" colspan="3">
+      <widget class="Line" name="line_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="23" column="0" colspan="3">
+      <widget class="Line" name="line_11">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="39" column="0" colspan="3">
+      <widget class="Line" name="line_19">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="3">
+      <widget class="Line" name="line_21">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_6">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch3 - RF OUT MON</string>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_10">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>adcValues(6)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="30" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_17">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>dacValues(5)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="30" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_15">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch12</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_21">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Mux Inputs</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::PlainText</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="25" column="0" colspan="3">
+      <widget class="Line" name="line_12">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="22" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_7">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>dacValues(1)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="36" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_15">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>debugValues(1)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="34" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_13">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>debugValues(0)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Test</string>
+       </property>
+      </widget>
+     </item>
+     <item row="40" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_20">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch17</string>
+       </property>
+      </widget>
+     </item>
+     <item row="31" column="0" colspan="3">
+      <widget class="Line" name="line_15">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="28" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_18">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>dacValues(4)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_4">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ch1 - RF IN 1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="21" column="0" colspan="3">
+      <widget class="Line" name="line_10">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton_4">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>adcValues(0)</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="19" column="0" colspan="3">
+      <widget class="Line" name="line_9">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="33" column="0" colspan="3">
+      <widget class="Line" name="line_16">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Disabled</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="PyDMPushButton" name="PyDMPushButton">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+  background-color: #50697D;
+  border-color: #F3B749;
+  color:white;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #14B09B;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+       </property>
+       <property name="text">
+        <string>Disabled</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>
