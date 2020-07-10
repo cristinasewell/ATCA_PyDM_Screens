@@ -555,7 +555,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -647,7 +647,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -681,7 +681,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -715,7 +715,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -770,7 +770,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -865,7 +865,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -906,7 +906,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1012,7 +1012,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1046,7 +1046,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1114,7 +1114,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1213,7 +1213,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1277,7 +1277,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1356,7 +1356,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1390,7 +1390,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1461,7 +1461,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1495,7 +1495,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1529,7 +1529,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1604,7 +1604,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1662,7 +1662,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1730,7 +1730,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>

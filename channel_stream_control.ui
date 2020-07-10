@@ -215,7 +215,7 @@ QPushButton:hover{
         <string>Trigger</string>
        </property>
        <property name="channel" stdset="0">
-        <string>${DEVICE}:DAQMUX${MUX}_TRGDAQ </string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_TRGDAQ </string>
        </property>
        <property name="pressValue" stdset="0">
         <string>1</string>
@@ -266,6 +266,7 @@ QPushButton:hover{
        <property name="macros" stdset="0">
         <stringlist>
          <string>{&quot;CH&quot;:&quot;0&quot;}</string>
+         <string>{&quot;DEVICE&quot;:&quot;${DEVICE}&quot;}</string>
         </stringlist>
        </property>
        <property name="openInNewWindow" stdset="0">
@@ -764,7 +765,7 @@ QPushButton:hover{
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>

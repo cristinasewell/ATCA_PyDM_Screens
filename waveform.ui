@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -51,11 +51,11 @@
       <string/>
      </property>
      <property name="yLabels">
+      <stringlist/>
+     </property>
+     <property name="curves">
       <stringlist>
-       <string>ca://${DEVICE}:STR0:STREAM_SLOWSHORT0</string>
-       <string>ca://${DEVICE}:STR0:STREAM_SLOWSHORT1</string>
-       <string>ca://${DEVICE}:STR0:STREAM_SLOWSHORT2</string>
-       <string>ca://${DEVICE}:STR0:STREAM_SLOWSHORT3</string>
+       <string>{&quot;y_channel&quot;: &quot;ca://{DEVICE}:STR${MUX}:STREAM_SLOWSHORT${CH}&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
       </stringlist>
      </property>
     </widget>
