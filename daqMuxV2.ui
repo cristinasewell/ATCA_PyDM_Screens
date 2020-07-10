@@ -66,7 +66,7 @@
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>${DEVICE}:DAQMUX${MUX}_DBGLNKRDY</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_DBGLNKRDY</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLineEdit::Default</enum>
@@ -97,7 +97,7 @@ QPushButton:hover{
         <string>Freeze</string>
        </property>
        <property name="channel" stdset="0">
-        <string>${DEVICE}:DAQMUX${MUX}_FRZBUF</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_FRZBUF</string>
        </property>
        <property name="pressValue" stdset="0">
         <string>1</string>
@@ -133,7 +133,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}:DAQMUX${MUX}_PACKETHEADER</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_PACKETHEADER</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>1</string>
@@ -170,7 +170,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}:DAQMUX${MUX}_PACKETHEADER</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_PACKETHEADER</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>0</string>
@@ -194,7 +194,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>${DEVICE}:DAQMUX${MUX}_BUFFSIZE</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_BUFFSIZE</string>
        </property>
       </widget>
      </item>
@@ -222,7 +222,7 @@ QPushButton:hover{
         <string>Clear</string>
        </property>
        <property name="channel" stdset="0">
-        <string>${DEVICE}:DAQMUX${MUX}_CLRTRGST</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_CLRTRGST</string>
        </property>
        <property name="pressValue" stdset="0">
         <string>1</string>
@@ -241,7 +241,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>${DEVICE}:DAQMUX${MUX}_DECRATEDIV</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_DECRATEDIV</string>
        </property>
       </widget>
      </item>
@@ -274,7 +274,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}DAQMUX${MUX}_DAQMODE</string>
+          <string>ca://${DEVICE}DAQMUX${MUX}_DAQMODE</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>1</string>
@@ -312,7 +312,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}:DAQMUX${MUX}_DAQMODE</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_DAQMODE</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>0</string>
@@ -353,7 +353,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}:DAQMUX${MUX}_ARMHWTRG </string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_ARMHWTRG </string>
          </property>
          <property name="pressValue" stdset="0">
           <string>0</string>
@@ -390,7 +390,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}:DAQMUX${MUX}_ARMHWTRG </string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_ARMHWTRG </string>
          </property>
          <property name="pressValue" stdset="0">
           <string>1</string>
@@ -417,7 +417,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>${DEVICE}:DAQMUX${MUX}_DBGINPVALID</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_DBGINPVALID</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLineEdit::Default</enum>
@@ -453,7 +453,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}:DAQMUX${MUX}_HWFRZ</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_HWFRZ</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>1</string>
@@ -490,7 +490,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}DAQMUX${MUX}_HWFRZ</string>
+          <string>ca://${DEVICE}DAQMUX${MUX}_HWFRZ</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>0</string>
@@ -531,7 +531,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}:DAQMUX${MUX}_CSCDTRG</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_CSCDTRG</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>1</string>
@@ -568,7 +568,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}:DAQMUX${MUX}_CSCDTRG</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_CSCDTRG</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>0</string>
@@ -595,7 +595,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>${DEVICE}:DAQMUX${MUX}_TRGCNT</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_TRGCNT</string>
        </property>
       </widget>
      </item>
@@ -628,7 +628,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}:DAQMUX${MUX}_AUTOREARM</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_AUTOREARM</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>1</string>
@@ -665,7 +665,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}:DAQMUX${MUX}_AUTOREARM</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_AUTOREARM</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>0</string>
@@ -995,7 +995,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}DAQMUX$${MUX}_TS_SEC</string>
+          <string>ca://${DEVICE}DAQMUX$${MUX}_TS_SEC</string>
          </property>
         </widget>
        </item>
@@ -1018,7 +1018,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}:DAQMUX${MUX}_TS_NSEC</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_TS_NSEC</string>
          </property>
         </widget>
        </item>
@@ -1043,11 +1043,11 @@ QPushButton:hover{
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroup_5"/>
-  <buttongroup name="buttonGroup_6"/>
   <buttongroup name="buttonGroup_4"/>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup_6"/>
+  <buttongroup name="buttonGroup_5"/>
  </buttongroups>
 </ui>
