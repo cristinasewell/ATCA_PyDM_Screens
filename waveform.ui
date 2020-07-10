@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WaveForm</class>
+ <widget class="QWidget" name="WaveForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>394</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>391</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Waveform Plot</string>
+    </attribute>
+    <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>391</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="showXGrid">
+      <bool>true</bool>
+     </property>
+     <property name="showYGrid">
+      <bool>true</bool>
+     </property>
+     <property name="title" stdset="0">
+      <string/>
+     </property>
+     <property name="yLabels">
+      <stringlist>
+       <string>ca://${DEVICE}:STR0:STREAM_SLOWSHORT0</string>
+       <string>ca://${DEVICE}:STR0:STREAM_SLOWSHORT1</string>
+       <string>ca://${DEVICE}:STR0:STREAM_SLOWSHORT2</string>
+       <string>ca://${DEVICE}:STR0:STREAM_SLOWSHORT3</string>
+      </stringlist>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Scatter Plot</string>
+    </attribute>
+    <widget class="PyDMScatterPlot" name="PyDMScatterPlot">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>391</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="yLabels">
+      <stringlist>
+       <string>ca://${DEVICE}:STR0:STREAM_SLOWSHORT0</string>
+       <string>ca://${DEVICE}:STR0:STREAM_SLOWSHORT1</string>
+       <string>ca://${DEVICE}:STR0:STREAM_SLOWSHORT2</string>
+       <string>ca://${DEVICE}:STR0:STREAM_SLOWSHORT3</string>
+      </stringlist>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMScatterPlot</class>
+   <extends>QGraphicsView</extends>
+   <header>pydm.widgets.scatterplot</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMWaveformPlot</class>
+   <extends>QGraphicsView</extends>
+   <header>pydm.widgets.waveformplot</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

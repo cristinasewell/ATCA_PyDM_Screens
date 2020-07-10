@@ -554,6 +554,9 @@ QPushButton:hover{
        <property name="checkable">
         <bool>true</bool>
        </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+       </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
        </attribute>
@@ -643,6 +646,9 @@ QPushButton:hover{
        <property name="checkable">
         <bool>true</bool>
        </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+       </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
        </attribute>
@@ -674,6 +680,9 @@ QPushButton:hover{
        <property name="checkable">
         <bool>true</bool>
        </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+       </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
        </attribute>
@@ -704,6 +713,9 @@ QPushButton:hover{
        </property>
        <property name="checkable">
         <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -756,6 +768,9 @@ QPushButton:hover{
        </property>
        <property name="checkable">
         <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -849,6 +864,9 @@ QPushButton:hover{
        <property name="checkable">
         <bool>true</bool>
        </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+       </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
        </attribute>
@@ -886,6 +904,9 @@ QPushButton:hover{
        </property>
        <property name="checkable">
         <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -990,6 +1011,9 @@ QPushButton:hover{
        <property name="checkable">
         <bool>true</bool>
        </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+       </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
        </attribute>
@@ -1020,6 +1044,9 @@ QPushButton:hover{
        </property>
        <property name="checkable">
         <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1085,6 +1112,9 @@ QPushButton:hover{
        </property>
        <property name="checkable">
         <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1182,6 +1212,9 @@ QPushButton:hover{
        <property name="checkable">
         <bool>true</bool>
        </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+       </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
        </attribute>
@@ -1242,6 +1275,9 @@ QPushButton:hover{
        </property>
        <property name="checkable">
         <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1319,6 +1355,9 @@ QPushButton:hover{
        <property name="checkable">
         <bool>true</bool>
        </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+       </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
        </attribute>
@@ -1349,6 +1388,9 @@ QPushButton:hover{
        </property>
        <property name="checkable">
         <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1418,6 +1460,9 @@ QPushButton:hover{
        <property name="checkable">
         <bool>true</bool>
        </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+       </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
        </attribute>
@@ -1449,6 +1494,9 @@ QPushButton:hover{
        <property name="checkable">
         <bool>true</bool>
        </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+       </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
        </attribute>
@@ -1479,6 +1527,9 @@ QPushButton:hover{
        </property>
        <property name="checkable">
         <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1552,6 +1603,9 @@ QPushButton:hover{
        <property name="checkable">
         <bool>true</bool>
        </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
+       </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
        </attribute>
@@ -1606,6 +1660,9 @@ QPushButton:hover{
        </property>
        <property name="checkable">
         <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>
@@ -1671,6 +1728,9 @@ QPushButton:hover{
        </property>
        <property name="checkable">
         <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://{DEVICE}:DAQMUX1_INPMUXSEL${CH}</string>
        </property>
        <attribute name="buttonGroup">
         <string notr="true">buttonGroup</string>

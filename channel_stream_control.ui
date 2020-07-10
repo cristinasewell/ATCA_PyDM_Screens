@@ -71,7 +71,7 @@
         <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE}:DAQMUX0_STRMPAUSE${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_STRMPAUSE${CH}</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLineEdit::String</enum>
@@ -107,7 +107,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>$(DEVICE):DAQMUX0_DECIMATION$(CH)</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_DECIMATION${CH}</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>1</string>
@@ -144,7 +144,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>$(DEVICE):DAQMUX0_DECIMATION$(CH)</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_DECIMATION${CH}</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>0</string>
@@ -213,6 +213,9 @@ QPushButton:hover{
        </property>
        <property name="text">
         <string>Trigger</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>${DEVICE}:DAQMUX${MUX}_TRGDAQ </string>
        </property>
        <property name="pressValue" stdset="0">
         <string>1</string>
@@ -284,7 +287,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>$(DEVICE):DAQMUX0_STRMERR$(CH)</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_STRMERR${CH}</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLineEdit::String</enum>
@@ -399,7 +402,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>$(DEVICE):DAQMUX0_FORMATSIGN$(CH)</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_FORMATSIGN${CH}</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>1</string>
@@ -436,7 +439,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>$(DEVICE):DAQMUX0_FORMATSIGN$(CH)</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_FORMATSIGN${CH}</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>0</string>
@@ -463,7 +466,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>$(DEVICE):DAQMUX0_STRMENABLED$(CH)</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_STRMENABLED${CH}</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLineEdit::String</enum>
@@ -479,7 +482,7 @@ QPushButton:hover{
         <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
        </property>
        <property name="channel" stdset="0">
-        <string>$(DEVICE):DAQMUX0_FORMATDATAWIDTH$(CH)</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_FORMATDATAWIDTH${CH}</string>
        </property>
       </widget>
      </item>
@@ -553,7 +556,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>$(DEVICE):DAQMUX0_INPDATAVALID$(CH)</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_INPDATAVALID${CH}</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLineEdit::String</enum>
@@ -599,7 +602,7 @@ QPushButton:hover{
         <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
        </property>
        <property name="channel" stdset="0">
-        <string>$(DEVICE):DAQMUX0_FORMATSIGNWIDTH$(CH)</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_FORMATSIGNWIDTH${CH}</string>
        </property>
       </widget>
      </item>
@@ -625,7 +628,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>$(DEVICE):DAQMUX0_STRMRDY$(CH)</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_STRMRDY${CH}</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLineEdit::String</enum>
@@ -647,7 +650,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>$(DEVICE):DAQMUX0_STRMOVF$(CH)</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_STRMOVF${CH}</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLineEdit::String</enum>
@@ -669,7 +672,7 @@ QPushButton:hover{
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>$(DEVICE):DAQMUX0_FRAMECNT$(CH)</string>
+        <string>ca://${DEVICE}:DAQMUX${MUX}_FRAMECNT${CH}</string>
        </property>
       </widget>
      </item>
