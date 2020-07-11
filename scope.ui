@@ -323,7 +323,7 @@ QPushButton:hover{
         <enum>QFrame::Panel</enum>
        </property>
        <property name="filename" stdset="0">
-        <string>channel_stream_control.ui</string>
+        <string>bay0_channel_settings.ui</string>
        </property>
       </widget>
      </item>

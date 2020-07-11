@@ -24,7 +24,7 @@
 }</string>
      </property>
      <property name="text">
-      <string>Channel Settings</string>
+      <string>Bay0 Channel Settings</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -55,7 +55,7 @@ background: #19B3B1;
           <string>{&quot;CH&quot;:&quot;0&quot;}</string>
          </property>
          <property name="filename" stdset="0">
-          <string>channel_stream_control.ui</string>
+          <string>individuals/down_converter_ch_stream.ui</string>
          </property>
         </widget>
        </item>
@@ -75,7 +75,7 @@ background: #19B3B1;
           <string>{&quot;CH&quot;:&quot;1&quot;}</string>
          </property>
          <property name="filename" stdset="0">
-          <string>channel_stream_control.ui</string>
+          <string>individuals/down_converter_ch_stream.ui</string>
          </property>
         </widget>
        </item>
@@ -95,7 +95,7 @@ background: #19B3B1;
           <string>{&quot;CH&quot;:&quot;2&quot;}</string>
          </property>
          <property name="filename" stdset="0">
-          <string>channel_stream_control.ui</string>
+          <string>individuals/down_converter_ch_stream.ui</string>
          </property>
         </widget>
        </item>
@@ -115,7 +115,7 @@ background: #19B3B1;
           <string>{&quot;CH&quot;:&quot;3&quot;}</string>
          </property>
          <property name="filename" stdset="0">
-          <string>channel_stream_control.ui</string>
+          <string>individuals/down_converter_ch_stream.ui</string>
          </property>
         </widget>
        </item>

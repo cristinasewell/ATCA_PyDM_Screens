@@ -256,17 +256,16 @@ QPushButton:hover{
         <string/>
        </property>
        <property name="text">
-        <string>Up Converter</string>
+        <string>Down Converter</string>
        </property>
        <property name="filenames" stdset="0">
         <stringlist>
-         <string>amc_up_converter.ui</string>
+         <string>amc_down_converter.ui</string>
         </stringlist>
        </property>
        <property name="macros" stdset="0">
         <stringlist>
-         <string>{&quot;CH&quot;:&quot;0&quot;}</string>
-         <string>{&quot;DEVICE&quot;:&quot;${DEVICE}&quot;}</string>
+         <string>{&quot;MUX&quot;:&quot;0&quot;}</string>
         </stringlist>
        </property>
        <property name="openInNewWindow" stdset="0">

@@ -196,6 +196,9 @@ QPushButton:hover{
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DAQMUX${MUX}_BUFFSIZE</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLineEdit::Default</enum>
+       </property>
       </widget>
      </item>
      <item row="6" column="2">
@@ -242,6 +245,9 @@ QPushButton:hover{
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DAQMUX${MUX}_DECRATEDIV</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLineEdit::Default</enum>
        </property>
       </widget>
      </item>
@@ -596,6 +602,9 @@ QPushButton:hover{
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DAQMUX${MUX}_TRGCNT</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLineEdit::Default</enum>
        </property>
       </widget>
      </item>
@@ -1043,11 +1052,11 @@ QPushButton:hover{
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_3"/>
-  <buttongroup name="buttonGroup_4"/>
-  <buttongroup name="buttonGroup"/>
-  <buttongroup name="buttonGroup_6"/>
-  <buttongroup name="buttonGroup_5"/>
   <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_4"/>
+  <buttongroup name="buttonGroup_5"/>
+  <buttongroup name="buttonGroup_6"/>
+  <buttongroup name="buttonGroup_3"/>
  </buttongroups>
 </ui>
