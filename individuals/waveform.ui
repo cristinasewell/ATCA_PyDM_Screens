@@ -17,7 +17,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -105,6 +105,11 @@
           <property name="title" stdset="0">
            <string>CH 1</string>
           </property>
+          <property name="curves">
+           <stringlist>
+            <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR${MUX}:STREAM_SLOWSHORT1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 3, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+           </stringlist>
+          </property>
          </widget>
         </item>
         <item row="1" column="2">
@@ -131,6 +136,11 @@
           <property name="title" stdset="0">
            <string>CH 3</string>
           </property>
+          <property name="curves">
+           <stringlist>
+            <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR${MUX}:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffaa7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 3, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+           </stringlist>
+          </property>
          </widget>
         </item>
         <item row="1" column="0">
@@ -156,6 +166,11 @@
           </property>
           <property name="title" stdset="0">
            <string>CH 2</string>
+          </property>
+          <property name="curves">
+           <stringlist>
+            <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR${MUX}:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 3, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+           </stringlist>
           </property>
          </widget>
         </item>
@@ -185,6 +200,11 @@
           </property>
           <property name="showLegend">
            <bool>false</bool>
+          </property>
+          <property name="curves">
+           <stringlist>
+            <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR${MUX}:STREAM_SLOWSHORT0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ffff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 3, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+           </stringlist>
           </property>
          </widget>
         </item>
