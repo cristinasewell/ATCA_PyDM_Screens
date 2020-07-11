@@ -151,7 +151,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:DAQMUX_FORMATSIGN${CH}</string>
+          <string>ca://${DEVICE}:DAQMUX0_FORMATSIGN${CH}</string>
          </property>
          <property name="pressValue" stdset="0">
           <string>1</string>
