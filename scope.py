@@ -9,7 +9,8 @@ class Scope(Display):
     def __init__(self, parent=None, args=None, macros=None, ui_filename=None):
         super(Scope, self).__init__(parent=parent, args=args, macros=macros)
         self._macros = macros
-        self._curves = self.define_curves()
+        self._curves = None
+        self.define_curves()
         self.setup_ui()
 
     def macros(self):
@@ -23,7 +24,7 @@ class Scope(Display):
             if device is not None:
                 ioc = "ca://{}:".format(device)
         
-                curves = {
+                self._curves = {
                     0: {"y_channel": ioc+"STR0:STREAM_SLOWSHORT0",
                         "x_channel": None, "name": "CH 0", "color": "#55ffff",
                         "lineStyle": 1, "lineWidth": 1, "symbol": None,
@@ -62,35 +63,43 @@ class Scope(Display):
                     7: {"y_channel": ioc+"STR1:STREAM_SLOWSHORT3",
                         "x_channel": None, "name": "CH 3", "color": "#ffaa7f",
                         "lineStyle": 1, "lineWidth": 1, "symbol": None, 
-                        "symbolSize": 10, "redraw_mode": 2}}
-                return curves    
+                        "symbolSize": 10, "redraw_mode": 2}}    
         except:
             logger.error("You need to define a DEVICE ioc!")
             return
 
     def handle_show_curve(self):
-        # put them in the correct json format
-        for curve in self._curves:
-            self._curves[curve] = json.dumps(self._curves.get(curve))
-
         # bay 0
+        b0_curves = []
         if self.ui.b0_channel0_pb.isChecked():
-            self.waveformPlotBay0.setCurves(self._curves.get(0))
+            ch = json.dumps(self._curves.get(0))
+            b0_curves.append(ch)
         if self.ui.b0_channel1_pb.isChecked():
-            self.waveformPlotBay0.setCurves(self._curves.get(1))
+            ch = json.dumps(self._curves.get(1))
+            b0_curves.append(ch)
         if self.ui.b0_channel2_pb.isChecked():
-            self.waveformPlotBay0.setCurves(self._curves.get(2))
+            ch = json.dumps(self._curves.get(2))
+            b0_curves.append(ch)
         if self.ui.b0_channel3_pb.isChecked():
-            self.waveformPlotBay0.setCurves(self._curves.get(3))
+            ch = json.dumps(self._curves.get(3))
+            b0_curves.append(ch)
+        self.waveformPlotBay0.setCurves(b0_curves)
+
         # bay 1
+        b1_curves = []
         if self.ui.b1_channel0_pb.isChecked():
-            self.waveformPlotBay0.setCurves(self._curves.get(4))
+            ch = json.dumps(self._curves.get(4))
+            b1_curves.append(ch)
         if self.ui.b1_channel1_pb.isChecked():
-            self.waveformPlotBay0.setCurves(self._curves.get(5))
+            ch = json.dumps(self._curves.get(5))
+            b1_curves.append(ch)
         if self.ui.b1_channel2_pb.isChecked():
-            self.waveformPlotBay0.setCurves(self._curves.get(6))
+            ch = json.dumps(self._curves.get(6))
+            b1_curves.append(ch)
         if self.ui.b1_channel3_pb.isChecked():
-            self.waveformPlotBay0.setCurves(self._curves.get(7))
+            ch = json.dumps(self._curves.get(7))
+            b1_curves.append(ch)
+        self.waveformPlotBay1.setCurves(b1_curves)
 
     def setup_ui(self):
         # bay 0
