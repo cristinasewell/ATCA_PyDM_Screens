@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>415</width>
-    <height>517</height>
+    <height>561</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -54,6 +54,18 @@
    </item>
    <item>
     <widget class="QTabWidget" name="tabWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>538</height>
+      </size>
+     </property>
      <property name="currentIndex">
       <number>0</number>
      </property>

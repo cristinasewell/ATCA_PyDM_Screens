@@ -1222,7 +1222,7 @@ QPushButton:hover{
 }</string>
        </property>
        <property name="text">
-        <string>debugValues(0)</string>
+        <string>debugValues(3)</string>
        </property>
        <property name="checkable">
         <bool>true</bool>
