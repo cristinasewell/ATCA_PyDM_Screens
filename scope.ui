@@ -7,13 +7,13 @@
     <x>0</x>
     <y>0</y>
     <width>1326</width>
-    <height>727</height>
+    <height>734</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout_4">
+  <layout class="QGridLayout" name="gridLayout_4" rowstretch="0,0,0,0,1" rowminimumheight="0,0,0,0,1">
    <property name="leftMargin">
     <number>0</number>
    </property>
@@ -33,7 +33,7 @@
  QToolBox::tab::selected{background:#FFB471}</string>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <property name="styleSheet">
@@ -42,7 +42,7 @@
       <attribute name="title">
        <string>DAQMUX_0</string>
       </attribute>
-      <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0,0,0,0" columnstretch="0,0,0">
+      <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0" columnstretch="0,0,0">
        <property name="leftMargin">
         <number>2</number>
        </property>
@@ -61,51 +61,7 @@
        <property name="verticalSpacing">
         <number>4</number>
        </property>
-       <item row="5" column="1">
-        <widget class="QPushButton" name="channel0_pb">
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-  background-color: #55ffff;
-  border-color: #55ffff;
-  color:black;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #55ffff;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-         </property>
-         <property name="text">
-          <string>Channel 0</string>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1" rowspan="5" colspan="2">
-        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>1</horstretch>
-           <verstretch>1</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="toolTip">
-          <string/>
-         </property>
-         <property name="midLineWidth">
-          <number>7</number>
-         </property>
-         <property name="filename" stdset="0">
-          <string>bay0_waveform.ui</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="1">
+       <item row="2" column="1">
         <widget class="QPushButton" name="channel2_pb">
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -130,17 +86,17 @@ QPushButton:hover{
          </property>
         </widget>
        </item>
-       <item row="5" column="2">
-        <widget class="QPushButton" name="channel1_pb">
+       <item row="1" column="1">
+        <widget class="QPushButton" name="channel0_pb">
          <property name="styleSheet">
           <string notr="true">QPushButton {
-  background-color: #55ff7f;
-  border-color: #55ff7f;
+  background-color: #55ffff;
+  border-color: #55ffff;
   color:black;
   font-size: 10px;
 }
 QPushButton:checked{
-  background-color: #55ff7f;
+  background-color: #55ffff;
   font: bold
 }
 QPushButton:hover{
@@ -148,14 +104,14 @@ QPushButton:hover{
 }</string>
          </property>
          <property name="text">
-          <string>Channel 1</string>
+          <string>Channel 0</string>
          </property>
          <property name="checkable">
           <bool>true</bool>
          </property>
         </widget>
        </item>
-       <item row="6" column="2">
+       <item row="2" column="2">
         <widget class="QPushButton" name="channel3_pb">
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -180,7 +136,7 @@ QPushButton:hover{
          </property>
         </widget>
        </item>
-       <item row="0" column="0" rowspan="7">
+       <item row="0" column="0" rowspan="3">
         <widget class="QToolBox" name="toolBox">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -217,7 +173,7 @@ QPushButton:hover{
           <number>0</number>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>1</number>
          </property>
          <property name="tabSpacing">
           <number>0</number>
@@ -228,7 +184,7 @@ QPushButton:hover{
             <x>0</x>
             <y>0</y>
             <width>429</width>
-            <height>659</height>
+            <height>666</height>
            </rect>
           </property>
           <attribute name="label">
@@ -256,7 +212,7 @@ QPushButton:hover{
             <x>0</x>
             <y>0</y>
             <width>429</width>
-            <height>659</height>
+            <height>666</height>
            </rect>
           </property>
           <property name="minimumSize">
@@ -278,6 +234,197 @@ QPushButton:hover{
               <string>bay0_channel_settings.ui</string>
              </property>
             </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="channel1_pb">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+  background-color: #55ff7f;
+  border-color: #55ff7f;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #55ff7f;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+         </property>
+         <property name="text">
+          <string>Channel 1</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="2">
+        <widget class="QTabWidget" name="tabWidget_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_5">
+          <attribute name="title">
+           <string>Single Window</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="PyDMWaveformPlot" name="waveformPlotBay0">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="showXGrid">
+              <bool>true</bool>
+             </property>
+             <property name="showYGrid">
+              <bool>true</bool>
+             </property>
+             <property name="axisColor">
+              <color>
+               <red>193</red>
+               <green>193</green>
+               <blue>193</blue>
+              </color>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_6">
+          <attribute name="title">
+           <string>Multiple Windows</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_7">
+             <property name="spacing">
+              <number>20</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_6">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="showXGrid">
+                <bool>true</bool>
+               </property>
+               <property name="showYGrid">
+                <bool>true</bool>
+               </property>
+               <property name="axisColor">
+                <color>
+                 <red>211</red>
+                 <green>211</green>
+                 <blue>211</blue>
+                </color>
+               </property>
+               <property name="title" stdset="0">
+                <string>CH 0</string>
+               </property>
+               <property name="curves">
+                <stringlist>
+                 <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ffff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+                </stringlist>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_7">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="showXGrid">
+                <bool>true</bool>
+               </property>
+               <property name="showYGrid">
+                <bool>true</bool>
+               </property>
+               <property name="axisColor">
+                <color>
+                 <red>211</red>
+                 <green>211</green>
+                 <blue>211</blue>
+                </color>
+               </property>
+               <property name="title" stdset="0">
+                <string>CH 2</string>
+               </property>
+               <property name="curves">
+                <stringlist>
+                 <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+                </stringlist>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_8">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="showXGrid">
+                <bool>true</bool>
+               </property>
+               <property name="showYGrid">
+                <bool>true</bool>
+               </property>
+               <property name="axisColor">
+                <color>
+                 <red>211</red>
+                 <green>211</green>
+                 <blue>211</blue>
+                </color>
+               </property>
+               <property name="title" stdset="0">
+                <string>CH 1</string>
+               </property>
+               <property name="curves">
+                <stringlist>
+                 <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+                </stringlist>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_9">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="showXGrid">
+                <bool>true</bool>
+               </property>
+               <property name="showYGrid">
+                <bool>true</bool>
+               </property>
+               <property name="axisColor">
+                <color>
+                 <red>211</red>
+                 <green>211</green>
+                 <blue>211</blue>
+                </color>
+               </property>
+               <property name="title" stdset="0">
+                <string>CH 3</string>
+               </property>
+               <property name="curves">
+                <stringlist>
+                 <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffaa7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+                </stringlist>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </item>
           </layout>
          </widget>
@@ -308,48 +455,7 @@ QPushButton:hover{
        <property name="verticalSpacing">
         <number>4</number>
        </property>
-       <item row="0" column="1" rowspan="5" colspan="2">
-        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_7">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>1</horstretch>
-           <verstretch>1</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="toolTip">
-          <string/>
-         </property>
-         <property name="filename" stdset="0">
-          <string>bay1_waveform.ui</string>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="2">
-        <widget class="QPushButton" name="pushButton_3">
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-  background-color: #55ff7f;
-  border-color: #55ff7f;
-  color:black;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #55ff7f;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-         </property>
-         <property name="text">
-          <string>Channel 1</string>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="1">
+       <item row="1" column="1">
         <widget class="QPushButton" name="pushButton">
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -374,57 +480,7 @@ QPushButton:hover{
          </property>
         </widget>
        </item>
-       <item row="6" column="2">
-        <widget class="QPushButton" name="pushButton_4">
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-  background-color: #ffaa7f;
-  border-color: #ffaa7f;
-  color:black;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #ffaa7f;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-         </property>
-         <property name="text">
-          <string>Channel 3</string>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="1">
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-  background-color: #ffff7f;
-  border-color: #ffff7f;
-  color:black;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #ffff7f;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-         </property>
-         <property name="text">
-          <string>Channel 2</string>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="0" rowspan="7">
+       <item row="0" column="0" rowspan="3">
         <widget class="QToolBox" name="toolBox_3">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -442,7 +498,7 @@ QPushButton:hover{
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="page_5">
           <property name="geometry">
@@ -450,7 +506,7 @@ QPushButton:hover{
             <x>0</x>
             <y>0</y>
             <width>429</width>
-            <height>651</height>
+            <height>607</height>
            </rect>
           </property>
           <attribute name="label">
@@ -477,8 +533,8 @@ QPushButton:hover{
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>114</width>
-            <height>114</height>
+            <width>429</width>
+            <height>658</height>
            </rect>
           </property>
           <attribute name="label">
@@ -499,6 +555,247 @@ QPushButton:hover{
          </widget>
         </widget>
        </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+  background-color: #ffaa7f;
+  border-color: #ffaa7f;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #ffaa7f;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+         </property>
+         <property name="text">
+          <string>Channel 3</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+  background-color: #ffff7f;
+  border-color: #ffff7f;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #ffff7f;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+         </property>
+         <property name="text">
+          <string>Channel 2</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+  background-color: #55ff7f;
+  border-color: #55ff7f;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #55ff7f;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+         </property>
+         <property name="text">
+          <string>Channel 1</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="2">
+        <widget class="QTabWidget" name="tabWidget_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_3">
+          <attribute name="title">
+           <string>Single Window</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="PyDMWaveformPlot" name="waveformPlotBay1">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="showXGrid">
+              <bool>true</bool>
+             </property>
+             <property name="showYGrid">
+              <bool>true</bool>
+             </property>
+             <property name="axisColor">
+              <color>
+               <red>183</red>
+               <green>183</green>
+               <blue>183</blue>
+              </color>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_4">
+          <attribute name="title">
+           <string>Multiple Windows</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_6">
+             <property name="spacing">
+              <number>20</number>
+             </property>
+             <item row="1" column="0">
+              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_3">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="showXGrid">
+                <bool>true</bool>
+               </property>
+               <property name="showYGrid">
+                <bool>true</bool>
+               </property>
+               <property name="axisColor">
+                <color>
+                 <red>186</red>
+                 <green>186</green>
+                 <blue>186</blue>
+                </color>
+               </property>
+               <property name="title" stdset="0">
+                <string>Ch 2</string>
+               </property>
+               <property name="curves">
+                <stringlist>
+                 <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+                </stringlist>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_2">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="showXGrid">
+                <bool>true</bool>
+               </property>
+               <property name="showYGrid">
+                <bool>true</bool>
+               </property>
+               <property name="axisColor">
+                <color>
+                 <red>186</red>
+                 <green>186</green>
+                 <blue>186</blue>
+                </color>
+               </property>
+               <property name="title" stdset="0">
+                <string>CH 0</string>
+               </property>
+               <property name="curves">
+                <stringlist>
+                 <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ffff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+                </stringlist>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_4">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="showXGrid">
+                <bool>true</bool>
+               </property>
+               <property name="showYGrid">
+                <bool>true</bool>
+               </property>
+               <property name="axisColor">
+                <color>
+                 <red>186</red>
+                 <green>186</green>
+                 <blue>186</blue>
+                </color>
+               </property>
+               <property name="title" stdset="0">
+                <string>CH 1</string>
+               </property>
+               <property name="curves">
+                <stringlist>
+                 <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+                </stringlist>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_5">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="showXGrid">
+                <bool>true</bool>
+               </property>
+               <property name="showYGrid">
+                <bool>true</bool>
+               </property>
+               <property name="axisColor">
+                <color>
+                 <red>186</red>
+                 <green>186</green>
+                 <blue>186</blue>
+                </color>
+               </property>
+               <property name="title" stdset="0">
+                <string>Ch 3</string>
+               </property>
+               <property name="curves">
+                <stringlist>
+                 <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffaa7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+                </stringlist>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
       </layout>
      </widget>
     </widget>
@@ -506,6 +803,11 @@ QPushButton:hover{
   </layout>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>PyDMWaveformPlot</class>
+   <extends>QGraphicsView</extends>
+   <header>pydm.widgets.waveformplot</header>
+  </customwidget>
   <customwidget>
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
