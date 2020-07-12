@@ -33,7 +33,7 @@
  QToolBox::tab::selected{background:#FFB471}</string>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <property name="styleSheet">
@@ -277,7 +277,7 @@ QPushButton:hover{
          </property>
          <widget class="QWidget" name="tab_5">
           <attribute name="title">
-           <string>Single Window</string>
+           <string>Single Window Overlapped</string>
           </attribute>
           <layout class="QVBoxLayout" name="verticalLayout_2">
            <item>
@@ -297,6 +297,47 @@ QPushButton:hover{
                <green>193</green>
                <blue>193</blue>
               </color>
+             </property>
+             <property name="showRightAxis">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_8">
+          <attribute name="title">
+           <string>Single Window Separated</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="PyDMWaveformPlot" name="separate_waveformBay1_2">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="showXGrid">
+              <bool>true</bool>
+             </property>
+             <property name="showYGrid">
+              <bool>true</bool>
+             </property>
+             <property name="axisColor">
+              <color>
+               <red>204</red>
+               <green>204</green>
+               <blue>204</blue>
+              </color>
+             </property>
+             <property name="showRightAxis">
+              <bool>true</bool>
+             </property>
+             <property name="curves">
+              <stringlist>
+               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;CH 0&quot;, &quot;color&quot;: &quot;#55ffff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;CH 1&quot;, &quot;color&quot;: &quot;#55ff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;CH 2&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;CH 3&quot;, &quot;color&quot;: &quot;#ffaa7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              </stringlist>
              </property>
             </widget>
            </item>
@@ -330,6 +371,9 @@ QPushButton:hover{
                  <blue>211</blue>
                 </color>
                </property>
+               <property name="showRightAxis">
+                <bool>true</bool>
+               </property>
                <property name="title" stdset="0">
                 <string>CH 0</string>
                </property>
@@ -357,6 +401,9 @@ QPushButton:hover{
                  <green>211</green>
                  <blue>211</blue>
                 </color>
+               </property>
+               <property name="showRightAxis">
+                <bool>true</bool>
                </property>
                <property name="title" stdset="0">
                 <string>CH 2</string>
@@ -386,6 +433,9 @@ QPushButton:hover{
                  <blue>211</blue>
                 </color>
                </property>
+               <property name="showRightAxis">
+                <bool>true</bool>
+               </property>
                <property name="title" stdset="0">
                 <string>CH 1</string>
                </property>
@@ -413,6 +463,9 @@ QPushButton:hover{
                  <green>211</green>
                  <blue>211</blue>
                 </color>
+               </property>
+               <property name="showRightAxis">
+                <bool>true</bool>
                </property>
                <property name="title" stdset="0">
                 <string>CH 3</string>
@@ -643,7 +696,7 @@ QPushButton:hover{
          </property>
          <widget class="QWidget" name="tab_3">
           <attribute name="title">
-           <string>Single Window</string>
+           <string>Single Window Overlapped</string>
           </attribute>
           <layout class="QHBoxLayout" name="horizontalLayout_2">
            <item>
@@ -663,6 +716,47 @@ QPushButton:hover{
                <green>183</green>
                <blue>183</blue>
               </color>
+             </property>
+             <property name="showRightAxis">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_7">
+          <attribute name="title">
+           <string>Single Window Separated</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="PyDMWaveformPlot" name="separate_waveformBay1">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="showXGrid">
+              <bool>true</bool>
+             </property>
+             <property name="showYGrid">
+              <bool>true</bool>
+             </property>
+             <property name="axisColor">
+              <color>
+               <red>206</red>
+               <green>206</green>
+               <blue>206</blue>
+              </color>
+             </property>
+             <property name="showRightAxis">
+              <bool>true</bool>
+             </property>
+             <property name="curves">
+              <stringlist>
+               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;CH 0&quot;, &quot;color&quot;: &quot;#55ffff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;CH 1&quot;, &quot;color&quot;: &quot;#55ff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;CH 2&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;Ch 3&quot;, &quot;color&quot;: &quot;#ffaa7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              </stringlist>
              </property>
             </widget>
            </item>
@@ -696,6 +790,9 @@ QPushButton:hover{
                  <blue>186</blue>
                 </color>
                </property>
+               <property name="showRightAxis">
+                <bool>true</bool>
+               </property>
                <property name="title" stdset="0">
                 <string>Ch 2</string>
                </property>
@@ -723,6 +820,9 @@ QPushButton:hover{
                  <green>186</green>
                  <blue>186</blue>
                 </color>
+               </property>
+               <property name="showRightAxis">
+                <bool>true</bool>
                </property>
                <property name="title" stdset="0">
                 <string>CH 0</string>
@@ -752,6 +852,9 @@ QPushButton:hover{
                  <blue>186</blue>
                 </color>
                </property>
+               <property name="showRightAxis">
+                <bool>true</bool>
+               </property>
                <property name="title" stdset="0">
                 <string>CH 1</string>
                </property>
@@ -779,6 +882,9 @@ QPushButton:hover{
                  <green>186</green>
                  <blue>186</blue>
                 </color>
+               </property>
+               <property name="showRightAxis">
+                <bool>true</bool>
                </property>
                <property name="title" stdset="0">
                 <string>Ch 3</string>
