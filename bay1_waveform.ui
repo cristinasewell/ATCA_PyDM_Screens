@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>728</width>
-    <height>456</height>
+    <width>927</width>
+    <height>591</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,202 +17,192 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
        <string>Single Window</string>
       </attribute>
-      <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>711</width>
-         <height>421</height>
-        </rect>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="showXGrid">
-        <bool>true</bool>
-       </property>
-       <property name="showYGrid">
-        <bool>true</bool>
-       </property>
-       <property name="axisColor">
-        <color>
-         <red>206</red>
-         <green>206</green>
-         <blue>206</blue>
-        </color>
-       </property>
-       <property name="showRightAxis">
-        <bool>true</bool>
-       </property>
-       <property name="title" stdset="0">
-        <string/>
-       </property>
-       <property name="yLabels">
-        <stringlist/>
-       </property>
-       <property name="curves">
-        <stringlist>
-         <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;cyan&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-         <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-         <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-         <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffaa7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-        </stringlist>
-       </property>
-      </widget>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="showXGrid">
+          <bool>true</bool>
+         </property>
+         <property name="showYGrid">
+          <bool>true</bool>
+         </property>
+         <property name="axisColor">
+          <color>
+           <red>206</red>
+           <green>206</green>
+           <blue>206</blue>
+          </color>
+         </property>
+         <property name="showRightAxis">
+          <bool>true</bool>
+         </property>
+         <property name="title" stdset="0">
+          <string/>
+         </property>
+         <property name="yLabels">
+          <stringlist/>
+         </property>
+         <property name="curves">
+          <stringlist>
+           <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;cyan&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffaa7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+          </stringlist>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
      <widget class="QWidget" name="tab_2">
       <attribute name="title">
        <string>Multiple Windows</string>
       </attribute>
-      <widget class="QWidget" name="gridLayoutWidget">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>711</width>
-         <height>421</height>
-        </rect>
-       </property>
-       <layout class="QGridLayout" name="gridLayout">
-        <property name="spacing">
-         <number>20</number>
-        </property>
-        <item row="0" column="2">
-         <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_2">
-          <property name="toolTip">
-           <string/>
-          </property>
-          <property name="showXGrid">
-           <bool>true</bool>
-          </property>
-          <property name="showYGrid">
-           <bool>true</bool>
-          </property>
-          <property name="axisColor">
-           <color>
-            <red>227</red>
-            <green>227</green>
-            <blue>227</blue>
-           </color>
-          </property>
-          <property name="showRightAxis">
-           <bool>true</bool>
-          </property>
-          <property name="title" stdset="0">
-           <string>CH 1</string>
-          </property>
-          <property name="curves">
-           <stringlist>
-            <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-           </stringlist>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="2">
-         <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_5">
-          <property name="toolTip">
-           <string/>
-          </property>
-          <property name="showXGrid">
-           <bool>true</bool>
-          </property>
-          <property name="showYGrid">
-           <bool>true</bool>
-          </property>
-          <property name="axisColor">
-           <color>
-            <red>215</red>
-            <green>215</green>
-            <blue>215</blue>
-           </color>
-          </property>
-          <property name="showRightAxis">
-           <bool>true</bool>
-          </property>
-          <property name="title" stdset="0">
-           <string>CH 3</string>
-          </property>
-          <property name="curves">
-           <stringlist>
-            <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffaa7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-           </stringlist>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_4">
-          <property name="toolTip">
-           <string/>
-          </property>
-          <property name="showXGrid">
-           <bool>true</bool>
-          </property>
-          <property name="showYGrid">
-           <bool>true</bool>
-          </property>
-          <property name="axisColor">
-           <color>
-            <red>214</red>
-            <green>214</green>
-            <blue>214</blue>
-           </color>
-          </property>
-          <property name="showRightAxis">
-           <bool>true</bool>
-          </property>
-          <property name="title" stdset="0">
-           <string>CH 2</string>
-          </property>
-          <property name="curves">
-           <stringlist>
-            <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-           </stringlist>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_3">
-          <property name="toolTip">
-           <string/>
-          </property>
-          <property name="showXGrid">
-           <bool>true</bool>
-          </property>
-          <property name="showYGrid">
-           <bool>true</bool>
-          </property>
-          <property name="axisColor">
-           <color>
-            <red>224</red>
-            <green>224</green>
-            <blue>224</blue>
-           </color>
-          </property>
-          <property name="showRightAxis">
-           <bool>true</bool>
-          </property>
-          <property name="title" stdset="0">
-           <string>CH 0</string>
-          </property>
-          <property name="showLegend">
-           <bool>false</bool>
-          </property>
-          <property name="curves">
-           <stringlist>
-            <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ffff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-           </stringlist>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="spacing">
+          <number>20</number>
+         </property>
+         <item row="0" column="2">
+          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_2">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showXGrid">
+            <bool>true</bool>
+           </property>
+           <property name="showYGrid">
+            <bool>true</bool>
+           </property>
+           <property name="axisColor">
+            <color>
+             <red>227</red>
+             <green>227</green>
+             <blue>227</blue>
+            </color>
+           </property>
+           <property name="showRightAxis">
+            <bool>true</bool>
+           </property>
+           <property name="title" stdset="0">
+            <string>CH 1</string>
+           </property>
+           <property name="curves">
+            <stringlist>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_5">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showXGrid">
+            <bool>true</bool>
+           </property>
+           <property name="showYGrid">
+            <bool>true</bool>
+           </property>
+           <property name="axisColor">
+            <color>
+             <red>215</red>
+             <green>215</green>
+             <blue>215</blue>
+            </color>
+           </property>
+           <property name="showRightAxis">
+            <bool>true</bool>
+           </property>
+           <property name="title" stdset="0">
+            <string>CH 3</string>
+           </property>
+           <property name="curves">
+            <stringlist>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffaa7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_4">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showXGrid">
+            <bool>true</bool>
+           </property>
+           <property name="showYGrid">
+            <bool>true</bool>
+           </property>
+           <property name="axisColor">
+            <color>
+             <red>214</red>
+             <green>214</green>
+             <blue>214</blue>
+            </color>
+           </property>
+           <property name="showRightAxis">
+            <bool>true</bool>
+           </property>
+           <property name="title" stdset="0">
+            <string>CH 2</string>
+           </property>
+           <property name="curves">
+            <stringlist>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_3">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showXGrid">
+            <bool>true</bool>
+           </property>
+           <property name="showYGrid">
+            <bool>true</bool>
+           </property>
+           <property name="axisColor">
+            <color>
+             <red>224</red>
+             <green>224</green>
+             <blue>224</blue>
+            </color>
+           </property>
+           <property name="showRightAxis">
+            <bool>true</bool>
+           </property>
+           <property name="title" stdset="0">
+            <string>CH 0</string>
+           </property>
+           <property name="showLegend">
+            <bool>false</bool>
+           </property>
+           <property name="curves">
+            <stringlist>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ffff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
      </widget>
     </widget>
    </item>

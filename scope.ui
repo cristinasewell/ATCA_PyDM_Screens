@@ -7,26 +7,42 @@
     <x>0</x>
     <y>0</y>
     <width>1326</width>
-    <height>695</height>
+    <height>727</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_4">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item row="4" column="0">
     <widget class="QTabWidget" name="tabWidget">
+     <property name="styleSheet">
+      <string notr="true">QToolBox::tab{background:#D18237; border-radius: 6px; border: 1px solid white}
+ QToolBox::tab::selected{background:#FFB471}</string>
+     </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab">
       <property name="styleSheet">
        <string notr="true"/>
       </property>
       <attribute name="title">
-       <string>Tab 1</string>
+       <string>DAQMUX_0</string>
       </attribute>
-      <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0,0,0,0,0,0" columnstretch="0,0,0">
+      <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0,0,0,0" columnstretch="0,0,0">
        <property name="leftMargin">
         <number>2</number>
        </property>
@@ -45,115 +61,6 @@
        <property name="verticalSpacing">
         <number>4</number>
        </property>
-       <item row="0" column="0" rowspan="5">
-        <widget class="QToolBox" name="toolBox">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>1</horstretch>
-           <verstretch>1</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>9</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="currentIndex">
-          <number>1</number>
-         </property>
-         <widget class="QWidget" name="page">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>425</width>
-            <height>582</height>
-           </rect>
-          </property>
-          <attribute name="label">
-           <string>DaqMux0 Controller</string>
-          </attribute>
-          <layout class="QVBoxLayout" name="verticalLayout">
-           <item>
-            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="macros" stdset="0">
-              <string>{&quot;MUX&quot;:&quot;0&quot;}</string>
-             </property>
-             <property name="filename" stdset="0">
-              <string>daqMuxV2.ui</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-         <widget class="QWidget" name="page_2">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>425</width>
-            <height>559</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>231</width>
-            <height>0</height>
-           </size>
-          </property>
-          <attribute name="label">
-           <string>Channels Stream Settings</string>
-          </attribute>
-          <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>-30</y>
-             <width>411</width>
-             <height>571</height>
-            </rect>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="filename" stdset="0">
-            <string>bay0_channel_settings.ui</string>
-           </property>
-          </widget>
-         </widget>
-        </widget>
-       </item>
-       <item row="5" column="2">
-        <widget class="QPushButton" name="channel1_pb">
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-  background-color: #55ff7f;
-  border-color: #55ff7f;
-  color:black;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #55ff7f;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-         </property>
-         <property name="text">
-          <string>Channel 1</string>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
        <item row="5" column="1">
         <widget class="QPushButton" name="channel0_pb">
          <property name="styleSheet">
@@ -179,6 +86,25 @@ QPushButton:hover{
          </property>
         </widget>
        </item>
+       <item row="0" column="1" rowspan="5" colspan="2">
+        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="midLineWidth">
+          <number>7</number>
+         </property>
+         <property name="filename" stdset="0">
+          <string>bay0_waveform.ui</string>
+         </property>
+        </widget>
+       </item>
        <item row="6" column="1">
         <widget class="QPushButton" name="channel2_pb">
          <property name="styleSheet">
@@ -198,6 +124,31 @@ QPushButton:hover{
          </property>
          <property name="text">
           <string>Channel 2</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="channel1_pb">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+  background-color: #55ff7f;
+  border-color: #55ff7f;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #55ff7f;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+         </property>
+         <property name="text">
+          <string>Channel 1</string>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -229,8 +180,136 @@ QPushButton:hover{
          </property>
         </widget>
        </item>
+       <item row="0" column="0" rowspan="7">
+        <widget class="QToolBox" name="toolBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="palette">
+          <palette>
+           <active/>
+           <inactive/>
+           <disabled/>
+          </palette>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QToolBox::tab{background:#D18237; border-radius: 6px; border: 1px solid white}
+ QToolBox::tab::selected{background:#FFB471}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Panel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="midLineWidth">
+          <number>0</number>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="tabSpacing">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="page">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>429</width>
+            <height>659</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>DaqMux0 Controller</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="macros" stdset="0">
+              <string>{&quot;MUX&quot;:&quot;0&quot;}</string>
+             </property>
+             <property name="filename" stdset="0">
+              <string>daqMuxV2.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>429</width>
+            <height>659</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>231</width>
+            <height>0</height>
+           </size>
+          </property>
+          <attribute name="label">
+           <string>Channels Stream Settings</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="filename" stdset="0">
+              <string>bay0_channel_settings.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>DAQMUX_1</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>15</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>4</number>
+       </property>
        <item row="0" column="1" rowspan="5" colspan="2">
-        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_7">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
            <horstretch>1</horstretch>
@@ -240,21 +319,187 @@ QPushButton:hover{
          <property name="toolTip">
           <string/>
          </property>
-         <property name="midLineWidth">
-          <number>7</number>
-         </property>
          <property name="filename" stdset="0">
-          <string>bay0_waveform.ui</string>
+          <string>bay1_waveform.ui</string>
          </property>
         </widget>
        </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+  background-color: #55ff7f;
+  border-color: #55ff7f;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #55ff7f;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+         </property>
+         <property name="text">
+          <string>Channel 1</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPushButton" name="pushButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+  background-color: #55ffff;
+  border-color: #55ffff;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #55ffff;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+         </property>
+         <property name="text">
+          <string>Channel 0</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+  background-color: #ffaa7f;
+  border-color: #ffaa7f;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #ffaa7f;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+         </property>
+         <property name="text">
+          <string>Channel 3</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+  background-color: #ffff7f;
+  border-color: #ffff7f;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #ffff7f;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+         </property>
+         <property name="text">
+          <string>Channel 2</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" rowspan="7">
+        <widget class="QToolBox" name="toolBox_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="page_5">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>429</width>
+            <height>651</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>DaqMux1 Controller</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_8">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="macros" stdset="0">
+              <string>{&quot;MUX&quot;:&quot;1&quot;}</string>
+             </property>
+             <property name="filename" stdset="0">
+              <string>daqMuxV2.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_6">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>114</width>
+            <height>114</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>Channel Stream settings</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="filename" stdset="0">
+              <string>bay1_channel_settings.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
       </layout>
-     </widget>
-     <widget class="QWidget" name="tab_2">
-      <attribute name="title">
-       <string>Tab 2</string>
-      </attribute>
-      <layout class="QGridLayout" name="gridLayout"/>
      </widget>
     </widget>
    </item>
