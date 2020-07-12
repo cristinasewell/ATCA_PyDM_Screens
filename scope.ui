@@ -33,7 +33,7 @@
  QToolBox::tab::selected{background:#FFB471}</string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab">
       <property name="styleSheet">
@@ -62,7 +62,7 @@
         <number>4</number>
        </property>
        <item row="2" column="1">
-        <widget class="QPushButton" name="channel2_pb">
+        <widget class="QPushButton" name="b0_channel2_pb">
          <property name="styleSheet">
           <string notr="true">QPushButton {
   background-color: #ffff7f;
@@ -87,7 +87,7 @@ QPushButton:hover{
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QPushButton" name="channel0_pb">
+        <widget class="QPushButton" name="b0_channel0_pb">
          <property name="styleSheet">
           <string notr="true">QPushButton {
   background-color: #55ffff;
@@ -112,7 +112,7 @@ QPushButton:hover{
         </widget>
        </item>
        <item row="2" column="2">
-        <widget class="QPushButton" name="channel3_pb">
+        <widget class="QPushButton" name="b0_channel3_pb">
          <property name="styleSheet">
           <string notr="true">QPushButton {
   background-color: #ffaa7f;
@@ -240,7 +240,7 @@ QPushButton:hover{
         </widget>
        </item>
        <item row="1" column="2">
-        <widget class="QPushButton" name="channel1_pb">
+        <widget class="QPushButton" name="b0_channel1_pb">
          <property name="styleSheet">
           <string notr="true">QPushButton {
   background-color: #55ff7f;
@@ -456,7 +456,7 @@ QPushButton:hover{
         <number>4</number>
        </property>
        <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="b1_channel0_pb">
          <property name="styleSheet">
           <string notr="true">QPushButton {
   background-color: #55ffff;
@@ -505,8 +505,8 @@ QPushButton:hover{
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>429</width>
-            <height>607</height>
+            <width>114</width>
+            <height>114</height>
            </rect>
           </property>
           <attribute name="label">
@@ -556,7 +556,7 @@ QPushButton:hover{
         </widget>
        </item>
        <item row="2" column="2">
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QPushButton" name="b1_channel3_pb">
          <property name="styleSheet">
           <string notr="true">QPushButton {
   background-color: #ffaa7f;
@@ -581,7 +581,7 @@ QPushButton:hover{
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="b1_channel2_pb">
          <property name="styleSheet">
           <string notr="true">QPushButton {
   background-color: #ffff7f;
@@ -606,7 +606,7 @@ QPushButton:hover{
         </widget>
        </item>
        <item row="1" column="2">
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="b1_channel1_pb">
          <property name="styleSheet">
           <string notr="true">QPushButton {
   background-color: #55ff7f;
