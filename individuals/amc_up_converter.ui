@@ -12,8 +12,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>458</width>
-    <height>624</height>
+    <width>481</width>
+    <height>846</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -118,9 +118,9 @@
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>204</red>
-        <green>204</green>
-        <blue>204</blue>
+        <red>228</red>
+        <green>228</green>
+        <blue>228</blue>
        </color>
       </brush>
      </colorrole>
@@ -264,9 +264,9 @@
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>204</red>
-        <green>204</green>
-        <blue>204</blue>
+        <red>228</red>
+        <green>228</green>
+        <blue>228</blue>
        </color>
       </brush>
      </colorrole>
@@ -401,18 +401,18 @@
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>204</red>
-        <green>204</green>
-        <blue>204</blue>
+        <red>228</red>
+        <green>228</green>
+        <blue>228</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>204</red>
-        <green>204</green>
-        <blue>204</blue>
+        <red>228</red>
+        <green>228</green>
+        <blue>228</blue>
        </color>
       </brush>
      </colorrole>
@@ -479,25 +479,17 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
-   <property name="spacing">
-    <number>4</number>
-   </property>
-   <property name="sizeConstraint">
-    <enum>QLayout::SetDefaultConstraint</enum>
-   </property>
-   <property name="leftMargin">
-    <number>0</number>
-   </property>
-   <property name="topMargin">
-    <number>0</number>
-   </property>
-   <property name="rightMargin">
-    <number>0</number>
-   </property>
-   <property name="bottomMargin">
-    <number>0</number>
-   </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="filename" stdset="0">
+      <string>docs/_static/amc_upconverter.png</string>
+     </property>
+    </widget>
+   </item>
    <item>
     <layout class="QGridLayout" name="gridLayout" columnstretch="0,0,0,0,0,0,0,0">
      <property name="sizeConstraint">
@@ -648,7 +640,7 @@ QPushButton:hover{
       <widget class="QLabel" name="label_7">
        <property name="styleSheet">
         <string notr="true">QLabel{
-  color:#00142F;
+  color:rgb(197,90,17);
   font-size: 12px;
   font: bold italic;
 }</string>
@@ -844,7 +836,7 @@ QPushButton:hover{
       <widget class="QLabel" name="label_3">
        <property name="styleSheet">
         <string notr="true">QLabel{
-  color:#00142F;
+  color:rgb(0,134,61);
   font-size: 12px;
   font: bold italic;
 }</string>
@@ -1011,7 +1003,7 @@ QPushButton:hover{
       <widget class="QLabel" name="label_5">
        <property name="styleSheet">
         <string notr="true">QLabel{
-  color:#00142F;
+  color:rgb(112,48,160);
   font-size: 12px;
   font: bold italic;
 }</string>
@@ -1164,7 +1156,7 @@ QPushButton:hover{
       <widget class="QLabel" name="label_4">
        <property name="styleSheet">
         <string notr="true">QLabel{
-  color:#00142F;
+  color:rgb(0,112,192);
   font-size: 12px;
   font: bold italic;
 }</string>
@@ -1381,7 +1373,7 @@ QPushButton:hover{
       <widget class="QLabel" name="label_8">
        <property name="styleSheet">
         <string notr="true">QLabel{
-  color:#00142F;
+  color:rgb(30,78,121);
   font-size: 12px;
   font: bold italic;
 }</string>
@@ -1411,7 +1403,7 @@ QPushButton:hover{
       <widget class="QLabel" name="label_2">
        <property name="styleSheet">
         <string notr="true">QLabel{
-  color:#00142F;
+  color:rgb(192,0,0);
   font-size: 12px;
   font: bold italic;
 }</string>
@@ -1489,7 +1481,7 @@ QPushButton:hover{
       <widget class="QLabel" name="label_6">
        <property name="styleSheet">
         <string notr="true">QLabel{
-  color:#00142F;
+  color:rgb(255,51,204);
   font-size: 12px;
   font: bold italic;
 }</string>
@@ -1791,6 +1783,11 @@ QPushButton:hover{
    <class>PyDMPushButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
