@@ -861,8 +861,14 @@ QPushButton:hover{
        <property name="toolTip">
         <string/>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+color:#25255F;
+font: bold
+}</string>
+       </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DAQMUX0_IMPMUXSELSTR${CH}</string>
+        <string>ca://${DEVICE}:DAQMUX0_INPMUXSELSTR${CH}</string>
        </property>
       </widget>
      </item>
