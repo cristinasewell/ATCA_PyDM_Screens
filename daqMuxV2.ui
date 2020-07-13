@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>356</width>
+    <width>357</width>
     <height>480</height>
    </rect>
   </property>
@@ -41,7 +41,7 @@
       <string notr="true">QLabel{
   color:#030923;
   font-size: 16px;
-  font-style: bold;
+  font: bold;
 }</string>
      </property>
      <property name="text">
@@ -710,7 +710,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -724,7 +723,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -738,7 +736,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -752,7 +749,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -766,7 +762,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -780,7 +775,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -794,7 +788,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -808,7 +801,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -822,7 +814,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -836,7 +827,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -850,7 +840,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -864,7 +853,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -878,7 +866,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -892,7 +879,6 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
-  font-style: bold;
 }</string>
        </property>
        <property name="text">
@@ -1076,11 +1062,11 @@ QPushButton:hover{
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_4"/>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup_6"/>
+  <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup_4"/>
   <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_5"/>
-  <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>
