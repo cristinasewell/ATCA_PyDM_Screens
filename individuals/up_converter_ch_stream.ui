@@ -839,25 +839,6 @@ QPushButton:hover{
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_8">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{
- color:#25255F;
- font-size: 10px;
-}</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DAQMUX1_IMPMUXSELSTR${CH}</string>
-       </property>
-      </widget>
-     </item>
      <item row="2" column="0">
       <widget class="QLabel" name="label_15">
        <property name="styleSheet">
@@ -869,6 +850,16 @@ QPushButton:hover{
        </property>
        <property name="text">
         <string>Current Mux Select:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DAQMUX1_IMPMUXSELSTR${CH}</string>
        </property>
       </widget>
      </item>
