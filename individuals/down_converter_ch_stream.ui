@@ -39,7 +39,7 @@
     <number>0</number>
    </property>
    <item>
-    <layout class="QGridLayout" name="gridLayout" columnstretch="0,0,0">
+    <layout class="QGridLayout" name="gridLayout" columnstretch="0,0">
      <property name="sizeConstraint">
       <enum>QLayout::SetMinimumSize</enum>
      </property>
@@ -133,7 +133,7 @@
         <string>ca://${DEVICE}:DAQMUX0_STRMPAUSE${CH}</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::String</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -707,29 +707,6 @@ QPushButton:hover{
        </property>
       </widget>
      </item>
-     <item row="22" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_8">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-  border-width: 1px; 
-  border-style: solid; 
-  border-color: #002C2F;
-}</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DAQMUX0_FORMATSIGNWIDTH${CH}</string>
-       </property>
-      </widget>
-     </item>
      <item row="16" column="0">
       <widget class="QLabel" name="label_6">
        <property name="styleSheet">
@@ -741,29 +718,6 @@ QPushButton:hover{
        </property>
        <property name="text">
         <string>Input Data Valid</string>
-       </property>
-      </widget>
-     </item>
-     <item row="24" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_9">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-  border-width: 1px; 
-  border-style: solid; 
-  border-color: #002C2F;
-}</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DAQMUX0_FORMATDATAWIDTH${CH}</string>
        </property>
       </widget>
      </item>
@@ -870,6 +824,40 @@ QPushButton:hover{
        </property>
       </widget>
      </item>
+     <item row="22" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+  border-width: 1px; 
+  border-style: solid; 
+  border-color: #002C2F;
+}</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DAQMUX0_FORMATSIGNWIDTH${CH}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="24" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+  border-width: 1px; 
+  border-style: solid; 
+  border-color: #002C2F;
+}</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DAQMUX0_FORMATDATAWIDTH${CH}</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </item>
   </layout>
@@ -879,6 +867,11 @@ QPushButton:hover{
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
    <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
   </customwidget>
   <customwidget>
    <class>PyDMPushButton</class>
