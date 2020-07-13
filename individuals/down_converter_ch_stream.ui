@@ -870,6 +870,9 @@ font: bold
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DAQMUX0_INPMUXSELSTR${CH}</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLineEdit::String</enum>
+       </property>
       </widget>
      </item>
     </layout>
