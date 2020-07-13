@@ -64,7 +64,7 @@
         <string>TRG03</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE2}:TRG03_SYS0_TWID</string>
+        <string>ca://${DEVICE2}:TRG03_SYS0_TWID</string>
        </property>
       </widget>
      </item>
@@ -83,7 +83,7 @@
         <string>TRG02</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE2}:TRG02_SYS0_TWID</string>
+        <string>ca://${DEVICE2}:TRG02_SYS0_TWID</string>
        </property>
       </widget>
      </item>
@@ -146,7 +146,7 @@
         <string>TRG03</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE2}:TRG03_SYS0_TWID</string>
+        <string>ca://${DEVICE2}:TRG03_SYS0_TWID</string>
        </property>
       </widget>
      </item>
@@ -165,7 +165,7 @@
         <string>TRG04</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://{DEVICE2}:TRG04_SYS0_TWID</string>
+        <string>ca://${DEVICE2}:TRG04_SYS0_TWID</string>
        </property>
       </widget>
      </item>

@@ -121,7 +121,7 @@
           <string/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:RTM_FAULTOUT</string>
+          <string>ca://${DEVICE}:RTM_FAULTOUT</string>
          </property>
         </widget>
        </item>
@@ -146,7 +146,7 @@
           <string/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:RTM_MOTR_ON</string>
+          <string>ca://${DEVICE}:RTM_MOTR_ON</string>
          </property>
         </widget>
        </item>
@@ -162,7 +162,7 @@
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:RTM_SLED_DETUNED</string>
+          <string>ca://${DEVICE}:RTM_SLED_DETUNED</string>
          </property>
         </widget>
        </item>
@@ -209,7 +209,7 @@
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:RTM_SLED_SML</string>
+          <string>ca://${DEVICE}:RTM_SLED_SML</string>
          </property>
         </widget>
        </item>
@@ -268,7 +268,7 @@
           <string/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:RTM_FAULTSUMY</string>
+          <string>ca://${DEVICE}:RTM_FAULTSUMY</string>
          </property>
         </widget>
        </item>
@@ -315,7 +315,7 @@
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:RTM_SLED_TUNED</string>
+          <string>ca://${DEVICE}:RTM_SLED_TUNED</string>
          </property>
         </widget>
        </item>
@@ -331,7 +331,7 @@
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:RTM_SLED_SUMY</string>
+          <string>ca://${DEVICE}:RTM_SLED_SUMY</string>
          </property>
         </widget>
        </item>
@@ -356,7 +356,7 @@
           <string/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:RTM_ADCLOCK</string>
+          <string>ca://${DEVICE}:RTM_ADCLOCK</string>
          </property>
         </widget>
        </item>
@@ -1181,7 +1181,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:BC_ILK_RAW</string>
+          <string>ca://${DEVICE}:BC_ILK_RAW</string>
          </property>
         </widget>
        </item>
@@ -1203,7 +1203,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:RE_ILK_RAW</string>
+          <string>ca://${DEVICE}:RE_ILK_RAW</string>
          </property>
         </widget>
        </item>
@@ -1219,7 +1219,7 @@ QPushButton:hover{
           <string/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:SET_BC_ILK_RAW</string>
+          <string>ca://${DEVICE}:SET_BC_ILK_RAW</string>
          </property>
         </widget>
        </item>
@@ -1235,7 +1235,7 @@ QPushButton:hover{
           <string/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:SET_BV_ILK_RAW</string>
+          <string>ca://${DEVICE}:SET_BV_ILK_RAW</string>
          </property>
         </widget>
        </item>
@@ -1257,7 +1257,7 @@ QPushButton:hover{
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:BV_ILK_RAW</string>
+          <string>ca://${DEVICE}:BV_ILK_RAW</string>
          </property>
         </widget>
        </item>
@@ -1293,7 +1293,7 @@ QPushButton:hover{
           <string/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://{DEVICE}:SET_RE_ILK_RAW</string>
+          <string>ca://${DEVICE}:SET_RE_ILK_RAW</string>
          </property>
         </widget>
        </item>
