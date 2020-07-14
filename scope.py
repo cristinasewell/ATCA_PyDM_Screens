@@ -14,6 +14,7 @@ class Scope(Display):
         self._curves = None
         self.define_curves()
         self.setup_ui()
+        self.setup_curve_selection_mode()
 
     def macros(self):
         if self._macros is None:
@@ -86,7 +87,6 @@ class Scope(Display):
             if self.ui.b0_channel3_pb.isChecked():
                 ch = json.dumps(self._curves.get(3))
                 b0_curves.append(ch)
-            self.waveformPlotBay0.plotItem.getView().setMouseMode(pg.ViewBox.RectMode)
             self.waveformPlotBay0.setCurves(b0_curves)
 
             # bay 1
@@ -103,8 +103,19 @@ class Scope(Display):
             if self.ui.b1_channel3_pb.isChecked():
                 ch = json.dumps(self._curves.get(7))
                 b1_curves.append(ch)
-            self.waveformPlotBay1.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
             self.waveformPlotBay1.setCurves(b1_curves)
+
+    def setup_curve_selection_mode(self):
+        self.waveform0Ch0.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
+        self.waveform0Ch1.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
+        self.waveform0Ch2.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
+        self.waveform0Ch3.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
+        self.waveform1Ch0.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
+        self.waveform1Ch1.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
+        self.waveform1Ch2.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
+        self.waveform1Ch3.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
+        self.waveformPlotBay0.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
+        self.waveformPlotBay1.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
 
     def setup_ui(self):
         # bay 0

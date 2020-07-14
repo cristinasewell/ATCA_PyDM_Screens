@@ -69,7 +69,7 @@
           </sizepolicy>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="tab_5">
           <attribute name="title">
@@ -233,7 +233,7 @@ QPushButton:hover{
               <number>20</number>
              </property>
              <item row="0" column="0">
-              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_6">
+              <widget class="PyDMWaveformPlot" name="waveform0Ch0">
                <property name="toolTip">
                 <string/>
                </property>
@@ -273,7 +273,7 @@ QPushButton:hover{
               </widget>
              </item>
              <item row="1" column="0">
-              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_7">
+              <widget class="PyDMWaveformPlot" name="waveform0Ch2">
                <property name="toolTip">
                 <string/>
                </property>
@@ -313,7 +313,7 @@ QPushButton:hover{
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_8">
+              <widget class="PyDMWaveformPlot" name="waveform0Ch1">
                <property name="toolTip">
                 <string/>
                </property>
@@ -353,7 +353,7 @@ QPushButton:hover{
               </widget>
              </item>
              <item row="1" column="1">
-              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_9">
+              <widget class="PyDMWaveformPlot" name="waveform0Ch3">
                <property name="toolTip">
                 <string/>
                </property>
@@ -444,8 +444,8 @@ QPushButton:hover{
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>100</width>
-            <height>30</height>
+            <width>434</width>
+            <height>658</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -702,7 +702,7 @@ QPushButton:hover{
               <number>20</number>
              </property>
              <item row="1" column="0">
-              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_3">
+              <widget class="PyDMWaveformPlot" name="waveform1Ch2">
                <property name="toolTip">
                 <string/>
                </property>
@@ -742,7 +742,7 @@ QPushButton:hover{
               </widget>
              </item>
              <item row="0" column="0">
-              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_2">
+              <widget class="PyDMWaveformPlot" name="waveform1Ch0">
                <property name="toolTip">
                 <string/>
                </property>
@@ -788,7 +788,7 @@ QPushButton:hover{
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_4">
+              <widget class="PyDMWaveformPlot" name="waveform1Ch1">
                <property name="toolTip">
                 <string/>
                </property>
@@ -828,7 +828,7 @@ QPushButton:hover{
               </widget>
              </item>
              <item row="1" column="1">
-              <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_5">
+              <widget class="PyDMWaveformPlot" name="waveform1Ch3">
                <property name="toolTip">
                 <string/>
                </property>
@@ -926,8 +926,8 @@ QPushButton:hover{
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>114</width>
-            <height>114</height>
+            <width>434</width>
+            <height>658</height>
            </rect>
           </property>
           <attribute name="label">
