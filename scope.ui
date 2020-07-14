@@ -157,8 +157,7 @@ QPushButton:hover{
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">QToolBox::tab{background:#D18237; border-radius: 6px; border: 1px solid white}
- QToolBox::tab::selected{background:#FFB471}</string>
+          <string notr="true"/>
          </property>
          <property name="frameShape">
           <enum>QFrame::Panel</enum>
@@ -176,7 +175,7 @@ QPushButton:hover{
           <number>1</number>
          </property>
          <property name="tabSpacing">
-          <number>0</number>
+          <number>4</number>
          </property>
          <widget class="QWidget" name="page">
           <property name="geometry">
@@ -184,8 +183,11 @@ QPushButton:hover{
             <x>0</x>
             <y>0</y>
             <width>429</width>
-            <height>666</height>
+            <height>658</height>
            </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
           </property>
           <attribute name="label">
            <string>DaqMux0 Controller</string>
@@ -212,7 +214,7 @@ QPushButton:hover{
             <x>0</x>
             <y>0</y>
             <width>429</width>
-            <height>666</height>
+            <height>658</height>
            </rect>
           </property>
           <property name="minimumSize">
@@ -273,7 +275,7 @@ QPushButton:hover{
           </sizepolicy>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="tab_5">
           <attribute name="title">
@@ -301,43 +303,14 @@ QPushButton:hover{
              <property name="showRightAxis">
               <bool>true</bool>
              </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-         <widget class="QWidget" name="tab_8">
-          <attribute name="title">
-           <string>Plots</string>
-          </attribute>
-          <layout class="QVBoxLayout" name="verticalLayout_5">
-           <item>
-            <widget class="PyDMScatterPlot" name="PyDMScatterPlot">
-             <property name="toolTip">
-              <string/>
+             <property name="autoRangeY">
+              <bool>false</bool>
              </property>
-             <property name="showXGrid">
-              <bool>true</bool>
+             <property name="minYRange">
+              <double>-32768.000000000000000</double>
              </property>
-             <property name="showYGrid">
-              <bool>true</bool>
-             </property>
-             <property name="axisColor">
-              <color>
-               <red>199</red>
-               <green>199</green>
-               <blue>199</blue>
-              </color>
-             </property>
-             <property name="showRightAxis">
-              <bool>true</bool>
-             </property>
-             <property name="curves">
-              <stringlist>
-               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ffff&quot;, &quot;lineStyle&quot;: 0, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: &quot;o&quot;, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2, &quot;buffer_size&quot;: 1200}</string>
-               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ff7f&quot;, &quot;lineStyle&quot;: 0, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: &quot;o&quot;, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2, &quot;buffer_size&quot;: 1200}</string>
-               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 0, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: &quot;o&quot;, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2, &quot;buffer_size&quot;: 1200}</string>
-               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffaa7f&quot;, &quot;lineStyle&quot;: 0, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: &quot;o&quot;, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2, &quot;buffer_size&quot;: 1200}</string>
-              </stringlist>
+             <property name="maxYRange">
+              <double>-32767.000000000000000</double>
              </property>
             </widget>
            </item>
@@ -375,12 +348,21 @@ QPushButton:hover{
                 <bool>true</bool>
                </property>
                <property name="title" stdset="0">
-                <string>CH 0</string>
+                <string>Stream CH 0</string>
                </property>
                <property name="curves">
                 <stringlist>
                  <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ffff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
                 </stringlist>
+               </property>
+               <property name="autoRangeY">
+                <bool>false</bool>
+               </property>
+               <property name="minYRange">
+                <double>-32768.000000000000000</double>
+               </property>
+               <property name="maxYRange">
+                <double>32767.000000000000000</double>
                </property>
               </widget>
              </item>
@@ -406,12 +388,21 @@ QPushButton:hover{
                 <bool>true</bool>
                </property>
                <property name="title" stdset="0">
-                <string>CH 2</string>
+                <string>Stream CH 2</string>
                </property>
                <property name="curves">
                 <stringlist>
                  <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
                 </stringlist>
+               </property>
+               <property name="autoRangeY">
+                <bool>false</bool>
+               </property>
+               <property name="minYRange">
+                <double>-32768.000000000000000</double>
+               </property>
+               <property name="maxYRange">
+                <double>32767.000000000000000</double>
                </property>
               </widget>
              </item>
@@ -437,12 +428,21 @@ QPushButton:hover{
                 <bool>true</bool>
                </property>
                <property name="title" stdset="0">
-                <string>CH 1</string>
+                <string>Stream CH 1</string>
                </property>
                <property name="curves">
                 <stringlist>
                  <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
                 </stringlist>
+               </property>
+               <property name="autoRangeY">
+                <bool>false</bool>
+               </property>
+               <property name="minYRange">
+                <double>-32768.000000000000000</double>
+               </property>
+               <property name="maxYRange">
+                <double>32767.000000000000000</double>
                </property>
               </widget>
              </item>
@@ -468,12 +468,21 @@ QPushButton:hover{
                 <bool>true</bool>
                </property>
                <property name="title" stdset="0">
-                <string>CH 3</string>
+                <string>Stream CH 3</string>
                </property>
                <property name="curves">
                 <stringlist>
                  <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR0:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffaa7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
                 </stringlist>
+               </property>
+               <property name="autoRangeY">
+                <bool>false</bool>
+               </property>
+               <property name="minYRange">
+                <double>-32768.000000000000000</double>
+               </property>
+               <property name="maxYRange">
+                <double>32767.000000000000000</double>
                </property>
               </widget>
              </item>
@@ -692,7 +701,7 @@ QPushButton:hover{
           </sizepolicy>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="tab_3">
           <attribute name="title">
@@ -703,6 +712,9 @@ QPushButton:hover{
             <widget class="PyDMWaveformPlot" name="waveformPlotBay1">
              <property name="toolTip">
               <string/>
+             </property>
+             <property name="cacheMode">
+              <set>QGraphicsView::CacheBackground</set>
              </property>
              <property name="showXGrid">
               <bool>true</bool>
@@ -720,43 +732,14 @@ QPushButton:hover{
              <property name="showRightAxis">
               <bool>true</bool>
              </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-         <widget class="QWidget" name="tab_7">
-          <attribute name="title">
-           <string>Plots</string>
-          </attribute>
-          <layout class="QVBoxLayout" name="verticalLayout_4">
-           <item>
-            <widget class="PyDMScatterPlot" name="PyDMScatterPlot_2">
-             <property name="toolTip">
-              <string/>
+             <property name="autoRangeY">
+              <bool>false</bool>
              </property>
-             <property name="showXGrid">
-              <bool>true</bool>
+             <property name="minYRange">
+              <double>-32768.000000000000000</double>
              </property>
-             <property name="showYGrid">
-              <bool>true</bool>
-             </property>
-             <property name="axisColor">
-              <color>
-               <red>202</red>
-               <green>202</green>
-               <blue>202</blue>
-              </color>
-             </property>
-             <property name="showRightAxis">
-              <bool>true</bool>
-             </property>
-             <property name="curves">
-              <stringlist>
-               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ffff&quot;, &quot;lineStyle&quot;: 0, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: &quot;o&quot;, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2, &quot;buffer_size&quot;: 1200}</string>
-               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ff7f&quot;, &quot;lineStyle&quot;: 0, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: &quot;o&quot;, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2, &quot;buffer_size&quot;: 1200}</string>
-               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 0, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: &quot;o&quot;, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2, &quot;buffer_size&quot;: 1200}</string>
-               <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffaa7f&quot;, &quot;lineStyle&quot;: 0, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: &quot;o&quot;, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2, &quot;buffer_size&quot;: 1200}</string>
-              </stringlist>
+             <property name="maxYRange">
+              <double>32767.000000000000000</double>
              </property>
             </widget>
            </item>
@@ -794,12 +777,21 @@ QPushButton:hover{
                 <bool>true</bool>
                </property>
                <property name="title" stdset="0">
-                <string>Ch 2</string>
+                <string>Stream CH 2</string>
                </property>
                <property name="curves">
                 <stringlist>
                  <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
                 </stringlist>
+               </property>
+               <property name="autoRangeY">
+                <bool>false</bool>
+               </property>
+               <property name="minYRange">
+                <double>-32768.000000000000000</double>
+               </property>
+               <property name="maxYRange">
+                <double>32767.000000000000000</double>
                </property>
               </widget>
              </item>
@@ -825,12 +817,27 @@ QPushButton:hover{
                 <bool>true</bool>
                </property>
                <property name="title" stdset="0">
-                <string>CH 0</string>
+                <string>Stream CH 0</string>
+               </property>
+               <property name="showLegend">
+                <bool>false</bool>
                </property>
                <property name="curves">
                 <stringlist>
                  <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ffff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
                 </stringlist>
+               </property>
+               <property name="autoRangeX">
+                <bool>true</bool>
+               </property>
+               <property name="autoRangeY">
+                <bool>false</bool>
+               </property>
+               <property name="minYRange">
+                <double>-32768.000000000000000</double>
+               </property>
+               <property name="maxYRange">
+                <double>32767.000000000000000</double>
                </property>
               </widget>
              </item>
@@ -856,12 +863,21 @@ QPushButton:hover{
                 <bool>true</bool>
                </property>
                <property name="title" stdset="0">
-                <string>CH 1</string>
+                <string>Stream CH 1</string>
                </property>
                <property name="curves">
                 <stringlist>
                  <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#55ff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
                 </stringlist>
+               </property>
+               <property name="autoRangeY">
+                <bool>false</bool>
+               </property>
+               <property name="minYRange">
+                <double>-32768.000000000000000</double>
+               </property>
+               <property name="maxYRange">
+                <double>32767.000000000000000</double>
                </property>
               </widget>
              </item>
@@ -887,12 +903,21 @@ QPushButton:hover{
                 <bool>true</bool>
                </property>
                <property name="title" stdset="0">
-                <string>Ch 3</string>
+                <string>Stream CH 3</string>
                </property>
                <property name="curves">
                 <stringlist>
                  <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:STR1:STREAM_SLOWSHORT3&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffaa7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
                 </stringlist>
+               </property>
+               <property name="autoRangeY">
+                <bool>false</bool>
+               </property>
+               <property name="minYRange">
+                <double>-32768.000000000000000</double>
+               </property>
+               <property name="maxYRange">
+                <double>32767.000000000000000</double>
                </property>
               </widget>
              </item>
@@ -909,11 +934,6 @@ QPushButton:hover{
   </layout>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>PyDMScatterPlot</class>
-   <extends>QGraphicsView</extends>
-   <header>pydm.widgets.scatterplot</header>
-  </customwidget>
   <customwidget>
    <class>PyDMWaveformPlot</class>
    <extends>QGraphicsView</extends>
