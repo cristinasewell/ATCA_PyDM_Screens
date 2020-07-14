@@ -15,8 +15,15 @@ class Scope(Display):
         self._dotted_curves = None
         self.define_curves()
         self.define_dotted_curves()
+
         self.setup_ui()
-        self.setup_curve_selection_mode()
+     #   self.ui.bay0Mode0_rb.setChecked(True)
+      #  self.ui.bay1Mode0_rb.setChecked(True)
+        
+        self.bay0_dotted = True
+        self.bay1_dotted = True
+        self.bay0_line= False
+        self.bay1_line = False
 
     def macros(self):
         if self._macros is None:
@@ -128,68 +135,68 @@ class Scope(Display):
         b0_curves = []
         if self._curves:
             if self.ui.b0_channel0_pb.isChecked():
-                ch = json.dumps(self._curves.get(0))
-                b0_curves.append(ch)
+                if self.bay0_line:
+                    ch = json.dumps(self._curves.get(0))
+                    b0_curves.append(ch)
+                else:
+                    ch = json.dumps(self._dotted_curves.get(0))
+                    b0_curves.append(ch)
             if self.ui.b0_channel1_pb.isChecked():
-                ch = json.dumps(self._curves.get(1))
-                b0_curves.append(ch)
+                if self.bay0_line:
+                    ch = json.dumps(self._curves.get(1))
+                    b0_curves.append(ch)
+                else:
+                    ch = json.dumps(self._dotted_curves.get(1))
+                    b0_curves.append(ch)
             if self.ui.b0_channel2_pb.isChecked():
-                ch = json.dumps(self._curves.get(2))
-                b0_curves.append(ch)
+                if self.bay0_line:
+                    ch = json.dumps(self._curves.get(2))
+                    b0_curves.append(ch)
+                else:
+                    ch = json.dumps(self._dotted_curves.get(2))
+                    b0_curves.append(ch)
             if self.ui.b0_channel3_pb.isChecked():
-                ch = json.dumps(self._curves.get(3))
-                b0_curves.append(ch)
-            self.waveformPlotBay0.setCurves(b0_curves)
+                if self.bay0_line:
+                    ch = json.dumps(self._curves.get(3))
+                    b0_curves.append(ch)
+                else:
+                    ch = json.dumps(self._dotted_curves.get(3))
+                    b0_curves.append(ch)
 
-            # bay 1
-            b1_curves = []
-            if self.ui.b1_channel0_pb.isChecked():
+            self.waveformPlotBay0.setCurves(b0_curves)
+            
+        # bay 1
+        b1_curves = []
+        # if curves...
+        if self.ui.b1_channel0_pb.isChecked():
+            if self.bay1_line:        
                 ch = json.dumps(self._curves.get(4))
                 b1_curves.append(ch)
-            if self.ui.b1_channel1_pb.isChecked():
+            else:
+                ch = json.dumps(self._dotted_curves.get(4))
+                b1_curves.append(ch)
+        if self.ui.b1_channel1_pb.isChecked():
+            if self.bay1_line:
                 ch = json.dumps(self._curves.get(5))
                 b1_curves.append(ch)
-            if self.ui.b1_channel2_pb.isChecked():
+            else:
+                ch = json.dumps(self._dotted_curves.get(5))
+                b1_curves.append(ch)
+        if self.ui.b1_channel2_pb.isChecked():
+            if self.bay1_line:
                 ch = json.dumps(self._curves.get(6))
                 b1_curves.append(ch)
-            if self.ui.b1_channel3_pb.isChecked():
+            else:
+                ch = json.dumps(self._dotted_curves.get(6))
+                b1_curves.append(ch)
+        if self.ui.b1_channel3_pb.isChecked():
+            if self.bay1_line:
                 ch = json.dumps(self._curves.get(7))
                 b1_curves.append(ch)
-            self.waveformPlotBay1.setCurves(b1_curves)
-
-    def handle_show_dotted_curve(self):
-        # bay 0
-        b0_curves = []
-        if self._dotted_curves:
-            if self.ui.b0_channel0_pb.isChecked():
-                ch = json.dumps(self._curves.get(0))
-                b0_curves.append(ch)
-            if self.ui.b0_channel1_pb.isChecked():
-                ch = json.dumps(self._curves.get(1))
-                b0_curves.append(ch)
-            if self.ui.b0_channel2_pb.isChecked():
-                ch = json.dumps(self._curves.get(2))
-                b0_curves.append(ch)
-            if self.ui.b0_channel3_pb.isChecked():
-                ch = json.dumps(self._curves.get(3))
-                b0_curves.append(ch)
-            self.waveformPlotBay0.setCurves(b0_curves)
-
-            # bay 1
-            b1_curves = []
-            if self.ui.b1_channel0_pb.isChecked():
-                ch = json.dumps(self._curves.get(4))
+            else:
+                ch = json.dumps(self._dotted_curves.get(7))
                 b1_curves.append(ch)
-            if self.ui.b1_channel1_pb.isChecked():
-                ch = json.dumps(self._curves.get(5))
-                b1_curves.append(ch)
-            if self.ui.b1_channel2_pb.isChecked():
-                ch = json.dumps(self._curves.get(6))
-                b1_curves.append(ch)
-            if self.ui.b1_channel3_pb.isChecked():
-                ch = json.dumps(self._curves.get(7))
-                b1_curves.append(ch)
-            self.waveformPlotBay1.setCurves(b1_curves)
+        self.waveformPlotBay1.setCurves(b1_curves)
     
     def setup_curve_selection_mode(self):
         self.waveform0Ch0.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
@@ -203,13 +210,7 @@ class Scope(Display):
         self.waveformPlotBay0.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
         self.waveformPlotBay1.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
 
-    def setup_ui(self): 
-        if self.bay0Mode0_rb.isChecked() or self.bay0Mode0_rb.isChecked():
-            self.setup_dotted_curves()
-        elif self.bayoMode1_pb.isChecked() or self.bay1Mode1_rb.isChecked():
-            self.setup_curves()
-
-    def setup_curves(self):
+    def setup_ui(self):
         # bay 0
         self.ui.b0_channel0_pb.clicked.connect(self.handle_show_curve)
         self.ui.b0_channel1_pb.clicked.connect(self.handle_show_curve)
@@ -220,19 +221,26 @@ class Scope(Display):
         self.ui.b1_channel1_pb.clicked.connect(self.handle_show_curve)
         self.ui.b1_channel2_pb.clicked.connect(self.handle_show_curve)
         self.ui.b1_channel3_pb.clicked.connect(self.handle_show_curve)
+        # modes
+        self.ui.bay0Mode0_rb.clicked.connect(self.setup_mode)
+        self.ui.bay0Mode1_rb.clicked.connect(self.setup_mode)
+        self.ui.bay1Mode0_rb.clicked.connect(self.setup_mode)
+        self.ui.bay1Mode1_rb.clicked.connect(self.setup_mode)
 
-    def setup_dotted_curves(self):
-        # bay 0
-        self.ui.b0_channel0_pb.clicked.connect(self.handle_show_dotted_curve)
-        self.ui.b0_channel1_pb.clicked.connect(self.handle_show_dotted_curve)
-        self.ui.b0_channel2_pb.clicked.connect(self.handle_show_dotted_curve)
-        self.ui.b0_channel3_pb.clicked.connect(self.handle_show_dotted_curve)
-        # bay 1
-        self.ui.b1_channel0_pb.clicked.connect(self.handle_show_dotted_curve)
-        self.ui.b1_channel1_pb.clicked.connect(self.handle_show_dotted_curve)
-        self.ui.b1_channel2_pb.clicked.connect(self.handle_show_dotted_curve)
-        self.ui.b1_channel3_pb.clicked.connect(self.handle_show_dotted_curve)
+    def setup_mode(self):
+        if self.ui.bay0Mode0_rb.isChecked():
+            self.bay0_dotted = True
+            self.bay0_line = False
+        elif self.ui.bay0Mode1_rb.isChecked():
+            self.bay0_line = True
+            self.bay0_dotted = False
 
+        if self.ui.bay1Mode0_rb.isChecked():
+            self.bay1_dotted = True
+            self.bay1_line = False
+        elif self.ui.bay1Mode1_rb.isChecked():
+            self.bay1_line = True
+            self.bay1_dotted = False
 
     def ui_filename(self):
         try:
