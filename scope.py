@@ -30,43 +30,43 @@ class Scope(Display):
                 self._curves = {
                     0: {"y_channel": ioc+"STR0:STREAM_SLOWSHORT0",
                         "x_channel": None, "name": "CH 0", "color": "#55ffff",
-                        "lineStyle": 3, "lineWidth": 1, "symbol": 1,
-                        "symbolSize": 8, "redraw_mode": 2},
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 1,
+                        "symbolSize": 16, "redraw_mode": 2},
 
                     1: {"y_channel": ioc+"STR0:STREAM_SLOWSHORT1",
                         "x_channel": None, "name": "CH 1", "color": "#55ff7f",
-                        "lineStyle": 3, "lineWidth": 1, "symbol": 1,
-                        "symbolSize": 8, "redraw_mode": 2},
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 1,
+                        "symbolSize": 16, "redraw_mode": 2},
 
                     2: {"y_channel": ioc+"STR0:STREAM_SLOWSHORT2",
                         "x_channel": None, "name": "CH 2", "color": "#ffff7f",
-                        "lineStyle": 3, "lineWidth": 1, "symbol": 1,
-                        "symbolSize": 8, "redraw_mode": 2},
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 1,
+                        "symbolSize": 16, "redraw_mode": 2},
 
                     3: {"y_channel": ioc+"STR0:STREAM_SLOWSHORT3",
                         "x_channel": None, "name": "CH 3", "color": "#ffaa7f",
-                        "lineStyle": 3, "lineWidth": 1, "symbol": 1, 
-                        "symbolSize": 8, "redraw_mode": 2}, 
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 1, 
+                        "symbolSize": 16, "redraw_mode": 2}, 
                     
                     4: {"y_channel": ioc+"STR1:STREAM_SLOWSHORT0",
                         "x_channel": None, "name": "CH 0", "color": "#55ffff",
-                        "lineStyle": 3, "lineWidth": 1, "symbol": 1,
-                        "symbolSize": 8, "redraw_mode": 2},
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 1,
+                        "symbolSize": 16, "redraw_mode": 2},
 
                     5: {"y_channel": ioc+"STR1:STREAM_SLOWSHORT1",
                         "x_channel": None, "name": "CH 1", "color": "#55ff7f",
-                        "lineStyle": 3, "lineWidth": 1, "symbol": 1,
-                        "symbolSize": 8, "redraw_mode": 2},
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 1,
+                        "symbolSize": 16, "redraw_mode": 2},
 
                     6: {"y_channel": ioc+"STR1:STREAM_SLOWSHORT2",
                         "x_channel": None, "name": "CH 2", "color": "#ffff7f",
-                        "lineStyle": 3, "lineWidth": 1, "symbol": 1,
-                        "symbolSize": 8, "redraw_mode": 2},
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 1,
+                        "symbolSize": 16, "redraw_mode": 2},
 
                     7: {"y_channel": ioc+"STR1:STREAM_SLOWSHORT3",
                         "x_channel": None, "name": "CH 3", "color": "#ffaa7f",
-                        "lineStyle": 3, "lineWidth": 1, "symbol": 1, 
-                        "symbolSize": 8, "redraw_mode": 2}}    
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 1, 
+                        "symbolSize": 16, "redraw_mode": 2}}    
         except:
             logger.error("You need to define a DEVICE macro ioc  - ex: -m 'DEVICE=MY_IOC' ")
             sys.exit(1)
