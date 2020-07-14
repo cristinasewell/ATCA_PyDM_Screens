@@ -29,11 +29,10 @@
    <item row="4" column="0">
     <widget class="QTabWidget" name="tabWidget">
      <property name="styleSheet">
-      <string notr="true">QToolBox::tab{background:#D18237; border-radius: 6px; border: 1px solid white}
- QToolBox::tab::selected{background:#FFB471}</string>
+      <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <property name="styleSheet">
@@ -61,111 +60,6 @@
        <property name="verticalSpacing">
         <number>4</number>
        </property>
-       <item row="0" column="0" rowspan="3">
-        <widget class="QToolBox" name="toolBox">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>1</horstretch>
-           <verstretch>1</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="palette">
-          <palette>
-           <active/>
-           <inactive/>
-           <disabled/>
-          </palette>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>9</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::Panel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Plain</enum>
-         </property>
-         <property name="lineWidth">
-          <number>0</number>
-         </property>
-         <property name="midLineWidth">
-          <number>0</number>
-         </property>
-         <property name="currentIndex">
-          <number>1</number>
-         </property>
-         <property name="tabSpacing">
-          <number>4</number>
-         </property>
-         <widget class="QWidget" name="page">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>434</width>
-            <height>658</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true"/>
-          </property>
-          <attribute name="label">
-           <string>DaqMux0 Controller</string>
-          </attribute>
-          <layout class="QVBoxLayout" name="verticalLayout">
-           <item>
-            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="macros" stdset="0">
-              <string>{&quot;MUX&quot;:&quot;0&quot;}</string>
-             </property>
-             <property name="filename" stdset="0">
-              <string>daqMuxV2.ui</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-         <widget class="QWidget" name="page_2">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>434</width>
-            <height>658</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>231</width>
-            <height>0</height>
-           </size>
-          </property>
-          <attribute name="label">
-           <string>Channels Stream Settings</string>
-          </attribute>
-          <layout class="QVBoxLayout" name="verticalLayout_3">
-           <item>
-            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="filename" stdset="0">
-              <string>bay0_channel_settings.ui</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-        </widget>
-       </item>
        <item row="0" column="1" rowspan="3" colspan="2">
         <widget class="QTabWidget" name="tabWidget_3">
          <property name="sizePolicy">
@@ -492,9 +386,117 @@ QPushButton:hover{
          </widget>
         </widget>
        </item>
+       <item row="0" column="0" rowspan="3">
+        <widget class="QToolBox" name="toolBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="palette">
+          <palette>
+           <active/>
+           <inactive/>
+           <disabled/>
+          </palette>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Panel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="midLineWidth">
+          <number>0</number>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <property name="tabSpacing">
+          <number>4</number>
+         </property>
+         <widget class="QWidget" name="page">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>114</width>
+            <height>114</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <attribute name="label">
+           <string>DaqMux0 Controller</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="macros" stdset="0">
+              <string>{&quot;MUX&quot;:&quot;0&quot;}</string>
+             </property>
+             <property name="filename" stdset="0">
+              <string>daqMuxV2.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>434</width>
+            <height>658</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>231</width>
+            <height>0</height>
+           </size>
+          </property>
+          <attribute name="label">
+           <string>Channels Stream Settings</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="filename" stdset="0">
+              <string>bay0_channel_settings.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="tab_2">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <attribute name="title">
        <string>DAQMUX_1</string>
       </attribute>
@@ -599,6 +601,9 @@ QPushButton:hover{
            <horstretch>1</horstretch>
            <verstretch>1</verstretch>
           </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
          </property>
          <property name="currentIndex">
           <number>0</number>
