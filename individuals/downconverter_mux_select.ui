@@ -29,7 +29,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Down Converter</string>
   </property>
   <layout class="QGridLayout" name="gridLayout" rowstretch="1,0,0" columnstretch="0">
    <property name="leftMargin">
