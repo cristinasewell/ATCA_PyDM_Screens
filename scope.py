@@ -3,6 +3,7 @@ from os import path
 import json
 import logging
 import sys
+import pyqtgraph as pg
 
 logger = logging.getLogger(__name__)
 
@@ -85,6 +86,7 @@ class Scope(Display):
             if self.ui.b0_channel3_pb.isChecked():
                 ch = json.dumps(self._curves.get(3))
                 b0_curves.append(ch)
+            self.waveformPlotBay0.plotItem.getView().setMouseMode(pg.ViewBox.RectMode)
             self.waveformPlotBay0.setCurves(b0_curves)
 
             # bay 1
@@ -101,6 +103,7 @@ class Scope(Display):
             if self.ui.b1_channel3_pb.isChecked():
                 ch = json.dumps(self._curves.get(7))
                 b1_curves.append(ch)
+            self.waveformPlotBay1.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
             self.waveformPlotBay1.setCurves(b1_curves)
 
     def setup_ui(self):
