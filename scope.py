@@ -12,9 +12,15 @@ class Scope(Display):
         super(Scope, self).__init__(parent=parent, args=args, macros=macros)
         self._macros = macros
         self._curves = None
-        self.define_curves()
+       # self.define_curves()
         self.setup_ui()
         self.setup_curve_selection_mode()
+        #ui.bay0Mode0_pb.isCheked() = True
+
+        if self.bay0Mode0_rb.isChecked() or self.bay0Mode0_rb.isChecked():
+            self.define_curves()
+        elif self.bayoMode1_pb.isChecked() or self.bay1Mode1_rb.isChecked():
+            self.define_dotted_curves()
 
     def macros(self):
         if self._macros is None:
@@ -30,43 +36,93 @@ class Scope(Display):
                 self._curves = {
                     0: {"y_channel": ioc+"STR0:STREAM_SLOWSHORT0",
                         "x_channel": None, "name": "CH 0", "color": "#55ffff",
-                        "lineStyle": 0, "lineWidth": 1, "symbol": 1,
-                        "symbolSize": 16, "redraw_mode": 2},
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 0,
+                        "symbolSize": 4, "redraw_mode": 2},
 
                     1: {"y_channel": ioc+"STR0:STREAM_SLOWSHORT1",
                         "x_channel": None, "name": "CH 1", "color": "#55ff7f",
-                        "lineStyle": 0, "lineWidth": 1, "symbol": 1,
-                        "symbolSize": 16, "redraw_mode": 2},
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 0,
+                        "symbolSize": 4, "redraw_mode": 2},
 
                     2: {"y_channel": ioc+"STR0:STREAM_SLOWSHORT2",
                         "x_channel": None, "name": "CH 2", "color": "#ffff7f",
-                        "lineStyle": 0, "lineWidth": 1, "symbol": 1,
-                        "symbolSize": 16, "redraw_mode": 2},
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 0,
+                        "symbolSize": 4, "redraw_mode": 2},
 
                     3: {"y_channel": ioc+"STR0:STREAM_SLOWSHORT3",
                         "x_channel": None, "name": "CH 3", "color": "#ffaa7f",
-                        "lineStyle": 0, "lineWidth": 1, "symbol": 1, 
-                        "symbolSize": 16, "redraw_mode": 2}, 
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 0, 
+                        "symbolSize": 4, "redraw_mode": 2}, 
                     
                     4: {"y_channel": ioc+"STR1:STREAM_SLOWSHORT0",
                         "x_channel": None, "name": "CH 0", "color": "#55ffff",
-                        "lineStyle": 0, "lineWidth": 1, "symbol": 1,
-                        "symbolSize": 16, "redraw_mode": 2},
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 0,
+                        "symbolSize": 4, "redraw_mode": 2},
 
                     5: {"y_channel": ioc+"STR1:STREAM_SLOWSHORT1",
                         "x_channel": None, "name": "CH 1", "color": "#55ff7f",
-                        "lineStyle": 0, "lineWidth": 1, "symbol": 1,
-                        "symbolSize": 16, "redraw_mode": 2},
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 0,
+                        "symbolSize": 4, "redraw_mode": 2},
 
                     6: {"y_channel": ioc+"STR1:STREAM_SLOWSHORT2",
                         "x_channel": None, "name": "CH 2", "color": "#ffff7f",
-                        "lineStyle": 0, "lineWidth": 1, "symbol": 1,
-                        "symbolSize": 16, "redraw_mode": 2},
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 0,
+                        "symbolSize": 4, "redraw_mode": 2},
 
                     7: {"y_channel": ioc+"STR1:STREAM_SLOWSHORT3",
                         "x_channel": None, "name": "CH 3", "color": "#ffaa7f",
-                        "lineStyle": 0, "lineWidth": 1, "symbol": 1, 
-                        "symbolSize": 16, "redraw_mode": 2}}    
+                        "lineStyle": 0, "lineWidth": 1, "symbol": 0, 
+                        "symbolSize": 4, "redraw_mode": 2}}    
+        except:
+            logger.error("You need to define a DEVICE macro ioc  - ex: -m 'DEVICE=MY_IOC' ")
+            sys.exit(1)
+
+    def define_dotted_curves(self):
+        try:
+            device = self._macros["DEVICE"]
+            if device:
+                ioc = "ca://{}:".format(device)
+        
+                self._curves = {
+                    0: {"y_channel": ioc+"STR0:STREAM_SLOWSHORT0",
+                        "x_channel": None, "name": "CH 0", "color": "#55ffff",
+                        "lineStyle": 1, "lineWidth": 1, "symbol": 0,
+                        "symbolSize": 4, "redraw_mode": 2},
+
+                    1: {"y_channel": ioc+"STR0:STREAM_SLOWSHORT1",
+                        "x_channel": None, "name": "CH 1", "color": "#55ff7f",
+                        "lineStyle": 1, "lineWidth": 1, "symbol": 0,
+                        "symbolSize": 4, "redraw_mode": 2},
+
+                    2: {"y_channel": ioc+"STR0:STREAM_SLOWSHORT2",
+                        "x_channel": None, "name": "CH 2", "color": "#ffff7f",
+                        "lineStyle": 1, "lineWidth": 1, "symbol": 0,
+                        "symbolSize": 4, "redraw_mode": 2},
+
+                    3: {"y_channel": ioc+"STR0:STREAM_SLOWSHORT3",
+                        "x_channel": None, "name": "CH 3", "color": "#ffaa7f",
+                        "lineStyle": 1, "lineWidth": 1, "symbol": 0, 
+                        "symbolSize": 4, "redraw_mode": 2}, 
+                    
+                    4: {"y_channel": ioc+"STR1:STREAM_SLOWSHORT0",
+                        "x_channel": None, "name": "CH 0", "color": "#55ffff",
+                        "lineStyle": 1, "lineWidth": 1, "symbol": 0,
+                        "symbolSize": 4, "redraw_mode": 2},
+
+                    5: {"y_channel": ioc+"STR1:STREAM_SLOWSHORT1",
+                        "x_channel": None, "name": "CH 1", "color": "#55ff7f",
+                        "lineStyle": 1, "lineWidth": 1, "symbol": 0,
+                        "symbolSize": 4, "redraw_mode": 2},
+
+                    6: {"y_channel": ioc+"STR1:STREAM_SLOWSHORT2",
+                        "x_channel": None, "name": "CH 2", "color": "#ffff7f",
+                        "lineStyle": 1, "lineWidth": 1, "symbol": 0,
+                        "symbolSize": 4, "redraw_mode": 2},
+
+                    7: {"y_channel": ioc+"STR1:STREAM_SLOWSHORT3",
+                        "x_channel": None, "name": "CH 3", "color": "#ffaa7f",
+                        "lineStyle": 1, "lineWidth": 1, "symbol": 0, 
+                        "symbolSize": 4, "redraw_mode": 2}}    
         except:
             logger.error("You need to define a DEVICE macro ioc  - ex: -m 'DEVICE=MY_IOC' ")
             sys.exit(1)
@@ -104,7 +160,7 @@ class Scope(Display):
                 ch = json.dumps(self._curves.get(7))
                 b1_curves.append(ch)
             self.waveformPlotBay1.setCurves(b1_curves)
-
+    
     def setup_curve_selection_mode(self):
         self.waveform0Ch0.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
         self.waveform0Ch1.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
