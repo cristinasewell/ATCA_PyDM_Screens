@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>346</width>
+    <width>348</width>
     <height>556</height>
    </rect>
   </property>
@@ -533,6 +533,12 @@ QPushButton:hover{
   border-style: outset;
 }</string>
        </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DAQMUX${MUX}_ARMHWTRG </string>
        </property>
@@ -598,7 +604,7 @@ QPushButton:hover{
 }</string>
        </property>
        <property name="alarmSensitiveContent" stdset="0">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DAQMUX${MUX}_CSCDTRG</string>
@@ -1004,11 +1010,4 @@ QPushButton:hover{
  </customwidgets>
  <resources/>
  <connections/>
- <buttongroups>
-  <buttongroup name="buttonGroup_3"/>
-  <buttongroup name="buttonGroup_5"/>
-  <buttongroup name="buttonGroup"/>
-  <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroup_6"/>
- </buttongroups>
 </ui>
