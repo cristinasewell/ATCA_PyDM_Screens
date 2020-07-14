@@ -94,7 +94,7 @@ background: #19B3B1;
           <string/>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;CH&quot;:&quot;1&quot;}</string>
+          <string>{&quot;CH&quot;:&quot;0&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>individuals/up_converter_ch_stream.ui</string>
