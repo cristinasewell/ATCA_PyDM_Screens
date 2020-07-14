@@ -25,7 +25,7 @@
   <property name="windowTitle">
    <string>Bay1 Channel Settings</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout" rowstretch="1,1" columnstretch="0">
+  <layout class="QGridLayout" name="gridLayout" rowstretch="0,1" columnstretch="0">
    <property name="leftMargin">
     <number>0</number>
    </property>

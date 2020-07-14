@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>307</width>
-    <height>452</height>
+    <height>607</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -41,7 +41,7 @@
    <item>
     <layout class="QGridLayout" name="gridLayout" columnstretch="0,0">
      <property name="sizeConstraint">
-      <enum>QLayout::SetMinimumSize</enum>
+      <enum>QLayout::SetDefaultConstraint</enum>
      </property>
      <property name="leftMargin">
       <number>4</number>
@@ -108,18 +108,16 @@
      </item>
      <item row="11" column="1">
       <widget class="PyDMLabel" name="PyDMLabel_2">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-  border-width: 1px; 
-  border-style: solid; 
-  border-color: #002C2F;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string/>
@@ -132,13 +130,7 @@
      <item row="27" column="1">
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="PyDMPushButton" name="PyDMPushButton_3">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
+        <widget class="PyDMEnumButton" name="PyDMEnumButton">
          <property name="toolTip">
           <string/>
          </property>
@@ -157,64 +149,12 @@ QPushButton:hover{
   border-style: outset;
 }</string>
          </property>
-         <property name="text">
-          <string>Enable</string>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
          <property name="channel" stdset="0">
           <string>ca://${DEVICE}:DAQMUX0_FORMATSIGN${CH}</string>
          </property>
-         <property name="pressValue" stdset="0">
-          <string>1</string>
+         <property name="orientation" stdset="0">
+          <enum>Qt::Horizontal</enum>
          </property>
-         <attribute name="buttonGroup">
-          <string notr="true">buttonGroup</string>
-         </attribute>
-        </widget>
-       </item>
-       <item>
-        <widget class="PyDMPushButton" name="PyDMPushButton_4">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="toolTip">
-          <string/>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-         </property>
-         <property name="text">
-          <string>Disable</string>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-         <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:DAQMUX0_FORMATSIGN${CH}</string>
-         </property>
-         <property name="pressValue" stdset="0">
-          <string>0</string>
-         </property>
-         <attribute name="buttonGroup">
-          <string notr="true">buttonGroup</string>
-         </attribute>
         </widget>
        </item>
       </layout>
@@ -256,18 +196,16 @@ QPushButton:hover{
      </item>
      <item row="13" column="1">
       <widget class="PyDMLabel" name="PyDMLabel_3">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-  border-width: 1px; 
-  border-style: solid; 
-  border-color: #002C2F;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string/>
@@ -300,18 +238,16 @@ QPushButton:hover{
      </item>
      <item row="19" column="1">
       <widget class="PyDMLabel" name="PyDMLabel_6">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-  border-width: 1px; 
-  border-style: solid; 
-  border-color: #002C2F;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string/>
@@ -344,18 +280,16 @@ QPushButton:hover{
      </item>
      <item row="17" column="1">
       <widget class="PyDMLabel" name="PyDMLabel_5">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-  border-width: 1px; 
-  border-style: solid; 
-  border-color: #002C2F;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string/>
@@ -520,13 +454,7 @@ QPushButton:hover{
      <item row="30" column="1">
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="PyDMPushButton" name="PyDMPushButton">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
+        <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
          <property name="toolTip">
           <string/>
          </property>
@@ -545,64 +473,12 @@ QPushButton:hover{
   border-style: outset;
 }</string>
          </property>
-         <property name="text">
-          <string>Enable</string>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
          <property name="channel" stdset="0">
           <string>ca://${DEVICE}:DAQMUX0_DECIMATION${CH}</string>
          </property>
-         <property name="pressValue" stdset="0">
-          <string>1</string>
+         <property name="orientation" stdset="0">
+          <enum>Qt::Horizontal</enum>
          </property>
-         <attribute name="buttonGroup">
-          <string notr="true">buttonGroup_2</string>
-         </attribute>
-        </widget>
-       </item>
-       <item>
-        <widget class="PyDMPushButton" name="PyDMPushButton_2">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="toolTip">
-          <string/>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-         </property>
-         <property name="text">
-          <string>Disable</string>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-         <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:DAQMUX0_DECIMATION${CH}</string>
-         </property>
-         <property name="pressValue" stdset="0">
-          <string>0</string>
-         </property>
-         <attribute name="buttonGroup">
-          <string notr="true">buttonGroup_2</string>
-         </attribute>
         </widget>
        </item>
       </layout>
@@ -614,40 +490,18 @@ QPushButton:hover{
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLineEdit{
-color:#7A2D59;
-font: bold;
-font: 14px;
-}</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DAQMUX0_INPMUXSELSTR${CH}</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLineEdit::String</enum>
-       </property>
-      </widget>
-     </item>
      <item row="9" column="1">
       <widget class="PyDMLabel" name="PyDMLabel">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-  border-width: 1px; 
-  border-style: solid; 
-  border-color: #002C2F;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string/>
@@ -665,18 +519,16 @@ font: 14px;
      </item>
      <item row="15" column="1">
       <widget class="PyDMLabel" name="PyDMLabel_4">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-  border-width: 1px; 
-  border-style: solid; 
-  border-color: #002C2F;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string/>
@@ -790,18 +642,16 @@ font: 14px;
      </item>
      <item row="21" column="1">
       <widget class="PyDMLabel" name="PyDMLabel_7">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-  border-width: 1px; 
-  border-style: solid; 
-  border-color: #002C2F;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string/>
@@ -883,6 +733,29 @@ font: 14px;
        </property>
       </widget>
      </item>
+     <item row="2" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_8">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+color:#7A2D59;
+font: bold;
+font: 14px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DAQMUX0_INPMUXSELSTR${CH}</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
     </layout>
    </item>
   </layout>
@@ -899,6 +772,11 @@ font: 14px;
    <header>pydm.widgets.line_edit</header>
   </customwidget>
   <customwidget>
+   <class>PyDMEnumButton</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.enum_button</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMPushButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.pushbutton</header>
@@ -912,7 +790,7 @@ font: 14px;
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>
