@@ -29,7 +29,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Up Converter</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
@@ -76,9 +76,9 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-322</y>
+          <y>0</y>
           <width>567</width>
-          <height>630</height>
+          <height>622</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -152,22 +152,6 @@ QPushButton:hover{
              </property>
             </widget>
            </item>
-           <item row="12" column="7">
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_14">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="readOnly">
-              <bool>true</bool>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:UPC_TEMP1</string>
-             </property>
-            </widget>
-           </item>
            <item row="12" column="2">
             <layout class="QHBoxLayout" name="horizontalLayout_7">
              <item>
@@ -180,7 +164,7 @@ QPushButton:hover{
 }</string>
                </property>
                <property name="text">
-                <string>ATTEN1</string>
+                <string>ATTEN1: </string>
                </property>
               </widget>
              </item>
@@ -188,6 +172,9 @@ QPushButton:hover{
               <widget class="PyDMLineEdit" name="PyDMLineEdit_12">
                <property name="toolTip">
                 <string/>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
                </property>
                <property name="channel" stdset="0">
                 <string>ca://${DEVICE}:UPC_ATTEN1</string>
@@ -279,7 +266,7 @@ QPushButton:hover{
 }</string>
                </property>
                <property name="text">
-                <string>ATTEN2</string>
+                <string>ATTEN2: </string>
                </property>
               </widget>
              </item>
@@ -287,6 +274,9 @@ QPushButton:hover{
               <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
                <property name="toolTip">
                 <string/>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
                </property>
                <property name="channel" stdset="0">
                 <string>ca://${DEVICE}:UPC_ATTEN2</string>
@@ -389,7 +379,7 @@ QPushButton:hover{
 }</string>
                </property>
                <property name="text">
-                <string>ATTEN3</string>
+                <string>ATTEN3: </string>
                </property>
               </widget>
              </item>
@@ -397,6 +387,9 @@ QPushButton:hover{
               <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
                <property name="toolTip">
                 <string/>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
                </property>
                <property name="channel" stdset="0">
                 <string>ca://${DEVICE}:UPC_ATTEN3</string>
@@ -616,7 +609,7 @@ QPushButton:hover{
 }</string>
                </property>
                <property name="text">
-                <string>ATTEN0 </string>
+                <string>ATTEN0 : </string>
                </property>
               </widget>
              </item>
@@ -624,6 +617,9 @@ QPushButton:hover{
               <widget class="PyDMLineEdit" name="PyDMLineEdit_13">
                <property name="toolTip">
                 <string/>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
                </property>
                <property name="channel" stdset="0">
                 <string>ca://${DEVICE}:UPC_ATTEN0</string>
@@ -669,38 +665,6 @@ QPushButton:hover{
              </property>
              <property name="text">
               <string>RF OUT MON</string>
-             </property>
-            </widget>
-           </item>
-           <item row="16" column="7">
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_16">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="readOnly">
-              <bool>true</bool>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:UPC_TEMP3</string>
-             </property>
-            </widget>
-           </item>
-           <item row="10" column="7">
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_11">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="readOnly">
-              <bool>true</bool>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:UPC_TEMP0</string>
              </property>
             </widget>
            </item>
@@ -1317,22 +1281,6 @@ QPushButton:hover{
              </attribute>
             </widget>
            </item>
-           <item row="14" column="7">
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_10">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="readOnly">
-              <bool>true</bool>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:UPC_TEMP2</string>
-             </property>
-            </widget>
-           </item>
            <item row="8" column="5">
             <widget class="PyDMPushButton" name="PyDMPushButton_38">
              <property name="toolTip">
@@ -1660,6 +1608,78 @@ QPushButton:hover{
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="7">
+            <widget class="PyDMLabel" name="PyDMLabel">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${DEVICE}:UPC_TEMP0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="7">
+            <widget class="PyDMLabel" name="PyDMLabel_2">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${DEVICE}:UPC_TEMP1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="7">
+            <widget class="PyDMLabel" name="PyDMLabel_3">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${DEVICE}:UPC_TEMP2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="7">
+            <widget class="PyDMLabel" name="PyDMLabel_4">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${DEVICE}:UPC_TEMP2</string>
              </property>
             </widget>
            </item>
