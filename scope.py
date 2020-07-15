@@ -14,8 +14,8 @@ class Scope(Display):
         self._macros = macros
         self._curves = None
         self.define_curves()
-        # self.define_dotted_curves()
         self.setup_ui()
+        self.setup_curve_selection_mode()
 
         try:
             device = self._macros["DEVICE"]
