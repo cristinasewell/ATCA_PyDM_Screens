@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>342</width>
-    <height>521</height>
+    <height>608</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -54,7 +54,7 @@
       <string notr="true">QLabel{
   color:#030923;
   font-size: 16px;
-  font-style: bold;
+  font: bold;
 }</string>
      </property>
      <property name="text">

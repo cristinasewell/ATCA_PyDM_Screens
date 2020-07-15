@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>360</width>
-    <height>516</height>
+    <height>621</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -625,7 +625,7 @@ QPushButton:hover{
         <string notr="true">QLabel{
   color:#030923;
   font-size: 16px;
-  font-style: bold;
+  font: bold;
 }</string>
        </property>
        <property name="text">
@@ -776,7 +776,7 @@ font: 14px;
         <string>ca://${DEVICE}:DAQMUX0_INPMUXSELSTR${CH}</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::String</enum>
        </property>
       </widget>
      </item>
