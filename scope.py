@@ -23,14 +23,6 @@ class Scope(Display):
              logger.error("Please provide a valid macro for the IOC - ex: 'DEVICE=MY_IOC' ")
              sys.exit(1)
 
-    # TODO: Probably you don't need this
-    # def macros(self):
-    #     if self._macros is None:
-    #         return {}
-    #     return self._macros
-
-    # TODO: We can refactor this to no longer need two dicts
-
     def define_curves(self):
         try:
             device = self._macros["DEVICE"]
