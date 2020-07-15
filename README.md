@@ -10,6 +10,10 @@ ATCA - Advanced Telecommunication Computing Architecture Engineering Screens
 ```bash
 git clone https://github.com/cristinasewell/ATCA_PyDM_Screens.git
 
-cd ATCA_PyDM_Screens
+```
 
+# Open display:
+```
+cd ATCA_PyDM_Screens
+pydm -m "DEVICE=<ioc_name_here>" scope.py
 ```
