@@ -157,9 +157,7 @@ QLineEdit {
          <item row="2" column="2">
           <widget class="QLabel" name="label">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -443,9 +441,7 @@ QLineEdit {
          <item row="16" column="6">
           <widget class="PyDMLabel" name="PyDMLabel_4">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="toolTip">
             <string/>
@@ -831,9 +827,7 @@ QPushButton:pressed {
          <item row="10" column="6">
           <widget class="PyDMLabel" name="PyDMLabel">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="toolTip">
             <string/>
@@ -1215,9 +1209,7 @@ QPushButton:pressed {
          <item row="2" column="6">
           <widget class="QLabel" name="label_17">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -1277,7 +1269,7 @@ QPushButton:pressed {
             <string>2</string>
            </property>
            <property name="relativeChange" stdset="0">
-            <bool>true</bool>
+            <bool>false</bool>
            </property>
            <attribute name="buttonGroup">
             <string notr="true">buttonGroup</string>
@@ -1473,9 +1465,7 @@ QPushButton:pressed {
          <item row="2" column="3" colspan="2">
           <widget class="PyDMLabel" name="PyDMLabel_21">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="toolTip">
             <string/>
@@ -1557,9 +1547,7 @@ QPushButton:pressed {
          <item row="12" column="6">
           <widget class="PyDMLabel" name="PyDMLabel_2">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="toolTip">
             <string/>
@@ -1644,9 +1632,7 @@ QPushButton:pressed {
          <item row="14" column="6">
           <widget class="PyDMLabel" name="PyDMLabel_3">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="toolTip">
             <string/>
@@ -1829,6 +1815,11 @@ QPushButton:pressed {
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMLineEdit</class>
    <extends>QLineEdit</extends>
    <header>pydm.widgets.line_edit</header>
@@ -1837,11 +1828,6 @@ QPushButton:pressed {
    <class>PyDMPushButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.pushbutton</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
