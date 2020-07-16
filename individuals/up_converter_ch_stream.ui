@@ -78,11 +78,13 @@ QLineEdit {
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">QLabel{
-  font-size: 12px;
-  font: bold;
-}</string>
+      <string notr="true"/>
      </property>
      <property name="text">
       <string>Stream Channel: ${CH}</string>
@@ -103,7 +105,7 @@ QLineEdit {
         <x>0</x>
         <y>0</y>
         <width>422</width>
-        <height>488</height>
+        <height>485</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -768,10 +770,10 @@ QPushButton:checked{
           <widget class="PyDMLabel" name="PyDMLabel_8">
            <property name="font">
             <font>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
              <italic>false</italic>
-             <bold>false</bold>
+             <bold>true</bold>
             </font>
            </property>
            <property name="toolTip">
@@ -781,7 +783,6 @@ QPushButton:checked{
             <string notr="true">QLabel{
 color:#7A2D59;
 font: bold;
-font: 14px;
 }</string>
            </property>
            <property name="text">

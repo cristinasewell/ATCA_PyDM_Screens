@@ -16,11 +16,13 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">QLabel{
-  font-size: 12px;
-  font: bold;
-}</string>
+      <string notr="true"/>
      </property>
      <property name="text">
       <string>Waveform Engine ${ENG}</string>
@@ -48,7 +50,7 @@
         <x>0</x>
         <y>0</y>
         <width>364</width>
-        <height>465</height>
+        <height>462</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
@@ -224,7 +226,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
 }</string>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>3</number>
          </property>
          <widget class="QWidget" name="tab">
           <attribute name="title">

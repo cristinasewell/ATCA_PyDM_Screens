@@ -78,11 +78,13 @@ QLineEdit {
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">QLabel{
-  font-size: 12px;
-  font: bold;
-}</string>
+      <string notr="true"/>
      </property>
      <property name="text">
       <string>Stream Channel: ${CH}</string>
@@ -103,7 +105,7 @@ QLineEdit {
         <x>0</x>
         <y>0</y>
         <width>417</width>
-        <height>487</height>
+        <height>484</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -115,9 +117,7 @@ QLineEdit {
          <item row="0" column="0">
           <widget class="QLabel" name="label_15">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -140,9 +140,7 @@ QLineEdit {
          <item row="2" column="0">
           <widget class="QLabel" name="label_14">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -222,9 +220,7 @@ QPushButton:checked{
          <item row="4" column="0">
           <widget class="QLabel" name="label_13">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -278,9 +274,7 @@ QPushButton:checked{
          <item row="6" column="0">
           <widget class="QLabel" name="label_3">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -293,9 +287,7 @@ QPushButton:checked{
          <item row="6" column="1">
           <widget class="PyDMLabel" name="PyDMLabel">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="toolTip">
             <string/>
@@ -329,9 +321,7 @@ QPushButton:checked{
          <item row="8" column="0">
           <widget class="QLabel" name="label_4">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -344,9 +334,7 @@ QPushButton:checked{
          <item row="8" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_2">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="toolTip">
             <string/>
@@ -374,9 +362,7 @@ QPushButton:checked{
          <item row="10" column="0">
           <widget class="QLabel" name="label_2">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -389,9 +375,7 @@ QPushButton:checked{
          <item row="10" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_3">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="toolTip">
             <string/>
@@ -419,9 +403,7 @@ QPushButton:checked{
          <item row="12" column="0">
           <widget class="QLabel" name="label_5">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -434,9 +416,7 @@ QPushButton:checked{
          <item row="12" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_4">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="toolTip">
             <string/>
@@ -464,9 +444,7 @@ QPushButton:checked{
          <item row="14" column="0">
           <widget class="QLabel" name="label_6">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -479,9 +457,7 @@ QPushButton:checked{
          <item row="14" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_5">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="toolTip">
             <string/>
@@ -509,9 +485,7 @@ QPushButton:checked{
          <item row="16" column="0">
           <widget class="QLabel" name="label_7">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -524,9 +498,7 @@ QPushButton:checked{
          <item row="16" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_6">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="toolTip">
             <string/>
@@ -554,9 +526,7 @@ QPushButton:checked{
          <item row="18" column="0">
           <widget class="QLabel" name="label_8">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -569,9 +539,7 @@ QPushButton:checked{
          <item row="18" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_7">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="toolTip">
             <string/>
@@ -599,9 +567,7 @@ QPushButton:checked{
          <item row="20" column="0">
           <widget class="QLabel" name="label_9">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -640,9 +606,7 @@ QPushButton:checked{
          <item row="22" column="0">
           <widget class="QLabel" name="label_10">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -681,9 +645,7 @@ QPushButton:checked{
          <item row="24" column="0">
           <widget class="QLabel" name="label_11">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -743,9 +705,7 @@ QPushButton:checked{
          <item row="26" column="0">
           <widget class="QLabel" name="label_12">
            <property name="font">
-            <font>
-             <pointsize>-1</pointsize>
-            </font>
+            <font/>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -797,15 +757,21 @@ QPushButton:checked{
          </item>
          <item row="0" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_8">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
            <property name="toolTip">
             <string/>
            </property>
            <property name="styleSheet">
             <string notr="true">QLabel{
 color:#7A2D59;
-font: bold;
-font: 14px;
-}</string>
+font: bold;}</string>
            </property>
            <property name="text">
             <string/>

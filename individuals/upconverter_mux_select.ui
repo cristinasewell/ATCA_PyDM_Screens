@@ -110,7 +110,7 @@ QLineEdit {
           <x>0</x>
           <y>0</y>
           <width>567</width>
-          <height>768</height>
+          <height>771</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -1169,9 +1169,7 @@ QPushButton:pressed {
            <item row="3" column="2">
             <widget class="QLabel" name="label_17">
              <property name="font">
-              <font>
-               <pointsize>-1</pointsize>
-              </font>
+              <font/>
              </property>
              <property name="styleSheet">
               <string notr="true"/>
@@ -1236,9 +1234,7 @@ QPushButton:pressed {
            <item row="3" column="7">
             <widget class="QLabel" name="label_18">
              <property name="font">
-              <font>
-               <pointsize>-1</pointsize>
-              </font>
+              <font/>
              </property>
              <property name="styleSheet">
               <string notr="true"/>
@@ -1368,9 +1364,7 @@ QPushButton:pressed {
            <item row="3" column="4" colspan="2">
             <widget class="PyDMLabel" name="PyDMLabel_22">
              <property name="font">
-              <font>
-               <pointsize>-1</pointsize>
-              </font>
+              <font/>
              </property>
              <property name="toolTip">
               <string/>
@@ -1412,9 +1406,7 @@ QPushButton:pressed {
            <item row="10" column="7">
             <widget class="PyDMLabel" name="PyDMLabel">
              <property name="font">
-              <font>
-               <pointsize>-1</pointsize>
-              </font>
+              <font/>
              </property>
              <property name="toolTip">
               <string/>
@@ -1435,9 +1427,7 @@ QPushButton:pressed {
            <item row="12" column="7">
             <widget class="PyDMLabel" name="PyDMLabel_2">
              <property name="font">
-              <font>
-               <pointsize>-1</pointsize>
-              </font>
+              <font/>
              </property>
              <property name="toolTip">
               <string/>
@@ -1458,9 +1448,7 @@ QPushButton:pressed {
            <item row="14" column="7">
             <widget class="PyDMLabel" name="PyDMLabel_3">
              <property name="font">
-              <font>
-               <pointsize>-1</pointsize>
-              </font>
+              <font/>
              </property>
              <property name="toolTip">
               <string/>
@@ -1481,9 +1469,7 @@ QPushButton:pressed {
            <item row="16" column="7">
             <widget class="PyDMLabel" name="PyDMLabel_4">
              <property name="font">
-              <font>
-               <pointsize>-1</pointsize>
-              </font>
+              <font/>
              </property>
              <property name="toolTip">
               <string/>
@@ -1503,11 +1489,13 @@ QPushButton:pressed {
            </item>
            <item row="0" column="0" colspan="8">
             <widget class="QLabel" name="label_28">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
              <property name="styleSheet">
-              <string notr="true">QLabel{
-  font-size: 12px;
-  font: bold;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>AMC Up Converter Settings</string>
