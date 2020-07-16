@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1189</width>
-    <height>739</height>
+    <width>1199</width>
+    <height>762</height>
    </rect>
   </property>
   <property name="font">
@@ -165,7 +165,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          </property>
          <property name="minimumSize">
           <size>
-           <width>460</width>
+           <width>470</width>
            <height>0</height>
           </size>
          </property>
@@ -177,8 +177,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>458</width>
-            <height>683</height>
+            <width>468</width>
+            <height>706</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -691,7 +691,7 @@ QPushButton:hover{
          </property>
          <property name="minimumSize">
           <size>
-           <width>460</width>
+           <width>470</width>
            <height>0</height>
           </size>
          </property>
@@ -703,8 +703,8 @@ QPushButton:hover{
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>458</width>
-            <height>683</height>
+            <width>468</width>
+            <height>706</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_3">
