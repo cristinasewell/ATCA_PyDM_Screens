@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1355</width>
-    <height>703</height>
+    <width>1294</width>
+    <height>694</height>
    </rect>
   </property>
   <property name="font">
@@ -18,20 +18,8 @@
   <property name="windowTitle">
    <string>ATCA Scope</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout_4">
-   <property name="leftMargin">
-    <number>5</number>
-   </property>
-   <property name="topMargin">
-    <number>5</number>
-   </property>
-   <property name="rightMargin">
-    <number>5</number>
-   </property>
-   <property name="bottomMargin">
-    <number>5</number>
-   </property>
-   <item row="0" column="0">
+  <layout class="QHBoxLayout" name="horizontalLayout_8">
+   <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
@@ -76,11 +64,11 @@ QTabBar::tab:selected {
 }
 
 QTabBar::tab:!selected {
-    background: silver;
+    background: rgb(189,229,219);
 }
 
 QTabBar::tab:!selected:hover {
-    background: #999;
+    background:  rgb(199,239,229);
 }
 
 QTabBar::tab:top:!selected {
@@ -95,7 +83,7 @@ QTabBar::tab:top, QTabBar::tab:bottom {
     min-width: 6ex;
     margin-right: -1px;
     padding: 4px 8px 4px 8px;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 QTabBar::tab:top:selected {
@@ -123,7 +111,7 @@ QTabBar::tab:left, QTabBar::tab:right {
     min-height: 6ex;
     margin-bottom: -1px;
     padding: 8px 5px 8px 5px;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 QTabBar::tab:left:selected {
@@ -140,7 +128,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
 }</string>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <property name="font">
@@ -154,20 +142,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <attribute name="title">
        <string>DAQMUX_0</string>
       </attribute>
-      <layout class="QGridLayout" name="gridLayout">
-       <property name="leftMargin">
-        <number>5</number>
-       </property>
-       <property name="topMargin">
-        <number>5</number>
-       </property>
-       <property name="rightMargin">
-        <number>5</number>
-       </property>
-       <property name="bottomMargin">
-        <number>5</number>
-       </property>
-       <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="0,1">
+       <item>
         <widget class="QTabWidget" name="tabWidget">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
@@ -220,15 +196,15 @@ QTabBar::tab {
 }
 
 QTabBar::tab:selected {
-    background: white;
+    background: rgb(220,229,236);
 }
 
 QTabBar::tab:!selected {
-    background: silver;
+    background: rgb(132,165,190);
 }
 
 QTabBar::tab:!selected:hover {
-    background: #999;
+    background: rgb(120,153,178);
 }
 
 QTabBar::tab:top:!selected {
@@ -243,7 +219,7 @@ QTabBar::tab:top, QTabBar::tab:bottom {
     min-width: 6ex;
     margin-right: -1px;
     padding: 4px 8px 4px 8px;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 QTabBar::tab:top:selected {
@@ -271,7 +247,7 @@ QTabBar::tab:left, QTabBar::tab:right {
     min-height: 6ex;
     margin-bottom: -1px;
     padding: 8px 5px 8px 5px;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 QTabBar::tab:left:selected {
@@ -288,14 +264,14 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
 }</string>
          </property>
          <property name="currentIndex">
-          <number>1</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="tabWidgetPage1">
           <property name="styleSheet">
            <string notr="true"/>
           </property>
           <attribute name="title">
-           <string>DaqMux0  Settings</string>
+           <string>DaqMux  Settings</string>
           </attribute>
           <layout class="QHBoxLayout" name="horizontalLayout_3">
            <property name="leftMargin">
@@ -321,7 +297,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                 <x>0</x>
                 <y>0</y>
                 <width>372</width>
-                <height>611</height>
+                <height>594</height>
                </rect>
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -362,6 +338,45 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            </item>
           </layout>
          </widget>
+         <widget class="QWidget" name="tab_7">
+          <attribute name="title">
+           <string>Waveform Engine</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0" colspan="2">
+            <widget class="QScrollArea" name="scrollArea_6">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_6">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>368</width>
+                <height>590</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_5">
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                 <property name="macros" stdset="0">
+                  <string>{&quot;ENG&quot;:&quot;0&quot;}</string>
+                 </property>
+                 <property name="filename" stdset="0">
+                  <string>waveform_engine_tab.ui</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
          <widget class="QWidget" name="tabWidgetPage2">
           <property name="font">
            <font>
@@ -372,7 +387,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <string notr="true"/>
           </property>
           <attribute name="title">
-           <string>DaqMux0 Stream Settings</string>
+           <string>Channel Stream Settings</string>
           </attribute>
           <layout class="QHBoxLayout" name="horizontalLayout_6">
            <property name="leftMargin">
@@ -410,7 +425,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                 <x>0</x>
                 <y>0</y>
                 <width>370</width>
-                <height>611</height>
+                <height>594</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout">
@@ -456,7 +471,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          </widget>
         </widget>
        </item>
-       <item row="0" column="1">
+       <item>
         <widget class="QTabWidget" name="tabWidget_3">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -469,153 +484,109 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <pointsize>12</pointsize>
           </font>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QTabWidget::pane {
+    border: 1px solid black;
+    background: white;
+}
+
+QTabWidget::tab-bar:top {
+    top: 1px;
+}
+
+QTabWidget::tab-bar:bottom {
+    bottom: 1px;
+}
+
+QTabWidget::tab-bar:left {
+    right: 1px;
+}
+
+QTabWidget::tab-bar:right {
+    left: 1px;
+}
+
+QTabBar::tab {
+    border: 1px solid black;
+}
+
+QTabBar::tab:selected {
+    background: rgb(255,245,238);
+}
+
+QTabBar::tab:!selected {
+    background: rgb(255,219,201);
+}
+
+QTabBar::tab:!selected:hover {
+    background:  rgb(240,204,189);
+}
+
+QTabBar::tab:top:!selected {
+    margin-top: 3px;
+}
+
+QTabBar::tab:bottom:!selected {
+    margin-bottom: 3px;
+}
+
+QTabBar::tab:top, QTabBar::tab:bottom {
+    min-width: 6ex;
+    margin-right: -1px;
+    padding: 4px 8px 4px 8px;
+	border-radius: 2px;
+}
+
+QTabBar::tab:top:selected {
+    border-bottom-color: none;
+}
+
+QTabBar::tab:bottom:selected {
+    border-top-color: none;
+}
+
+QTabBar::tab:top:last, QTabBar::tab:bottom:last,
+QTabBar::tab:top:only-one, QTabBar::tab:bottom:only-one {
+    margin-right: 0;
+}
+
+QTabBar::tab:left:!selected {
+    margin-right: 3px;
+}
+
+QTabBar::tab:right:!selected {
+    margin-left: 3px;
+}
+
+QTabBar::tab:left, QTabBar::tab:right {
+    min-height: 6ex;
+    margin-bottom: -1px;
+    padding: 8px 5px 8px 5px;
+	border-radius: 2px;
+}
+
+QTabBar::tab:left:selected {
+    border-left-color: none;
+}
+
+QTabBar::tab:right:selected {
+    border-right-color: none;
+}
+
+QTabBar::tab:left:last, QTabBar::tab:right:last,
+QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
+    margin-bottom: 0;
+}</string>
+         </property>
          <property name="currentIndex">
-          <number>1</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="tab_5">
           <attribute name="title">
            <string>Single Window Overlapped</string>
           </attribute>
-          <layout class="QGridLayout" name="gridLayout_2">
-           <property name="leftMargin">
-            <number>5</number>
-           </property>
-           <property name="topMargin">
-            <number>5</number>
-           </property>
-           <property name="rightMargin">
-            <number>5</number>
-           </property>
-           <property name="bottomMargin">
-            <number>5</number>
-           </property>
-           <item row="3" column="1">
-            <widget class="QPushButton" name="b0_channel2_pb">
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #ffff7f;
-  border-color: #ffff7f;
-  color:black;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #ffff7f;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-             </property>
-             <property name="text">
-              <string>Stream Channel 2</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0">
-            <widget class="QRadioButton" name="bay0Mode1_rb">
-             <property name="text">
-              <string>Line Curves</string>
-             </property>
-             <attribute name="buttonGroup">
-              <string notr="true">buttonGroup</string>
-             </attribute>
-            </widget>
-           </item>
-           <item row="2" column="0">
-            <widget class="QRadioButton" name="bay0Mode0_rb">
-             <property name="styleSheet">
-              <string notr="true"/>
-             </property>
-             <property name="text">
-              <string>Dotted Curves</string>
-             </property>
-             <property name="checked">
-              <bool>true</bool>
-             </property>
-             <attribute name="buttonGroup">
-              <string notr="true">buttonGroup</string>
-             </attribute>
-            </widget>
-           </item>
-           <item row="2" column="1">
-            <widget class="QPushButton" name="b0_channel0_pb">
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #55ffff;
-  border-color: #55ffff;
-  color:black;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #55ffff;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-             </property>
-             <property name="text">
-              <string>Stream Channel 0</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="2">
-            <widget class="QPushButton" name="b0_channel3_pb">
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #ffaa7f;
-  border-color: #ffaa7f;
-  color:black;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #ffaa7f;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-             </property>
-             <property name="text">
-              <string>Stream Channel 3</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="2">
-            <widget class="QPushButton" name="b0_channel1_pb">
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #55ff7f;
-  border-color: #55ff7f;
-  color:black;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #55ff7f;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-             </property>
-             <property name="text">
-              <string>Stream Channel 1</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="0" colspan="4">
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0" rowspan="2" colspan="4">
             <widget class="PyDMWaveformPlot" name="waveformPlotBay0">
              <property name="toolTip">
               <string/>
@@ -657,6 +628,132 @@ QPushButton:hover{
              <property name="maxYRange">
               <double>32767.000000000000000</double>
              </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="b0_channel0_pb">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+  background-color: #55ffff;
+  border-color: #55ffff;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #55ffff;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+             </property>
+             <property name="text">
+              <string>Stream Channel 0</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QPushButton" name="b0_channel1_pb">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+  background-color: #55ff7f;
+  border-color: #55ff7f;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #55ff7f;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+             </property>
+             <property name="text">
+              <string>Stream Channel 1</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QPushButton" name="b0_channel3_pb">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+  background-color: #ffaa7f;
+  border-color: #ffaa7f;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #ffaa7f;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+             </property>
+             <property name="text">
+              <string>Stream Channel 3</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="b0_channel2_pb">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+  background-color: #ffff7f;
+  border-color: #ffff7f;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #ffff7f;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+             </property>
+             <property name="text">
+              <string>Stream Channel 2</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QRadioButton" name="bay0Mode0_rb">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Dotted Curves</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QRadioButton" name="bay0Mode1_rb">
+             <property name="text">
+              <string>Line Curves</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup</string>
+             </attribute>
             </widget>
            </item>
           </layout>
@@ -871,24 +968,17 @@ QPushButton:hover{
        <property name="bottomMargin">
         <number>5</number>
        </property>
-       <item row="0" column="0">
-        <widget class="QTabWidget" name="tabWidget_3">
+       <item row="0" column="1">
+        <widget class="QTabWidget" name="tabWidget_2">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
-         <property name="minimumSize">
-          <size>
-           <width>360</width>
-           <height>0</height>
-          </size>
-         </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
-           <italic>false</italic>
+           <pointsize>12</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -918,15 +1008,15 @@ QTabBar::tab {
 }
 
 QTabBar::tab:selected {
-    background: white;
+    background: rgb(255,245,238);
 }
 
 QTabBar::tab:!selected {
-    background: silver;
+    background: rgb(255,219,201);
 }
 
 QTabBar::tab:!selected:hover {
-    background: #999;
+    background:  rgb(240,204,189);
 }
 
 QTabBar::tab:top:!selected {
@@ -941,7 +1031,7 @@ QTabBar::tab:top, QTabBar::tab:bottom {
     min-width: 6ex;
     margin-right: -1px;
     padding: 4px 8px 4px 8px;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 QTabBar::tab:top:selected {
@@ -969,7 +1059,7 @@ QTabBar::tab:left, QTabBar::tab:right {
     min-height: 6ex;
     margin-bottom: -1px;
     padding: 8px 5px 8px 5px;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 QTabBar::tab:left:selected {
@@ -986,163 +1076,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
 }</string>
          </property>
          <property name="currentIndex">
-          <number>1</number>
-         </property>
-         <widget class="QWidget" name="tabWidget_3Page1">
-          <attribute name="title">
-           <string>DaqMux1 Settings</string>
-          </attribute>
-          <layout class="QVBoxLayout" name="verticalLayout_2">
-           <property name="leftMargin">
-            <number>5</number>
-           </property>
-           <property name="topMargin">
-            <number>5</number>
-           </property>
-           <property name="rightMargin">
-            <number>5</number>
-           </property>
-           <property name="bottomMargin">
-            <number>5</number>
-           </property>
-           <item>
-            <widget class="QScrollArea" name="scrollArea_3">
-             <property name="widgetResizable">
-              <bool>true</bool>
-             </property>
-             <widget class="QWidget" name="scrollAreaWidgetContents_3">
-              <property name="geometry">
-               <rect>
-                <x>0</x>
-                <y>0</y>
-                <width>372</width>
-                <height>611</height>
-               </rect>
-              </property>
-              <layout class="QHBoxLayout" name="horizontalLayout_2">
-               <property name="leftMargin">
-                <number>5</number>
-               </property>
-               <property name="topMargin">
-                <number>5</number>
-               </property>
-               <property name="rightMargin">
-                <number>5</number>
-               </property>
-               <property name="bottomMargin">
-                <number>5</number>
-               </property>
-               <item>
-                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_8">
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="macros" stdset="0">
-                  <string>{&quot;MUX&quot;:&quot;1&quot;}</string>
-                 </property>
-                 <property name="filename" stdset="0">
-                  <string>daqMuxV2.ui</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </widget>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-         <widget class="QWidget" name="tabWidget_3Page2">
-          <attribute name="title">
-           <string>DaqMux1 Stream Settings</string>
-          </attribute>
-          <layout class="QVBoxLayout" name="verticalLayout_3">
-           <property name="leftMargin">
-            <number>5</number>
-           </property>
-           <property name="topMargin">
-            <number>5</number>
-           </property>
-           <property name="rightMargin">
-            <number>5</number>
-           </property>
-           <property name="bottomMargin">
-            <number>5</number>
-           </property>
-           <item>
-            <widget class="QScrollArea" name="scrollArea_4">
-             <property name="widgetResizable">
-              <bool>true</bool>
-             </property>
-             <widget class="QWidget" name="scrollAreaWidgetContents_4">
-              <property name="geometry">
-               <rect>
-                <x>0</x>
-                <y>0</y>
-                <width>372</width>
-                <height>611</height>
-               </rect>
-              </property>
-              <layout class="QVBoxLayout" name="verticalLayout_4">
-               <property name="leftMargin">
-                <number>5</number>
-               </property>
-               <property name="topMargin">
-                <number>5</number>
-               </property>
-               <property name="rightMargin">
-                <number>5</number>
-               </property>
-               <property name="bottomMargin">
-                <number>5</number>
-               </property>
-               <item>
-                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>360</width>
-                   <height>0</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="filename" stdset="0">
-                  <string>bay1_channel_settings.ui</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </widget>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QTabWidget" name="tabWidget_2">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="currentIndex">
-          <number>1</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="tab_3">
           <attribute name="title">
@@ -1161,17 +1095,54 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <property name="bottomMargin">
             <number>5</number>
            </property>
-           <item row="1" column="0">
-            <widget class="QRadioButton" name="bay1Mode0_rb">
-             <property name="text">
-              <string>Dotted Curves</string>
+           <item row="1" column="2">
+            <widget class="QPushButton" name="b1_channel1_pb">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+  background-color: #55ff7f;
+  border-color: #55ff7f;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #55ff7f;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
              </property>
-             <property name="checked">
+             <property name="text">
+              <string>Stream Channel 1</string>
+             </property>
+             <property name="checkable">
               <bool>true</bool>
              </property>
-             <attribute name="buttonGroup">
-              <string notr="true">buttonGroup_2</string>
-             </attribute>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="b1_channel2_pb">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+  background-color: #ffff7f;
+  border-color: #ffff7f;
+  color:black;
+  font-size: 10px;
+}
+QPushButton:checked{
+  background-color: #ffff7f;
+  font: bold
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+             </property>
+             <property name="text">
+              <string>Stream Channel 2</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
            <item row="1" column="1">
@@ -1234,31 +1205,6 @@ QPushButton:hover{
              </property>
             </widget>
            </item>
-           <item row="1" column="2">
-            <widget class="QPushButton" name="b1_channel1_pb">
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #55ff7f;
-  border-color: #55ff7f;
-  color:black;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #55ff7f;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-             </property>
-             <property name="text">
-              <string>Stream Channel 1</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
            <item row="2" column="2">
             <widget class="QPushButton" name="b1_channel3_pb">
              <property name="styleSheet">
@@ -1284,29 +1230,17 @@ QPushButton:hover{
              </property>
             </widget>
            </item>
-           <item row="2" column="1">
-            <widget class="QPushButton" name="b1_channel2_pb">
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #ffff7f;
-  border-color: #ffff7f;
-  color:black;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #ffff7f;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-             </property>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="bay1Mode0_rb">
              <property name="text">
-              <string>Stream Channel 2</string>
+              <string>Dotted Curves</string>
              </property>
-             <property name="checkable">
+             <property name="checked">
               <bool>true</bool>
              </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup_2</string>
+             </attribute>
             </widget>
            </item>
            <item row="2" column="0">
@@ -1510,6 +1444,299 @@ QPushButton:hover{
               </widget>
              </item>
             </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="tabWidget_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>360</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTabWidget::pane {
+    border: 1px solid black;
+    background: white;
+}
+
+QTabWidget::tab-bar:top {
+    top: 1px;
+}
+
+QTabWidget::tab-bar:bottom {
+    bottom: 1px;
+}
+
+QTabWidget::tab-bar:left {
+    right: 1px;
+}
+
+QTabWidget::tab-bar:right {
+    left: 1px;
+}
+
+QTabBar::tab {
+    border: 1px solid black;
+}
+
+QTabBar::tab:selected {
+    background: rgb(220,229,236);
+}
+
+QTabBar::tab:!selected {
+    background: rgb(132,165,190);
+}
+
+QTabBar::tab:!selected:hover {
+    background: rgb(120,153,178);
+}
+
+QTabBar::tab:top:!selected {
+    margin-top: 3px;
+}
+
+QTabBar::tab:bottom:!selected {
+    margin-bottom: 3px;
+}
+
+QTabBar::tab:top, QTabBar::tab:bottom {
+    min-width: 6ex;
+    margin-right: -1px;
+    padding: 4px 8px 4px 8px;
+	border-radius: 2px;
+}
+
+QTabBar::tab:top:selected {
+    border-bottom-color: none;
+}
+
+QTabBar::tab:bottom:selected {
+    border-top-color: none;
+}
+
+QTabBar::tab:top:last, QTabBar::tab:bottom:last,
+QTabBar::tab:top:only-one, QTabBar::tab:bottom:only-one {
+    margin-right: 0;
+}
+
+QTabBar::tab:left:!selected {
+    margin-right: 3px;
+}
+
+QTabBar::tab:right:!selected {
+    margin-left: 3px;
+}
+
+QTabBar::tab:left, QTabBar::tab:right {
+    min-height: 6ex;
+    margin-bottom: -1px;
+    padding: 8px 5px 8px 5px;
+	border-radius: 2px;
+}
+
+QTabBar::tab:left:selected {
+    border-left-color: none;
+}
+
+QTabBar::tab:right:selected {
+    border-right-color: none;
+}
+
+QTabBar::tab:left:last, QTabBar::tab:right:last,
+QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
+    margin-bottom: 0;
+}</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tabWidget_3Page1">
+          <attribute name="title">
+           <string>DaqMux Settings</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <item>
+            <widget class="QScrollArea" name="scrollArea_3">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_3">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>372</width>
+                <height>598</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <property name="leftMargin">
+                <number>5</number>
+               </property>
+               <property name="topMargin">
+                <number>5</number>
+               </property>
+               <property name="rightMargin">
+                <number>5</number>
+               </property>
+               <property name="bottomMargin">
+                <number>5</number>
+               </property>
+               <item>
+                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_8">
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                 <property name="macros" stdset="0">
+                  <string>{&quot;MUX&quot;:&quot;1&quot;}</string>
+                 </property>
+                 <property name="filename" stdset="0">
+                  <string>daqMuxV2.ui</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_8">
+          <attribute name="title">
+           <string>Waveform Engine</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QScrollArea" name="scrollArea_5">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_5">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>368</width>
+                <height>594</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                 <property name="macros" stdset="0">
+                  <string>{&quot;ENG&quot;:&quot;1&quot;}</string>
+                 </property>
+                 <property name="filename" stdset="0">
+                  <string>waveform_engine_tab.ui</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabWidget_3Page2">
+          <attribute name="title">
+           <string>Channel Stream Settings</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <item>
+            <widget class="QScrollArea" name="scrollArea_4">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_4">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>372</width>
+                <height>598</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <property name="leftMargin">
+                <number>5</number>
+               </property>
+               <property name="topMargin">
+                <number>5</number>
+               </property>
+               <property name="rightMargin">
+                <number>5</number>
+               </property>
+               <property name="bottomMargin">
+                <number>5</number>
+               </property>
+               <item>
+                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>360</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                 <property name="filename" stdset="0">
+                  <string>bay1_channel_settings.ui</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
            </item>
           </layout>
          </widget>

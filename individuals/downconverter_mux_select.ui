@@ -31,6 +31,41 @@
   <property name="windowTitle">
    <string>Down Converter</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+    background-color: rgb(182, 194, 198);
+    border-color: rgb(182, 204, 212) rgb(82, 104, 112) rgb(82, 104, 112) rgb(182,204,212);
+    border-style: outset;
+    border-radius: 2px;
+    border-width: 2px; 
+    padding: 5px;
+}
+QPushButton:hover {
+   background-color: rgb(154,170,176);
+}
+QPushButton:pressed {
+    background-color: rgb(104,198,176);
+    border-style: inset;
+    border-width: 3px;
+	border-color: rgb(32,86,73);
+}
+QPushButton:checked{
+    background-color: rgb(104,198,176);
+    border-style: inset;
+    border-width: 3px;
+	border-color: rgb(82, 104, 112)  rgb(182, 204, 212) rgb(182,204,212) rgb(82, 104, 112) ;
+}
+
+QLineEdit {
+  background-color: rgb(218,223,230);
+  border-color: rgb(66,77,96);
+  border-style: inset;
+  border-width: 2px 1px 1px 2px;
+}
+QLabel {
+  font-size: 10px;
+}</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout" rowstretch="1,0,0" columnstretch="0">
    <property name="leftMargin">
     <number>0</number>
@@ -95,7 +130,7 @@
         <x>0</x>
         <y>0</y>
         <width>569</width>
-        <height>626</height>
+        <height>770</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
@@ -122,8 +157,33 @@
          <property name="verticalSpacing">
           <number>2</number>
          </property>
-         <item row="24" column="3">
-          <widget class="QLabel" name="label_28">
+         <item row="2" column="2">
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Attenuators</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="0" colspan="7">
+          <widget class="Line" name="line_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="28" column="3">
+          <widget class="QLabel" name="label_30">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -137,174 +197,22 @@
             </size>
            </property>
            <property name="text">
-            <string>9:</string>
+            <string>11:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
           </widget>
          </item>
-         <item row="20" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_12">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>adcValues(5)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>7</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="42" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_14">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>debugValues(2)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>18</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="41" column="0" colspan="7">
-          <widget class="Line" name="line_18">
+         <item row="21" column="0" colspan="7">
+          <widget class="Line" name="line_8">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
-         <item row="20" column="2">
-          <layout class="QHBoxLayout" name="horizontalLayout_7">
-           <item>
-            <widget class="QLabel" name="label_7">
-             <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
-             </property>
-             <property name="text">
-              <string>ATTEN5: </string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:DNC_ATTEN5</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item row="14" column="3">
-          <widget class="QLabel" name="label_23">
-           <property name="text">
-            <string>4:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="12" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_5">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>adcValues(1)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>3</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="19" column="0" colspan="7">
-          <widget class="Line" name="line_7">
+         <item row="35" column="0" colspan="7">
+          <widget class="Line" name="line_15">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
@@ -320,78 +228,21 @@ QPushButton:hover{
            </property>
           </widget>
          </item>
-         <item row="24" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_8">
-           <property name="toolTip">
-            <string/>
+         <item row="45" column="0" colspan="7">
+          <widget class="Line" name="line_20">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
            </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>dacValues(0)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>9</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
           </widget>
          </item>
-         <item row="38" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_13">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
+         <item row="18" column="3">
+          <widget class="QLabel" name="label_25">
            <property name="text">
-            <string>debugValues(0)</string>
+            <string>6:</string>
            </property>
-           <property name="checkable">
-            <bool>true</bool>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>16</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
           </widget>
          </item>
          <item row="12" column="3">
@@ -404,534 +255,52 @@ QPushButton:hover{
            </property>
           </widget>
          </item>
-         <item row="28" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_2">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>dacValues(2)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>11</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="14" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_6">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>adcValues(2)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>4</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="18" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_11">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>adcValues(4)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>6</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="36" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_16">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>dacValues(6)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>15</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="14" column="0">
-          <widget class="QLabel" name="label_10">
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-  color:rgb(0,112,192);
-  font-size: 12px;
-  font: bold italic;
-}</string>
-           </property>
-           <property name="text">
-            <string>RF IN 4</string>
-           </property>
-          </widget>
-         </item>
-         <item row="10" column="3">
-          <widget class="QLabel" name="label_20">
-           <property name="text">
-            <string>2:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="34" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_17">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>dacValues(5)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>14</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="35" column="0" colspan="7">
-          <widget class="Line" name="line_15">
+         <item row="5" column="1">
+          <spacer name="horizontalSpacer_3">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="25" column="0" colspan="7">
-          <widget class="Line" name="line_10">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="26" column="0">
-          <widget class="QLabel" name="label_15">
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-  color:#00141F;
-  font-size: 12px;
-  font: bold italic;
-}</string>
-           </property>
-           <property name="text">
-            <string>CLK PLL DAC</string>
-           </property>
-          </widget>
-         </item>
-         <item row="22" column="3">
-          <widget class="QLabel" name="label_27">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>20</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>8:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="23" column="0" colspan="7">
-          <widget class="Line" name="line_9">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="7" column="0" colspan="7">
-          <widget class="Line" name="line">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="0" colspan="7">
-          <widget class="Line" name="line_21">
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <property name="lineWidth">
-            <number>5</number>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="12" column="2">
-          <layout class="QHBoxLayout" name="horizontalLayout_3">
-           <item>
-            <widget class="QLabel" name="label_3">
-             <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
-             </property>
-             <property name="text">
-              <string>ATTEN1: </string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:DNC_ATTEN1</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item row="2" column="6">
-          <widget class="QLabel" name="label_17">
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
-           </property>
-           <property name="text">
-            <string>Temperatures</string>
-           </property>
-          </widget>
-         </item>
-         <item row="29" column="0" colspan="7">
-          <widget class="Line" name="line_12">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="10" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_4">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>adcValues(0)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>2</string>
-           </property>
-           <property name="relativeChange" stdset="0">
-            <bool>true</bool>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="13" column="0" colspan="7">
-          <widget class="Line" name="line_4">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="44" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_20">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>debugValues(3)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>19</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="45" column="0" colspan="7">
-          <widget class="Line" name="line_20">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="8" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_3">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>Test</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>1</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="40" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_15">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>debugValues(1)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>17</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="9" column="0" colspan="7">
-          <widget class="Line" name="line_2">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="0">
-          <spacer name="verticalSpacer">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
            </property>
            <property name="sizeType">
-            <enum>QSizePolicy::Maximum</enum>
+            <enum>QSizePolicy::Fixed</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
-             <height>15</height>
+             <height>20</height>
             </size>
            </property>
           </spacer>
          </item>
-         <item row="26" column="3">
-          <widget class="QLabel" name="label_29">
+         <item row="6" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Disabled</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>0</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="36" column="3">
+          <widget class="QLabel" name="label_34">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -945,61 +314,7 @@ QPushButton:hover{
             </size>
            </property>
            <property name="text">
-            <string>10:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="16" column="0">
-          <widget class="QLabel" name="label_11">
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-  color:rgb(112,48,160);
-  font-size: 12px;
-  font: bold italic;
-}</string>
-           </property>
-           <property name="text">
-            <string>RF IN 3</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="text">
-            <string>Down Converter</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-           <property name="default">
-            <bool>false</bool>
-           </property>
-           <property name="flat">
-            <bool>false</bool>
-           </property>
-           <property name="filenames" stdset="0">
-            <stringlist>
-             <string>individuals/down_converter_picture.ui</string>
-            </stringlist>
-           </property>
-           <property name="titles" stdset="0">
-            <stringlist/>
-           </property>
-           <property name="openInNewWindow" stdset="0">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="18" column="3">
-          <widget class="QLabel" name="label_25">
-           <property name="text">
-            <string>6:</string>
+            <string>15:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1028,28 +343,29 @@ QPushButton:hover{
            </property>
           </widget>
          </item>
-         <item row="32" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_18">
+         <item row="4" column="0" colspan="7">
+          <widget class="Line" name="line_21">
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="lineWidth">
+            <number>5</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="24" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_8">
            <property name="toolTip">
             <string/>
            </property>
            <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+            <string notr="true"/>
            </property>
            <property name="text">
-            <string>dacValues(4)</string>
+            <string>dacValues(0)</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -1058,526 +374,25 @@ QPushButton:hover{
             <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
            </property>
            <property name="pressValue" stdset="0">
-            <string>13</string>
+            <string>9</string>
            </property>
            <attribute name="buttonGroup">
             <string notr="true">buttonGroup</string>
            </attribute>
           </widget>
          </item>
-         <item row="26" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_7">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>dacValues(1)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>10</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="15" column="0" colspan="7">
-          <widget class="Line" name="line_5">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="43" column="0" colspan="7">
-          <widget class="Line" name="line_19">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="20" column="0">
-          <widget class="QLabel" name="label_13">
+         <item row="14" column="0">
+          <widget class="QLabel" name="label_10">
            <property name="styleSheet">
             <string notr="true">QLabel{
-  color:rgb(197,90,17);
+  color:rgb(0,112,192);
   font-size: 12px;
   font: bold italic;
 }</string>
            </property>
            <property name="text">
-            <string>RF IN 5</string>
+            <string>RF IN 4</string>
            </property>
-          </widget>
-         </item>
-         <item row="12" column="0">
-          <widget class="QLabel" name="label_9">
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-  color:rgb(0,134,61);
-  font-size: 12px;
-  font: bold italic;
-}</string>
-           </property>
-           <property name="text">
-            <string>RF IN 1</string>
-           </property>
-          </widget>
-         </item>
-         <item row="30" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_19">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>dacValues(3)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>12</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="10" column="0">
-          <widget class="QLabel" name="label_8">
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-  color: rgb(192,0,0);
-  font-size: 12px;
-  font: bold italic;
-}</string>
-           </property>
-           <property name="text">
-            <string>RF IN 2</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="1">
-          <spacer name="horizontalSpacer_3">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeType">
-            <enum>QSizePolicy::Fixed</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item row="20" column="3">
-          <widget class="QLabel" name="label_26">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>20</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>7:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="3" colspan="2">
-          <widget class="PyDMLabel" name="PyDMLabel_21">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
-           </property>
-           <property name="text">
-            <string>Input Mux Select</string>
-           </property>
-           <property name="textFormat">
-            <enum>Qt::PlainText</enum>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="18" column="2">
-          <layout class="QHBoxLayout" name="horizontalLayout_6">
-           <item>
-            <widget class="QLabel" name="label_6">
-             <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
-             </property>
-             <property name="text">
-              <string>ATTEN4: </string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:DNC_ATTEN4</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item row="16" column="2">
-          <layout class="QHBoxLayout" name="horizontalLayout_5">
-           <item>
-            <widget class="QLabel" name="label_5">
-             <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
-             </property>
-             <property name="text">
-              <string>ATTEN3: </string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:DNC_ATTEN3</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item row="10" column="2">
-          <layout class="QHBoxLayout" name="horizontalLayout_2">
-           <item>
-            <widget class="QLabel" name="label_2">
-             <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
-             </property>
-             <property name="text">
-              <string>ATTEN0: </string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="PyDMLineEdit" name="PyDMLineEdit">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:DNC_ATTEN0</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item row="5" column="5">
-          <spacer name="horizontalSpacer_4">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeType">
-            <enum>QSizePolicy::Fixed</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item row="6" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="autoFillBackground">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>Disabled</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>0</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="0" column="2" colspan="3">
-          <widget class="QLabel" name="label_18">
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-  color:#261326;
-  font-size: 12px;
-  font: bold;
-}</string>
-           </property>
-           <property name="text">
-            <string>AMC Down Converter Settings</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="28" column="0">
-          <widget class="QLabel" name="label_16">
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-  color:rgb(30,78,121);
-  font-size: 12px;
-  font: bold italic;
-}</string>
-           </property>
-           <property name="text">
-            <string>DAC OUT</string>
-           </property>
-          </widget>
-         </item>
-         <item row="21" column="0" colspan="7">
-          <widget class="Line" name="line_8">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="31" column="0" colspan="7">
-          <widget class="Line" name="line_13">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="18" column="0">
-          <widget class="QLabel" name="label_12">
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-  color:rgb(255,51,204);
-  font-size: 12px;
-  font: bold italic;
-}</string>
-           </property>
-           <property name="text">
-            <string>RF IN 6</string>
-           </property>
-          </widget>
-         </item>
-         <item row="39" column="0" colspan="7">
-          <widget class="Line" name="line_17">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="11" column="0" colspan="7">
-          <widget class="Line" name="line_3">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="16" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_9">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>adcValues(3)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>5</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-         <item row="37" column="0" colspan="7">
-          <widget class="Line" name="line_16">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="24" column="0">
-          <widget class="QLabel" name="label_14">
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-  color:#00141F;
-  font-size: 12px;
-  font: bold italic;
-}</string>
-           </property>
-           <property name="text">
-            <string>LO PLL DAC</string>
-           </property>
-          </widget>
-         </item>
-         <item row="27" column="0" colspan="7">
-          <widget class="Line" name="line_11">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="22" column="4">
-          <widget class="PyDMPushButton" name="PyDMPushButton_10">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
-           </property>
-           <property name="text">
-            <string>adcValues(6)</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
-           </property>
-           <property name="pressValue" stdset="0">
-            <string>8</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup</string>
-           </attribute>
           </widget>
          </item>
          <item row="1" column="2">
@@ -1596,10 +411,376 @@ QPushButton:hover{
            </property>
           </spacer>
          </item>
+         <item row="27" column="0" colspan="7">
+          <widget class="Line" name="line_11">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="34" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_17">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>dacValues(5)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>14</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="16" column="6">
+          <widget class="PyDMLabel" name="PyDMLabel_4">
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DNC_TEMP3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="31" column="0" colspan="7">
+          <widget class="Line" name="line_13">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0" colspan="7">
+          <widget class="Line" name="line">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="44" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_20">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>debugValues(3)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>19</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="34" column="3">
+          <widget class="QLabel" name="label_33">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>14:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="0" colspan="7">
+          <widget class="Line" name="line_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="42" column="3">
+          <widget class="QLabel" name="label_37">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>18:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="37" column="0" colspan="7">
+          <widget class="Line" name="line_16">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="19" column="0" colspan="7">
+          <widget class="Line" name="line_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
          <item row="17" column="0" colspan="7">
           <widget class="Line" name="line_6">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(253,224,181);
+    border-color: rgb(253,224,181) rgb(172,104,4) rgb(172,104,4) rgb(253,224,181);
+    border-style: outset;
+    border-radius: 4px;
+    border-width: 3px; 
+}
+QPushButton:flat {
+    border: none; /* no border for a flat push button */
+}
+QPushButton:hover {
+   background-color: rgb(233,204,161);
+}
+QPushButton:pressed {
+    background-color: rgb(233,204,161);
+    border-style: inset;
+    border-width: 3px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Down Converter</string>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+           <property name="default">
+            <bool>false</bool>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+           <property name="filenames" stdset="0">
+            <stringlist>
+             <string>individuals/down_converter_picture.ui</string>
+            </stringlist>
+           </property>
+           <property name="titles" stdset="0">
+            <stringlist/>
+           </property>
+           <property name="openInNewWindow" stdset="0">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_3">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Test</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>1</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="28" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_2">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>dacValues(2)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>11</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="29" column="0" colspan="7">
+          <widget class="Line" name="line_12">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="40" column="3">
+          <widget class="QLabel" name="label_36">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>17:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="26" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_7">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>dacValues(1)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>10</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="41" column="0" colspan="7">
+          <widget class="Line" name="line_18">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="33" column="0" colspan="7">
+          <widget class="Line" name="line_14">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_6">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>adcValues(2)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>4</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="24" column="0">
+          <widget class="QLabel" name="label_14">
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+  color:#00141F;
+  font-size: 12px;
+  font: bold italic;
+}</string>
+           </property>
+           <property name="text">
+            <string>LO PLL DAC</string>
            </property>
           </widget>
          </item>
@@ -1625,32 +806,178 @@ QPushButton:hover{
            </property>
           </widget>
          </item>
-         <item row="33" column="0" colspan="7">
-          <widget class="Line" name="line_14">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+         <item row="42" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_14">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>debugValues(2)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>18</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="10" column="6">
+          <widget class="PyDMLabel" name="PyDMLabel">
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DNC_TEMP0</string>
            </property>
           </widget>
          </item>
-         <item row="2" column="2">
-          <widget class="QLabel" name="label">
+         <item row="16" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_9">
+           <property name="toolTip">
+            <string/>
+           </property>
            <property name="styleSheet">
-            <string notr="true">QLabel{
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>adcValues(3)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>5</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="32" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_18">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>dacValues(4)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>13</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="12" column="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
   color:#030923;
   font-size: 10px;
   font-style: bold;
 }</string>
-           </property>
-           <property name="text">
-            <string>Attenuators</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
+             </property>
+             <property name="text">
+              <string>ATTEN1: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${DEVICE}:DNC_ATTEN1</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
-         <item row="28" column="3">
-          <widget class="QLabel" name="label_30">
+         <item row="18" column="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+             </property>
+             <property name="text">
+              <string>ATTEN4: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${DEVICE}:DNC_ATTEN4</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="44" column="3">
+          <widget class="QLabel" name="label_38">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -1664,7 +991,43 @@ QPushButton:hover{
             </size>
            </property>
            <property name="text">
-            <string>11:</string>
+            <string>19:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="43" column="0" colspan="7">
+          <widget class="Line" name="line_19">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="39" column="0" colspan="7">
+          <widget class="Line" name="line_17">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="3">
+          <widget class="QLabel" name="label_26">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>7:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1693,8 +1056,189 @@ QPushButton:hover{
            </property>
           </widget>
          </item>
-         <item row="32" column="3">
-          <widget class="QLabel" name="label_32">
+         <item row="14" column="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+             </property>
+             <property name="text">
+              <string>ATTEN2: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${DEVICE}:DNC_ATTEN2</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="16" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+  color:rgb(112,48,160);
+  font-size: 12px;
+  font: bold italic;
+}</string>
+           </property>
+           <property name="text">
+            <string>RF IN 3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+             </property>
+             <property name="text">
+              <string>ATTEN3: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${DEVICE}:DNC_ATTEN3</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="25" column="0" colspan="7">
+          <widget class="Line" name="line_10">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+             </property>
+             <property name="text">
+              <string>ATTEN5: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${DEVICE}:DNC_ATTEN5</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="26" column="0">
+          <widget class="QLabel" name="label_15">
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+  color:#00141F;
+  font-size: 12px;
+  font: bold italic;
+}</string>
+           </property>
+           <property name="text">
+            <string>CLK PLL DAC</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="5">
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="6">
+          <widget class="QLabel" name="label_17">
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Temperatures</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0" colspan="7">
+          <widget class="Line" name="line_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="3">
+          <widget class="QLabel" name="label_27">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -1708,54 +1252,52 @@ QPushButton:hover{
             </size>
            </property>
            <property name="text">
-            <string>13:</string>
+            <string>8:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
           </widget>
          </item>
-         <item row="34" column="3">
-          <widget class="QLabel" name="label_33">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
+         <item row="10" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_4">
+           <property name="toolTip">
+            <string/>
            </property>
-           <property name="minimumSize">
-            <size>
-             <width>20</width>
-             <height>0</height>
-            </size>
+           <property name="styleSheet">
+            <string notr="true"/>
            </property>
            <property name="text">
-            <string>14:</string>
+            <string>adcValues(0)</string>
            </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           <property name="checkable">
+            <bool>true</bool>
            </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>2</string>
+           </property>
+           <property name="relativeChange" stdset="0">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
           </widget>
          </item>
-         <item row="36" column="3">
-          <widget class="QLabel" name="label_34">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>20</width>
-             <height>0</height>
-            </size>
+         <item row="28" column="0">
+          <widget class="QLabel" name="label_16">
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+  color:rgb(30,78,121);
+  font-size: 12px;
+  font: bold italic;
+}</string>
            </property>
            <property name="text">
-            <string>15:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            <string>DAC OUT</string>
            </property>
           </widget>
          </item>
@@ -1781,8 +1323,43 @@ QPushButton:hover{
            </property>
           </widget>
          </item>
-         <item row="40" column="3">
-          <widget class="QLabel" name="label_36">
+         <item row="38" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_13">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>debugValues(0)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>16</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="10" column="3">
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>2:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="32" column="3">
+          <widget class="QLabel" name="label_32">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -1796,15 +1373,36 @@ QPushButton:hover{
             </size>
            </property>
            <property name="text">
-            <string>17:</string>
+            <string>13:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
           </widget>
          </item>
-         <item row="42" column="3">
-          <widget class="QLabel" name="label_37">
+         <item row="23" column="0" colspan="7">
+          <widget class="Line" name="line_9">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+  color:rgb(0,134,61);
+  font-size: 12px;
+  font: bold italic;
+}</string>
+           </property>
+           <property name="text">
+            <string>RF IN 1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="24" column="3">
+          <widget class="QLabel" name="label_28">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -1818,62 +1416,161 @@ QPushButton:hover{
             </size>
            </property>
            <property name="text">
-            <string>18:</string>
+            <string>9:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
           </widget>
          </item>
-         <item row="44" column="3">
-          <widget class="QLabel" name="label_38">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
+         <item row="12" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_5">
+           <property name="toolTip">
+            <string/>
            </property>
-           <property name="minimumSize">
-            <size>
-             <width>20</width>
-             <height>0</height>
-            </size>
+           <property name="styleSheet">
+            <string notr="true"/>
            </property>
            <property name="text">
-            <string>19:</string>
+            <string>adcValues(1)</string>
            </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           <property name="checkable">
+            <bool>true</bool>
            </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>3</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
           </widget>
          </item>
-         <item row="10" column="6">
-          <widget class="PyDMLabel" name="PyDMLabel">
+         <item row="36" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_16">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>dacValues(6)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>15</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="2" column="3" colspan="2">
+          <widget class="PyDMLabel" name="PyDMLabel_21">
            <property name="font">
             <font>
-             <pointsize>10</pointsize>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="toolTip">
             <string/>
            </property>
-           <property name="text">
-            <string/>
+           <property name="styleSheet">
+            <string notr="true"/>
            </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DNC_TEMP0</string>
+           <property name="text">
+            <string>Input Mux Select</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::PlainText</enum>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
            </property>
           </widget>
+         </item>
+         <item row="18" column="0">
+          <widget class="QLabel" name="label_12">
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+  color:rgb(255,51,204);
+  font-size: 12px;
+  font: bold italic;
+}</string>
+           </property>
+           <property name="text">
+            <string>RF IN 6</string>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="3">
+          <widget class="QLabel" name="label_23">
+           <property name="text">
+            <string>4:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+             </property>
+             <property name="text">
+              <string>ATTEN0: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="PyDMLineEdit" name="PyDMLineEdit">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${DEVICE}:DNC_ATTEN0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
          <item row="12" column="6">
           <widget class="PyDMLabel" name="PyDMLabel_2">
            <property name="font">
             <font>
-             <pointsize>10</pointsize>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="toolTip">
             <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
            </property>
            <property name="text">
             <string/>
@@ -1883,15 +1580,84 @@ QPushButton:hover{
            </property>
           </widget>
          </item>
+         <item row="10" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+  color: rgb(192,0,0);
+  font-size: 12px;
+  font: bold italic;
+}</string>
+           </property>
+           <property name="text">
+            <string>RF IN 2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_10">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>adcValues(6)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>8</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="18" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_11">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>adcValues(4)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>6</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
          <item row="14" column="6">
           <widget class="PyDMLabel" name="PyDMLabel_3">
            <property name="font">
             <font>
-             <pointsize>10</pointsize>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="toolTip">
             <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
            </property>
            <property name="text">
             <string/>
@@ -1901,54 +1667,155 @@ QPushButton:hover{
            </property>
           </widget>
          </item>
-         <item row="16" column="6">
-          <widget class="PyDMLabel" name="PyDMLabel_4">
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="toolTip">
-            <string/>
+         <item row="20" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+  color:rgb(197,90,17);
+  font-size: 12px;
+  font: bold italic;
+}</string>
            </property>
            <property name="text">
-            <string/>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DNC_TEMP3</string>
+            <string>RF IN 5</string>
            </property>
           </widget>
          </item>
-         <item row="14" column="2">
-          <layout class="QHBoxLayout" name="horizontalLayout_4">
-           <item>
-            <widget class="QLabel" name="label_4">
-             <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
+         <item row="26" column="3">
+          <widget class="QLabel" name="label_29">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>10:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_12">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>adcValues(5)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>7</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>15</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="40" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_15">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>debugValues(1)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>17</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="30" column="4">
+          <widget class="PyDMPushButton" name="PyDMPushButton_19">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>dacValues(3)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>12</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="15" column="0" colspan="7">
+          <widget class="Line" name="line_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="7">
+          <widget class="QLabel" name="label_18">
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+  font-size: 12px;
+  font: bold;
 }</string>
-             </property>
-             <property name="text">
-              <string>ATTEN2: </string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:DNC_ATTEN2</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
+           </property>
+           <property name="text">
+            <string>AMC Down Converter Settings</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>
