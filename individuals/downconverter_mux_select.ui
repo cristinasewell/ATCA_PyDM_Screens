@@ -901,15 +901,11 @@ QPushButton:pressed {
             <widget class="QLabel" name="label_3">
              <property name="font">
               <font>
-               <pointsize>-1</pointsize>
+               <pointsize>10</pointsize>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>ATTEN1: </string>
@@ -937,15 +933,11 @@ QPushButton:pressed {
             <widget class="QLabel" name="label_6">
              <property name="font">
               <font>
-               <pointsize>-1</pointsize>
+               <pointsize>10</pointsize>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>ATTEN4: </string>
@@ -1053,15 +1045,11 @@ QPushButton:pressed {
             <widget class="QLabel" name="label_4">
              <property name="font">
               <font>
-               <pointsize>-1</pointsize>
+               <pointsize>10</pointsize>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>ATTEN2: </string>
@@ -1103,15 +1091,11 @@ QPushButton:pressed {
             <widget class="QLabel" name="label_5">
              <property name="font">
               <font>
-               <pointsize>-1</pointsize>
+               <pointsize>10</pointsize>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>ATTEN3: </string>
@@ -1146,15 +1130,11 @@ QPushButton:pressed {
             <widget class="QLabel" name="label_7">
              <property name="font">
               <font>
-               <pointsize>-1</pointsize>
+               <pointsize>10</pointsize>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>ATTEN5: </string>
@@ -1514,15 +1494,11 @@ QPushButton:pressed {
             <widget class="QLabel" name="label_2">
              <property name="font">
               <font>
-               <pointsize>-1</pointsize>
+               <pointsize>10</pointsize>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>ATTEN0: </string>

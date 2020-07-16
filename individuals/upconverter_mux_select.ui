@@ -81,6 +81,25 @@ QLineEdit {
      <property name="rightMargin">
       <number>0</number>
      </property>
+     <item row="0" column="0">
+      <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="filename" stdset="0">
+        <string>../docs/_static/amc_upconverter.png</string>
+       </property>
+       <property name="aspectRatioMode" stdset="0">
+        <enum>Qt::KeepAspectRatio</enum>
+       </property>
+      </widget>
+     </item>
      <item row="1" column="0">
       <widget class="QScrollArea" name="scrollArea">
        <property name="sizePolicy">
@@ -108,7 +127,7 @@ QLineEdit {
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>0</y>
+          <y>-120</y>
           <width>567</width>
           <height>771</height>
          </rect>
@@ -176,12 +195,13 @@ QLineEdit {
             <layout class="QHBoxLayout" name="horizontalLayout_7">
              <item>
               <widget class="QLabel" name="label_21">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
                <property name="styleSheet">
-                <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+                <string notr="true"/>
                </property>
                <property name="text">
                 <string>ATTEN1: </string>
@@ -266,12 +286,13 @@ QLineEdit {
             <layout class="QHBoxLayout" name="horizontalLayout_9">
              <item>
               <widget class="QLabel" name="label_27">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
                <property name="styleSheet">
-                <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+                <string notr="true"/>
                </property>
                <property name="text">
                 <string>ATTEN2: </string>
@@ -387,12 +408,13 @@ QPushButton:pressed {
             <layout class="QHBoxLayout" name="horizontalLayout_6">
              <item>
               <widget class="QLabel" name="label_16">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
                <property name="styleSheet">
-                <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+                <string notr="true"/>
                </property>
                <property name="text">
                 <string>ATTEN3: </string>
@@ -569,12 +591,13 @@ QPushButton:pressed {
             <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="0,0">
              <item>
               <widget class="QLabel" name="label_23">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
                <property name="styleSheet">
-                <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+                <string notr="true"/>
                </property>
                <property name="text">
                 <string>ATTEN0 : </string>
@@ -1509,25 +1532,6 @@ QPushButton:pressed {
          </item>
         </layout>
        </widget>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>1</horstretch>
-         <verstretch>1</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="filename" stdset="0">
-        <string>../docs/_static/amc_upconverter.png</string>
-       </property>
-       <property name="aspectRatioMode" stdset="0">
-        <enum>Qt::KeepAspectRatio</enum>
-       </property>
       </widget>
      </item>
     </layout>
