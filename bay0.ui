@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>443</width>
-    <height>613</height>
+    <width>492</width>
+    <height>694</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -128,8 +128,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>411</width>
-            <height>556</height>
+            <width>460</width>
+            <height>637</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -167,8 +167,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>411</width>
-            <height>556</height>
+            <width>460</width>
+            <height>605</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -206,8 +206,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>411</width>
-            <height>556</height>
+            <width>460</width>
+            <height>605</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_4">

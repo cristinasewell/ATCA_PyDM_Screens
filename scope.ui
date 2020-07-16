@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1199</width>
+    <width>1383</width>
     <height>762</height>
    </rect>
   </property>
@@ -703,8 +703,8 @@ QPushButton:hover{
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>468</width>
-            <height>706</height>
+            <width>458</width>
+            <height>114</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -1212,7 +1212,7 @@ QPushButton:hover{
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>
