@@ -140,7 +140,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
 }</string>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <property name="font">
@@ -165,7 +165,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          </property>
          <property name="minimumSize">
           <size>
-           <width>450</width>
+           <width>460</width>
            <height>0</height>
           </size>
          </property>
@@ -177,7 +177,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>448</width>
+            <width>458</width>
             <height>683</height>
            </rect>
           </property>
@@ -691,7 +691,7 @@ QPushButton:hover{
          </property>
          <property name="minimumSize">
           <size>
-           <width>450</width>
+           <width>460</width>
            <height>0</height>
           </size>
          </property>
@@ -703,7 +703,7 @@ QPushButton:hover{
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>448</width>
+            <width>458</width>
             <height>683</height>
            </rect>
           </property>
