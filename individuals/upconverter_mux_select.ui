@@ -61,9 +61,6 @@ QLineEdit {
   border-color: rgb(66,77,96);
   border-style: inset;
   border-width: 2px 1px 1px 2px;
-}
-QLabel {
-  font-size: 10px;
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
@@ -113,7 +110,7 @@ QLabel {
           <x>0</x>
           <y>0</y>
           <width>567</width>
-          <height>610</height>
+          <height>768</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">

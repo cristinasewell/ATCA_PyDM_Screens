@@ -54,9 +54,6 @@ QLineEdit {
   border-color: rgb(66,77,96);
   border-style: inset;
   border-width: 2px 1px 1px 2px;
-}
-QLabel {
-  font-size: 10px;
 }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
@@ -240,7 +237,7 @@ QLabel {
            <property name="minimumSize">
             <size>
              <width>0</width>
-             <height>24</height>
+             <height>0</height>
             </size>
            </property>
            <property name="maximumSize">

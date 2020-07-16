@@ -61,9 +61,6 @@ QLineEdit {
   border-color: rgb(66,77,96);
   border-style: inset;
   border-width: 2px 1px 1px 2px;
-}
-QLabel {
-  font-size: 10px;
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout" rowstretch="1,0,0" columnstretch="0">
