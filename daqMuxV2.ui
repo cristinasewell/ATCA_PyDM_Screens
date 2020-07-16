@@ -106,12 +106,12 @@ QLabel {
         <x>0</x>
         <y>0</y>
         <width>360</width>
-        <height>606</height>
+        <height>598</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <layout class="QGridLayout" name="gridLayout" columnstretch="0,0">
+        <layout class="QGridLayout" name="gridLayout" columnstretch="0,1" columnminimumwidth="0,1">
          <property name="leftMargin">
           <number>2</number>
          </property>
