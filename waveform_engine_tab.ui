@@ -6,26 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>405</height>
+    <width>380</width>
+    <height>507</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,1">
-   <property name="leftMargin">
-    <number>5</number>
-   </property>
-   <property name="topMargin">
-    <number>5</number>
-   </property>
-   <property name="rightMargin">
-    <number>5</number>
-   </property>
-   <property name="bottomMargin">
-    <number>5</number>
-   </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="label">
      <property name="styleSheet">
@@ -43,32 +31,59 @@
     </widget>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_5">
-     <property name="topMargin">
-      <number>20</number>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
      </property>
-     <item>
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Initialize: </string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="PyDMPushButton" name="PyDMPushButton">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>364</width>
+        <height>465</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <property name="topMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Initialize: </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="PyDMPushButton" name="PyDMPushButton">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
     background-color: rgb(182, 194, 198);
     border-color: rgb(182, 204, 212) rgb(82, 104, 112) rgb(82, 104, 112) rgb(182,204,212);
     border-style: outset;
@@ -101,25 +116,21 @@ QLineEdit {
 QLabel {
   font-size: 10px;
 }</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:WFENG${ENG}_INIT</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <widget class="Line" name="line">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-   </item>
-   <item>
-    <widget class="QTabWidget" name="tabWidget">
-     <property name="styleSheet">
-      <string notr="true">QTabWidget::pane {
+           </property>
+           <property name="text">
+            <string>Initialize</string>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:WFENG${ENG}_INIT</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="styleSheet">
+          <string notr="true">QTabWidget::pane {
     border: 1px solid black;
     background: white;
 }
@@ -211,86 +222,102 @@ QTabBar::tab:left:last, QTabBar::tab:right:last,
 QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
     margin-bottom: 0;
 }</string>
-     </property>
-     <property name="currentIndex">
-      <number>0</number>
-     </property>
-     <widget class="QWidget" name="tab">
-      <attribute name="title">
-       <string>Stream Ch 0</string>
-      </attribute>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
-         <property name="toolTip">
-          <string/>
          </property>
-         <property name="macros" stdset="0">
-          <string>{&quot;CH&quot;:&quot;0&quot;}</string>
+         <property name="currentIndex">
+          <number>0</number>
          </property>
-         <property name="filename" stdset="0">
-          <string>waveform_engine.ui</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="tab_3">
-      <attribute name="title">
-       <string>Stream Ch 1</string>
-      </attribute>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
-         <property name="toolTip">
-          <string/>
-         </property>
-         <property name="macros" stdset="0">
-          <string>{&quot;CH&quot;:&quot;1&quot;}</string>
-         </property>
-         <property name="filename" stdset="0">
-          <string>waveform_engine.ui</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="tab_4">
-      <attribute name="title">
-       <string>Stream Ch 2</string>
-      </attribute>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
-        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
-         <property name="toolTip">
-          <string/>
-         </property>
-         <property name="macros" stdset="0">
-          <string>{&quot;CH&quot;:&quot;2&quot;}</string>
-         </property>
-         <property name="filename" stdset="0">
-          <string>waveform_engine.ui</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="tab_2">
-      <attribute name="title">
-       <string>Stream Ch 3</string>
-      </attribute>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
-         <property name="toolTip">
-          <string/>
-         </property>
-         <property name="macros" stdset="0">
-          <string>{&quot;CH&quot;:&quot;3&quot;}</string>
-         </property>
-         <property name="filename" stdset="0">
-          <string>waveform_engine.ui</string>
-         </property>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>Stream Ch 0</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="macros" stdset="0">
+              <string>{&quot;CH&quot;:&quot;0&quot;}</string>
+             </property>
+             <property name="filename" stdset="0">
+              <string>waveform_engine.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_3">
+          <attribute name="title">
+           <string>Stream Ch 1</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="macros" stdset="0">
+              <string>{&quot;CH&quot;:&quot;1&quot;}</string>
+             </property>
+             <property name="filename" stdset="0">
+              <string>waveform_engine.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_4">
+          <attribute name="title">
+           <string>Stream Ch 2</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="macros" stdset="0">
+              <string>{&quot;CH&quot;:&quot;2&quot;}</string>
+             </property>
+             <property name="filename" stdset="0">
+              <string>waveform_engine.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>Stream Ch 3</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0">
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <item>
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="macros" stdset="0">
+              <string>{&quot;CH&quot;:&quot;3&quot;}</string>
+             </property>
+             <property name="filename" stdset="0">
+              <string>waveform_engine.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </widget>
        </item>
       </layout>

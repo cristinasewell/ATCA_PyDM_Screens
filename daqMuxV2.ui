@@ -54,9 +54,6 @@ QLineEdit {
   border-color: rgb(66,77,96);
   border-style: inset;
   border-width: 2px 1px 1px 2px;
-}
-QLabel {
-  font-size: 10px;
 }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
@@ -76,7 +73,11 @@ QLabel {
     <widget class="QLabel" name="label_15">
      <property name="font">
       <font>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
        <italic>false</italic>
+       <bold>false</bold>
+       <kerning>true</kerning>
       </font>
      </property>
      <property name="toolTipDuration">
@@ -104,13 +105,13 @@ QLabel {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>370</width>
-        <height>568</height>
+        <width>360</width>
+        <height>600</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <layout class="QGridLayout" name="gridLayout" columnstretch="0,0">
+        <layout class="QGridLayout" name="gridLayout" columnstretch="0,1" columnminimumwidth="0,1">
          <property name="leftMargin">
           <number>2</number>
          </property>
@@ -130,10 +131,16 @@ QLabel {
           <layout class="QGridLayout" name="gridLayout_4">
            <item row="0" column="0">
             <widget class="PyDMPushButton" name="PyDMPushButton_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="minimumSize">
               <size>
                <width>0</width>
-               <height>24</height>
+               <height>0</height>
               </size>
              </property>
              <property name="toolTip">
@@ -158,7 +165,7 @@ QLabel {
              <property name="minimumSize">
               <size>
                <width>0</width>
-               <height>25</height>
+               <height>0</height>
               </size>
              </property>
              <property name="toolTip">
@@ -231,7 +238,7 @@ QLabel {
            <property name="minimumSize">
             <size>
              <width>0</width>
-             <height>24</height>
+             <height>0</height>
             </size>
            </property>
            <property name="maximumSize">
@@ -343,7 +350,7 @@ QLabel {
            <property name="minimumSize">
             <size>
              <width>0</width>
-             <height>24</height>
+             <height>0</height>
             </size>
            </property>
            <property name="maximumSize">
@@ -386,7 +393,7 @@ QLabel {
            <property name="minimumSize">
             <size>
              <width>0</width>
-             <height>24</height>
+             <height>0</height>
             </size>
            </property>
            <property name="maximumSize">
@@ -499,7 +506,7 @@ QLabel {
            <property name="minimumSize">
             <size>
              <width>0</width>
-             <height>24</height>
+             <height>0</height>
             </size>
            </property>
            <property name="maximumSize">
@@ -593,7 +600,7 @@ QLabel {
            <property name="minimumSize">
             <size>
              <width>0</width>
-             <height>24</height>
+             <height>0</height>
             </size>
            </property>
            <property name="maximumSize">
@@ -709,7 +716,7 @@ QLabel {
            <property name="minimumSize">
             <size>
              <width>0</width>
-             <height>24</height>
+             <height>0</height>
             </size>
            </property>
            <property name="maximumSize">
@@ -749,6 +756,12 @@ QLabel {
          </item>
          <item row="20" column="1">
           <widget class="PyDMLineEdit" name="PyDMLineEdit">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="toolTip">
             <string/>
            </property>
@@ -804,6 +817,12 @@ QLabel {
          </item>
          <item row="22" column="1">
           <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="toolTip">
             <string/>
            </property>
@@ -860,10 +879,16 @@ QLabel {
          </item>
          <item row="3" column="1">
           <widget class="PyDMPushButton" name="PyDMPushButton_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="minimumSize">
             <size>
              <width>0</width>
-             <height>24</height>
+             <height>0</height>
             </size>
            </property>
            <property name="toolTip">
