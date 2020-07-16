@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,1">
    <property name="leftMargin">
     <number>5</number>
    </property>
@@ -39,6 +39,80 @@
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <property name="topMargin">
+      <number>20</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Initialize: </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMPushButton" name="PyDMPushButton">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(182, 194, 198);
+    border-color: rgb(182, 204, 212) rgb(82, 104, 112) rgb(82, 104, 112) rgb(182,204,212);
+    border-style: outset;
+    border-radius: 2px;
+    border-width: 2px; 
+    padding: 5px;
+}
+QPushButton:hover {
+   background-color: rgb(154,170,176);
+}
+QPushButton:pressed {
+    background-color: rgb(104,198,176);
+    border-style: inset;
+    border-width: 3px;
+	border-color: rgb(32,86,73);
+}
+QPushButton:checked{
+    background-color: rgb(104,198,176);
+    border-style: inset;
+    border-width: 3px;
+	border-color: rgb(82, 104, 112)  rgb(182, 204, 212) rgb(182,204,212) rgb(82, 104, 112) ;
+}
+
+QLineEdit {
+  background-color: rgb(218,223,230);
+  border-color: rgb(66,77,96);
+  border-style: inset;
+  border-width: 2px 1px 1px 2px;
+}
+QLabel {
+  font-size: 10px;
+}</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:WFENG${ENG}_INIT</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
      </property>
     </widget>
    </item>
@@ -79,7 +153,7 @@ QTabBar::tab:!selected {
 }
 
 QTabBar::tab:!selected:hover {
-    background: #999;
+    background:  rgb(179,211,221);
 }
 
 QTabBar::tab:top:!selected {
@@ -139,7 +213,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
 }</string>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -226,6 +300,11 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
   </layout>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
+  </customwidget>
   <customwidget>
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>

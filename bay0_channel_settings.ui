@@ -132,7 +132,7 @@ QTabBar::tab:!selected {
 }
 
 QTabBar::tab:!selected:hover {
-    background: #999;
+    background:  rgb(179,211,221);
 }
 
 QTabBar::tab:top:!selected {
@@ -202,6 +202,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <string>Stream Ch 0</string>
           </attribute>
           <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
            <item>
             <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
              <property name="toolTip">
@@ -222,6 +234,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <string>Stream Ch 1</string>
           </attribute>
           <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
            <item>
             <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
              <property name="toolTip">
@@ -242,6 +266,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <string>Stream Ch 2</string>
           </attribute>
           <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
            <item>
             <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
              <property name="toolTip">
@@ -262,6 +298,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <string>Stream Ch 3</string>
           </attribute>
           <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
            <item>
             <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
              <property name="toolTip">

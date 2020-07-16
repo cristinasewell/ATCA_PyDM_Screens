@@ -36,20 +36,24 @@
     background-color: rgb(182, 194, 198);
     border-color: rgb(182, 204, 212) rgb(82, 104, 112) rgb(82, 104, 112) rgb(182,204,212);
     border-style: outset;
-    border-radius: 4px;
-    border-width: 3px; 
-}
-QPushButton:flat {
-    border: none; /* no border for a flat push button */
+    border-radius: 2px;
+    border-width: 2px; 
+    padding: 5px;
 }
 QPushButton:hover {
    background-color: rgb(154,170,176);
 }
 QPushButton:pressed {
-    background-color: rgb(139,195,186);
+    background-color: rgb(104,198,176);
     border-style: inset;
     border-width: 3px;
-	border-color: rgb(47,91,84);
+	border-color: rgb(32,86,73);
+}
+QPushButton:checked{
+    background-color: rgb(104,198,176);
+    border-style: inset;
+    border-width: 3px;
+	border-color: rgb(82, 104, 112)  rgb(182, 204, 212) rgb(182,204,212) rgb(82, 104, 112) ;
 }
 
 QLineEdit {
@@ -60,26 +64,6 @@ QLineEdit {
 }
 QLabel {
   font-size: 10px;
-}
-
-QScrollBar:horizontal {
-  border: 1px solid #32414B;
-}
-QScrollBar:vertical {
-  border: 1px solid #32414B;
-}
-QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
-  background: none;
-}
-
-QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
-  background: none;
-}
-QScrollBar::handle:horizontal {
-  border: 1px solid black;
-}
-QScrollBar::handle:vertical {
-  border: 1px solid black;
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">

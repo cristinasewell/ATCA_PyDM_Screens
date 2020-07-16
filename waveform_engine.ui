@@ -18,7 +18,7 @@
   </property>
   <property name="font">
    <font>
-    <pointsize>9</pointsize>
+    <pointsize>10</pointsize>
    </font>
   </property>
   <property name="windowTitle">
@@ -31,18 +31,22 @@
     border-style: outset;
     border-radius: 2px;
     border-width: 2px; 
-}
-QPushButton:flat {
-    border: none; /* no border for a flat push button */
+    padding: 5px;
 }
 QPushButton:hover {
    background-color: rgb(154,170,176);
 }
 QPushButton:pressed {
-    background-color: rgb(102,124,132);
+    background-color: rgb(104,198,176);
     border-style: inset;
     border-width: 3px;
-	border-color: rgb(72, 94, 102);
+	border-color: rgb(32,86,73);
+}
+QPushButton:checked{
+    background-color: rgb(104,198,176);
+    border-style: inset;
+    border-width: 3px;
+	border-color: rgb(82, 104, 112)  rgb(182, 204, 212) rgb(182,204,212) rgb(82, 104, 112) ;
 }
 
 QLineEdit {
@@ -233,7 +237,7 @@ QLabel {
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>0</height>
+         <height>24</height>
         </size>
        </property>
        <property name="maximumSize">
@@ -250,8 +254,11 @@ QLabel {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <property name="channel" stdset="0">
-        <string>ca://$[DEVICE}:WFENG${ENG}_ENABLE${CH}</string>
+        <string>ca://${DEVICE}:WFENG${ENG}_ENABLE${CH}</string>
        </property>
        <property name="orientation" stdset="0">
         <enum>Qt::Horizontal</enum>
@@ -313,7 +320,7 @@ QLabel {
         <string/>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:WFENG${ENG}_WADDR${CH}</string>
+        <string>ca://${DEVICE}:WFENG${ENG}_WRADDR${CH}</string>
        </property>
       </widget>
      </item>
@@ -451,6 +458,9 @@ QLabel {
        </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:WFENG${ENG}_MODE${CH}</string>
