@@ -18,7 +18,7 @@
   </property>
   <property name="font">
    <font>
-    <pointsize>10</pointsize>
+    <pointsize>9</pointsize>
    </font>
   </property>
   <property name="windowTitle">
@@ -141,7 +141,7 @@ QLabel {
            </property>
            <property name="font">
             <font>
-             <pointsize>10</pointsize>
+             <pointsize>9</pointsize>
             </font>
            </property>
            <property name="toolTip">
@@ -193,7 +193,7 @@ QLabel {
            </property>
            <property name="font">
             <font>
-             <pointsize>10</pointsize>
+             <pointsize>9</pointsize>
             </font>
            </property>
            <property name="toolTip">
@@ -575,7 +575,7 @@ QLabel {
            </property>
            <property name="font">
             <font>
-             <pointsize>10</pointsize>
+             <pointsize>9</pointsize>
             </font>
            </property>
            <property name="toolTip">

@@ -55,12 +55,21 @@ QLineEdit {
   border-color: rgb(66,77,96);
   border-style: inset;
   border-width: 2px 1px 1px 2px;
-}
-QLabel {
-  font-size: 10px;
 }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
    <item>
     <widget class="QLabel" name="label">
      <property name="sizePolicy">
@@ -93,8 +102,8 @@ QLabel {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>402</width>
-        <height>487</height>
+        <width>422</width>
+        <height>488</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -180,16 +189,6 @@ QPushButton:checked{
     border-style: inset;
     border-width: 3px;
 	border-color: rgb(82, 104, 112)  rgb(182, 204, 212) rgb(182,204,212) rgb(82, 104, 112) ;
-}
-
-QLineEdit {
-  background-color: rgb(218,223,230);
-  border-color: rgb(66,77,96);
-  border-style: inset;
-  border-width: 2px 1px 1px 2px;
-}
-QLabel {
-  font-size: 10px;
 }</string>
            </property>
            <property name="text">
@@ -613,7 +612,7 @@ QLabel {
            </property>
            <property name="font">
             <font>
-             <pointsize>10</pointsize>
+             <pointsize>9</pointsize>
             </font>
            </property>
            <property name="toolTip">
@@ -659,7 +658,7 @@ QLabel {
            </property>
            <property name="font">
             <font>
-             <pointsize>10</pointsize>
+             <pointsize>9</pointsize>
             </font>
            </property>
            <property name="toolTip">
@@ -705,7 +704,7 @@ QLabel {
            </property>
            <property name="font">
             <font>
-             <pointsize>10</pointsize>
+             <pointsize>9</pointsize>
             </font>
            </property>
            <property name="toolTip">
@@ -772,7 +771,7 @@ QLabel {
            </property>
            <property name="font">
             <font>
-             <pointsize>10</pointsize>
+             <pointsize>9</pointsize>
             </font>
            </property>
            <property name="toolTip">
@@ -809,6 +808,14 @@ QLabel {
          </item>
          <item row="0" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_8">
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
            <property name="toolTip">
             <string/>
            </property>
