@@ -64,6 +64,11 @@
      </item>
      <item>
       <widget class="PyDMPushButton" name="PyDMPushButton">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -101,6 +106,9 @@ QLineEdit {
 QLabel {
   font-size: 10px;
 }</string>
+       </property>
+       <property name="text">
+        <string>Initialize</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:WFENG${ENG}_INIT</string>
