@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>408</width>
-    <height>615</height>
+    <width>308</width>
+    <height>493</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -24,6 +24,57 @@
   </property>
   <property name="windowTitle">
    <string>Bay0 Channel Stream</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+    background-color: rgb(182, 194, 198);
+    border-color: rgb(182, 204, 212) rgb(82, 104, 112) rgb(82, 104, 112) rgb(182,204,212);
+    border-style: outset;
+    border-radius: 4px;
+    border-width: 3px; 
+}
+QPushButton:flat {
+    border: none; /* no border for a flat push button */
+}
+QPushButton:hover {
+   background-color: rgb(154,170,176);
+}
+QPushButton:pressed {
+    background-color: rgb(139,195,186);
+    border-style: inset;
+    border-width: 3px;
+	border-color: rgb(47,91,84);
+}
+
+QLineEdit {
+  background-color: rgb(218,223,230);
+  border-color: rgb(66,77,96);
+  border-style: inset;
+  border-width: 2px 1px 1px 2px;
+}
+QLabel {
+  font-size: 10px;
+}
+
+QScrollBar:horizontal {
+  border: 1px solid #32414B;
+}
+QScrollBar:vertical {
+  border: 1px solid #32414B;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+  background: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+  background: none;
+}
+QScrollBar::handle:horizontal {
+  border: 1px solid black;
+}
+QScrollBar::handle:vertical {
+  border: 1px solid black;
+}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
    <property name="leftMargin">
@@ -48,8 +99,7 @@
      </property>
      <property name="styleSheet">
       <string notr="true">QLabel{
-  color:#030923;
-  font-size: 16px;
+  font-size: 12px;
   font: bold;
 }</string>
      </property>
@@ -68,12 +118,13 @@
      </property>
      <item row="0" column="0">
       <widget class="QLabel" name="label_15">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Current Mux Select:</string>
@@ -92,12 +143,13 @@
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="label_14">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Input Mux Select</string>
@@ -114,6 +166,26 @@
        </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(253,224,181);
+    border-color: rgb(253,224,181) rgb(172,104,4) rgb(172,104,4) rgb(253,224,181);
+    border-style: outset;
+    border-radius: 4px;
+    border-width: 3px; 
+}
+QPushButton:flat {
+    border: none; /* no border for a flat push button */
+}
+QPushButton:hover {
+   background-color: rgb(233,204,161);
+}
+QPushButton:pressed {
+    background-color: rgb(233,204,161);
+    border-style: inset;
+    border-width: 3px;
+}</string>
        </property>
        <property name="text">
         <string>Down Converter</string>
@@ -142,12 +214,13 @@
      </item>
      <item row="4" column="0">
       <widget class="QLabel" name="label_13">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Trigger Daq</string>
@@ -166,19 +239,7 @@
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton {
-  background-color: #1E646E;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:pressed{
-  background-color: #023459;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Trigger</string>
@@ -203,12 +264,13 @@ QPushButton:hover{
      </item>
      <item row="6" column="0">
       <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Stream Pause</string>
@@ -219,14 +281,16 @@ QPushButton:hover{
       <widget class="PyDMLabel" name="PyDMLabel">
        <property name="font">
         <font>
-         <pointsize>10</pointsize>
+         <pointsize>-1</pointsize>
         </font>
        </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
        </property>
        <property name="text">
         <string/>
@@ -251,12 +315,13 @@ QPushButton:hover{
      </item>
      <item row="8" column="0">
       <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Stream Ready</string>
@@ -267,14 +332,16 @@ QPushButton:hover{
       <widget class="PyDMLabel" name="PyDMLabel_2">
        <property name="font">
         <font>
-         <pointsize>10</pointsize>
+         <pointsize>-1</pointsize>
         </font>
        </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
        </property>
        <property name="text">
         <string/>
@@ -293,12 +360,13 @@ QPushButton:hover{
      </item>
      <item row="10" column="0">
       <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Stream Overflow</string>
@@ -309,14 +377,16 @@ QPushButton:hover{
       <widget class="PyDMLabel" name="PyDMLabel_3">
        <property name="font">
         <font>
-         <pointsize>10</pointsize>
+         <pointsize>-1</pointsize>
         </font>
        </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
        </property>
        <property name="text">
         <string/>
@@ -335,12 +405,13 @@ QPushButton:hover{
      </item>
      <item row="12" column="0">
       <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Stream Error</string>
@@ -351,14 +422,16 @@ QPushButton:hover{
       <widget class="PyDMLabel" name="PyDMLabel_4">
        <property name="font">
         <font>
-         <pointsize>10</pointsize>
+         <pointsize>-1</pointsize>
         </font>
        </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
        </property>
        <property name="text">
         <string/>
@@ -377,12 +450,13 @@ QPushButton:hover{
      </item>
      <item row="14" column="0">
       <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Input Data Valid</string>
@@ -393,14 +467,16 @@ QPushButton:hover{
       <widget class="PyDMLabel" name="PyDMLabel_5">
        <property name="font">
         <font>
-         <pointsize>10</pointsize>
+         <pointsize>-1</pointsize>
         </font>
        </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
        </property>
        <property name="text">
         <string/>
@@ -419,12 +495,13 @@ QPushButton:hover{
      </item>
      <item row="16" column="0">
       <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Stream Enabled</string>
@@ -435,14 +512,16 @@ QPushButton:hover{
       <widget class="PyDMLabel" name="PyDMLabel_6">
        <property name="font">
         <font>
-         <pointsize>10</pointsize>
+         <pointsize>-1</pointsize>
         </font>
        </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
        </property>
        <property name="text">
         <string/>
@@ -461,12 +540,13 @@ QPushButton:hover{
      </item>
      <item row="18" column="0">
       <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Frame Counter</string>
@@ -477,14 +557,16 @@ QPushButton:hover{
       <widget class="PyDMLabel" name="PyDMLabel_7">
        <property name="font">
         <font>
-         <pointsize>10</pointsize>
+         <pointsize>-1</pointsize>
         </font>
        </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
        </property>
        <property name="text">
         <string/>
@@ -503,12 +585,13 @@ QPushButton:hover{
      </item>
      <item row="20" column="0">
       <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Format Sign Width</string>
@@ -521,11 +604,7 @@ QPushButton:hover{
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLineEdit{
-  border-width: 1px; 
-  border-style: solid; 
-  border-color: #002C2F;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DAQMUX0_FORMATSIGNWIDTH${CH}</string>
@@ -541,12 +620,13 @@ QPushButton:hover{
      </item>
      <item row="22" column="0">
       <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Format Data Width</string>
@@ -559,11 +639,7 @@ QPushButton:hover{
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLineEdit{
-  border-width: 1px; 
-  border-style: solid; 
-  border-color: #002C2F;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DAQMUX0_FORMATDATAWIDTH${CH}</string>
@@ -579,12 +655,13 @@ QPushButton:hover{
      </item>
      <item row="24" column="0">
       <widget class="QLabel" name="label_11">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Format Sign</string>
@@ -593,23 +670,17 @@ QPushButton:hover{
      </item>
      <item row="24" column="1">
       <widget class="PyDMEnumButton" name="PyDMEnumButton">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>48</height>
+        </size>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DAQMUX0_FORMATSIGN${CH}</string>
@@ -646,12 +717,13 @@ QPushButton:hover{
      </item>
      <item row="26" column="0">
       <widget class="QLabel" name="label_12">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Decimation</string>
@@ -660,23 +732,17 @@ QPushButton:hover{
      </item>
      <item row="26" column="1">
       <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>48</height>
+        </size>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DAQMUX0_DECIMATION${CH}</string>

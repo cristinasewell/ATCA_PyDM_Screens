@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>580</height>
+    <height>590</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -28,12 +28,13 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">QLabel{
-  color:#030923;
-  font-size: 16px;
-  font-style: bold;
-}</string>
+      <string notr="true"/>
      </property>
      <property name="text">
       <string>Bay1 Channel Settings</string>
@@ -103,7 +104,7 @@ QTabBar::tab:selected {
 }
 
 QTabBar::tab:!selected {
-    background: silver;
+    background: rgb(159,191,201);
 }
 
 QTabBar::tab:!selected:hover {
@@ -122,7 +123,7 @@ QTabBar::tab:top, QTabBar::tab:bottom {
     min-width: 6ex;
     margin-right: -1px;
     padding: 4px 8px 4px 8px;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 QTabBar::tab:top:selected {
@@ -150,7 +151,7 @@ QTabBar::tab:left, QTabBar::tab:right {
     min-height: 6ex;
     margin-bottom: -1px;
     padding: 8px 5px 8px 5px;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 QTabBar::tab:left:selected {

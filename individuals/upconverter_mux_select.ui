@@ -31,6 +31,57 @@
   <property name="windowTitle">
    <string>Up Converter</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+    background-color: rgb(182, 194, 198);
+    border-color: rgb(182, 204, 212) rgb(82, 104, 112) rgb(82, 104, 112) rgb(182,204,212);
+    border-style: outset;
+    border-radius: 4px;
+    border-width: 3px; 
+}
+QPushButton:flat {
+    border: none; /* no border for a flat push button */
+}
+QPushButton:hover {
+   background-color: rgb(154,170,176);
+}
+QPushButton:pressed {
+    background-color: rgb(139,195,186);
+    border-style: inset;
+    border-width: 3px;
+	border-color: rgb(47,91,84);
+}
+
+QLineEdit {
+  background-color: rgb(218,223,230);
+  border-color: rgb(66,77,96);
+  border-style: inset;
+  border-width: 2px 1px 1px 2px;
+}
+QLabel {
+  font-size: 10px;
+}
+
+QScrollBar:horizontal {
+  border: 1px solid #32414B;
+}
+QScrollBar:vertical {
+  border: 1px solid #32414B;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+  background: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+  background: none;
+}
+QScrollBar::handle:horizontal {
+  border: 1px solid black;
+}
+QScrollBar::handle:vertical {
+  border: 1px solid black;
+}</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
     <number>0</number>
@@ -78,7 +129,7 @@
           <x>0</x>
           <y>0</y>
           <width>567</width>
-          <height>622</height>
+          <height>610</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -111,19 +162,7 @@
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>debugValues(1)</string>
@@ -174,7 +213,7 @@ QPushButton:hover{
                 <string/>
                </property>
                <property name="styleSheet">
-                <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
+                <string notr="true"/>
                </property>
                <property name="channel" stdset="0">
                 <string>ca://${DEVICE}:UPC_ATTEN1</string>
@@ -199,19 +238,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>debugValues(0)</string>
@@ -276,7 +303,7 @@ QPushButton:hover{
                 <string/>
                </property>
                <property name="styleSheet">
-                <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
+                <string notr="true"/>
                </property>
                <property name="channel" stdset="0">
                 <string>ca://${DEVICE}:UPC_ATTEN2</string>
@@ -297,6 +324,26 @@ QPushButton:hover{
              <property name="toolTip">
               <string/>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: rgb(253,224,181);
+    border-color: rgb(253,224,181) rgb(172,104,4) rgb(172,104,4) rgb(253,224,181);
+    border-style: outset;
+    border-radius: 4px;
+    border-width: 3px; 
+}
+QPushButton:flat {
+    border: none; /* no border for a flat push button */
+}
+QPushButton:hover {
+   background-color: rgb(233,204,161);
+}
+QPushButton:pressed {
+    background-color: rgb(233,204,161);
+    border-style: inset;
+    border-width: 3px;
+}</string>
+             </property>
              <property name="text">
               <string>Up Converter </string>
              </property>
@@ -316,19 +363,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>dacValues(5)</string>
@@ -389,7 +424,7 @@ QPushButton:hover{
                 <string/>
                </property>
                <property name="styleSheet">
-                <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
+                <string notr="true"/>
                </property>
                <property name="channel" stdset="0">
                 <string>ca://${DEVICE}:UPC_ATTEN3</string>
@@ -404,19 +439,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>adcValues(3)</string>
@@ -448,19 +471,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>debugValues(2)</string>
@@ -492,19 +503,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>dacValues(0)</string>
@@ -566,19 +565,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>adcValues(4)</string>
@@ -619,7 +606,7 @@ QPushButton:hover{
                 <string/>
                </property>
                <property name="styleSheet">
-                <string notr="true">QLineEdit{ border-width: 1px; border-style: solid; border-color: #002C2F; }</string>
+                <string notr="true"/>
                </property>
                <property name="channel" stdset="0">
                 <string>ca://${DEVICE}:UPC_ATTEN0</string>
@@ -674,19 +661,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>adcValues(1)</string>
@@ -735,19 +710,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>adcValues(5)</string>
@@ -772,19 +735,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>dacValues(2)</string>
@@ -858,19 +809,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>debugValues(2)</string>
@@ -895,19 +834,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>dacValues(4)</string>
@@ -987,19 +914,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>adcValues(0)</string>
@@ -1113,19 +1028,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>dacValues(6)</string>
@@ -1153,19 +1056,7 @@ QPushButton:hover{
               <bool>false</bool>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>Disabled</string>
@@ -1250,19 +1141,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>dacValues(1)</string>
@@ -1287,19 +1166,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>Test</string>
@@ -1320,12 +1187,13 @@ QPushButton:hover{
            </item>
            <item row="3" column="2">
             <widget class="QLabel" name="label_17">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
              <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>Attenuators</string>
@@ -1345,42 +1213,13 @@ QPushButton:hover{
              </property>
             </widget>
            </item>
-           <item row="0" column="1" colspan="5">
-            <widget class="QLabel" name="label_28">
-             <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#261326;
-  font-size: 12px;
-  font: bold;
-}</string>
-             </property>
-             <property name="text">
-              <string>AMC Up Converter Settings</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
            <item row="30" column="5">
             <widget class="PyDMPushButton" name="PyDMPushButton_37">
              <property name="toolTip">
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>dacValues(3)</string>
@@ -1415,12 +1254,13 @@ QPushButton:hover{
            </item>
            <item row="3" column="7">
             <widget class="QLabel" name="label_18">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
              <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>Temperatures</string>
@@ -1433,19 +1273,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>adcValues(6)</string>
@@ -1470,19 +1298,7 @@ QPushButton:hover{
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton {
-  background-color: #50697D;
-  border-color: #F3B749;
-  color:white;
-  font-size: 10px;
-}
-QPushButton:checked{
-  background-color: #14B09B;
-  font: bold
-}
-QPushButton:hover{
-  border-style: outset;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>adcValues(2)</string>
@@ -1570,15 +1386,16 @@ QPushButton:hover{
            </item>
            <item row="3" column="4" colspan="2">
             <widget class="PyDMLabel" name="PyDMLabel_22">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
              <property name="toolTip">
               <string/>
              </property>
              <property name="styleSheet">
-              <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>Input Mux Select</string>
@@ -1615,11 +1432,16 @@ QPushButton:hover{
             <widget class="PyDMLabel" name="PyDMLabel">
              <property name="font">
               <font>
-               <pointsize>10</pointsize>
+               <pointsize>-1</pointsize>
               </font>
              </property>
              <property name="toolTip">
               <string/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
              </property>
              <property name="text">
               <string/>
@@ -1633,11 +1455,16 @@ QPushButton:hover{
             <widget class="PyDMLabel" name="PyDMLabel_2">
              <property name="font">
               <font>
-               <pointsize>10</pointsize>
+               <pointsize>-1</pointsize>
               </font>
              </property>
              <property name="toolTip">
               <string/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
              </property>
              <property name="text">
               <string/>
@@ -1651,11 +1478,16 @@ QPushButton:hover{
             <widget class="PyDMLabel" name="PyDMLabel_3">
              <property name="font">
               <font>
-               <pointsize>10</pointsize>
+               <pointsize>-1</pointsize>
               </font>
              </property>
              <property name="toolTip">
               <string/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
              </property>
              <property name="text">
               <string/>
@@ -1669,17 +1501,38 @@ QPushButton:hover{
             <widget class="PyDMLabel" name="PyDMLabel_4">
              <property name="font">
               <font>
-               <pointsize>10</pointsize>
+               <pointsize>-1</pointsize>
               </font>
              </property>
              <property name="toolTip">
               <string/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+  background-color: rgb(222,229,234);
+}</string>
              </property>
              <property name="text">
               <string/>
              </property>
              <property name="channel" stdset="0">
               <string>ca://${DEVICE}:UPC_TEMP2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="8">
+            <widget class="QLabel" name="label_28">
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+  font-size: 12px;
+  font: bold;
+}</string>
+             </property>
+             <property name="text">
+              <string>AMC Up Converter Settings</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
