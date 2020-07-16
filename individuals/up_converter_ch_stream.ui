@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>428</width>
-    <height>511</height>
+    <height>513</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -60,7 +60,7 @@ QLabel {
   font-size: 10px;
 }</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
    <item>
     <widget class="QLabel" name="label">
      <property name="sizePolicy">
@@ -157,7 +157,7 @@ font: 14px;
      <item row="2" column="1">
       <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -170,19 +170,34 @@ font: 14px;
     background-color: rgb(253,224,181);
     border-color: rgb(253,224,181) rgb(172,104,4) rgb(172,104,4) rgb(253,224,181);
     border-style: outset;
-    border-radius: 4px;
-    border-width: 3px; 
-}
-QPushButton:flat {
-    border: none; /* no border for a flat push button */
+    border-radius: 2px;
+    border-width: 2px; 
+    padding: 5px;
 }
 QPushButton:hover {
    background-color: rgb(233,204,161);
 }
 QPushButton:pressed {
-    background-color: rgb(233,204,161);
+   background-color: rgb(233,204,161);
     border-style: inset;
     border-width: 3px;
+	border-color: rgb(32,86,73);
+}
+QPushButton:checked{
+    background-color: rgb(104,198,176);
+    border-style: inset;
+    border-width: 3px;
+	border-color: rgb(82, 104, 112)  rgb(182, 204, 212) rgb(182,204,212) rgb(82, 104, 112) ;
+}
+
+QLineEdit {
+  background-color: rgb(218,223,230);
+  border-color: rgb(66,77,96);
+  border-style: inset;
+  border-width: 2px 1px 1px 2px;
+}
+QLabel {
+  font-size: 10px;
 }</string>
        </property>
        <property name="text">
@@ -228,7 +243,7 @@ QPushButton:pressed {
      <item row="4" column="1">
       <widget class="PyDMPushButton" name="PyDMPushButton_5">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -238,11 +253,6 @@ QPushButton:pressed {
          <width>16777215</width>
          <height>48</height>
         </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
        </property>
        <property name="toolTip">
         <string/>
@@ -603,6 +613,12 @@ QPushButton:pressed {
      </item>
      <item row="20" column="1">
       <widget class="PyDMLineEdit" name="PyDMLineEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="font">
         <font>
          <pointsize>10</pointsize>
@@ -643,6 +659,12 @@ QPushButton:pressed {
      </item>
      <item row="22" column="1">
       <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="font">
         <font>
          <pointsize>10</pointsize>
