@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>DaqMux0 Input Select</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="spacing">
@@ -47,7 +47,7 @@
       <enum>QFrame::StyledPanel</enum>
      </property>
      <property name="text">
-      <string>Imput Mux Select ${CH}</string>
+      <string>Input Mux Select ${CH}</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

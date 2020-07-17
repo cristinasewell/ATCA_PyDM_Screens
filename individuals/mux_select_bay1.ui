@@ -50,7 +50,7 @@
       <enum>QFrame::StyledPanel</enum>
      </property>
      <property name="text">
-      <string>Imput Mux Select Ch: ${CH}</string>
+      <string>Input Mux Select Ch: ${CH}</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
