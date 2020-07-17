@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>428</width>
-    <height>513</height>
+    <width>353</width>
+    <height>611</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -57,15 +57,15 @@ QLineEdit {
   border-width: 2px 1px 1px 2px;
 }</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1">
    <property name="leftMargin">
-    <number>2</number>
+    <number>4</number>
    </property>
    <property name="topMargin">
     <number>2</number>
    </property>
    <property name="rightMargin">
-    <number>2</number>
+    <number>4</number>
    </property>
    <property name="bottomMargin">
     <number>2</number>
@@ -95,6 +95,28 @@ QLineEdit {
     </widget>
    </item>
    <item>
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string/>
+     </property>
+     <property name="filename" stdset="0">
+      <string>individuals/mux_select_bay1.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QScrollArea" name="scrollArea">
      <property name="widgetResizable">
       <bool>true</bool>
@@ -104,32 +126,43 @@ QLineEdit {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>422</width>
-        <height>485</height>
+        <width>343</width>
+        <height>479</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
        <item>
         <layout class="QFormLayout" name="formLayout">
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_15">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true"/>
-           </property>
-           <property name="text">
-            <string>Current Mux Select:</string>
-           </property>
-          </widget>
-         </item>
+         <property name="labelAlignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="formAlignment">
+          <set>Qt::AlignHCenter|Qt::AlignTop</set>
+         </property>
+         <property name="leftMargin">
+          <number>2</number>
+         </property>
+         <property name="topMargin">
+          <number>2</number>
+         </property>
+         <property name="rightMargin">
+          <number>2</number>
+         </property>
+         <property name="bottomMargin">
+          <number>2</number>
+         </property>
          <item row="1" column="0" colspan="2">
           <widget class="Line" name="line">
            <property name="lineWidth">
@@ -140,81 +173,14 @@ QLineEdit {
            </property>
           </widget>
          </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_14">
-           <property name="font">
-            <font/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true"/>
-           </property>
-           <property name="text">
-            <string>Input Mux Select</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-    background-color: rgb(253,224,181);
-    border-color: rgb(253,224,181) rgb(172,104,4) rgb(172,104,4) rgb(253,224,181);
-    border-style: outset;
-    border-radius: 2px;
-    border-width: 2px; 
-    padding: 5px;
-}
-QPushButton:hover {
-   background-color: rgb(233,204,161);
-}
-QPushButton:pressed {
-   background-color: rgb(233,204,161);
-    border-style: inset;
-    border-width: 3px;
-	border-color: rgb(32,86,73);
-}
-QPushButton:checked{
-    background-color: rgb(104,198,176);
-    border-style: inset;
-    border-width: 3px;
-	border-color: rgb(82, 104, 112)  rgb(182, 204, 212) rgb(182,204,212) rgb(82, 104, 112) ;
-}</string>
-           </property>
-           <property name="text">
-            <string>Up Converter</string>
-           </property>
-           <property name="filenames" stdset="0">
-            <stringlist>
-             <string>upconverter_mux_select.ui</string>
-            </stringlist>
-           </property>
-           <property name="macros" stdset="0">
-            <stringlist>
-             <string>{&quot;MUX&quot;:&quot;1&quot;}</string>
-            </stringlist>
-           </property>
-           <property name="openInNewWindow" stdset="0">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0" colspan="2">
+         <item row="4" column="0" colspan="2">
           <widget class="Line" name="line_2">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
-         <item row="4" column="0">
+         <item row="6" column="0">
           <widget class="QLabel" name="label_13">
            <property name="font">
             <font/>
@@ -227,7 +193,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="4" column="1">
+         <item row="6" column="1">
           <widget class="PyDMPushButton" name="PyDMPushButton_5">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -258,7 +224,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="5" column="0" colspan="2">
+         <item row="7" column="0" colspan="2">
           <widget class="Line" name="line_3">
            <property name="lineWidth">
             <number>3</number>
@@ -268,7 +234,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="6" column="0">
+         <item row="8" column="0">
           <widget class="QLabel" name="label_3">
            <property name="font">
             <font/>
@@ -281,7 +247,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="6" column="1">
+         <item row="8" column="1">
           <widget class="PyDMLabel" name="PyDMLabel">
            <property name="font">
             <font/>
@@ -302,14 +268,14 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="7" column="0" colspan="2">
+         <item row="9" column="0" colspan="2">
           <widget class="Line" name="line_4">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
-         <item row="8" column="0">
+         <item row="10" column="0">
           <widget class="QLabel" name="label_4">
            <property name="font">
             <font/>
@@ -322,7 +288,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="8" column="1">
+         <item row="10" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_2">
            <property name="font">
             <font/>
@@ -343,14 +309,14 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="9" column="0" colspan="2">
+         <item row="11" column="0" colspan="2">
           <widget class="Line" name="line_5">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
-         <item row="10" column="0">
+         <item row="12" column="0">
           <widget class="QLabel" name="label_2">
            <property name="font">
             <font/>
@@ -363,7 +329,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="10" column="1">
+         <item row="12" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_3">
            <property name="font">
             <font/>
@@ -384,14 +350,14 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="11" column="0" colspan="2">
+         <item row="13" column="0" colspan="2">
           <widget class="Line" name="line_6">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
-         <item row="12" column="0">
+         <item row="14" column="0">
           <widget class="QLabel" name="label_5">
            <property name="font">
             <font/>
@@ -404,7 +370,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="12" column="1">
+         <item row="14" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_4">
            <property name="font">
             <font/>
@@ -425,14 +391,14 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="13" column="0" colspan="2">
+         <item row="15" column="0" colspan="2">
           <widget class="Line" name="line_7">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
-         <item row="14" column="0">
+         <item row="16" column="0">
           <widget class="QLabel" name="label_6">
            <property name="font">
             <font/>
@@ -445,7 +411,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="14" column="1">
+         <item row="16" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_5">
            <property name="font">
             <font/>
@@ -466,14 +432,14 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="15" column="0" colspan="2">
+         <item row="17" column="0" colspan="2">
           <widget class="Line" name="line_8">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
-         <item row="16" column="0">
+         <item row="18" column="0">
           <widget class="QLabel" name="label_7">
            <property name="font">
             <font/>
@@ -486,7 +452,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="16" column="1">
+         <item row="18" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_6">
            <property name="font">
             <font/>
@@ -507,14 +473,14 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="17" column="0" colspan="2">
+         <item row="19" column="0" colspan="2">
           <widget class="Line" name="line_9">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
-         <item row="18" column="0">
+         <item row="20" column="0">
           <widget class="QLabel" name="label_8">
            <property name="font">
             <font/>
@@ -527,7 +493,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="18" column="1">
+         <item row="20" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_7">
            <property name="font">
             <font/>
@@ -548,14 +514,14 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="19" column="0" colspan="2">
+         <item row="21" column="0" colspan="2">
           <widget class="Line" name="line_10">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
-         <item row="20" column="0">
+         <item row="22" column="0">
           <widget class="QLabel" name="label_9">
            <property name="font">
             <font/>
@@ -568,7 +534,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="20" column="1">
+         <item row="22" column="1">
           <widget class="PyDMLineEdit" name="PyDMLineEdit">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -592,14 +558,14 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="21" column="0" colspan="2">
+         <item row="23" column="0" colspan="2">
           <widget class="Line" name="line_11">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
-         <item row="22" column="0">
+         <item row="24" column="0">
           <widget class="QLabel" name="label_10">
            <property name="font">
             <font/>
@@ -612,7 +578,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="22" column="1">
+         <item row="24" column="1">
           <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -636,14 +602,14 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="23" column="0" colspan="2">
+         <item row="25" column="0" colspan="2">
           <widget class="Line" name="line_12">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
-         <item row="24" column="0">
+         <item row="26" column="0">
           <widget class="QLabel" name="label_11">
            <property name="font">
             <font/>
@@ -656,7 +622,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="24" column="1">
+         <item row="26" column="1">
           <widget class="PyDMEnumButton" name="PyDMEnumButton">
            <property name="maximumSize">
             <size>
@@ -701,14 +667,14 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="25" column="0" colspan="2">
+         <item row="27" column="0" colspan="2">
           <widget class="Line" name="line_13">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
-         <item row="26" column="0">
+         <item row="28" column="0">
           <widget class="QLabel" name="label_12">
            <property name="font">
             <font/>
@@ -721,7 +687,7 @@ QPushButton:checked{
            </property>
           </widget>
          </item>
-         <item row="26" column="1">
+         <item row="28" column="1">
           <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
            <property name="maximumSize">
             <size>
@@ -796,6 +762,79 @@ font: bold;
            </property>
           </widget>
          </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_15">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Current Mux Select:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(253,224,181);
+    border-color: rgb(253,224,181) rgb(172,104,4) rgb(172,104,4) rgb(253,224,181);
+    border-style: outset;
+    border-radius: 2px;
+    border-width: 2px; 
+    padding: 5px;
+}
+QPushButton:hover {
+   background-color: rgb(233,204,161);
+}
+QPushButton:pressed {
+   background-color: rgb(233,204,161);
+    border-style: inset;
+    border-width: 3px;
+	border-color: rgb(32,86,73);
+}
+QPushButton:checked{
+    background-color: rgb(104,198,176);
+    border-style: inset;
+    border-width: 3px;
+	border-color: rgb(82, 104, 112)  rgb(182, 204, 212) rgb(182,204,212) rgb(82, 104, 112) ;
+}</string>
+           </property>
+           <property name="text">
+            <string>Up Converter</string>
+           </property>
+           <property name="filenames" stdset="0">
+            <stringlist>
+             <string>upconverter_mux_select.ui</string>
+            </stringlist>
+           </property>
+           <property name="macros" stdset="0">
+            <stringlist>
+             <string>{&quot;MUX&quot;:&quot;1&quot;}</string>
+            </stringlist>
+           </property>
+           <property name="openInNewWindow" stdset="0">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
         </layout>
        </item>
       </layout>
@@ -824,6 +863,11 @@ font: bold;
    <class>PyDMPushButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
