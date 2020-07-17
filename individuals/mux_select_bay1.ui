@@ -43,6 +43,9 @@
        <pointsize>10</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
      </property>
@@ -58,6 +61,9 @@
     <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
      <property name="toolTip">
       <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
      </property>
      <property name="editable">
       <bool>false</bool>

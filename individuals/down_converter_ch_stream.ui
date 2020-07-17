@@ -111,6 +111,12 @@ QLineEdit {
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>60</height>
+          </size>
+         </property>
          <property name="toolTip">
           <string/>
          </property>
