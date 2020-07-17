@@ -145,12 +145,12 @@ QComboBox::drop-down {
      </item>
      <item>
       <property name="text">
-       <string>6: ADC4 [TF Panel: RIG MON]</string>
+       <string>6: ADC4 [F Panel: TRIG MON]</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>7: ADC5 [F Panel: DC IN]</string>
+       <string>7: ADC5 [F Panel: DC IN 1]</string>
       </property>
      </item>
      <item>
@@ -160,7 +160,7 @@ QComboBox::drop-down {
      </item>
      <item>
       <property name="text">
-       <string>9: DAC0 [F Panel: FP RF OUT]</string>
+       <string>9: DAC0 [F Panel: RF OUT]</string>
       </property>
      </item>
      <item>

@@ -737,9 +737,9 @@ QLineEdit {
            <property name="font">
             <font>
              <pointsize>14</pointsize>
-             <weight>75</weight>
+             <weight>50</weight>
              <italic>false</italic>
-             <bold>true</bold>
+             <bold>false</bold>
             </font>
            </property>
            <property name="toolTip">
@@ -748,7 +748,6 @@ QLineEdit {
            <property name="styleSheet">
             <string notr="true">QLabel{
 color:#7A2D59;
-font: bold;
 }</string>
            </property>
            <property name="text">
@@ -765,7 +764,7 @@ font: bold;
          <item row="0" column="0">
           <widget class="QLabel" name="label_15">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
