@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RTM</class>
+ <widget class="QWidget" name="RTM">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>345</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="2" column="0" colspan="2">
+    <widget class="Line" name="line_3">
+     <property name="styleSheet">
+      <string notr="true">QFrame{background:black}</string>
+     </property>
+     <property name="lineWidth">
+      <number>5</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" columnstretch="0,0">
+     <item row="12" column="0" colspan="2">
+      <widget class="Line" name="line_4">
+       <property name="styleSheet">
+        <string notr="true">QFrame{background:#85B8C8}</string>
+       </property>
+       <property name="lineWidth">
+        <number>5</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="2">
+      <widget class="Line" name="line_2">
+       <property name="styleSheet">
+        <string notr="true">QFrame{background:#283B42}</string>
+       </property>
+       <property name="lineWidth">
+        <number>5</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_23">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:white;
+  font-size: 14px;
+  font-style: bold;
+  background-color: #1D6A96;
+ }</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_26">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:white;
+  font-size: 14px;
+  font-style: bold;
+  background-color: #1D6A96;
+ }</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="11" column="1">
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="0" column="4">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_FAULTOUT</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_MOTR_ON</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_12">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_SLED_DETUNED</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Fault Out</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_37">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>SLED SML</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_14">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_SLED_SML</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="label_20">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>ADC Lock Status</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>RTM Summary</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_FAULTSUMY</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="label_21">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Motor running</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_35">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>SLED Detuned</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_11">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_SLED_TUNED</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_13">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_SLED_SUMY</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_ADCLOCK</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_36">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>SLED Summary</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_34">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>SLED Tuned</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>12</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:white;
+  font-size: 14px;
+  font-style: bold;
+  background-color:#003853
+}</string>
+       </property>
+       <property name="text">
+        <string>Threshold</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="1">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="4" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_MOTR_TUNING</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <widget class="QLabel" name="label_14">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Modulator Fault</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLabel" name="label_11">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Lower Detuned</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="QLabel" name="label_15">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Beam Current Under Threshold</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_RF_ON</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_11">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_MOTR_NOT_TUNED</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_LOWER_TUNED</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_10">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_CURR_OVER</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QLabel" name="label_13">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Motor Not Detuned</string>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_FP_OVER</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>RF ON</string>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_16">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_LOWER_DETUNED</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_14">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_UPPER_DETUNED</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_8">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_MOTR_NOT_DETUNED</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labelPosition" stdset="0">
+          <enum>QTabWidget::East</enum>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Motor Timeout</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="1">
+        <widget class="QLabel" name="label_17">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Beam Voltage Over Threshold</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_MOTR_DETUNING</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="1">
+        <widget class="QLabel" name="label_18">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Forward Power Over Threshold</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="label_8">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Lower Tuned</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_9">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_UPPER_TUNED</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_13">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_CURR_UNDER</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="1">
+        <widget class="QLabel" name="label_19">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Reflected Power Over Threshold</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_MOTR_TIMEOUT</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_MOD_FAULT</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="label_10">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Motor Not Tuned</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="label_9">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Upper Tuned</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QLabel" name="label_12">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Upper Detuned</string>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_7">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_RP_OVER</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="0">
+        <widget class="PyDMByteIndicator" name="PyDMByteIndicator_12">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_VOLT_OVER</string>
+         </property>
+         <property name="circles" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="labels" stdset="0">
+          <stringlist/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_6">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Motor Detuning</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="1">
+        <widget class="QLabel" name="label_16">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Beam Current Over Threshold</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="label_7">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Motor Tuning</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="13" column="1">
+      <widget class="QLabel" name="label_45">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+  color:#030923;
+  font-size: 14px;
+  font-style: bold;
+  background-color:#85B8C8
+}</string>
+       </property>
+       <property name="text">
+        <string>SLED - Modulator Connector Inputs</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0" colspan="2">
+        <widget class="PyDMPushButton" name="PyDMPushButton">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+  background-color: #CC8A4D;
+  border-color: #32435F;
+  color:black;
+  font-size: 12px;
+}
+QPushButton:hover{
+  border-style: outset;
+}</string>
+         </property>
+         <property name="text">
+          <string>Clear Fault</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_CLEARFAULT</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_24">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>RTM Staus Hex</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RTM_STATUS_HEX</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="8" column="1">
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_30">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Beam Voltage:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_29">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Beam Current:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:BC_ILK_RAW</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_7">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:RE_ILK_RAW</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_8">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:SET_BC_ILK_RAW</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:SET_BV_ILK_RAW</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:BV_ILK_RAW</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_31">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Reflected Power:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_10">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:SET_RE_ILK_RAW</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_25">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+         </property>
+         <property name="text">
+          <string>Set Threshold</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="label_22">
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+  color:#030923;
+  font-size: 16px;
+  font-style: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>RTM Settings</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
