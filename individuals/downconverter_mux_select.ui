@@ -455,7 +455,7 @@ QLineEdit {
             <string/>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DNC_TEMP3</string>
+            <string>ca://${DEVICE}:DNC_TEMP2</string>
            </property>
           </widget>
          </item>
@@ -953,7 +953,7 @@ QPushButton:pressed {
               <string notr="true"/>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:DNC_ATTEN4</string>
+              <string>ca://${DEVICE}:DNC_ATTEN5</string>
              </property>
             </widget>
            </item>
@@ -1065,7 +1065,7 @@ QPushButton:pressed {
               <string notr="true"/>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:DNC_ATTEN2</string>
+              <string>ca://${DEVICE}:DNC_ATTEN3</string>
              </property>
             </widget>
            </item>
@@ -1111,7 +1111,7 @@ QPushButton:pressed {
               <string notr="true"/>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:DNC_ATTEN3</string>
+              <string>ca://${DEVICE}:DNC_ATTEN2</string>
              </property>
             </widget>
            </item>
@@ -1150,7 +1150,7 @@ QPushButton:pressed {
               <string notr="true"/>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:DNC_ATTEN5</string>
+              <string>ca://${DEVICE}:DNC_ATTEN4</string>
              </property>
             </widget>
            </item>
@@ -1622,7 +1622,7 @@ QPushButton:pressed {
             <string/>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:DNC_TEMP2</string>
+            <string>ca://${DEVICE}:DNC_TEMP3</string>
            </property>
           </widget>
          </item>
@@ -1793,11 +1793,6 @@ QPushButton:pressed {
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMLineEdit</class>
    <extends>QLineEdit</extends>
    <header>pydm.widgets.line_edit</header>
@@ -1806,6 +1801,11 @@ QPushButton:pressed {
    <class>PyDMPushButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
