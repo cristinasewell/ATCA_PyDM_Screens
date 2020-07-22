@@ -498,45 +498,6 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="0">
-      <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>1</horstretch>
-         <verstretch>1</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Down Converter</string>
-       </property>
-       <property name="autoDefault">
-        <bool>false</bool>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>false</bool>
-       </property>
-       <property name="filenames" stdset="0">
-        <stringlist>
-         <string>down_converter_picture.ui</string>
-        </stringlist>
-       </property>
-       <property name="titles" stdset="0">
-        <stringlist/>
-       </property>
-       <property name="openInNewWindow" stdset="0">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
     </layout>
    </item>
   </layout>
@@ -551,11 +512,6 @@
    <class>PyDMLineEdit</class>
    <extends>QLineEdit</extends>
    <header>pydm.widgets.line_edit</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
   </customwidget>
  </customwidgets>
  <resources/>

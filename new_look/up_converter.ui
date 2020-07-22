@@ -268,33 +268,6 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="0">
-      <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-         <horstretch>1</horstretch>
-         <verstretch>1</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Up Converter </string>
-       </property>
-       <property name="filenames" stdset="0">
-        <stringlist>
-         <string>up_converter_picture.ui</string>
-        </stringlist>
-       </property>
-       <property name="openInNewWindow" stdset="0">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
      <item row="2" column="1">
       <layout class="QHBoxLayout" name="horizontalLayout_7">
        <item>
@@ -456,11 +429,6 @@
    <class>PyDMLineEdit</class>
    <extends>QLineEdit</extends>
    <header>pydm.widgets.line_edit</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
   </customwidget>
  </customwidgets>
  <resources/>
