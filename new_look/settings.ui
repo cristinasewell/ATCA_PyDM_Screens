@@ -67,7 +67,6 @@ QLineEdit {
 }
 PyDMLabel {
   background-color: rgb(238,243,250);
-  border-color: rgb(66,77,96);
 }
 
  QTabWidget::pane {

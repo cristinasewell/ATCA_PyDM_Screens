@@ -67,7 +67,6 @@ QLineEdit {
 }
 PyDMLabel {
   background-color: rgb(238,243,250);
-  border-color: rgb(66,77,96);
 }
 
  QTabWidget::pane {
@@ -322,7 +321,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <widget class="PyDMLabel" name="PyDMLabel">
             <property name="font">
              <font>
-              <pointsize>8</pointsize>
+              <pointsize>9</pointsize>
              </font>
             </property>
             <property name="toolTip">
