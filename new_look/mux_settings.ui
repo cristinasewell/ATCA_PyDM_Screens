@@ -14,36 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QPushButton {
-    background-color: rgb(182, 194, 198);
-    border-color: rgb(182, 204, 212) rgb(82, 104, 112) rgb(82, 104, 112) rgb(182,204,212);
-    border-style: outset;
-    border-radius: 2px;
-    border-width: 2px; 
-    padding: 5px;
-}
-QPushButton:hover {
-   background-color: rgb(154,170,176);
-}
-QPushButton:pressed {
-    background-color: rgb(104,198,176);
-    border-style: inset;
-    border-width: 3px;
-	border-color: rgb(32,86,73);
-}
-QPushButton:checked{
-    background-color: rgb(104,198,176);
-    border-style: inset;
-    border-width: 3px;
-	border-color: rgb(82, 104, 112)  rgb(182, 204, 212) rgb(182,204,212) rgb(82, 104, 112) ;
-}
-
-QLineEdit {
-  background-color: rgb(218,223,230);
-  border-color: rgb(66,77,96);
-  border-style: inset;
-  border-width: 2px 1px 1px 2px;
-}</string>
+   <string notr="true"/>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="2" column="0" colspan="2">
@@ -332,7 +303,7 @@ QLineEdit {
         <string notr="true"/>
        </property>
        <property name="frameShape">
-        <enum>QFrame::Panel</enum>
+        <enum>QFrame::NoFrame</enum>
        </property>
        <property name="text">
         <string/>
@@ -351,7 +322,7 @@ QLineEdit {
         <string notr="true"/>
        </property>
        <property name="frameShape">
-        <enum>QFrame::Panel</enum>
+        <enum>QFrame::NoFrame</enum>
        </property>
        <property name="text">
         <string/>
@@ -441,7 +412,7 @@ QLineEdit {
       <string notr="true"/>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Panel</enum>
+      <enum>QFrame::NoFrame</enum>
      </property>
      <property name="text">
       <string/>
@@ -532,7 +503,7 @@ QLineEdit {
       <string notr="true"/>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Panel</enum>
+      <enum>QFrame::NoFrame</enum>
      </property>
      <property name="text">
       <string/>
@@ -565,7 +536,7 @@ QLineEdit {
         <string notr="true"/>
        </property>
        <property name="frameShape">
-        <enum>QFrame::Panel</enum>
+        <enum>QFrame::NoFrame</enum>
        </property>
        <property name="text">
         <string/>
