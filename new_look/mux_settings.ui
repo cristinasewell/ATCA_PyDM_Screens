@@ -331,6 +331,9 @@ QLineEdit {
        <property name="styleSheet">
         <string notr="true"/>
        </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -346,6 +349,9 @@ QLineEdit {
        </property>
        <property name="styleSheet">
         <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
        </property>
        <property name="text">
         <string/>
@@ -433,6 +439,9 @@ QLineEdit {
      </property>
      <property name="styleSheet">
       <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
      </property>
      <property name="text">
       <string/>
@@ -522,6 +531,9 @@ QLineEdit {
      <property name="styleSheet">
       <string notr="true"/>
      </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -551,6 +563,9 @@ QLineEdit {
        </property>
        <property name="styleSheet">
         <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
        </property>
        <property name="text">
         <string/>

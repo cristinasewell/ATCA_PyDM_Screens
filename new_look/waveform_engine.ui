@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>258</width>
-    <height>289</height>
+    <height>413</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,6 +21,7 @@
     border-radius: 2px;
     border-width: 2px; 
     padding: 5px;
+    font: 8px;
 }
 QPushButton:hover {
    background-color: rgb(154,170,176);

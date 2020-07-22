@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>346</width>
+    <width>350</width>
     <height>613</height>
    </rect>
   </property>
@@ -111,7 +111,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
 }</string>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -128,7 +128,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>314</width>
+            <width>318</width>
             <height>556</height>
            </rect>
           </property>
@@ -164,11 +164,11 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>314</width>
+            <width>318</width>
             <height>556</height>
            </rect>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout_6" stretch="1,0">
+          <layout class="QGridLayout" name="gridLayout" rowstretch="1,0">
            <property name="leftMargin">
             <number>2</number>
            </property>
@@ -181,12 +181,43 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <property name="bottomMargin">
             <number>2</number>
            </property>
-           <item>
+           <item row="1" column="0">
+            <widget class="QFrame" name="frame">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>70</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="0">
             <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>1</horstretch>
-               <verstretch>1</verstretch>
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
               </sizepolicy>
              </property>
              <property name="font">
@@ -197,27 +228,14 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
              <property name="toolTip">
               <string/>
              </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
              <property name="frameShape">
               <enum>QFrame::NoFrame</enum>
              </property>
              <property name="filename" stdset="0">
-              <string>engine_settings.ui</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QFrame" name="frame">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>1</horstretch>
-               <verstretch>1</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="frameShape">
-              <enum>QFrame::NoFrame</enum>
-             </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
+              <string>waveform_engine_settings.ui</string>
              </property>
             </widget>
            </item>
@@ -242,7 +260,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>314</width>
+            <width>318</width>
             <height>556</height>
            </rect>
           </property>
