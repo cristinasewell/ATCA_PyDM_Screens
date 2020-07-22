@@ -17,7 +17,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -155,7 +155,7 @@
           <string/>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;MUX&quot;:&quot;0&quot;, &quot;CH&quot;:&quot;0&quot;}</string>
+          <string>{&quot;CH&quot;:&quot;0&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>channel_settings.ui</string>
@@ -300,7 +300,7 @@
           <string/>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;MUX&quot;:&quot;0&quot;, &quot;CH&quot;:&quot;1&quot;}</string>
+          <string>{&quot;CH&quot;:&quot;1&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>channel_settings.ui</string>
@@ -445,7 +445,7 @@
           <string/>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;MUX&quot;:&quot;0&quot;, &quot;CH&quot;:&quot;2&quot;}</string>
+          <string>{&quot;CH&quot;:&quot;2&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>channel_settings.ui</string>
@@ -590,7 +590,7 @@
           <string/>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;MUX&quot;:&quot;0&quot;, &quot;CH&quot;:&quot;3&quot;}</string>
+          <string>{&quot;CH&quot;:&quot;3&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>channel_settings.ui</string>
