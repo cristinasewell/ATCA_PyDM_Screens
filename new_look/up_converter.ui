@@ -55,6 +55,9 @@
        <property name="styleSheet">
         <string notr="true"/>
        </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -147,6 +150,9 @@
        <property name="styleSheet">
         <string notr="true"/>
        </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -202,6 +208,9 @@
        </property>
        <property name="styleSheet">
         <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
        </property>
        <property name="text">
         <string/>
@@ -312,6 +321,9 @@
        </property>
        <property name="styleSheet">
         <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
        </property>
        <property name="text">
         <string/>

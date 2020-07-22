@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>229</width>
-    <height>282</height>
+    <width>258</width>
+    <height>289</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -84,12 +84,12 @@ QLineEdit {
        <property name="maximumSize">
         <size>
          <width>16777215</width>
-         <height>48</height>
+         <height>16777215</height>
         </size>
        </property>
        <property name="font">
         <font>
-         <pointsize>9</pointsize>
+         <pointsize>8</pointsize>
         </font>
        </property>
        <property name="toolTip">
@@ -157,12 +157,12 @@ QLineEdit {
        <property name="maximumSize">
         <size>
          <width>16777215</width>
-         <height>48</height>
+         <height>16777215</height>
         </size>
        </property>
        <property name="font">
         <font>
-         <pointsize>9</pointsize>
+         <pointsize>8</pointsize>
         </font>
        </property>
        <property name="toolTip">
@@ -230,12 +230,12 @@ QLineEdit {
        <property name="maximumSize">
         <size>
          <width>16777215</width>
-         <height>48</height>
+         <height>16777215</height>
         </size>
        </property>
        <property name="font">
         <font>
-         <pointsize>9</pointsize>
+         <pointsize>8</pointsize>
         </font>
        </property>
        <property name="toolTip">

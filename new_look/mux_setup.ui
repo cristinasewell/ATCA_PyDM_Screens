@@ -111,7 +111,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
 }</string>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -164,11 +164,23 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>114</width>
-            <height>128</height>
+            <width>314</width>
+            <height>556</height>
            </rect>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout_6">
+          <layout class="QVBoxLayout" name="verticalLayout_6" stretch="1,0">
+           <property name="leftMargin">
+            <number>2</number>
+           </property>
+           <property name="topMargin">
+            <number>2</number>
+           </property>
+           <property name="rightMargin">
+            <number>2</number>
+           </property>
+           <property name="bottomMargin">
+            <number>2</number>
+           </property>
            <item>
             <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
              <property name="sizePolicy">
@@ -177,8 +189,16 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <verstretch>1</verstretch>
               </sizepolicy>
              </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
              <property name="toolTip">
               <string/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
              </property>
              <property name="filename" stdset="0">
               <string>waveform_engine_settings.ui</string>
@@ -194,7 +214,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               </sizepolicy>
              </property>
              <property name="frameShape">
-              <enum>QFrame::StyledPanel</enum>
+              <enum>QFrame::NoFrame</enum>
              </property>
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
