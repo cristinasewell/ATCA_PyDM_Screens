@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1183</width>
-    <height>726</height>
+    <height>729</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,28 +36,32 @@ QComboBox::indicator{
     selection-color:transparent;
 }
 
+QFrame{
+  background-color: rgb(244,244,246)
+}
+
 QPushButton {
-    background-color: rgb(182, 194, 198);
-    border-color: rgb(182, 204, 212) rgb(82, 104, 112) rgb(82, 104, 112) rgb(182,204,212);
+    background-color: rgb(156,177,182);
+    border-color: rgb(212,228,233) rgb(50,88,100) rgb(50,88,100) rgb(212,228,233);
     border-style: outset;
-    border-radius: 2px;
+    border-radius: 1px;
     border-width: 2px; 
-    padding: 5px;
+    padding: 3px;
 }
 QPushButton:hover {
-   background-color: rgb(154,170,176);
+   background-color: rgb(106,127,132);
 }
 QPushButton:pressed {
-    background-color: rgb(104,198,176);
+    background-color: rgb(208,219,222);
     border-style: inset;
-    border-width: 3px;
-	border-color: rgb(32,86,73);
+    border-width: 2px;
+	border-color: rgb(50,88,100) rgb(212,228,233) rgb(212,228,233) rgb(50,88,100);
 }
 QPushButton:checked{
-    background-color: rgb(104,198,176);
+    background-color: rgb(178,190,194);
     border-style: inset;
-    border-width: 3px;
-	border-color: rgb(82, 104, 112)  rgb(182, 204, 212) rgb(182,204,212) rgb(82, 104, 112) ;
+    border-width: 2px;
+	border-color:  rgb(112,134,142) rgb(229,233,235) rgb(239,233,235) rgb(112,134,142);
 }
 QLineEdit {
   background-color: rgb(218,223,230);
@@ -65,8 +69,11 @@ QLineEdit {
   border-style: inset;
   border-width: 2px 1px 1px 2px;
 }
+QLineEdit:hover {
+ background-color: rgb(198,203,210)
+}
 PyDMLabel {
-  background-color: rgb(238,243,250);
+  background-color: rgb(189,197,205);
 }
 
  QTabWidget::pane {
@@ -174,7 +181,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <x>0</x>
         <y>0</y>
         <width>1167</width>
-        <height>710</height>
+        <height>713</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1,0">
@@ -216,7 +223,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string>Clear Fault</string>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_CLEARFAULT</string>
+               <string>ca://${RTM}:RTM_CLEARFAULT</string>
               </property>
              </widget>
             </item>
@@ -239,7 +246,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_STATUS_HEX</string>
+               <string>ca://${RTM}:RTM_STATUS_HEX</string>
               </property>
               <property name="displayFormat" stdset="0">
                <enum>PyDMLineEdit::Hex</enum>
@@ -282,7 +289,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_FAULTOUT</string>
+               <string>ca://${RTM}:RTM_FAULTOUT</string>
               </property>
              </widget>
             </item>
@@ -318,7 +325,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_FAULTSUMY</string>
+               <string>ca://${RTM}:RTM_FAULTSUMY</string>
               </property>
              </widget>
             </item>
@@ -354,7 +361,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_ADCLOCK</string>
+               <string>ca://${RTM}:RTM_ADCLOCK</string>
               </property>
              </widget>
             </item>
@@ -364,7 +371,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_MOTR_ON</string>
+               <string>ca://${RTM}:RTM_MOTR_ON</string>
               </property>
              </widget>
             </item>
@@ -423,7 +430,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:BC_ILK_RAW</string>
+               <string>ca://${RTM}:BC_ILK_RAW</string>
               </property>
              </widget>
             </item>
@@ -458,7 +465,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <bool>true</bool>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:SET_BC_ILK_RAW</string>
+               <string>ca://${RTM}:SET_BC_ILK_RAW</string>
               </property>
              </widget>
             </item>
@@ -480,7 +487,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <bool>true</bool>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:SET_BV_ILK_RAW</string>
+               <string>ca://${RTM}:SET_BV_ILK_RAW</string>
               </property>
              </widget>
             </item>
@@ -506,7 +513,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:BV_ILK_RAW</string>
+               <string>ca://${RTM}:BV_ILK_RAW</string>
               </property>
              </widget>
             </item>
@@ -516,7 +523,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RE_ILK_RAW</string>
+               <string>ca://${RTM}:RE_ILK_RAW</string>
               </property>
              </widget>
             </item>
@@ -538,7 +545,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <bool>true</bool>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:SET_RE_ILK_RAW</string>
+               <string>ca://${RTM}:SET_RE_ILK_RAW</string>
               </property>
              </widget>
             </item>
@@ -588,7 +595,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_SLED_TUNED</string>
+               <string>ca://${RTM}:RTM_SLED_TUNED</string>
               </property>
              </widget>
             </item>
@@ -628,7 +635,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_SLED_DETUNED</string>
+               <string>ca://${RTM}:RTM_SLED_DETUNED</string>
               </property>
              </widget>
             </item>
@@ -638,7 +645,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_SLED_SUMY</string>
+               <string>ca://${RTM}:RTM_SLED_SUMY</string>
               </property>
              </widget>
             </item>
@@ -648,7 +655,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_SLED_SML</string>
+               <string>ca://${RTM}:RTM_SLED_SML</string>
               </property>
              </widget>
             </item>
@@ -721,7 +728,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FALTHIST3_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FALTHIST3_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -744,7 +751,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_WFPULSEID</string>
+               <string>ca://${RTM}:RTM_WFPULSEID</string>
               </property>
              </widget>
             </item>
@@ -791,7 +798,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FAULTHIST1_RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST1_RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -822,7 +829,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FAULTHIST2_RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST2_RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -845,7 +852,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:FAULTHIST1_WFPULSEID</string>
+               <string>ca://${RTM}:FAULTHIST1_WFPULSEID</string>
               </property>
              </widget>
             </item>
@@ -877,7 +884,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FAULTHIST3_RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST3_RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -900,7 +907,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:FAULTHIST0_WFPULSEID</string>
+               <string>ca://${RTM}:FAULTHIST0_WFPULSEID</string>
               </property>
              </widget>
             </item>
@@ -932,7 +939,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FAULTHIST2_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST2_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -963,7 +970,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FAULTHIST0_RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST0_RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -994,7 +1001,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FAULTHIST3_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST3_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1047,7 +1054,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1093,7 +1100,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FAULTHIST0_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST0_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1139,7 +1146,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1176,7 +1183,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FALTHIST2_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FALTHIST2_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1213,7 +1220,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FALTHIST1_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FALTHIST1_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1253,7 +1260,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <number>0</number>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_BCURR_PK</string>
+               <string>ca://${RTM}:RTM_BCURR_PK</string>
               </property>
               <property name="displayFormat" stdset="0">
                <enum>PyDMLineEdit::Decimal</enum>
@@ -1288,7 +1295,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FAULTHIST1_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST1_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1331,7 +1338,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1354,7 +1361,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:FAULTHIST2_WFPULSEID</string>
+               <string>ca://${RTM}:FAULTHIST2_WFPULSEID</string>
               </property>
              </widget>
             </item>
@@ -1397,7 +1404,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FALTHIST0_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FALTHIST0_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1427,7 +1434,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <number>0</number>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_RE_PK</string>
+               <string>ca://${RTM}:RTM_RE_PK</string>
               </property>
               <property name="displayFormat" stdset="0">
                <enum>PyDMLineEdit::Decimal</enum>
@@ -1461,7 +1468,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <number>0</number>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:RTM_BVOLT_PK</string>
+               <string>ca://${RTM}:RTM_BVOLT_PK</string>
               </property>
               <property name="displayFormat" stdset="0">
                <enum>PyDMLineEdit::Decimal</enum>
@@ -1488,7 +1495,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEVICE}:FAULTHIST3_WFPULSEID</string>
+               <string>ca://${RTM}:FAULTHIST3_WFPULSEID</string>
               </property>
              </widget>
             </item>
@@ -1584,7 +1591,7 @@ Power</string>
               <string/>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_RF_ON</string>
+              <string>ca://${RTM}:RTM_RF_ON</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -1617,7 +1624,7 @@ Power</string>
               <string/>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_MOTR_TIMEOUT</string>
+              <string>ca://${RTM}:RTM_MOTR_TIMEOUT</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -1647,7 +1654,7 @@ Power</string>
               <string/>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_UPPER_DETUNED</string>
+              <string>ca://${RTM}:RTM_UPPER_DETUNED</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -1677,7 +1684,7 @@ Power</string>
               <string/>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_FP_OVER</string>
+              <string>ca://${RTM}:RTM_FP_OVER</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -1710,7 +1717,7 @@ Power</string>
               <enum>Qt::RightToLeft</enum>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_UPPER_TUNED</string>
+              <string>ca://${RTM}:RTM_UPPER_TUNED</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -1743,7 +1750,7 @@ Power</string>
               <enum>Qt::RightToLeft</enum>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_VOLT_OVER</string>
+              <string>ca://${RTM}:RTM_VOLT_OVER</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -1776,7 +1783,7 @@ Power</string>
               <enum>Qt::RightToLeft</enum>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_CURR_OVER</string>
+              <string>ca://${RTM}:RTM_CURR_OVER</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -1809,7 +1816,7 @@ Power</string>
               <enum>Qt::RightToLeft</enum>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_MOTR_TUNING</string>
+              <string>ca://${RTM}:RTM_MOTR_TUNING</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -1842,7 +1849,7 @@ Power</string>
               <enum>Qt::RightToLeft</enum>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_LOWER_TUNED</string>
+              <string>ca://${RTM}:RTM_LOWER_TUNED</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -1875,7 +1882,7 @@ Power</string>
               <enum>Qt::RightToLeft</enum>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_MOTR_NOT_DETUNED</string>
+              <string>ca://${RTM}:RTM_MOTR_NOT_DETUNED</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -1908,7 +1915,7 @@ Power</string>
               <enum>Qt::RightToLeft</enum>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_LOWER_DETUNED</string>
+              <string>ca://${RTM}:RTM_LOWER_DETUNED</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -1941,7 +1948,7 @@ Power</string>
               <enum>Qt::RightToLeft</enum>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_RP_OVER</string>
+              <string>ca://${RTM}:RTM_RP_OVER</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -1974,7 +1981,7 @@ Power</string>
               <enum>Qt::RightToLeft</enum>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_MOTR_DETUNING</string>
+              <string>ca://${RTM}:RTM_MOTR_DETUNING</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -2007,7 +2014,7 @@ Power</string>
               <enum>Qt::RightToLeft</enum>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_MOD_FAULT</string>
+              <string>ca://${RTM}:RTM_MOD_FAULT</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -2040,7 +2047,7 @@ Power</string>
               <enum>Qt::RightToLeft</enum>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_MOTR_NOT_TUNED</string>
+              <string>ca://${RTM}:RTM_MOTR_NOT_TUNED</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>
@@ -2073,7 +2080,7 @@ Power</string>
               <enum>Qt::RightToLeft</enum>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:RTM_CURR_UNDER</string>
+              <string>ca://${RTM}:RTM_CURR_UNDER</string>
              </property>
              <property name="orientation" stdset="0">
               <enum>Qt::Vertical</enum>

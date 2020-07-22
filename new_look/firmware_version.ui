@@ -82,7 +82,7 @@
       </font>
      </property>
      <property name="text">
-      <string>AMC PFGA VErsion</string>
+      <string>AMC FPGA VErsion</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

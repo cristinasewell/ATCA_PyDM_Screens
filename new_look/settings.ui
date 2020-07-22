@@ -36,28 +36,32 @@ QComboBox::indicator{
     selection-color:transparent;
 }
 
+QFrame{
+  background-color: rgb(244,244,246)
+}
+
 QPushButton {
-    background-color: rgb(182, 194, 198);
-    border-color: rgb(182, 204, 212) rgb(82, 104, 112) rgb(82, 104, 112) rgb(182,204,212);
+    background-color: rgb(156,177,182);
+    border-color: rgb(212,228,233) rgb(50,88,100) rgb(50,88,100) rgb(212,228,233);
     border-style: outset;
-    border-radius: 2px;
+    border-radius: 1px;
     border-width: 2px; 
-    padding: 5px;
+    padding: 3px;
 }
 QPushButton:hover {
-   background-color: rgb(154,170,176);
+   background-color: rgb(106,127,132);
 }
 QPushButton:pressed {
-    background-color: rgb(104,198,176);
+    background-color: rgb(208,219,222);
     border-style: inset;
-    border-width: 3px;
-	border-color: rgb(32,86,73);
+    border-width: 2px;
+	border-color: rgb(50,88,100) rgb(212,228,233) rgb(212,228,233) rgb(50,88,100);
 }
 QPushButton:checked{
-    background-color: rgb(104,198,176);
+    background-color: rgb(178,190,194);
     border-style: inset;
-    border-width: 3px;
-	border-color: rgb(82, 104, 112)  rgb(182, 204, 212) rgb(182,204,212) rgb(82, 104, 112) ;
+    border-width: 2px;
+	border-color:  rgb(112,134,142) rgb(229,233,235) rgb(239,233,235) rgb(112,134,142);
 }
 QLineEdit {
   background-color: rgb(218,223,230);
@@ -65,8 +69,11 @@ QLineEdit {
   border-style: inset;
   border-width: 2px 1px 1px 2px;
 }
+QLineEdit:hover {
+ background-color: rgb(198,203,210)
+}
 PyDMLabel {
-  background-color: rgb(238,243,250);
+  background-color: rgb(189,197,205);
 }
 
  QTabWidget::pane {
