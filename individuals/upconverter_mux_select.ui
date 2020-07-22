@@ -127,7 +127,7 @@ QLineEdit {
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-136</y>
+          <y>-99</y>
           <width>567</width>
           <height>771</height>
          </rect>
@@ -217,7 +217,7 @@ QLineEdit {
                 <string notr="true"/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${DEVICE}:UPC_ATTEN7</string>
+                <string>ca://${DEVICE}:UPC_ATTEN0</string>
                </property>
               </widget>
              </item>
@@ -308,7 +308,7 @@ QLineEdit {
                 <string notr="true"/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${DEVICE}:UPC_ATTEN8</string>
+                <string>ca://${DEVICE}:UPC_ATTEN3</string>
                </property>
               </widget>
              </item>
@@ -430,7 +430,7 @@ QPushButton:pressed {
                 <string notr="true"/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${DEVICE}:UPC_ATTEN9</string>
+                <string>ca://${DEVICE}:UPC_ATTEN2</string>
                </property>
               </widget>
              </item>
@@ -613,7 +613,7 @@ QPushButton:pressed {
                 <string notr="true"/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${DEVICE}:UPC_ATTEN6</string>
+                <string>ca://${DEVICE}:UPC_ATTEN1</string>
                </property>
               </widget>
              </item>
@@ -1443,7 +1443,7 @@ QPushButton:pressed {
               <string/>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:UPC_TEMP6</string>
+              <string>ca://${DEVICE}:UPC_TEMP1</string>
              </property>
             </widget>
            </item>
@@ -1464,7 +1464,7 @@ QPushButton:pressed {
               <string/>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:UPC_TEMP7</string>
+              <string>ca://${DEVICE}:UPC_TEMP0</string>
              </property>
             </widget>
            </item>
@@ -1485,7 +1485,7 @@ QPushButton:pressed {
               <string/>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:UPC_TEMP8</string>
+              <string>ca://${DEVICE}:UPC_TEMP3</string>
              </property>
             </widget>
            </item>
@@ -1506,7 +1506,7 @@ QPushButton:pressed {
               <string/>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:UPC_TEMP9</string>
+              <string>ca://${DEVICE}:UPC_TEMP2</string>
              </property>
             </widget>
            </item>
