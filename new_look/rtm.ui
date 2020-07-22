@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1183</width>
-    <height>702</height>
+    <height>726</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -172,9 +172,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>-2</y>
-        <width>1157</width>
-        <height>688</height>
+        <y>0</y>
+        <width>1167</width>
+        <height>710</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1,0">
@@ -1093,7 +1093,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FAULTHIST1_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FAULTHIST0_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1288,7 +1288,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FAULTHIST0_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:FAULTHIST1_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
