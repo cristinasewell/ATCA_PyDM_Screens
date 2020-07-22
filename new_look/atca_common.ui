@@ -73,9 +73,9 @@ QLineEdit {
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>-12</y>
-        <width>1100</width>
-        <height>707</height>
+        <y>0</y>
+        <width>1110</width>
+        <height>695</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
@@ -458,15 +458,15 @@ QLineEdit {
                 <item>
                  <widget class="QTabWidget" name="tabWidget">
                   <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
                   </property>
                   <property name="minimumSize">
                    <size>
-                    <width>530</width>
-                    <height>360</height>
+                    <width>0</width>
+                    <height>0</height>
                    </size>
                   </property>
                   <property name="currentIndex">
@@ -892,6 +892,65 @@ QPushButton:hover{
              </property>
              <item>
               <layout class="QGridLayout" name="gridLayout_3">
+               <item row="1" column="2">
+                <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_6">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                   <horstretch>1</horstretch>
+                   <verstretch>1</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>Up Converter Front Panel Image</string>
+                 </property>
+                 <property name="filenames" stdset="0">
+                  <stringlist>
+                   <string>up_converter_picture.ui</string>
+                  </stringlist>
+                 </property>
+                 <property name="openInNewWindow" stdset="0">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="3" column="2">
+                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_6">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>1</horstretch>
+                   <verstretch>1</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                 <property name="macros" stdset="0">
+                  <string>{&quot;MUX&quot;:&quot;1&quot;}</string>
+                 </property>
+                 <property name="filename" stdset="0">
+                  <string>streams_info.ui</string>
+                 </property>
+                </widget>
+               </item>
                <item row="0" column="2">
                 <widget class="QLabel" name="label_2">
                  <property name="sizePolicy">
@@ -913,7 +972,7 @@ QPushButton:hover{
                  </property>
                 </widget>
                </item>
-               <item row="3" column="2">
+               <item row="2" column="2">
                 <layout class="QHBoxLayout" name="horizontalLayout_3">
                  <item>
                   <widget class="QLabel" name="label_4">
@@ -950,7 +1009,7 @@ QPushButton:hover{
                  </item>
                 </layout>
                </item>
-               <item row="0" column="0" rowspan="5">
+               <item row="0" column="0" rowspan="4">
                 <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -969,79 +1028,7 @@ QPushButton:hover{
                  </property>
                 </widget>
                </item>
-               <item row="4" column="2">
-                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_6">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>1</horstretch>
-                   <verstretch>1</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="macros" stdset="0">
-                  <string>{&quot;MUX&quot;:&quot;1&quot;}</string>
-                 </property>
-                 <property name="filename" stdset="0">
-                  <string>streams_info.ui</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="1">
-                <spacer name="horizontalSpacer_2">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>40</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-               <item row="1" column="2">
-                <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_6">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                   <horstretch>1</horstretch>
-                   <verstretch>1</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>Up Converter Front Panel Image</string>
-                 </property>
-                 <property name="filenames" stdset="0">
-                  <stringlist>
-                   <string>up_converter_picture.ui</string>
-                  </stringlist>
-                 </property>
-                 <property name="openInNewWindow" stdset="0">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="2">
-                <spacer name="verticalSpacer_2">
-                 <property name="orientation">
-                  <enum>Qt::Vertical</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>20</width>
-                   <height>40</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-               <item row="4" column="3">
+               <item row="3" column="3">
                 <spacer name="horizontalSpacer_6">
                  <property name="orientation">
                   <enum>Qt::Horizontal</enum>
@@ -1080,15 +1067,15 @@ QPushButton:hover{
                 <item>
                  <widget class="QTabWidget" name="tabWidget_2">
                   <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
                   </property>
                   <property name="minimumSize">
                    <size>
-                    <width>530</width>
-                    <height>360</height>
+                    <width>0</width>
+                    <height>0</height>
                    </size>
                   </property>
                   <property name="currentIndex">

@@ -111,7 +111,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
 }</string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -201,7 +201,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               <enum>QFrame::NoFrame</enum>
              </property>
              <property name="filename" stdset="0">
-              <string>waveform_engine_settings.ui</string>
+              <string>engine_settings.ui</string>
              </property>
             </widget>
            </item>
