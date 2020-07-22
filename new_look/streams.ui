@@ -45,7 +45,7 @@
           <string notr="true"/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSEL0</string>
          </property>
          <item>
           <property name="text">
@@ -190,7 +190,7 @@
           <string notr="true"/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSEL1</string>
          </property>
          <item>
           <property name="text">
@@ -335,7 +335,7 @@
           <string notr="true"/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSEL2</string>
          </property>
          <item>
           <property name="text">
@@ -480,7 +480,7 @@
           <string notr="true"/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:DAQMUX0_INPMUXSEL${CH}</string>
+          <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSEL3</string>
          </property>
          <item>
           <property name="text">

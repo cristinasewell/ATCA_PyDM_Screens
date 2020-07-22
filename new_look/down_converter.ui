@@ -94,7 +94,7 @@
           <string notr="true"/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:DNC_ATTEN1</string>
+          <string>ca://${DEVICE}:DNC_ATTEN0</string>
          </property>
         </widget>
        </item>
@@ -300,7 +300,7 @@
           <string notr="true"/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:DNC_ATTEN2</string>
+          <string>ca://${DEVICE}:DNC_ATTEN3</string>
          </property>
         </widget>
        </item>
@@ -410,7 +410,7 @@
           <string notr="true"/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:DNC_ATTEN3</string>
+          <string>ca://${DEVICE}:DNC_ATTEN2</string>
          </property>
         </widget>
        </item>
@@ -447,7 +447,7 @@
           <string notr="true"/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:DNC_ATTEN0</string>
+          <string>ca://${DEVICE}:DNC_ATTEN1</string>
          </property>
         </widget>
        </item>
@@ -526,7 +526,7 @@
        </property>
        <property name="filenames" stdset="0">
         <stringlist>
-         <string>../individuals/down_converter_picture.ui</string>
+         <string>down_converter_picture.ui</string>
         </stringlist>
        </property>
        <property name="titles" stdset="0">
