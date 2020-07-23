@@ -63,7 +63,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -101,7 +101,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -136,7 +136,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -171,7 +171,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -209,7 +209,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -247,7 +247,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -285,7 +285,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -323,7 +323,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -361,7 +361,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -399,7 +399,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -437,7 +437,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -475,7 +475,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -513,7 +513,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -551,7 +551,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -589,7 +589,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -627,7 +627,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 7px;
+ font: 8px;
 }</string>
        </property>
        <property name="channel" stdset="0">
