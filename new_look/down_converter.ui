@@ -71,7 +71,7 @@
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DNC_TEMP3</string>
+        <string>ca://${DEVICE}:DNC_TEMP2</string>
        </property>
       </widget>
      </item>
@@ -143,7 +143,7 @@
           <string notr="true"/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:DNC_ATTEN5</string>
+          <string>ca://${DEVICE}:DNC_ATTEN4</string>
          </property>
         </widget>
        </item>
@@ -187,7 +187,7 @@
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DNC_TEMP1</string>
+        <string>ca://${DEVICE}:DNC_TEMP0</string>
        </property>
       </widget>
      </item>
@@ -235,7 +235,7 @@
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DNC_TEMP0</string>
+        <string>ca://${DEVICE}:DNC_TEMP1</string>
        </property>
       </widget>
      </item>
@@ -277,7 +277,7 @@
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DNC_TEMP2</string>
+        <string>ca://${DEVICE}:DNC_TEMP3</string>
        </property>
       </widget>
      </item>
@@ -349,7 +349,7 @@
           <string notr="true"/>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:DNC_ATTEN4</string>
+          <string>ca://${DEVICE}:DNC_ATTEN5</string>
          </property>
         </widget>
        </item>
