@@ -14,12 +14,53 @@
    <string>Form</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
    <item>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="2" column="2">
-      <widget class="QLabel" name="label_7">
+     <property name="leftMargin">
+      <number>4</number>
+     </property>
+     <property name="topMargin">
+      <number>4</number>
+     </property>
+     <property name="rightMargin">
+      <number>4</number>
+     </property>
+     <property name="bottomMargin">
+      <number>4</number>
+     </property>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>Current Timeslot</string>
+        <string>Sub-Tupe</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Current Timestamp</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_7">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${RTM}:RTM_TS</string>
        </property>
       </widget>
      </item>
@@ -30,13 +71,6 @@
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_FIRMDATE</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>Sub-Tupe</string>
        </property>
       </widget>
      </item>
@@ -63,13 +97,17 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_6">
-       <property name="toolTip">
-        <string/>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Interlock Taks Count</string>
        </property>
-       <property name="channel" stdset="0">
-        <string>ca://${RTM}:RTM_PID</string>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Current Timeslot</string>
        </property>
       </widget>
      </item>
@@ -80,17 +118,20 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="2">
-      <widget class="QLabel" name="label_8">
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
        <property name="text">
-        <string>Current Timestamp</string>
+        <string>Firmware Date</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="2">
-      <widget class="QLabel" name="label_6">
-       <property name="text">
-        <string>Current Pulse ID</string>
+     <item row="1" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_6">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${RTM}:RTM_PID</string>
        </property>
       </widget>
      </item>
@@ -110,16 +151,6 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_7">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${RTM}:RTM_TS</string>
-       </property>
-      </widget>
-     </item>
      <item row="2" column="1">
       <widget class="PyDMLabel" name="PyDMLabel_3">
        <property name="toolTip">
@@ -130,10 +161,23 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="label_5">
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_6">
        <property name="text">
-        <string>Interlock Taks Count</string>
+        <string>Current Pulse ID</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_8">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${RTM}:RTM_TSTR</string>
        </property>
       </widget>
      </item>
@@ -144,23 +188,6 @@
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_SYSID</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label_4">
-       <property name="text">
-        <string>Firmware Date</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_8">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${RTM}:RTM_TSTR</string>
        </property>
       </widget>
      </item>
