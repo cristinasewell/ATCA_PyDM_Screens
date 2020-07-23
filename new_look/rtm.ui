@@ -872,7 +872,7 @@ Power</string>
 }</string>
               </property>
               <property name="text">
-               <string>Peak Value: </string>
+               <string>Peak Value:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -880,18 +880,33 @@ Power</string>
              </widget>
             </item>
             <item>
-             <widget class="PyDMLineEdit" name="PyDMLineEdit">
+             <widget class="PyDMLabel" name="PyDMLabel_14">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>94</width>
+                <height>20</height>
+               </size>
+              </property>
               <property name="toolTip">
                <string/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
               </property>
               <property name="precision" stdset="0">
                <number>0</number>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${RTM}:RTM_BCURR_PK</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLineEdit::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -940,18 +955,30 @@ Power</string>
              </widget>
             </item>
             <item>
-             <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+             <widget class="PyDMLabel" name="PyDMLabel_15">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>94</width>
+                <height>20</height>
+               </size>
+              </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="precision" stdset="0">
-               <number>0</number>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${RTM}:RTM_BVOLT_PK</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLineEdit::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -1432,18 +1459,24 @@ Voltage</string>
              </widget>
             </item>
             <item>
-             <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+             <widget class="PyDMLabel" name="PyDMLabel_16">
+              <property name="minimumSize">
+               <size>
+                <width>94</width>
+                <height>20</height>
+               </size>
+              </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="precision" stdset="0">
-               <number>0</number>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${RTM}:RTM_RE_PK</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLineEdit::Decimal</enum>
               </property>
              </widget>
             </item>
