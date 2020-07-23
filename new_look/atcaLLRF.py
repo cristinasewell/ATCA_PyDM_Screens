@@ -139,4 +139,4 @@ class Scope(Display):
         self.ui.bay1Mode1_rb.clicked.connect(self.handle_show_curve_bay1)
 
     def ui_filename(self):
-        return 'atca_common.ui'
+        return 'atcaLLRF.ui'
