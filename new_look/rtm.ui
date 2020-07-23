@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1183</width>
-    <height>717</height>
+    <height>740</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -181,7 +181,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <x>0</x>
         <y>0</y>
         <width>1167</width>
-        <height>701</height>
+        <height>724</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1,0">
