@@ -46,7 +46,7 @@ QPushButton {
     border-style: outset;
     border-radius: 1px;
     border-width: 2px; 
-    padding: 3px;
+    padding: 4px;
 }
 QPushButton:hover {
    background-color: rgb(106,127,132);

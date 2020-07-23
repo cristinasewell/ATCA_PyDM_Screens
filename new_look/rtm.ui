@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1183</width>
-    <height>729</height>
+    <height>712</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -46,7 +46,7 @@ QPushButton {
     border-style: outset;
     border-radius: 1px;
     border-width: 2px; 
-    padding: 3px;
+    padding: 4px;
 }
 QPushButton:hover {
    background-color: rgb(106,127,132);
@@ -181,7 +181,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <x>0</x>
         <y>0</y>
         <width>1167</width>
-        <height>713</height>
+        <height>696</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1,0">
@@ -458,6 +458,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                 <verstretch>1</verstretch>
                </sizepolicy>
               </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
               <property name="toolTip">
                <string/>
               </property>
@@ -479,6 +485,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                 <horstretch>1</horstretch>
                 <verstretch>1</verstretch>
                </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
               </property>
               <property name="toolTip">
                <string/>
@@ -537,6 +549,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                 <horstretch>1</horstretch>
                 <verstretch>1</verstretch>
                </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
               </property>
               <property name="toolTip">
                <string/>
@@ -689,6 +707,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </item>
        <item>
         <widget class="QFrame" name="frame_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>370</height>
+          </size>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -728,7 +758,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FALTHIST3_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST3_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1119,8 +1149,20 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               <height>80</height>
              </size>
             </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>99</height>
+             </size>
+            </property>
             <property name="toolTip">
              <string/>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustIgnored</enum>
+            </property>
+            <property name="renderHints">
+             <set>QPainter::TextAntialiasing</set>
             </property>
             <property name="showXGrid">
              <bool>true</bool>
@@ -1183,7 +1225,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FALTHIST2_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST2_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1220,7 +1262,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FALTHIST1_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST1_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1404,7 +1446,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FALTHIST0_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST0_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1540,7 +1582,7 @@ Power</string>
         </widget>
        </item>
        <item>
-        <layout class="QGridLayout" name="gridLayout_6" rowstretch="0,0,1" columnstretch="0,0,0,1">
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
          <property name="leftMargin">
           <number>2</number>
          </property>
@@ -1553,554 +1595,17 @@ Power</string>
          <property name="bottomMargin">
           <number>2</number>
          </property>
-         <item row="0" column="0" rowspan="3">
-          <layout class="QFormLayout" name="formLayout">
-           <property name="leftMargin">
-            <number>2</number>
+         <item>
+          <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+           <property name="toolTip">
+            <string/>
            </property>
-           <property name="topMargin">
-            <number>2</number>
+           <property name="filename" stdset="0">
+            <string>sled.ui</string>
            </property>
-           <property name="rightMargin">
-            <number>2</number>
-           </property>
-           <property name="bottomMargin">
-            <number>2</number>
-           </property>
-           <item row="0" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_RF_ON</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="showLabels" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::East</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>RF ON</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_MOTR_TIMEOUT</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::East</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Motor Timeout</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_14">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_UPPER_DETUNED</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::East</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Upper Detuned</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_FP_OVER</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::East</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Forward Power Over Threshold</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="4" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_9">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::RightToLeft</enum>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_UPPER_TUNED</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::West</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Upper Tuned</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="5" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_12">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::RightToLeft</enum>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_VOLT_OVER</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::West</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Beam Voltage Over Threshold</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="6" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_10">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::RightToLeft</enum>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_CURR_OVER</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::West</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Beam Current Over Threshold</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="7" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::RightToLeft</enum>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_MOTR_TUNING</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::West</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Motor Tuning</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="8" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::RightToLeft</enum>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_LOWER_TUNED</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::West</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Lower Tuned</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="9" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_8">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::RightToLeft</enum>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_MOTR_NOT_DETUNED</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::West</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Motor Not Detuned</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="10" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_16">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::RightToLeft</enum>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_LOWER_DETUNED</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::West</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Lower Detuned</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="11" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_7">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::RightToLeft</enum>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_RP_OVER</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::West</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Reflected Power Over Threshold</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="12" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::RightToLeft</enum>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_MOTR_DETUNING</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::West</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Motor Detuning</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="13" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::RightToLeft</enum>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_MOD_FAULT</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::West</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Modulator Fault</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="14" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_11">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::RightToLeft</enum>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_MOTR_NOT_TUNED</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::West</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Motor Not Tuned</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-           <item row="15" column="0">
-            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_13">
-             <property name="font">
-              <font>
-               <pointsize>7</pointsize>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::RightToLeft</enum>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${RTM}:RTM_CURR_UNDER</string>
-             </property>
-             <property name="orientation" stdset="0">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="circles" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="labelPosition" stdset="0">
-              <enum>QTabWidget::West</enum>
-             </property>
-             <property name="labels" stdset="0">
-              <stringlist>
-               <string>Beam Current Under Threshold</string>
-              </stringlist>
-             </property>
-            </widget>
-           </item>
-          </layout>
+          </widget>
          </item>
-         <item row="1" column="2" colspan="2">
+         <item>
           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
            <property name="toolTip">
             <string/>
@@ -2138,11 +1643,6 @@ Power</string>
    <class>PyDMWaveformPlot</class>
    <extends>QGraphicsView</extends>
    <header>pydm.widgets.waveformplot</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMByteIndicator</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.byte</header>
   </customwidget>
   <customwidget>
    <class>PyDMEmbeddedDisplay</class>
