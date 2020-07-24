@@ -6,38 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>200</width>
-    <height>238</height>
+    <width>855</width>
+    <height>56</height>
    </rect>
   </property>
-  <property name="font">
-   <font>
-    <pointsize>6</pointsize>
-   </font>
-  </property>
   <property name="windowTitle">
-   <string>SLED Bits</string>
-  </property>
-  <property name="styleSheet">
-   <string notr="true">QLabel{
- font: 7px;
-}</string>
+   <string>Form</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
     <layout class="QFormLayout" name="formLayout">
-     <property name="leftMargin">
-      <number>2</number>
-     </property>
-     <property name="topMargin">
-      <number>2</number>
-     </property>
-     <property name="rightMargin">
-      <number>2</number>
-     </property>
-     <property name="bottomMargin">
-      <number>2</number>
-     </property>
      <item row="0" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
        <property name="sizePolicy">
@@ -193,7 +171,11 @@
        </property>
       </widget>
      </item>
-     <item row="4" column="0">
+    </layout>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout_2">
+     <item row="0" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_9">
        <property name="font">
         <font>
@@ -231,7 +213,7 @@
        </property>
       </widget>
      </item>
-     <item row="5" column="0">
+     <item row="1" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_12">
        <property name="font">
         <font>
@@ -269,7 +251,7 @@
        </property>
       </widget>
      </item>
-     <item row="6" column="0">
+     <item row="2" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_10">
        <property name="font">
         <font>
@@ -307,7 +289,7 @@
        </property>
       </widget>
      </item>
-     <item row="7" column="0">
+     <item row="3" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
        <property name="font">
         <font>
@@ -345,7 +327,11 @@
        </property>
       </widget>
      </item>
-     <item row="8" column="0">
+    </layout>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout_3">
+     <item row="0" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
        <property name="font">
         <font>
@@ -383,7 +369,7 @@
        </property>
       </widget>
      </item>
-     <item row="9" column="0">
+     <item row="1" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_8">
        <property name="font">
         <font>
@@ -421,7 +407,7 @@
        </property>
       </widget>
      </item>
-     <item row="10" column="0">
+     <item row="2" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_16">
        <property name="font">
         <font>
@@ -459,7 +445,7 @@
        </property>
       </widget>
      </item>
-     <item row="11" column="0">
+     <item row="3" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_7">
        <property name="font">
         <font>
@@ -497,7 +483,11 @@
        </property>
       </widget>
      </item>
-     <item row="12" column="0">
+    </layout>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout_4">
+     <item row="0" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
        <property name="font">
         <font>
@@ -535,7 +525,7 @@
        </property>
       </widget>
      </item>
-     <item row="13" column="0">
+     <item row="1" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
        <property name="font">
         <font>
@@ -573,7 +563,7 @@
        </property>
       </widget>
      </item>
-     <item row="14" column="0">
+     <item row="2" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_11">
        <property name="font">
         <font>
@@ -611,7 +601,7 @@
        </property>
       </widget>
      </item>
-     <item row="15" column="0">
+     <item row="3" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_13">
        <property name="font">
         <font>

@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1183</width>
-    <height>773</height>
+    <width>1278</width>
+    <height>809</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -169,45 +175,39 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
     margin-bottom: 0;
 }</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
-   <property name="leftMargin">
-    <number>2</number>
-   </property>
-   <property name="topMargin">
-    <number>2</number>
-   </property>
-   <property name="rightMargin">
-    <number>2</number>
-   </property>
-   <property name="bottomMargin">
-    <number>2</number>
-   </property>
+  <layout class="QVBoxLayout" name="verticalLayout_6">
    <item>
     <widget class="QScrollArea" name="scrollArea">
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
      <property name="widgetResizable">
       <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
      <widget class="QWidget" name="scrollAreaWidgetContents">
       <property name="geometry">
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1177</width>
-        <height>767</height>
+        <width>1262</width>
+        <height>793</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1,0">
        <property name="leftMargin">
-        <number>0</number>
+        <number>5</number>
        </property>
        <property name="topMargin">
-        <number>0</number>
+        <number>5</number>
        </property>
        <property name="rightMargin">
-        <number>0</number>
+        <number>5</number>
        </property>
        <property name="bottomMargin">
-        <number>0</number>
+        <number>5</number>
        </property>
        <item>
         <widget class="QFrame" name="frame">
@@ -776,7 +776,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <property name="minimumSize">
           <size>
            <width>0</width>
-           <height>370</height>
+           <height>380</height>
           </size>
          </property>
          <property name="frameShape">
@@ -798,8 +798,17 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           <property name="bottomMargin">
            <number>2</number>
           </property>
-          <item row="5" column="5">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_6">
+          <item row="7" column="2">
+           <widget class="QLabel" name="label_12">
+            <property name="text">
+             <string>Modular 
+Reflected
+Power</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="7">
+           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_9">
             <property name="toolTip">
              <string/>
             </property>
@@ -824,10 +833,129 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST0_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST2_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLabel" name="label_15">
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>RTM Fast ADC</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="8">
+           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_12">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showXGrid">
+             <bool>true</bool>
+            </property>
+            <property name="showYGrid">
+             <bool>true</bool>
+            </property>
+            <property name="axisColor">
+             <color>
+              <red>209</red>
+              <green>209</green>
+              <blue>209</blue>
+             </color>
+            </property>
+            <property name="showRightAxis">
+             <bool>true</bool>
+            </property>
+            <property name="title" stdset="0">
+             <string/>
+            </property>
+            <property name="curves">
+             <stringlist>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST3_RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             </stringlist>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="8">
+           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>1</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showXGrid">
+             <bool>true</bool>
+            </property>
+            <property name="showYGrid">
+             <bool>true</bool>
+            </property>
+            <property name="axisColor">
+             <color>
+              <red>202</red>
+              <green>202</green>
+              <blue>202</blue>
+             </color>
+            </property>
+            <property name="showRightAxis">
+             <bool>true</bool>
+            </property>
+            <property name="title" stdset="0">
+             <string/>
+            </property>
+            <property name="curves">
+             <stringlist>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST3_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             </stringlist>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="7">
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>Pulse ID:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_18">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:FAULTHIST2_WFPULSEID</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </item>
           <item row="8" column="3">
            <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -865,8 +993,112 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </item>
            </layout>
           </item>
-          <item row="5" column="7">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_9">
+          <item row="8" column="5">
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>Pulse ID:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_13">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:FAULTHIST0_WFPULSEID</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="5" column="4">
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+              </property>
+              <property name="text">
+               <string>Peak Value</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_15">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>94</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+              <property name="precision" stdset="0">
+               <number>6</number>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:RTM_BVOLT_PK</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="5" column="8">
+           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_7">
             <property name="toolTip">
              <string/>
             </property>
@@ -891,17 +1123,258 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST2_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST3_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
           </item>
-          <item row="7" column="2">
-           <widget class="QLabel" name="label_12">
+          <item row="8" column="6">
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>Pulse ID:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_17">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:FAULTHIST1_WFPULSEID</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="5" column="3">
+           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_10">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>1</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showXGrid">
+             <bool>true</bool>
+            </property>
+            <property name="showYGrid">
+             <bool>true</bool>
+            </property>
+            <property name="axisColor">
+             <color>
+              <red>215</red>
+              <green>215</green>
+              <blue>215</blue>
+             </color>
+            </property>
+            <property name="showRightAxis">
+             <bool>true</bool>
+            </property>
+            <property name="title" stdset="0">
+             <string/>
+            </property>
+            <property name="curves">
+             <stringlist>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             </stringlist>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="7">
+           <widget class="QLabel" name="label_18">
             <property name="text">
-             <string>Modular 
-Reflected
-Power</string>
+             <string>RTM Fast ADC / Fault History 2</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="6">
+           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_8">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showXGrid">
+             <bool>true</bool>
+            </property>
+            <property name="showYGrid">
+             <bool>true</bool>
+            </property>
+            <property name="axisColor">
+             <color>
+              <red>215</red>
+              <green>215</green>
+              <blue>215</blue>
+             </color>
+            </property>
+            <property name="showRightAxis">
+             <bool>true</bool>
+            </property>
+            <property name="title" stdset="0">
+             <string/>
+            </property>
+            <property name="curves">
+             <stringlist>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST1_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             </stringlist>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <widget class="QLabel" name="label_16">
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>RTM Fast ADC / Fault History 0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="6">
+           <widget class="QLabel" name="label_17">
+            <property name="text">
+             <string>RTM Fast ADC / Fault History 1</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="4">
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+  color:#030923;
+  font-size: 10px;
+  font-style: bold;
+}</string>
+              </property>
+              <property name="text">
+               <string>Peak Value</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_16">
+              <property name="minimumSize">
+               <size>
+                <width>94</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+              <property name="precision" stdset="0">
+               <number>6</number>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:RTM_RE_PK</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="7" column="3">
+           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_15">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+              <horstretch>1</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showXGrid">
+             <bool>true</bool>
+            </property>
+            <property name="showYGrid">
+             <bool>true</bool>
+            </property>
+            <property name="axisColor">
+             <color>
+              <red>209</red>
+              <green>209</green>
+              <blue>209</blue>
+             </color>
+            </property>
+            <property name="showRightAxis">
+             <bool>true</bool>
+            </property>
+            <property name="title" stdset="0">
+             <string/>
+            </property>
+            <property name="curves">
+             <stringlist>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             </stringlist>
             </property>
            </widget>
           </item>
@@ -976,112 +1449,11 @@ Power</string>
             </item>
            </layout>
           </item>
-          <item row="0" column="7">
-           <widget class="QLabel" name="label_18">
+          <item row="5" column="2">
+           <widget class="QLabel" name="label_11">
             <property name="text">
-             <string>RTM Fast ADC / Fault History 2</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="4">
-           <layout class="QVBoxLayout" name="verticalLayout_3">
-            <item>
-             <widget class="QLabel" name="label_4">
-              <property name="styleSheet">
-               <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
-              </property>
-              <property name="text">
-               <string>Peak Value</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PyDMLabel" name="PyDMLabel_15">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>94</width>
-                <height>20</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="scaledContents">
-               <bool>true</bool>
-              </property>
-              <property name="precision" stdset="0">
-               <number>6</number>
-              </property>
-              <property name="precisionFromPV" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${RTM}:RTM_BVOLT_PK</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <spacer name="verticalSpacer_3">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>40</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-           </layout>
-          </item>
-          <item row="7" column="8">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_12">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="showXGrid">
-             <bool>true</bool>
-            </property>
-            <property name="showYGrid">
-             <bool>true</bool>
-            </property>
-            <property name="axisColor">
-             <color>
-              <red>209</red>
-              <green>209</green>
-              <blue>209</blue>
-             </color>
-            </property>
-            <property name="showRightAxis">
-             <bool>true</bool>
-            </property>
-            <property name="title" stdset="0">
-             <string/>
-            </property>
-            <property name="curves">
-             <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST3_RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             </stringlist>
+             <string>Beam 
+Voltage</string>
             </property>
            </widget>
           </item>
@@ -1112,6 +1484,84 @@ Power</string>
             <property name="curves">
              <stringlist>
               <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST0_RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             </stringlist>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="8">
+           <widget class="QLabel" name="label_19">
+            <property name="text">
+             <string>RTM Fast ADC / Fault History 3</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="7">
+           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_14">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showXGrid">
+             <bool>true</bool>
+            </property>
+            <property name="showYGrid">
+             <bool>true</bool>
+            </property>
+            <property name="axisColor">
+             <color>
+              <red>209</red>
+              <green>209</green>
+              <blue>209</blue>
+             </color>
+            </property>
+            <property name="showRightAxis">
+             <bool>true</bool>
+            </property>
+            <property name="title" stdset="0">
+             <string/>
+            </property>
+            <property name="curves">
+             <stringlist>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST2_RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             </stringlist>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="6">
+           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>1</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showXGrid">
+             <bool>true</bool>
+            </property>
+            <property name="showYGrid">
+             <bool>true</bool>
+            </property>
+            <property name="axisColor">
+             <color>
+              <red>202</red>
+              <green>202</green>
+              <blue>202</blue>
+             </color>
+            </property>
+            <property name="showRightAxis">
+             <bool>true</bool>
+            </property>
+            <property name="title" stdset="0">
+             <string/>
+            </property>
+            <property name="curves">
+             <stringlist>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST1_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1174,134 +1624,6 @@ Power</string>
             </property>
            </widget>
           </item>
-          <item row="3" column="2">
-           <widget class="QLabel" name="label_10">
-            <property name="text">
-             <string>Beam 
-Current</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="6">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_8">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="showXGrid">
-             <bool>true</bool>
-            </property>
-            <property name="showYGrid">
-             <bool>true</bool>
-            </property>
-            <property name="axisColor">
-             <color>
-              <red>215</red>
-              <green>215</green>
-              <blue>215</blue>
-             </color>
-            </property>
-            <property name="showRightAxis">
-             <bool>true</bool>
-            </property>
-            <property name="title" stdset="0">
-             <string/>
-            </property>
-            <property name="curves">
-             <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST1_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             </stringlist>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="7">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_14">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="showXGrid">
-             <bool>true</bool>
-            </property>
-            <property name="showYGrid">
-             <bool>true</bool>
-            </property>
-            <property name="axisColor">
-             <color>
-              <red>209</red>
-              <green>209</green>
-              <blue>209</blue>
-             </color>
-            </property>
-            <property name="showRightAxis">
-             <bool>true</bool>
-            </property>
-            <property name="title" stdset="0">
-             <string/>
-            </property>
-            <property name="curves">
-             <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST2_RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             </stringlist>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="3">
-           <widget class="QLabel" name="label_15">
-            <property name="font">
-             <font>
-              <pointsize>8</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>RTM Fast ADC</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="3">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_10">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>1</horstretch>
-              <verstretch>1</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>80</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="showXGrid">
-             <bool>true</bool>
-            </property>
-            <property name="showYGrid">
-             <bool>true</bool>
-            </property>
-            <property name="axisColor">
-             <color>
-              <red>215</red>
-              <green>215</green>
-              <blue>215</blue>
-             </color>
-            </property>
-            <property name="showRightAxis">
-             <bool>true</bool>
-            </property>
-            <property name="title" stdset="0">
-             <string/>
-            </property>
-            <property name="curves">
-             <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             </stringlist>
-            </property>
-           </widget>
-          </item>
           <item row="8" column="8">
            <layout class="QHBoxLayout" name="horizontalLayout_12">
             <item>
@@ -1337,372 +1659,6 @@ Current</string>
              </widget>
             </item>
            </layout>
-          </item>
-          <item row="5" column="2">
-           <widget class="QLabel" name="label_11">
-            <property name="text">
-             <string>Beam 
-Voltage</string>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="5">
-           <layout class="QHBoxLayout" name="horizontalLayout_6">
-            <item>
-             <widget class="QLabel" name="label_6">
-              <property name="text">
-               <string>Pulse ID:</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PyDMLabel" name="PyDMLabel_13">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>20</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${RTM}:FAULTHIST0_WFPULSEID</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="3" column="8">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_3">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>1</horstretch>
-              <verstretch>1</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="showXGrid">
-             <bool>true</bool>
-            </property>
-            <property name="showYGrid">
-             <bool>true</bool>
-            </property>
-            <property name="axisColor">
-             <color>
-              <red>202</red>
-              <green>202</green>
-              <blue>202</blue>
-             </color>
-            </property>
-            <property name="showRightAxis">
-             <bool>true</bool>
-            </property>
-            <property name="title" stdset="0">
-             <string/>
-            </property>
-            <property name="curves">
-             <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST3_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             </stringlist>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="6">
-           <layout class="QHBoxLayout" name="horizontalLayout_10">
-            <item>
-             <widget class="QLabel" name="label_7">
-              <property name="text">
-               <string>Pulse ID:</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PyDMLabel" name="PyDMLabel_17">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>20</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${RTM}:FAULTHIST1_WFPULSEID</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="0" column="8">
-           <widget class="QLabel" name="label_19">
-            <property name="text">
-             <string>RTM Fast ADC / Fault History 3</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="8">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_7">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="showXGrid">
-             <bool>true</bool>
-            </property>
-            <property name="showYGrid">
-             <bool>true</bool>
-            </property>
-            <property name="axisColor">
-             <color>
-              <red>215</red>
-              <green>215</green>
-              <blue>215</blue>
-             </color>
-            </property>
-            <property name="showRightAxis">
-             <bool>true</bool>
-            </property>
-            <property name="title" stdset="0">
-             <string/>
-            </property>
-            <property name="curves">
-             <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST3_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             </stringlist>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="4">
-           <layout class="QVBoxLayout" name="verticalLayout_5">
-            <item>
-             <widget class="QLabel" name="label_5">
-              <property name="styleSheet">
-               <string notr="true">QLabel{
-  color:#030923;
-  font-size: 10px;
-  font-style: bold;
-}</string>
-              </property>
-              <property name="text">
-               <string>Peak Value</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PyDMLabel" name="PyDMLabel_16">
-              <property name="minimumSize">
-               <size>
-                <width>94</width>
-                <height>20</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="scaledContents">
-               <bool>true</bool>
-              </property>
-              <property name="precision" stdset="0">
-               <number>6</number>
-              </property>
-              <property name="precisionFromPV" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${RTM}:RTM_RE_PK</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <spacer name="verticalSpacer_4">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>40</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-           </layout>
-          </item>
-          <item row="0" column="5">
-           <widget class="QLabel" name="label_16">
-            <property name="font">
-             <font>
-              <pointsize>8</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>RTM Fast ADC / Fault History 0</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="5">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>1</horstretch>
-              <verstretch>1</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>8</pointsize>
-             </font>
-            </property>
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="showXGrid">
-             <bool>true</bool>
-            </property>
-            <property name="showYGrid">
-             <bool>true</bool>
-            </property>
-            <property name="axisColor">
-             <color>
-              <red>202</red>
-              <green>202</green>
-              <blue>202</blue>
-             </color>
-            </property>
-            <property name="showRightAxis">
-             <bool>true</bool>
-            </property>
-            <property name="title" stdset="0">
-             <string/>
-            </property>
-            <property name="curves">
-             <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST0_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             </stringlist>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="3">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_15">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
-              <horstretch>1</horstretch>
-              <verstretch>1</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>80</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="showXGrid">
-             <bool>true</bool>
-            </property>
-            <property name="showYGrid">
-             <bool>true</bool>
-            </property>
-            <property name="axisColor">
-             <color>
-              <red>209</red>
-              <green>209</green>
-              <blue>209</blue>
-             </color>
-            </property>
-            <property name="showRightAxis">
-             <bool>true</bool>
-            </property>
-            <property name="title" stdset="0">
-             <string/>
-            </property>
-            <property name="curves">
-             <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:RTM_RE_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             </stringlist>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="7">
-           <layout class="QHBoxLayout" name="horizontalLayout_11">
-            <item>
-             <widget class="QLabel" name="label_9">
-              <property name="text">
-               <string>Pulse ID:</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PyDMLabel" name="PyDMLabel_18">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>20</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${RTM}:FAULTHIST2_WFPULSEID</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="0" column="6">
-           <widget class="QLabel" name="label_17">
-            <property name="text">
-             <string>RTM Fast ADC / Fault History 1</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
           </item>
           <item row="3" column="7">
            <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_2">
@@ -1772,13 +1728,26 @@ Voltage</string>
             </property>
            </widget>
           </item>
-          <item row="3" column="6">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_4">
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>Beam 
+Current</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="5">
+           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>1</horstretch>
               <verstretch>1</verstretch>
              </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
             </property>
             <property name="toolTip">
              <string/>
@@ -1804,30 +1773,39 @@ Voltage</string>
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST1_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST0_RTM_BCURR_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
           </item>
-          <item row="2" column="1" rowspan="4">
-           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>236</height>
-             </size>
-            </property>
+          <item row="5" column="5">
+           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_6">
             <property name="toolTip">
              <string/>
             </property>
-            <property name="filename" stdset="0">
-             <string>sled.ui</string>
+            <property name="showXGrid">
+             <bool>true</bool>
+            </property>
+            <property name="showYGrid">
+             <bool>true</bool>
+            </property>
+            <property name="axisColor">
+             <color>
+              <red>215</red>
+              <green>215</green>
+              <blue>215</blue>
+             </color>
+            </property>
+            <property name="showRightAxis">
+             <bool>true</bool>
+            </property>
+            <property name="title" stdset="0">
+             <string/>
+            </property>
+            <property name="curves">
+             <stringlist>
+              <string>{&quot;y_channel&quot;: &quot;ca://${RTM}:FAULTHIST0_RTM_BVOLT_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             </stringlist>
             </property>
            </widget>
           </item>
@@ -1835,30 +1813,99 @@ Voltage</string>
         </widget>
        </item>
        <item>
-        <layout class="QGridLayout" name="gridLayout_6" columnstretch="0,0">
-         <property name="leftMargin">
-          <number>2</number>
+        <widget class="QFrame" name="frame_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
          </property>
-         <property name="topMargin">
-          <number>2</number>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>200</height>
+          </size>
          </property>
-         <property name="rightMargin">
-          <number>2</number>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
          </property>
-         <property name="bottomMargin">
-          <number>2</number>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
          </property>
-         <item row="0" column="1">
-          <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="filename" stdset="0">
-            <string>rtm_faults.ui</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
+          </property>
+          <property name="rightMargin">
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
+          </property>
+          <item>
+           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="filename" stdset="0">
+             <string>rtm_faults.ui</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="filename" stdset="0">
+             <string>sled2.ui</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
        </item>
       </layout>
      </widget>
