@@ -61,7 +61,7 @@
         <enum>Qt::Vertical</enum>
        </property>
        <property name="showLabels" stdset="0">
-        <bool>false</bool>
+        <bool>true</bool>
        </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
@@ -103,7 +103,7 @@
         <enum>Qt::Vertical</enum>
        </property>
        <property name="showLabels" stdset="0">
-        <bool>false</bool>
+        <bool>true</bool>
        </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
@@ -235,6 +235,9 @@
        <property name="orientation" stdset="0">
         <enum>Qt::Vertical</enum>
        </property>
+       <property name="showLabels" stdset="0">
+        <bool>true</bool>
+       </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
        </property>
@@ -276,6 +279,9 @@
        </property>
        <property name="orientation" stdset="0">
         <enum>Qt::Vertical</enum>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>true</bool>
        </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
@@ -319,6 +325,9 @@
        <property name="orientation" stdset="0">
         <enum>Qt::Vertical</enum>
        </property>
+       <property name="showLabels" stdset="0">
+        <bool>true</bool>
+       </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
        </property>
@@ -360,6 +369,9 @@
        </property>
        <property name="orientation" stdset="0">
         <enum>Qt::Vertical</enum>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>true</bool>
        </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
@@ -407,6 +419,9 @@
        <property name="orientation" stdset="0">
         <enum>Qt::Vertical</enum>
        </property>
+       <property name="showLabels" stdset="0">
+        <bool>true</bool>
+       </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
        </property>
@@ -448,6 +463,9 @@
        </property>
        <property name="orientation" stdset="0">
         <enum>Qt::Vertical</enum>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>true</bool>
        </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
@@ -491,6 +509,9 @@
        <property name="orientation" stdset="0">
         <enum>Qt::Vertical</enum>
        </property>
+       <property name="showLabels" stdset="0">
+        <bool>true</bool>
+       </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
        </property>
@@ -532,6 +553,9 @@
        </property>
        <property name="orientation" stdset="0">
         <enum>Qt::Vertical</enum>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>true</bool>
        </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
@@ -579,6 +603,9 @@
        <property name="orientation" stdset="0">
         <enum>Qt::Vertical</enum>
        </property>
+       <property name="showLabels" stdset="0">
+        <bool>true</bool>
+       </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
        </property>
@@ -620,6 +647,9 @@
        </property>
        <property name="orientation" stdset="0">
         <enum>Qt::Vertical</enum>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>true</bool>
        </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
@@ -663,6 +693,9 @@
        <property name="orientation" stdset="0">
         <enum>Qt::Vertical</enum>
        </property>
+       <property name="showLabels" stdset="0">
+        <bool>true</bool>
+       </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
        </property>
@@ -704,6 +737,9 @@
        </property>
        <property name="orientation" stdset="0">
         <enum>Qt::Vertical</enum>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>true</bool>
        </property>
        <property name="circles" stdset="0">
         <bool>false</bool>
