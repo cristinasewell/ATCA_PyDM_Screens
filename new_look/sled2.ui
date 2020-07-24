@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>855</width>
-    <height>56</height>
+    <height>68</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -32,7 +32,7 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -41,7 +41,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -70,7 +70,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -79,7 +79,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -105,7 +105,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_14">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -114,7 +114,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -140,7 +140,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -149,7 +149,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -179,7 +179,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_9">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -191,7 +191,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -217,7 +217,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_12">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -229,7 +229,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -255,7 +255,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_10">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -267,7 +267,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -293,7 +293,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -305,7 +305,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -335,7 +335,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -347,7 +347,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -373,7 +373,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_8">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -385,7 +385,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -411,7 +411,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_16">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -423,7 +423,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -449,7 +449,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_7">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -461,7 +461,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -491,7 +491,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -503,7 +503,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -529,7 +529,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -541,7 +541,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -567,7 +567,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_11">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -579,7 +579,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -605,7 +605,7 @@
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_13">
        <property name="font">
         <font>
-         <pointsize>7</pointsize>
+         <pointsize>8</pointsize>
          <italic>true</italic>
         </font>
        </property>
@@ -617,7 +617,7 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
- font: 8px;
+ font: 9px;
 }</string>
        </property>
        <property name="channel" stdset="0">
