@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>733</width>
-    <height>400</height>
+    <height>408</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -188,6 +188,29 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    <property name="verticalSpacing">
     <number>14</number>
    </property>
+   <item row="7" column="2" rowspan="2">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>69</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="Line" name="line">
+     <property name="lineWidth">
+      <number>4</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
    <item row="0" column="0">
     <layout class="QHBoxLayout" name="horizontalLayout_3">
      <property name="leftMargin">
@@ -207,6 +230,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="text">
         <string>PLL Version</string>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
       </widget>
      </item>
      <item>
@@ -216,6 +242,423 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:PLL_VER</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="8" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="rightMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_23">
+       <property name="text">
+        <string>CLK DAC Control Mux</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMEnumButton" name="PyDMEnumButton_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:CLOCK_DACMUX</string>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="marginTop" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginBottom" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginLeft" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginRight" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="6" column="2">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="rightMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_25">
+       <property name="text">
+        <string>Lock Counter Threshold</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_11">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>94</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LOSS_THRESHOLD</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0" colspan="3">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="rightMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>7</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>4</number>
+     </property>
+     <item row="2" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:CLOCK_PLLSETPHASE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>LO PLL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:CLOCK_POL</string>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="marginTop" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginBottom" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginLeft" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginRight" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LO_KI</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>CLK PLL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>Polarity</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LO_REFSELECT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_10">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LO_PLLSETPHASE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>Reference Select</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QLabel" name="label_20">
+       <property name="text">
+        <string>DAC Set</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_7">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LO_DAC</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_8">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:CLOCK_DAC</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QLabel" name="label_21">
+       <property name="text">
+        <string>Phase Set</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:CLOCK_KI</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:CLOCK_REFSELECT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="PyDMEnumButton" name="PyDMEnumButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LO_POL</string>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="marginTop" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginBottom" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginLeft" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginRight" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:CLOCK_KP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LO_KP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>KP</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>KI</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
@@ -572,310 +1015,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
     </layout>
    </item>
-   <item row="2" column="0" colspan="3">
-    <layout class="QGridLayout" name="gridLayout_3">
-     <property name="leftMargin">
-      <number>2</number>
-     </property>
-     <property name="topMargin">
-      <number>2</number>
-     </property>
-     <property name="rightMargin">
-      <number>2</number>
-     </property>
-     <property name="bottomMargin">
-      <number>2</number>
-     </property>
-     <property name="spacing">
-      <number>7</number>
-     </property>
-     <item row="2" column="6">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_PLLSETPHASE</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_16">
-       <property name="text">
-        <string>LO PLL</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="4">
-      <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>40</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{font: 8px;}</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_POL</string>
-       </property>
-       <property name="orientation" stdset="0">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="marginTop" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginBottom" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginLeft" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginRight" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="horizontalSpacing" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="verticalSpacing" stdset="0">
-        <number>0</number>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_KI</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_17">
-       <property name="text">
-        <string>CLK PLL</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="4">
-      <widget class="QLabel" name="label_19">
-       <property name="text">
-        <string>Polarity</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_REFSELECT</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="6">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_10">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_PLLSETPHASE</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="3">
-      <widget class="QLabel" name="label_18">
-       <property name="text">
-        <string>Reference Select</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="5">
-      <widget class="QLabel" name="label_20">
-       <property name="text">
-        <string>DAC Set</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="5">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_7">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_DAC</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="5">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_8">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_DAC</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="6">
-      <widget class="QLabel" name="label_21">
-       <property name="text">
-        <string>Phase Set</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="2">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_KI</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="3">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_REFSELECT</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="4">
-      <widget class="PyDMEnumButton" name="PyDMEnumButton">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>40</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{font: 8px;}</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_POL</string>
-       </property>
-       <property name="orientation" stdset="0">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="marginTop" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginBottom" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginLeft" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginRight" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="horizontalSpacing" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="verticalSpacing" stdset="0">
-        <number>0</number>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_KP</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_KP</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="label_12">
-       <property name="text">
-        <string>KP</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="label_13">
-       <property name="text">
-        <string>KI</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item row="3" column="0" rowspan="3">
+   <item row="5" column="0" rowspan="3">
     <layout class="QVBoxLayout" name="verticalLayout">
      <property name="leftMargin">
       <number>2</number>
@@ -895,7 +1035,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>LO DAC Control Mux</string>
        </property>
        <property name="alignment">
-        <set>Qt::AlignCenter</set>
+        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
        </property>
       </widget>
      </item>
@@ -947,7 +1087,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
     </layout>
    </item>
-   <item row="3" column="1" rowspan="4">
+   <item row="5" column="1" rowspan="4">
     <layout class="QVBoxLayout" name="verticalLayout_3">
      <property name="leftMargin">
       <number>2</number>
@@ -1007,8 +1147,11 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
     </layout>
    </item>
-   <item row="3" column="2">
+   <item row="5" column="2">
     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>7</number>
+     </property>
      <property name="leftMargin">
       <number>2</number>
      </property>
@@ -1046,129 +1189,15 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
     </layout>
    </item>
-   <item row="4" column="2">
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <property name="leftMargin">
-      <number>2</number>
+   <item row="4" column="0" colspan="3">
+    <widget class="Line" name="line_2">
+     <property name="lineWidth">
+      <number>3</number>
      </property>
-     <property name="topMargin">
-      <number>2</number>
-     </property>
-     <property name="rightMargin">
-      <number>2</number>
-     </property>
-     <property name="bottomMargin">
-      <number>2</number>
-     </property>
-     <item>
-      <widget class="QLabel" name="label_25">
-       <property name="text">
-        <string>Lock Counter Threshold</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_11">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-         <horstretch>94</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LOSS_THRESHOLD</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item row="5" column="2" rowspan="2">
-    <spacer name="verticalSpacer">
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Horizontal</enum>
      </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>69</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="6" column="0">
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <property name="leftMargin">
-      <number>2</number>
-     </property>
-     <property name="topMargin">
-      <number>2</number>
-     </property>
-     <property name="rightMargin">
-      <number>2</number>
-     </property>
-     <property name="bottomMargin">
-      <number>2</number>
-     </property>
-     <item>
-      <widget class="QLabel" name="label_23">
-       <property name="text">
-        <string>CLK DAC Control Mux</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="PyDMEnumButton" name="PyDMEnumButton_4">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>40</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{font: 8px;}</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_DACMUX</string>
-       </property>
-       <property name="orientation" stdset="0">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="marginTop" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginBottom" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginLeft" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginRight" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="horizontalSpacing" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="verticalSpacing" stdset="0">
-        <number>0</number>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    </widget>
    </item>
   </layout>
  </widget>
