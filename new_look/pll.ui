@@ -52,7 +52,7 @@ QPushButton:hover {
    background-color: rgb(106,127,132);
 }
 QPushButton:pressed {
-    background-color: rgb(208,219,222);
+    background-color: rgb(218,229,232);
     border-style: inset;
     border-width: 2px;
 	border-color: rgb(50,88,100) rgb(212,228,233) rgb(212,228,233) rgb(50,88,100);
@@ -190,6 +190,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    </property>
    <item row="0" column="0">
     <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="rightMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
      <item>
       <widget class="QLabel" name="label">
        <property name="text">
@@ -211,6 +223,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    </item>
    <item row="1" column="0" colspan="3">
     <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>3</number>
+     </property>
+     <property name="topMargin">
+      <number>3</number>
+     </property>
+     <property name="rightMargin">
+      <number>3</number>
+     </property>
+     <property name="bottomMargin">
+      <number>3</number>
+     </property>
      <item row="0" column="1">
       <widget class="QLabel" name="label_2">
        <property name="text">
@@ -410,7 +434,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>Reset</string>
        </property>
        <property name="checkable">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:LO_LOCKCNTRESET</string>
@@ -536,7 +560,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>Reset</string>
        </property>
        <property name="checkable">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:CLOCK_LOCKCNTRESET</string>
@@ -547,6 +571,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    </item>
    <item row="2" column="0" colspan="3">
     <layout class="QGridLayout" name="gridLayout_3">
+     <property name="leftMargin">
+      <number>3</number>
+     </property>
+     <property name="topMargin">
+      <number>3</number>
+     </property>
+     <property name="rightMargin">
+      <number>3</number>
+     </property>
+     <property name="bottomMargin">
+      <number>3</number>
+     </property>
      <item row="2" column="6">
       <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
        <property name="toolTip">
@@ -583,6 +619,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:CLOCK_POL</string>
@@ -759,6 +798,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:LO_POL</string>
        </property>
@@ -829,6 +871,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    </item>
    <item row="3" column="0" rowspan="3">
     <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="rightMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
      <item>
       <widget class="QLabel" name="label_22">
        <property name="text">
@@ -855,6 +909,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:LO_DACMUX</string>
@@ -886,6 +943,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    </item>
    <item row="3" column="1" rowspan="4">
     <layout class="QVBoxLayout" name="verticalLayout_3">
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="rightMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
      <item>
       <widget class="QLabel" name="label_24">
        <property name="text">
@@ -900,6 +969,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMEnumButton" name="PyDMEnumButton_5">
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:USER_DACMUX</string>
@@ -931,6 +1003,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    </item>
    <item row="3" column="2">
     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="rightMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
      <item>
       <widget class="QLabel" name="label_26">
        <property name="text">
@@ -958,6 +1042,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    </item>
    <item row="4" column="2">
     <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="rightMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
      <item>
       <widget class="QLabel" name="label_25">
        <property name="text">
@@ -998,6 +1094,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    </item>
    <item row="6" column="0">
     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="rightMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
      <item>
       <widget class="QLabel" name="label_23">
        <property name="text">
@@ -1024,6 +1132,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:CLOCK_DACMUX</string>
