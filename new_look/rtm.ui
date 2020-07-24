@@ -20,29 +20,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">/* Background color of popup-list.*/ 
-QComboBox QListView{
-    background-color:white;
-    border:1px solid gray;
-}
-/* Needed to complete the rule set. */
-QComboBox::item:alternate {
-    background: white;
-}
-/* Color of the selected list item. */
-QComboBox::item:selected {
-    border: 1px solid transparent;
-    background:yellow;
-}
-/* Indicator will shine through the label text if you don't make it hidden. */
-QComboBox::indicator{
-    background-color:transparent;
-    selection-background-color:transparent;
-    color:transparent;
-    selection-color:transparent;
-}
-
-QPushButton {
+   <string notr="true">QPushButton {
     background-color: rgb(136,157,162);
     border-color: rgb(212,228,233) rgb(50,88,100) rgb(50,88,100) rgb(212,228,233);
     border-style: outset;
