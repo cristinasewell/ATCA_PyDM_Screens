@@ -24,28 +24,24 @@
    border-style: solid;
    border-width: 1px;
    border-color: rgb(0, 93, 168);
-   border-radius: 3px;
+   border-radius: 1px;
    padding-left: 3px;
 }
 QComboBox:on {
-   border-radius: 3px;
+   border-radius: 1px;
    background:transparent;
 }
 QComboBox::drop-down {
-   margin-right: 5px;
+   margin-right: 2px;
 }
 QComboBox QAbstractItemView::item {
-   padding: 8px 8px 8px 8px;
+   padding: 4px 4px 4px 4px;
 }
 QComboBox QAbstractItemView {
    background: transparent;
 }
 QComboBox QListView::item {
-   background: qradialgradient(
-   cx: 0.5, cy: -1.6, fx: 0.5, fy: 0,
-   radius: 2,
-   stop: 0 #C4C4C4,
-   stop: 1 #DBDBDB );
+   background-color: rgb(208,223,240);
    border-style: solid;
    border-width: 1px;
    border-color: rgb(0, 93, 168);
