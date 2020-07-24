@@ -217,6 +217,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Phase (raw)</string>
        </property>
@@ -232,6 +238,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <horstretch>1</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>Phase (deg)</string>
@@ -249,6 +261,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Amplitude (raw)</string>
        </property>
@@ -264,6 +282,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <horstretch>1</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>Amplitude (norm)</string>
@@ -281,6 +305,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Set I</string>
        </property>
@@ -296,6 +326,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <horstretch>1</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="text">
         <string>Set Q</string>
@@ -313,6 +349,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Set Phase</string>
        </property>
@@ -329,6 +371,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Set Amplitude</string>
        </property>
@@ -339,6 +387,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Ch0</string>
        </property>
@@ -354,6 +408,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_PHASERAW0</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -381,6 +438,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_AMPLRAW0</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="1" column="4">
@@ -406,6 +466,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_I0</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -444,6 +507,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Ch1</string>
        </property>
@@ -459,6 +528,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_PHASERAW1</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -486,6 +558,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_AMPLRAW1</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="2" column="4">
@@ -511,6 +586,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_I1</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -549,6 +627,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Ch2</string>
        </property>
@@ -564,6 +648,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_PHASERAW2</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -591,6 +678,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_AMPLRAW2</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="3" column="4">
@@ -616,6 +706,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_I2</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -654,6 +747,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
      <item row="4" column="0">
       <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Ch3</string>
        </property>
@@ -669,6 +768,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_PHASERAW3</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -696,6 +798,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_AMPLRAW3</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="4" column="4">
@@ -721,6 +826,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_I3</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -759,6 +867,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
      <item row="5" column="0">
       <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Ch4</string>
        </property>
@@ -774,6 +888,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_PHASERAW4</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -801,6 +918,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_AMPLRAW4</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="5" column="4">
@@ -826,6 +946,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_I4</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -864,6 +987,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
      <item row="6" column="0">
       <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Ch5</string>
        </property>
@@ -879,6 +1008,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_PHASERAW5</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -906,6 +1038,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_AMPLRAW5</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="6" column="4">
@@ -931,6 +1066,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_I5</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -969,6 +1107,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
      <item row="7" column="0">
       <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Ch6</string>
        </property>
@@ -984,6 +1128,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_PHASERAW6</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -1011,6 +1158,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_AMPLRAW6</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="7" column="4">
@@ -1036,6 +1186,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_I6</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -1074,6 +1227,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
      <item row="8" column="0">
       <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Ch7</string>
        </property>
@@ -1089,6 +1248,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_PHASERAW7</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -1116,6 +1278,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_AMPLRAW7</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="8" column="4">
@@ -1141,6 +1306,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_I7</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -1179,6 +1347,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
      <item row="9" column="0">
       <widget class="QLabel" name="label_11">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Ch8</string>
        </property>
@@ -1194,6 +1368,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_PHASERAW8</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -1221,6 +1398,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_AMPLRAW8</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="9" column="4">
@@ -1246,6 +1426,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_I8</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -1284,6 +1467,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
      <item row="10" column="0">
       <widget class="QLabel" name="label_12">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Ch9</string>
        </property>
@@ -1299,6 +1488,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_PHASERAW9</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -1326,6 +1518,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_AMPLRAW9</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="10" column="4">
@@ -1351,6 +1546,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_I9</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -1389,6 +1587,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
      <item row="11" column="0">
       <widget class="QLabel" name="label_13">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Ch10</string>
        </property>
@@ -1404,6 +1608,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_PHASERAW10</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -1431,6 +1638,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_AMPLRAW10</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="11" column="4">
@@ -1456,6 +1666,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_I10</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -1494,6 +1707,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
      <item row="12" column="0">
       <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Ch11</string>
        </property>
@@ -1509,6 +1728,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_PHASERAW11</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
@@ -1536,6 +1758,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_AMPLRAW11</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="12" column="4">
@@ -1561,6 +1786,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_I11</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
        </property>
       </widget>
      </item>
