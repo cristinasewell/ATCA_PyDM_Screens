@@ -490,6 +490,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_PHASE0</string>
        </property>
@@ -499,6 +502,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_AMPL0</string>
@@ -610,6 +616,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_PHASE1</string>
        </property>
@@ -619,6 +628,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_22">
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_AMPL1</string>
@@ -730,6 +742,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_PHASE2</string>
        </property>
@@ -739,6 +754,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_24">
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_AMPL2</string>
@@ -850,6 +868,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_PHASE3</string>
        </property>
@@ -859,6 +880,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_16">
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_AMPL3</string>
@@ -970,6 +994,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_PHASE4</string>
        </property>
@@ -979,6 +1006,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_18">
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_AMPL4</string>
@@ -1090,6 +1120,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_PHASE5</string>
        </property>
@@ -1099,6 +1132,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_14">
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_AMPL5</string>
@@ -1210,6 +1246,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_PHASE6</string>
        </property>
@@ -1219,6 +1258,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_23">
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_AMPL6</string>
@@ -1330,6 +1372,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_PHASE7</string>
        </property>
@@ -1339,6 +1384,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_19">
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_AMPL7</string>
@@ -1450,6 +1498,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_PHASE8</string>
        </property>
@@ -1459,6 +1510,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_20">
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_AMPL8</string>
@@ -1570,6 +1624,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_PHASE9</string>
        </property>
@@ -1579,6 +1636,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_17">
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_AMPL9</string>
@@ -1690,6 +1750,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_PHASE10</string>
        </property>
@@ -1699,6 +1762,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_13">
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_AMPL10</string>
@@ -1810,6 +1876,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_PHASE11</string>
        </property>
@@ -1819,6 +1888,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_21">
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_ROT_AMPL11</string>
