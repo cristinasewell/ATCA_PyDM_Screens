@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>381</width>
-    <height>366</height>
+    <width>442</width>
+    <height>516</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,7 +26,7 @@ QComboBox::item:alternate {
 /* Color of the selected list item. */
 QComboBox::item:selected {
     border: 1px solid transparent;
-    background:yellow;
+    background: #d1ede1;
 }
 /* Indicator will shine through the label text if you don't make it hidden. */
 QComboBox::indicator{
@@ -172,40 +172,14 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>FPGA Version</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="0">
-      <widget class="QLabel" name="label_8">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>RX Link Status</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
+     <item row="1" column="1">
       <widget class="QLabel" name="label_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
        <property name="font">
         <font>
          <weight>75</weight>
@@ -220,8 +194,49 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="9" column="0">
+     <item row="8" column="1">
+      <widget class="QLabel" name="label_9">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Version Error</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_6">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CRCERRCNT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
       <widget class="QLabel" name="label_10">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
        <property name="font">
         <font>
          <weight>75</weight>
@@ -236,8 +251,27 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="10" column="0">
-      <widget class="QLabel" name="label_11">
+     <item row="8" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_9">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:VERERR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="1">
+      <widget class="QLabel" name="label_15">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
        <property name="font">
         <font>
          <weight>75</weight>
@@ -245,14 +279,14 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>LCLS1 master delay (nsec)</string>
+        <string>Mode Selection</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
      </item>
-     <item row="14" column="1" colspan="2">
+     <item row="14" column="2" colspan="2">
       <widget class="PyDMEnumButton" name="PyDMEnumButton">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
@@ -298,72 +332,40 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="8" column="0">
-      <widget class="QLabel" name="label_9">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Version Error</string>
+     <item row="1" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_2">
+       <property name="toolTip">
+        <string/>
        </property>
        <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:UPTIME</string>
        </property>
       </widget>
      </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Start Frame Counter</string>
+     <item row="11" column="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <property name="toolTip">
+        <string/>
        </property>
        <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:MSGDLY</string>
        </property>
       </widget>
      </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label_4">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>End Frame Counter</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="0">
-      <widget class="QLabel" name="label_7">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>RX Clock Counter</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="0">
+     <item row="5" column="1">
       <widget class="QLabel" name="label_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
        <property name="font">
         <font>
          <weight>75</weight>
@@ -378,56 +380,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="11" column="0">
-      <widget class="QLabel" name="label_13">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>LCLS2 master delay (nsec)</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="label_5">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Fiducial Counter</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="14" column="0">
-      <widget class="QLabel" name="label_15">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Mode Selection</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="1">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+     <item row="4" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_5">
        <property name="toolTip">
         <string/>
        </property>
@@ -435,25 +389,75 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:MSGDLY</string>
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:FIDCNT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFCNT</string>
        </property>
       </widget>
      </item>
      <item row="10" column="1">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit">
-       <property name="toolTip">
-        <string/>
+      <widget class="QLabel" name="label_11">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>LCLS1 master delay (nsec)</string>
        </property>
        <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TREF</string>
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
      </item>
-     <item row="12" column="0">
+     <item row="7" column="1">
+      <widget class="QLabel" name="label_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RX Link Status</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
       <widget class="QLabel" name="label_12">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
        <property name="font">
         <font>
          <weight>75</weight>
@@ -468,8 +472,65 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="13" column="0">
+     <item row="15" column="2">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::MinimumExpanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:FPGAVER</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLabel" name="label_13">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>LCLS2 master delay (nsec)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="1">
       <widget class="QLabel" name="label_14">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
        <property name="font">
         <font>
          <weight>75</weight>
@@ -484,20 +545,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="13" column="1">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SYS2_CLK</string>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="1">
+     <item row="12" column="2">
       <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
        <property name="toolTip">
         <string/>
@@ -510,46 +558,29 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="9" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_10">
-       <property name="toolTip">
-        <string/>
+     <item row="4" column="1">
+      <widget class="QLabel" name="label_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Fiducial Counter</string>
        </property>
        <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:FRAMEVER</string>
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
      </item>
-     <item row="8" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_9">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:VERERR</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_8">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:RXLNKSTATUS</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="1">
+     <item row="6" column="2">
       <widget class="PyDMLabel" name="PyDMLabel_7">
        <property name="toolTip">
         <string/>
@@ -562,33 +593,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="5" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_6">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CRCERRCNT</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_5">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:FIDCNT</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
+     <item row="3" column="2">
       <widget class="PyDMLabel" name="PyDMLabel_4">
        <property name="toolTip">
         <string/>
@@ -601,8 +606,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_3">
+     <item row="10" column="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit">
        <property name="toolTip">
         <string/>
        </property>
@@ -610,12 +615,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFCNT</string>
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TREF</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_2">
+     <item row="7" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_8">
        <property name="toolTip">
         <string/>
        </property>
@@ -623,12 +628,69 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:UPTIME</string>
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:RXLNKSTATUS</string>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel">
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>FPGA Version</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="label_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RX Clock Counter</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="3">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="13" column="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
        <property name="toolTip">
         <string/>
        </property>
@@ -636,9 +698,274 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:FPGAVER</string>
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SYS2_CLK</string>
        </property>
       </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_10">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:FRAMEVER</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>End Frame Counter</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Start Frame Counter</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="1" colspan="3">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="0">
+        <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>Channel Screens</string>
+         </property>
+         <property name="filenames" stdset="0">
+          <stringlist>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string>tpr_channel_screen.ui</string>
+           <string></string>
+          </stringlist>
+         </property>
+         <property name="titles" stdset="0">
+          <stringlist>
+           <string>Channel 00</string>
+           <string>Channel 01</string>
+           <string>Channel 02</string>
+           <string>Channel 03</string>
+           <string>Channel 04</string>
+           <string>Channel 05</string>
+           <string>Channel 06</string>
+           <string>Channel 07</string>
+           <string>Channel 08</string>
+           <string>Channel 09</string>
+           <string>Channel 10</string>
+           <string>Channel 11</string>
+           <string>Channel 12</string>
+           <string>Channel 13</string>
+           <string>Channel 14</string>
+           <string>Channel 15</string>
+           <string></string>
+          </stringlist>
+         </property>
+         <property name="macros" stdset="0">
+          <stringlist>
+           <string>{&quot;NN&quot;:&quot;00&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;01&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;02&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;03&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;04&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;05&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;06&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;07&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;08&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;09&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;10&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;11&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;12&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;13&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;14&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;15&quot;}</string>
+          </stringlist>
+         </property>
+         <property name="openInNewWindow" stdset="0">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_16">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Channel Screens</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_17">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Trigger Screens </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>Trigger Screens</string>
+         </property>
+         <property name="filenames" stdset="0">
+          <stringlist>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+           <string>tpr_trigger_screen.ui</string>
+          </stringlist>
+         </property>
+         <property name="titles" stdset="0">
+          <stringlist>
+           <string>Trigger 00</string>
+           <string>Trigger 01</string>
+           <string>Trigger 02</string>
+           <string>Trigger 03</string>
+           <string>Trigger 04</string>
+           <string>Trigger 05</string>
+           <string>Trigger 06</string>
+           <string>Trigger 07</string>
+           <string>Trigger 08</string>
+           <string>Trigger 09</string>
+           <string>Trigger 10</string>
+           <string>Trigger 11</string>
+           <string>Trigger 12</string>
+           <string>Trigger 13</string>
+           <string>Trigger 14</string>
+           <string>Trigger 15</string>
+          </stringlist>
+         </property>
+         <property name="macros" stdset="0">
+          <stringlist>
+           <string>{&quot;NN&quot;:&quot;00&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;01&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;02&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;03&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;04&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;05&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;06&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;07&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;08&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;09&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;10&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;11&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;12&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;13&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;14&quot;}</string>
+           <string>{&quot;NN&quot;:&quot;15&quot;}</string>
+          </stringlist>
+         </property>
+         <property name="openInNewWindow" stdset="0">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
     </layout>
    </item>
@@ -659,6 +986,11 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    <class>PyDMEnumButton</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.enum_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
   </customwidget>
  </customwidgets>
  <resources/>
