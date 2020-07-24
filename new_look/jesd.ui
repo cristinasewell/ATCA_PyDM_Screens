@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>558</width>
-    <height>148</height>
+    <height>150</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -41,7 +41,7 @@ QFrame{
 }
 
 QPushButton {
-    background-color: rgb(156,177,182);
+    background-color: rgb(136,157,162);
     border-color: rgb(212,228,233) rgb(50,88,100) rgb(50,88,100) rgb(212,228,233);
     border-style: outset;
     border-radius: 1px;
@@ -52,13 +52,13 @@ QPushButton:hover {
    background-color: rgb(106,127,132);
 }
 QPushButton:pressed {
-    background-color: rgb(208,219,222);
+    background-color: rgb(208,229,232);
     border-style: inset;
     border-width: 2px;
 	border-color: rgb(50,88,100) rgb(212,228,233) rgb(212,228,233) rgb(50,88,100);
 }
 QPushButton:checked{
-    background-color: rgb(178,190,194);
+    background-color: rgb(208,229,232);
     border-style: inset;
     border-width: 2px;
 	border-color:  rgb(112,134,142) rgb(229,233,235) rgb(239,233,235) rgb(112,134,142);

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>733</width>
+    <width>736</width>
     <height>436</height>
    </rect>
   </property>
@@ -41,7 +41,7 @@ QFrame{
 }
 
 QPushButton {
-    background-color: rgb(156,177,182);
+    background-color: rgb(136,157,162);
     border-color: rgb(212,228,233) rgb(50,88,100) rgb(50,88,100) rgb(212,228,233);
     border-style: outset;
     border-radius: 1px;
@@ -52,13 +52,13 @@ QPushButton:hover {
    background-color: rgb(106,127,132);
 }
 QPushButton:pressed {
-    background-color: rgb(218,229,232);
+    background-color: rgb(208,229,232);
     border-style: inset;
     border-width: 2px;
 	border-color: rgb(50,88,100) rgb(212,228,233) rgb(212,228,233) rgb(50,88,100);
 }
 QPushButton:checked{
-    background-color: rgb(178,190,194);
+    background-color: rgb(208,229,232);
     border-style: inset;
     border-width: 2px;
 	border-color:  rgb(112,134,142) rgb(229,233,235) rgb(239,233,235) rgb(112,134,142);
@@ -227,6 +227,13 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </property>
      <item>
       <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>PLL Version</string>
        </property>
@@ -349,6 +356,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="text">
         <string>Lock Counter Threshold</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
      </item>
@@ -1321,6 +1331,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="text">
         <string>Signal Loss Counter Threshold</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
      </item>

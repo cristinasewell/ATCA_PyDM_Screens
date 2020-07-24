@@ -41,7 +41,7 @@ QFrame{
 }
 
 QPushButton {
-    background-color: rgb(156,177,182);
+    background-color: rgb(136,157,162);
     border-color: rgb(212,228,233) rgb(50,88,100) rgb(50,88,100) rgb(212,228,233);
     border-style: outset;
     border-radius: 1px;
@@ -52,13 +52,13 @@ QPushButton:hover {
    background-color: rgb(106,127,132);
 }
 QPushButton:pressed {
-    background-color: rgb(218,229,232);
+    background-color: rgb(208,229,232);
     border-style: inset;
     border-width: 2px;
 	border-color: rgb(50,88,100) rgb(212,228,233) rgb(212,228,233) rgb(50,88,100);
 }
 QPushButton:checked{
-    background-color: rgb(178,190,194);
+    background-color: rgb(208,229,232);
     border-style: inset;
     border-width: 2px;
 	border-color:  rgb(112,134,142) rgb(229,233,235) rgb(239,233,235) rgb(112,134,142);
@@ -273,7 +273,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLabel" name="PyDMLabel_10">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>0</horstretch>
+         <horstretch>1</horstretch>
          <verstretch>1</verstretch>
         </sizepolicy>
        </property>
@@ -295,7 +295,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLabel" name="PyDMLabel_11">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>0</horstretch>
+         <horstretch>1</horstretch>
          <verstretch>1</verstretch>
         </sizepolicy>
        </property>
@@ -314,12 +314,15 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
+         <horstretch>1</horstretch>
          <verstretch>1</verstretch>
         </sizepolicy>
        </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:BASEBAND_PHASE</string>
@@ -330,12 +333,15 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
+         <horstretch>1</horstretch>
          <verstretch>1</verstretch>
         </sizepolicy>
        </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:BASEBAND_AMPL</string>
@@ -769,6 +775,13 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </property>
      <item>
       <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>UpConverter Version</string>
        </property>
