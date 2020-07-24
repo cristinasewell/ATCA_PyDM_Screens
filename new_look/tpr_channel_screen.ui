@@ -216,21 +216,48 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="PyDMPushButton" name="PyDMPushButton">
+        <widget class="PyDMEnumButton" name="PyDMEnumButton">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-           <horstretch>1</horstretch>
-           <verstretch>1</verstretch>
+          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
           </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
          </property>
          <property name="toolTip">
           <string/>
          </property>
-         <property name="checkable">
-          <bool>true</bool>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{font: 8px;}</string>
          </property>
          <property name="channel" stdset="0">
           <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_SYS0_TCTL</string>
+         </property>
+         <property name="orientation" stdset="0">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="marginTop" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="marginBottom" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="marginLeft" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="marginRight" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="horizontalSpacing" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="verticalSpacing" stdset="0">
+          <number>0</number>
          </property>
         </widget>
        </item>
@@ -251,15 +278,48 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="PyDMPushButton" name="PyDMPushButton_2">
+        <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
          <property name="toolTip">
           <string/>
          </property>
-         <property name="checkable">
-          <bool>true</bool>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{font: 8px;}</string>
          </property>
          <property name="channel" stdset="0">
           <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_SYS2_TCTL</string>
+         </property>
+         <property name="orientation" stdset="0">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="marginTop" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="marginBottom" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="marginLeft" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="marginRight" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="horizontalSpacing" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="verticalSpacing" stdset="0">
+          <number>0</number>
          </property>
         </widget>
        </item>
@@ -695,9 +755,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    <header>pydm.widgets.line_edit</header>
   </customwidget>
   <customwidget>
-   <class>PyDMPushButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.pushbutton</header>
+   <class>PyDMEnumButton</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.enum_button</header>
   </customwidget>
   <customwidget>
    <class>PyDMEnumComboBox</class>

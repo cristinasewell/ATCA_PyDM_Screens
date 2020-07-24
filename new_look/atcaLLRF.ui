@@ -405,11 +405,11 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string/>
               </property>
               <property name="text">
-               <string>Timing Crossbar</string>
+               <string>Timing</string>
               </property>
               <property name="filenames" stdset="0">
                <stringlist>
-                <string>timing.ui</string>
+                <string>time.ui</string>
                </stringlist>
               </property>
               <property name="openInNewWindow" stdset="0">

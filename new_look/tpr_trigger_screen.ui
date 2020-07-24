@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>661</width>
-    <height>174</height>
+    <width>694</width>
+    <height>204</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -195,8 +195,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      <property name="verticalSpacing">
       <number>12</number>
      </property>
-     <item row="0" column="3">
-      <widget class="QLabel" name="label_2">
+     <item row="4" column="4">
+      <widget class="QLabel" name="label_7">
        <property name="font">
         <font>
          <weight>75</weight>
@@ -204,12 +204,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>LCLS1</string>
+        <string>LCLS2 Delay (nsec)</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="4">
-      <widget class="QLabel" name="label_6">
+     <item row="4" column="5">
+      <widget class="QLabel" name="label_9">
        <property name="font">
         <font>
          <weight>75</weight>
@@ -217,7 +217,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>LCLS1 Delay (nsec)</string>
+        <string>LCLS2 Width (nsec)</string>
        </property>
       </widget>
      </item>
@@ -234,10 +234,10 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="1" column="3">
-      <widget class="PyDMPushButton" name="PyDMPushButton">
+     <item row="2" column="5">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
          <horstretch>1</horstretch>
          <verstretch>1</verstretch>
         </sizepolicy>
@@ -245,15 +245,38 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="toolTip">
         <string/>
        </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
        <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS0_TCTL </string>
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS0_TWID</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="4">
+     <item row="4" column="3">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>LCLS2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>LCLS1 Delay (nsec)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
       <widget class="PyDMLineEdit" name="PyDMLineEdit">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -269,7 +292,102 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
+     <item row="2" column="3">
+      <widget class="PyDMEnumButton" name="PyDMEnumButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS0_TCTL </string>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="marginTop" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginBottom" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginLeft" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginRight" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SOURCE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS2_TDES</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_TPOL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>LCLS1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
       <widget class="QLabel" name="label_4">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -291,7 +409,43 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="4" column="0">
+     <item row="5" column="5">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS2_TWID</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="3">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="5" column="0">
       <widget class="QLabel" name="label_5">
        <property name="font">
         <font>
@@ -307,145 +461,51 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="1" column="1">
-      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+     <item row="5" column="3">
+      <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-         <horstretch>1</horstretch>
-         <verstretch>1</verstretch>
+        <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
         </sizepolicy>
        </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SOURCE</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="3">
-      <spacer name="horizontalSpacer">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
+       <property name="maximumSize">
         <size>
-         <width>40</width>
-         <height>20</height>
+         <width>16777215</width>
+         <height>40</height>
         </size>
        </property>
-      </spacer>
-     </item>
-     <item row="4" column="3">
-      <widget class="PyDMPushButton" name="PyDMPushButton_2">
        <property name="toolTip">
         <string/>
        </property>
-       <property name="checkable">
-        <bool>true</bool>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}</string>
        </property>
-      </widget>
-     </item>
-     <item row="4" column="5">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS2_TWID</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="4">
-      <widget class="QLabel" name="label_7">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>LCLS2 Delay (nsec)</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="5">
-      <widget class="QLabel" name="label_9">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>LCLS2 Width (nsec)</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_TPOL</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="4">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS2_TDES</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="5">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>1</horstretch>
-         <verstretch>1</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS0_TWID</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="3">
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>LCLS2</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <spacer name="horizontalSpacer_2">
-       <property name="orientation">
+       <property name="orientation" stdset="0">
         <enum>Qt::Horizontal</enum>
        </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
+       <property name="marginTop" stdset="0">
+        <number>0</number>
        </property>
-      </spacer>
+       <property name="marginBottom" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginLeft" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginRight" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
@@ -458,9 +518,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    <header>pydm.widgets.line_edit</header>
   </customwidget>
   <customwidget>
-   <class>PyDMPushButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.pushbutton</header>
+   <class>PyDMEnumButton</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.enum_button</header>
   </customwidget>
   <customwidget>
    <class>PyDMEnumComboBox</class>
