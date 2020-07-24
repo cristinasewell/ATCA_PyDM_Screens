@@ -42,10 +42,6 @@ QComboBox::indicator{
     selection-color:transparent;
 }
 
-QFrame{
-  background-color: rgb(244,244,246)
-}
-
 QPushButton {
     background-color: rgb(136,157,162);
     border-color: rgb(212,228,233) rgb(50,88,100) rgb(50,88,100) rgb(212,228,233);
