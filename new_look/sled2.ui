@@ -7,13 +7,25 @@
     <x>0</x>
     <y>0</y>
     <width>855</width>
-    <height>68</height>
+    <height>76</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
    <item>
     <layout class="QFormLayout" name="formLayout">
      <item row="0" column="0">
@@ -27,7 +39,7 @@
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>0</height>
+         <height>14</height>
         </size>
        </property>
        <property name="font">
@@ -40,9 +52,7 @@
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_RF_ON</string>
@@ -68,6 +78,12 @@
      </item>
      <item row="1" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -78,9 +94,7 @@
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_MOTR_TIMEOUT</string>
@@ -103,6 +117,12 @@
      </item>
      <item row="2" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_14">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -113,9 +133,7 @@
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_UPPER_DETUNED</string>
@@ -138,6 +156,12 @@
      </item>
      <item row="3" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -148,9 +172,7 @@
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_FP_OVER</string>
@@ -177,6 +199,12 @@
     <layout class="QFormLayout" name="formLayout_2">
      <item row="0" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_9">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -190,9 +218,7 @@
         <enum>Qt::RightToLeft</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_UPPER_TUNED</string>
@@ -215,6 +241,12 @@
      </item>
      <item row="1" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_12">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -228,9 +260,7 @@
         <enum>Qt::RightToLeft</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_VOLT_OVER</string>
@@ -253,6 +283,12 @@
      </item>
      <item row="2" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_10">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -266,9 +302,7 @@
         <enum>Qt::RightToLeft</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_CURR_OVER</string>
@@ -291,6 +325,12 @@
      </item>
      <item row="3" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -304,9 +344,7 @@
         <enum>Qt::RightToLeft</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_MOTR_TUNING</string>
@@ -333,6 +371,12 @@
     <layout class="QFormLayout" name="formLayout_3">
      <item row="0" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -346,9 +390,7 @@
         <enum>Qt::RightToLeft</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_LOWER_TUNED</string>
@@ -371,6 +413,12 @@
      </item>
      <item row="1" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_8">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -384,9 +432,7 @@
         <enum>Qt::RightToLeft</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_MOTR_NOT_DETUNED</string>
@@ -409,6 +455,12 @@
      </item>
      <item row="2" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_16">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -422,9 +474,7 @@
         <enum>Qt::RightToLeft</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_LOWER_DETUNED</string>
@@ -447,6 +497,12 @@
      </item>
      <item row="3" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_7">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -460,9 +516,7 @@
         <enum>Qt::RightToLeft</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_RP_OVER</string>
@@ -489,6 +543,12 @@
     <layout class="QFormLayout" name="formLayout_4">
      <item row="0" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -502,9 +562,7 @@
         <enum>Qt::RightToLeft</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_MOTR_DETUNING</string>
@@ -527,6 +585,12 @@
      </item>
      <item row="1" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -540,9 +604,7 @@
         <enum>Qt::RightToLeft</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_MOD_FAULT</string>
@@ -565,6 +627,12 @@
      </item>
      <item row="2" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_11">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -578,9 +646,7 @@
         <enum>Qt::RightToLeft</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_MOTR_NOT_TUNED</string>
@@ -603,6 +669,12 @@
      </item>
      <item row="3" column="0">
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_13">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>8</pointsize>
@@ -616,9 +688,7 @@
         <enum>Qt::RightToLeft</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">QLabel{
- font: 9px;
-}</string>
+        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_CURR_UNDER</string>
