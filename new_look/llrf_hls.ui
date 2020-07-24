@@ -402,324 +402,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <layout class="QVBoxLayout" name="verticalLayout_4">
           <item>
            <layout class="QGridLayout" name="gridLayout_7">
-            <item row="0" column="0" rowspan="6" colspan="2">
-             <layout class="QGridLayout" name="gridLayout_3">
-              <item row="0" column="0">
-               <widget class="QLabel" name="label_34">
-                <property name="font">
-                 <font>
-                  <pointsize>8</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>Stream </string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="0">
-               <widget class="QLabel" name="label_36">
-                <property name="font">
-                 <font>
-                  <pointsize>8</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>Reference Subtraction</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="1">
-               <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font: 8px;}</string>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:MODECFG</string>
-                </property>
-                <property name="orientation" stdset="0">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="marginTop" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginLeft" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginRight" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="horizontalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="verticalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0">
-               <widget class="QLabel" name="label_35">
-                <property name="font">
-                 <font>
-                  <pointsize>8</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>Trigger Mode Configuration</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="1">
-               <widget class="PyDMEnumButton" name="PyDMEnumButton_3">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font: 8px;}</string>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:REFSUBENB</string>
-                </property>
-                <property name="orientation" stdset="0">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="marginTop" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginLeft" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginRight" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="horizontalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="verticalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="1">
-               <widget class="PyDMEnumButton" name="PyDMEnumButton">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font: 8px;}</string>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:STRMENB</string>
-                </property>
-                <property name="orientation" stdset="0">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="marginTop" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginLeft" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginRight" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="horizontalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="verticalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="1">
-               <widget class="PyDMEnumButton" name="PyDMEnumButton_5">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font: 8px;}</string>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:AFBENB</string>
-                </property>
-                <property name="orientation" stdset="0">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="marginTop" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginLeft" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginRight" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="horizontalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="verticalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="0">
-               <widget class="QLabel" name="label_37">
-                <property name="font">
-                 <font>
-                  <pointsize>8</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>Phase Feedback</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="0">
-               <widget class="QLabel" name="label_38">
-                <property name="font">
-                 <font>
-                  <pointsize>8</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>Amplitude Feedback</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="1">
-               <widget class="PyDMEnumButton" name="PyDMEnumButton_4">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font: 8px;}</string>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:PFBENB</string>
-                </property>
-                <property name="orientation" stdset="0">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="marginTop" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginLeft" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginRight" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="horizontalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="verticalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item row="2" column="2">
-             <spacer name="verticalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>18</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item row="0" column="2">
+            <item row="0" column="3">
              <layout class="QGridLayout" name="gridLayout_5">
               <item row="0" column="0">
                <widget class="QLabel" name="label_43">
@@ -781,14 +464,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               </item>
              </layout>
             </item>
-            <item row="3" column="2" colspan="3">
-             <widget class="Line" name="line_2">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="3">
+            <item row="0" column="4">
              <spacer name="horizontalSpacer">
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
@@ -801,7 +477,189 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               </property>
              </spacer>
             </item>
-            <item row="4" column="2" rowspan="2" colspan="3">
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="3">
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>18</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="5" rowspan="2">
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="3" column="3" colspan="2">
+               <widget class="PyDMLineEdit" name="PyDMLineEdit_46">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                  <horstretch>1</horstretch>
+                  <verstretch>1</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:AGAIN</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QLabel" name="label_40">
+                <property name="font">
+                 <font>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Feedback POC</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3" colspan="2">
+               <widget class="PyDMLineEdit" name="PyDMLineEdit_44">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:FBPOC</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3" colspan="2">
+               <widget class="PyDMLineEdit" name="PyDMLineEdit_43">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                  <horstretch>1</horstretch>
+                  <verstretch>1</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:REFPOC</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3" colspan="2">
+               <widget class="PyDMLineEdit" name="PyDMLineEdit_45">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>1</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:PGAIN</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="label_39">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>1</horstretch>
+                  <verstretch>1</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Ref. POC</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="QLabel" name="label_41">
+                <property name="font">
+                 <font>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Phase Loop Gain</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="QLabel" name="label_42">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>1</horstretch>
+                  <verstretch>1</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Amplitude Loop Gain</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="3" column="3" rowspan="2" colspan="3">
              <layout class="QGridLayout" name="gridLayout_4">
               <item row="1" column="1">
                <widget class="PyDMLineEdit" name="PyDMLineEdit_47">
@@ -948,174 +806,329 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               </item>
              </layout>
             </item>
-            <item row="0" column="4" rowspan="3">
-             <layout class="QGridLayout" name="gridLayout_6">
-              <item row="3" column="3" colspan="2">
-               <widget class="PyDMLineEdit" name="PyDMLineEdit_46">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
-                  <horstretch>1</horstretch>
-                  <verstretch>1</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:AGAIN</string>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="2">
-               <widget class="QLabel" name="label_40">
+            <item row="2" column="3" colspan="3">
+             <widget class="Line" name="line_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" rowspan="5" colspan="2">
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_34">
                 <property name="font">
                  <font>
+                  <pointsize>8</pointsize>
                   <weight>75</weight>
                   <bold>true</bold>
                  </font>
                 </property>
                 <property name="text">
-                 <string>Feedback POC</string>
+                 <string>Stream </string>
                 </property>
                 <property name="alignment">
-                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                 </property>
                </widget>
               </item>
-              <item row="1" column="3" colspan="2">
-               <widget class="PyDMLineEdit" name="PyDMLineEdit_44">
+              <item row="0" column="1">
+               <widget class="PyDMEnumButton" name="PyDMEnumButton">
                 <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:FBPOC</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="3" colspan="2">
-               <widget class="PyDMLineEdit" name="PyDMLineEdit_43">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
-                  <horstretch>1</horstretch>
-                  <verstretch>1</verstretch>
-                 </sizepolicy>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
                 </property>
                 <property name="toolTip">
                  <string/>
                 </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{font: 8px;}</string>
                 </property>
                 <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:REFPOC</string>
+                 <string>ca://${DEVICE}:STRMENB</string>
+                </property>
+                <property name="orientation" stdset="0">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="marginTop" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginLeft" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginRight" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="horizontalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="verticalSpacing" stdset="0">
+                 <number>0</number>
                 </property>
                </widget>
               </item>
-              <item row="2" column="3" colspan="2">
-               <widget class="PyDMLineEdit" name="PyDMLineEdit_45">
+              <item row="2" column="1">
+               <widget class="PyDMEnumButton" name="PyDMEnumButton_3">
                 <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
                   <horstretch>0</horstretch>
-                  <verstretch>1</verstretch>
+                  <verstretch>0</verstretch>
                  </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
                 </property>
                 <property name="toolTip">
                  <string/>
                 </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{font: 8px;}</string>
                 </property>
                 <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:PGAIN</string>
+                 <string>ca://${DEVICE}:REFSUBENB</string>
+                </property>
+                <property name="orientation" stdset="0">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="marginTop" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginLeft" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginRight" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="horizontalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="verticalSpacing" stdset="0">
+                 <number>0</number>
                 </property>
                </widget>
               </item>
-              <item row="0" column="2">
-               <widget class="QLabel" name="label_39">
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_35">
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Trigger Mode Configuration</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="PyDMEnumButton" name="PyDMEnumButton_4">
                 <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>1</horstretch>
-                  <verstretch>1</verstretch>
+                 <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
-                <property name="font">
-                 <font>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
                 </property>
-                <property name="text">
-                 <string>Ref. POC</string>
+                <property name="toolTip">
+                 <string/>
                 </property>
-                <property name="alignment">
-                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{font: 8px;}</string>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:PFBENB</string>
+                </property>
+                <property name="orientation" stdset="0">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="marginTop" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginLeft" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginRight" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="horizontalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="verticalSpacing" stdset="0">
+                 <number>0</number>
                 </property>
                </widget>
               </item>
-              <item row="2" column="2">
-               <widget class="QLabel" name="label_41">
-                <property name="font">
-                 <font>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>Phase Loop Gain</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="2">
-               <widget class="QLabel" name="label_42">
+              <item row="4" column="1">
+               <widget class="PyDMEnumButton" name="PyDMEnumButton_5">
                 <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>1</horstretch>
-                  <verstretch>1</verstretch>
+                 <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{font: 8px;}</string>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:AFBENB</string>
+                </property>
+                <property name="orientation" stdset="0">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="marginTop" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginLeft" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginRight" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="horizontalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="verticalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_36">
                 <property name="font">
                  <font>
+                  <pointsize>8</pointsize>
                   <weight>75</weight>
                   <bold>true</bold>
                  </font>
                 </property>
                 <property name="text">
-                 <string>Amplitude Loop Gain</string>
+                 <string>Reference Subtraction</string>
                 </property>
                 <property name="alignment">
-                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_38">
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Amplitude Feedback</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_37">
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Phase Feedback</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1" colspan="2">
+               <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{font: 8px;}</string>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:MODECFG</string>
+                </property>
+                <property name="orientation" stdset="0">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="marginTop" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginLeft" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginRight" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="horizontalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="verticalSpacing" stdset="0">
+                 <number>0</number>
                 </property>
                </widget>
               </item>
              </layout>
-            </item>
-            <item row="1" column="0">
-             <spacer name="horizontalSpacer_3">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
            </layout>
           </item>
