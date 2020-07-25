@@ -170,7 +170,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <height>793</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1,0">
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1,0,0">
        <property name="leftMargin">
         <number>5</number>
        </property>
@@ -1850,36 +1850,43 @@ Current</string>
             </property>
            </widget>
           </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_4">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
           <item>
            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>80</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <italic>true</italic>
-             </font>
-            </property>
             <property name="toolTip">
              <string/>
             </property>
             <property name="filename" stdset="0">
              <string>sled2.ui</string>
-            </property>
-            <property name="loadWhenShown" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="disconnectWhenHidden" stdset="0">
-             <bool>true</bool>
             </property>
            </widget>
           </item>
