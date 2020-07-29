@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>247</width>
-    <height>134</height>
+    <height>137</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -217,12 +217,16 @@ QComboBox {
     padding: 1px 18px 1px 3px;
     min-width: 6em;
 }
+QComboBox::drop-down 
+{
+    border: 0px; /* This seems to replace the whole arrow of the combo box */
+}
+
+/* Define a new custom arrow icon for the combo box */
 QComboBox::down-arrow {
     image: url(../docs/_static/arrow.png);
-}
-QComboBox::down-arrow:on { /* shift the arrow when popup is open */
-    top: 1px;
-    left: 1px;
+    width: 12px;
+    height: 12px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -279,12 +283,16 @@ QComboBox {
     padding: 1px 18px 1px 3px;
     min-width: 6em;
 }
+QComboBox::drop-down 
+{
+    border: 0px; /* This seems to replace the whole arrow of the combo box */
+}
+
+/* Define a new custom arrow icon for the combo box */
 QComboBox::down-arrow {
     image: url(../docs/_static/arrow.png);
-}
-QComboBox::down-arrow:on { /* shift the arrow when popup is open */
-    top: 1px;
-    left: 1px;
+    width: 12px;
+    height: 12px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -322,12 +330,16 @@ QComboBox {
     padding: 1px 18px 1px 3px;
     min-width: 6em;
 }
+QComboBox::drop-down 
+{
+    border: 0px; /* This seems to replace the whole arrow of the combo box */
+}
+
+/* Define a new custom arrow icon for the combo box */
 QComboBox::down-arrow {
     image: url(../docs/_static/arrow.png);
-}
-QComboBox::down-arrow:on { /* shift the arrow when popup is open */
-    top: 1px;
-    left: 1px;
+    width: 12px;
+    height: 12px;
 }</string>
        </property>
        <property name="channel" stdset="0">
@@ -403,12 +415,16 @@ QComboBox {
     padding: 1px 18px 1px 3px;
     min-width: 6em;
 }
+QComboBox::drop-down 
+{
+    border: 0px; /* This seems to replace the whole arrow of the combo box */
+}
+
+/* Define a new custom arrow icon for the combo box */
 QComboBox::down-arrow {
     image: url(../docs/_static/arrow.png);
-}
-QComboBox::down-arrow:on { /* shift the arrow when popup is open */
-    top: 1px;
-    left: 1px;
+    width: 12px;
+    height: 12px;
 }</string>
        </property>
        <property name="channel" stdset="0">
