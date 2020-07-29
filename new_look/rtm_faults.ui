@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>933</width>
+    <width>967</width>
     <height>137</height>
    </rect>
   </property>
@@ -96,7 +96,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Fault Clear Delay (sec)</string>
+          <string>Fault Recovery Control</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignBottom|Qt::AlignHCenter</set>
@@ -561,7 +561,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Fault Clear Delay</string>
+          <string>Fault Clear Delay (sec)</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignBottom|Qt::AlignHCenter</set>
@@ -679,7 +679,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Recent RTM Fault Window</string>
+          <string>Recent RTM Fault Window (sec)</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignBottom|Qt::AlignHCenter</set>
