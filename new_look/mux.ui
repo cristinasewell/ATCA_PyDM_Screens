@@ -1413,6 +1413,9 @@
                    <property name="channel" stdset="0">
                     <string>ca://${DEVICE}:WFENG${ENG}_WRADDR0</string>
                    </property>
+                   <property name="displayFormat" stdset="0">
+                    <enum>PyDMLabel::Hex</enum>
+                   </property>
                   </widget>
                  </item>
                  <item row="3" column="2">
@@ -1843,6 +1846,9 @@
                    <property name="channel" stdset="0">
                     <string>ca://${DEVICE}:WFENG${ENG}_WRADDR1</string>
                    </property>
+                   <property name="displayFormat" stdset="0">
+                    <enum>PyDMLabel::Hex</enum>
+                   </property>
                   </widget>
                  </item>
                  <item row="7" column="0">
@@ -2070,6 +2076,9 @@
                    </property>
                    <property name="channel" stdset="0">
                     <string>ca://${DEVICE}:WFENG${ENG}_WRADDR2</string>
+                   </property>
+                   <property name="displayFormat" stdset="0">
+                    <enum>PyDMLabel::Hex</enum>
                    </property>
                   </widget>
                  </item>
@@ -2688,6 +2697,9 @@
                    </property>
                    <property name="channel" stdset="0">
                     <string>ca://${DEVICE}:WFENG${ENG}_WRADDR3</string>
+                   </property>
+                   <property name="displayFormat" stdset="0">
+                    <enum>PyDMLabel::Hex</enum>
                    </property>
                   </widget>
                  </item>
