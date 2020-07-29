@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1319</width>
+    <width>1348</width>
     <height>722</height>
    </rect>
   </property>
@@ -192,7 +192,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1307</width>
+        <width>1336</width>
         <height>710</height>
        </rect>
       </property>
