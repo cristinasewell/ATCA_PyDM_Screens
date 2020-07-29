@@ -105,6 +105,52 @@
               <property name="verticalSpacing">
                <number>2</number>
               </property>
+              <item row="4" column="2">
+               <widget class="PyDMEnumButton" name="PyDMEnumButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{font: 8px;}</string>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:DAQMUX${MUX}_CSCDTRG</string>
+                </property>
+                <property name="orientation" stdset="0">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="marginTop" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginBottom" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginLeft" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginRight" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="horizontalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="verticalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
               <item row="1" column="1">
                <widget class="QLabel" name="label_2">
                 <property name="font">
@@ -118,8 +164,82 @@
                 </property>
                </widget>
               </item>
-              <item row="6" column="1">
-               <widget class="QLabel" name="label_6">
+              <item row="13" column="2" colspan="2">
+               <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="0,1,0,1">
+                <item>
+                 <widget class="QLabel" name="label_15">
+                  <property name="text">
+                   <string>s:   </string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="PyDMLabel" name="PyDMLabel_7">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>19</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${DEVICE}:DAQMUX${MUX}_TS_SEC</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_3">
+                  <property name="text">
+                   <string>ns:   </string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="PyDMLabel" name="PyDMLabel_8">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>19</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${DEVICE}:DAQMUX${MUX}_TS_NSEC</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="11" column="1">
+               <widget class="QLabel" name="label_12">
                 <property name="font">
                  <font/>
                 </property>
@@ -127,7 +247,285 @@
                  <string notr="true"/>
                 </property>
                 <property name="text">
-                 <string>Daq Mode</string>
+                 <string>Debug Input Valid</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{font: 8px;}</string>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:DAQMUX${MUX}_ARMHWTRG </string>
+                </property>
+                <property name="orientation" stdset="0">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="marginTop" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginBottom" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginLeft" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginRight" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="horizontalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="verticalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="2">
+               <widget class="PyDMLineEdit" name="PyDMLineEdit">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="readOnly">
+                 <bool>false</bool>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:DAQMUX${MUX}_DECRATEDIV</string>
+                </property>
+                <property name="displayFormat" stdset="0">
+                 <enum>PyDMLineEdit::Default</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="1">
+               <widget class="QLabel" name="label_7">
+                <property name="font">
+                 <font/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>Packet Header</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLabel" name="label_11">
+                <property name="font">
+                 <font/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>Trigger Count</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="3">
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="2">
+               <widget class="PyDMPushButton" name="PyDMPushButton_3">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>Freeze</string>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:DAQMUX${MUX}_FRZBUF</string>
+                </property>
+                <property name="pressValue" stdset="0">
+                 <string>1</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="2">
+               <widget class="PyDMEnumButton" name="PyDMEnumButton_6">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{font: 8px;}</string>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:DAQMUX${MUX}_HWFRZ</string>
+                </property>
+                <property name="orientation" stdset="0">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="marginTop" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginBottom" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginLeft" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginRight" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="horizontalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="verticalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLabel" name="label_4">
+                <property name="font">
+                 <font/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>Cascaded Trigger</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="1">
+               <widget class="QLabel" name="label_8">
+                <property name="font">
+                 <font/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>Hardware Freeze</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QLabel" name="label_5">
+                <property name="font">
+                 <font/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>Auto Re-arm</string>
+                </property>
+               </widget>
+              </item>
+              <item row="12" column="2">
+               <widget class="PyDMLabel" name="PyDMLabel_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:DAQMUX${MUX}_DBGLNKRDY</string>
+                </property>
+                <property name="displayFormat" stdset="0">
+                 <enum>PyDMLabel::Hex</enum>
+                </property>
+                <property name="buddy">
+                 <cstring></cstring>
                 </property>
                </widget>
               </item>
@@ -196,44 +594,21 @@
                 </item>
                </layout>
               </item>
-              <item row="9" column="2">
-               <widget class="PyDMLineEdit" name="PyDMLineEdit">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
+              <item row="4" column="4">
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
                 </property>
-                <property name="minimumSize">
+                <property name="sizeHint" stdset="0">
                  <size>
-                  <width>0</width>
+                  <width>40</width>
                   <height>20</height>
                  </size>
                 </property>
-                <property name="font">
-                 <font>
-                  <pointsize>8</pointsize>
-                 </font>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="readOnly">
-                 <bool>false</bool>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:DAQMUX${MUX}_DECRATEDIV</string>
-                </property>
-                <property name="displayFormat" stdset="0">
-                 <enum>PyDMLineEdit::Default</enum>
-                </property>
-               </widget>
+               </spacer>
               </item>
-              <item row="2" column="1">
-               <widget class="QLabel" name="label_11">
+              <item row="3" column="1">
+               <widget class="QLabel" name="label">
                 <property name="font">
                  <font/>
                 </property>
@@ -241,89 +616,7 @@
                  <string notr="true"/>
                 </property>
                 <property name="text">
-                 <string>Trigger Count</string>
-                </property>
-               </widget>
-              </item>
-              <item row="10" column="2">
-               <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>20</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>8</pointsize>
-                 </font>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="readOnly">
-                 <bool>false</bool>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:DAQMUX${MUX}_BUFFSIZE</string>
-                </property>
-                <property name="displayFormat" stdset="0">
-                 <enum>PyDMLineEdit::Default</enum>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="2">
-               <widget class="PyDMEnumButton" name="PyDMEnumButton">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font: 8px;}</string>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:DAQMUX${MUX}_CSCDTRG</string>
-                </property>
-                <property name="orientation" stdset="0">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="marginTop" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginBottom" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginLeft" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginRight" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="horizontalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="verticalSpacing" stdset="0">
-                 <number>0</number>
+                 <string>Hardware Trigger Armed</string>
                 </property>
                </widget>
               </item>
@@ -373,113 +666,8 @@
                 </property>
                </widget>
               </item>
-              <item row="4" column="4">
-               <spacer name="horizontalSpacer">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item row="3" column="2">
-               <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font: 8px;}</string>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:DAQMUX${MUX}_ARMHWTRG </string>
-                </property>
-                <property name="orientation" stdset="0">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="marginTop" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginBottom" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginLeft" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginRight" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="horizontalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="verticalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="2">
-               <widget class="PyDMEnumButton" name="PyDMEnumButton_3">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font: 8px;}</string>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:DAQMUX${MUX}_AUTOREARM</string>
-                </property>
-                <property name="orientation" stdset="0">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="marginTop" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginBottom" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginLeft" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginRight" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="horizontalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="verticalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="1">
-               <widget class="QLabel" name="label_4">
+              <item row="6" column="1">
+               <widget class="QLabel" name="label_6">
                 <property name="font">
                  <font/>
                 </property>
@@ -487,200 +675,7 @@
                  <string notr="true"/>
                 </property>
                 <property name="text">
-                 <string>Cascaded Trigger</string>
-                </property>
-               </widget>
-              </item>
-              <item row="12" column="1">
-               <widget class="QLabel" name="label_13">
-                <property name="font">
-                 <font/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="text">
-                 <string>Debug Link Ready</string>
-                </property>
-               </widget>
-              </item>
-              <item row="8" column="2">
-               <widget class="PyDMEnumButton" name="PyDMEnumButton_6">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton{font: 8px;}</string>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:DAQMUX${MUX}_HWFRZ</string>
-                </property>
-                <property name="orientation" stdset="0">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="marginTop" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginBottom" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginLeft" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="marginRight" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="horizontalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-                <property name="verticalSpacing" stdset="0">
-                 <number>0</number>
-                </property>
-               </widget>
-              </item>
-              <item row="8" column="1">
-               <widget class="QLabel" name="label_8">
-                <property name="font">
-                 <font/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="text">
-                 <string>Hardware Freeze</string>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="1">
-               <widget class="QLabel" name="label_5">
-                <property name="font">
-                 <font/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="text">
-                 <string>Auto Re-arm</string>
-                </property>
-               </widget>
-              </item>
-              <item row="13" column="1">
-               <widget class="QLabel" name="label_14">
-                <property name="font">
-                 <font/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="text">
-                 <string>Timestamp (s:ns)</string>
-                </property>
-               </widget>
-              </item>
-              <item row="9" column="1">
-               <widget class="QLabel" name="label_9">
-                <property name="font">
-                 <font/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="text">
-                 <string>Decimation Rate Divisor</string>
-                </property>
-               </widget>
-              </item>
-              <item row="7" column="1">
-               <widget class="QLabel" name="label_7">
-                <property name="font">
-                 <font/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="text">
-                 <string>Packet Header</string>
-                </property>
-               </widget>
-              </item>
-              <item row="11" column="2">
-               <widget class="PyDMLabel" name="PyDMLabel">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>20</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>8</pointsize>
-                 </font>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="frameShape">
-                 <enum>QFrame::NoFrame</enum>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:DAQMUX${MUX}_DBGINPVALID</string>
-                </property>
-                <property name="displayFormat" stdset="0">
-                 <enum>PyDMLabel::Hex</enum>
-                </property>
-               </widget>
-              </item>
-              <item row="12" column="2">
-               <widget class="PyDMLabel" name="PyDMLabel_2">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>20</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>8</pointsize>
-                 </font>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="frameShape">
-                 <enum>QFrame::NoFrame</enum>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:DAQMUX${MUX}_DBGLNKRDY</string>
-                </property>
-                <property name="displayFormat" stdset="0">
-                 <enum>PyDMLabel::Hex</enum>
-                </property>
-                <property name="buddy">
-                 <cstring></cstring>
+                 <string>Daq Mode</string>
                 </property>
                </widget>
               </item>
@@ -730,32 +725,6 @@
                 </property>
                </widget>
               </item>
-              <item row="11" column="1">
-               <widget class="QLabel" name="label_12">
-                <property name="font">
-                 <font/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="text">
-                 <string>Debug Input Valid</string>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="1">
-               <widget class="QLabel" name="label">
-                <property name="font">
-                 <font/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="text">
-                 <string>Hardware Trigger Armed</string>
-                </property>
-               </widget>
-              </item>
               <item row="10" column="1">
                <widget class="QLabel" name="label_10">
                 <property name="font">
@@ -769,10 +738,56 @@
                 </property>
                </widget>
               </item>
-              <item row="1" column="2">
-               <widget class="PyDMPushButton" name="PyDMPushButton_3">
+              <item row="5" column="2">
+               <widget class="PyDMEnumButton" name="PyDMEnumButton_3">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{font: 8px;}</string>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:DAQMUX${MUX}_AUTOREARM</string>
+                </property>
+                <property name="orientation" stdset="0">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="marginTop" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginBottom" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginLeft" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="marginRight" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="horizontalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="verticalSpacing" stdset="0">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="2">
+               <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
                 <property name="sizePolicy">
-                 <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
@@ -780,7 +795,7 @@
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
-                  <height>0</height>
+                  <height>20</height>
                  </size>
                 </property>
                 <property name="font">
@@ -794,83 +809,88 @@
                 <property name="styleSheet">
                  <string notr="true"/>
                 </property>
-                <property name="text">
-                 <string>Freeze</string>
+                <property name="readOnly">
+                 <bool>false</bool>
                 </property>
                 <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:DAQMUX${MUX}_FRZBUF</string>
+                 <string>ca://${DEVICE}:DAQMUX${MUX}_BUFFSIZE</string>
                 </property>
-                <property name="pressValue" stdset="0">
-                 <string>1</string>
+                <property name="displayFormat" stdset="0">
+                 <enum>PyDMLineEdit::Default</enum>
                 </property>
                </widget>
               </item>
-              <item row="4" column="3">
-               <spacer name="horizontalSpacer_4">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
+              <item row="9" column="1">
+               <widget class="QLabel" name="label_9">
+                <property name="font">
+                 <font/>
                 </property>
-                <property name="sizeHint" stdset="0">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>Decimation Rate Divisor</string>
+                </property>
+               </widget>
+              </item>
+              <item row="12" column="1">
+               <widget class="QLabel" name="label_13">
+                <property name="font">
+                 <font/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>Debug Link Ready</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="2">
+               <widget class="PyDMLabel" name="PyDMLabel">
+                <property name="minimumSize">
                  <size>
-                  <width>40</width>
+                  <width>0</width>
                   <height>20</height>
                  </size>
                 </property>
-               </spacer>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:DAQMUX${MUX}_DBGINPVALID</string>
+                </property>
+                <property name="displayFormat" stdset="0">
+                 <enum>PyDMLabel::Hex</enum>
+                </property>
+               </widget>
               </item>
-              <item row="13" column="2" colspan="2">
-               <layout class="QHBoxLayout" name="horizontalLayout_9">
-                <item>
-                 <widget class="PyDMLabel" name="PyDMLabel_7">
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>19</height>
-                   </size>
-                  </property>
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true"/>
-                  </property>
-                  <property name="frameShape">
-                   <enum>QFrame::NoFrame</enum>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="channel" stdset="0">
-                   <string>ca://${DEVICE}:DAQMUX${MUX}_TS_SEC</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="PyDMLabel" name="PyDMLabel_8">
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>19</height>
-                   </size>
-                  </property>
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true"/>
-                  </property>
-                  <property name="frameShape">
-                   <enum>QFrame::NoFrame</enum>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="channel" stdset="0">
-                   <string>ca://${DEVICE}:DAQMUX${MUX}_TS_NSEC</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
+              <item row="13" column="1">
+               <widget class="QLabel" name="label_14">
+                <property name="font">
+                 <font/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>Timestamp (s:ns)</string>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>
@@ -925,7 +945,7 @@
                <number>4</number>
               </property>
               <property name="horizontalSpacing">
-               <number>7</number>
+               <number>2</number>
               </property>
               <item row="0" column="0">
                <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,1,0">
@@ -976,7 +996,7 @@
               <item row="3" column="0">
                <widget class="QFrame" name="frame_10">
                 <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
+                 <enum>QFrame::NoFrame</enum>
                 </property>
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
@@ -986,19 +1006,19 @@
                 </property>
                 <layout class="QGridLayout" name="gridLayout_9">
                  <property name="leftMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <property name="topMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <property name="rightMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <property name="bottomMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <property name="horizontalSpacing">
-                  <number>15</number>
+                  <number>8</number>
                  </property>
                  <item row="0" column="0">
                   <widget class="QLabel" name="label_21">
@@ -1135,6 +1155,9 @@
                    </property>
                    <property name="channel" stdset="0">
                     <string>ca://${DEVICE}:WFENG${ENG}_ENDADDR0</string>
+                   </property>
+                   <property name="displayFormat" stdset="0">
+                    <enum>PyDMLineEdit::Hex</enum>
                    </property>
                   </widget>
                  </item>
@@ -1420,6 +1443,9 @@
                    <property name="channel" stdset="0">
                     <string>ca://${DEVICE}:WFENG${ENG}_STARTADDR0</string>
                    </property>
+                   <property name="displayFormat" stdset="0">
+                    <enum>PyDMLineEdit::Hex</enum>
+                   </property>
                   </widget>
                  </item>
                  <item row="2" column="0">
@@ -1486,7 +1512,7 @@
               <item row="3" column="2">
                <widget class="QFrame" name="frame_11">
                 <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
+                 <enum>QFrame::NoFrame</enum>
                 </property>
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
@@ -1496,16 +1522,19 @@
                 </property>
                 <layout class="QGridLayout" name="gridLayout_10">
                  <property name="leftMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <property name="topMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <property name="rightMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <property name="bottomMargin">
                   <number>4</number>
+                 </property>
+                 <property name="horizontalSpacing">
+                  <number>2</number>
                  </property>
                  <item row="0" column="0">
                   <widget class="PyDMEnumButton" name="PyDMEnumButton_16">
@@ -1706,6 +1735,9 @@
                    <property name="channel" stdset="0">
                     <string>ca://${DEVICE}:WFENG${ENG}_STARTADDR1</string>
                    </property>
+                   <property name="displayFormat" stdset="0">
+                    <enum>PyDMLineEdit::Hex</enum>
+                   </property>
                   </widget>
                  </item>
                  <item row="4" column="0">
@@ -1738,6 +1770,9 @@
                    </property>
                    <property name="channel" stdset="0">
                     <string>ca://${DEVICE}:WFENG${ENG}_ENDADDR1</string>
+                   </property>
+                   <property name="displayFormat" stdset="0">
+                    <enum>PyDMLineEdit::Hex</enum>
                    </property>
                   </widget>
                  </item>
@@ -1855,7 +1890,7 @@
               <item row="3" column="4">
                <widget class="QFrame" name="frame_9">
                 <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
+                 <enum>QFrame::NoFrame</enum>
                 </property>
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
@@ -1865,16 +1900,19 @@
                 </property>
                 <layout class="QGridLayout" name="gridLayout_8">
                  <property name="leftMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <property name="topMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <property name="rightMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <property name="bottomMargin">
-                  <number>4</number>
+                  <number>2</number>
+                 </property>
+                 <property name="horizontalSpacing">
+                  <number>2</number>
                  </property>
                  <item row="5" column="0">
                   <widget class="PyDMLineEdit" name="PyDMLineEdit_12">
@@ -1933,6 +1971,9 @@
                    </property>
                    <property name="channel" stdset="0">
                     <string>ca://${DEVICE}:WFENG${ENG}_STARTADDR2</string>
+                   </property>
+                   <property name="displayFormat" stdset="0">
+                    <enum>PyDMLineEdit::Hex</enum>
                    </property>
                   </widget>
                  </item>
@@ -2120,6 +2161,9 @@
                    <property name="channel" stdset="0">
                     <string>ca://${DEVICE}:WFENG${ENG}_ENDADDR2</string>
                    </property>
+                   <property name="displayFormat" stdset="0">
+                    <enum>PyDMLineEdit::Hex</enum>
+                   </property>
                   </widget>
                  </item>
                  <item row="7" column="0">
@@ -2242,22 +2286,6 @@
                 </property>
                </widget>
               </item>
-              <item row="0" column="1">
-               <spacer name="verticalSpacer">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Preferred</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>40</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
               <item row="2" column="6">
                <widget class="QLabel" name="label_27">
                 <property name="font">
@@ -2333,7 +2361,7 @@
               <item row="3" column="6">
                <widget class="QFrame" name="frame_8">
                 <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
+                 <enum>QFrame::NoFrame</enum>
                 </property>
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
@@ -2343,16 +2371,16 @@
                 </property>
                 <layout class="QGridLayout" name="gridLayout_7">
                  <property name="leftMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <property name="topMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <property name="rightMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <property name="bottomMargin">
-                  <number>4</number>
+                  <number>2</number>
                  </property>
                  <item row="0" column="0">
                   <widget class="PyDMEnumButton" name="PyDMEnumButton_13">
@@ -2553,6 +2581,9 @@
                    <property name="channel" stdset="0">
                     <string>ca://${DEVICE}:WFENG${ENG}_STARTADDR3</string>
                    </property>
+                   <property name="displayFormat" stdset="0">
+                    <enum>PyDMLineEdit::Hex</enum>
+                   </property>
                   </widget>
                  </item>
                  <item row="4" column="0">
@@ -2585,6 +2616,9 @@
                    </property>
                    <property name="channel" stdset="0">
                     <string>ca://${DEVICE}:WFENG${ENG}_ENDADDR3</string>
+                   </property>
+                   <property name="displayFormat" stdset="0">
+                    <enum>PyDMLineEdit::Hex</enum>
                    </property>
                   </widget>
                  </item>
