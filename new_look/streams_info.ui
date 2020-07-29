@@ -140,14 +140,6 @@ QComboBox {
     border-radius: 3px;
     padding: 1px 18px 1px 3px;
     min-width: 6em;
-}
-QComboBox::down-arrow {
-    image: url(../docs/_static/arrow.png);
-}
-
-QComboBox::down-arrow:on { /* shift the arrow when popup is open */
-    top: 1px;
-    left: 1px;
 }</string>
      </property>
      <property name="channel" stdset="0">
