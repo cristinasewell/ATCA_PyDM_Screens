@@ -95,6 +95,9 @@
        <property name="channel" stdset="0">
         <string>ca://${RTM}:RTM_FIRMVER </string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="0" column="2">

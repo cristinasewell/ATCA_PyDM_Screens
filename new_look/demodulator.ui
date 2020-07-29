@@ -197,6 +197,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:DMOD_VER</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item>

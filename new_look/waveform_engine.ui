@@ -282,6 +282,9 @@
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:WFENG${ENG}_STARTADDR${CH}</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLineEdit::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="4" column="0">
@@ -330,6 +333,9 @@
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:WFENG${ENG}_ENDADDR${CH}</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLineEdit::Hex</enum>
        </property>
       </widget>
      </item>
