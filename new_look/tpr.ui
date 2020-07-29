@@ -499,6 +499,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <property name="channel" stdset="0">
         <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:FPGAVER</string>
        </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
       </widget>
      </item>
      <item row="11" column="1">

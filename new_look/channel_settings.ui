@@ -311,7 +311,7 @@
          <string notr="true"/>
         </property>
         <property name="text">
-         <string>Frame Counter</string>
+         <string>Frame Count</string>
         </property>
        </widget>
       </item>
