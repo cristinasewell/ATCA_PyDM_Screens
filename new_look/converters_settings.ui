@@ -192,7 +192,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </font>
      </property>
      <property name="text">
-      <string>Down Converter</string>
+      <string>Down Converter (DaqMux0)</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -209,7 +209,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </font>
      </property>
      <property name="text">
-      <string>Up Converter</string>
+      <string>Up Converter (DaqMux1)</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
