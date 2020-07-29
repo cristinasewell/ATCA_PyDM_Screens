@@ -616,7 +616,7 @@
                  <string notr="true"/>
                 </property>
                 <property name="text">
-                 <string>Hardware Trigger Armed</string>
+                 <string>Arm Hardware Trig</string>
                 </property>
                </widget>
               </item>
@@ -3257,7 +3257,7 @@
                     <string notr="true"/>
                    </property>
                    <property name="text">
-                    <string>Frame Counter</string>
+                    <string>Frame Count</string>
                    </property>
                   </widget>
                  </item>
