@@ -273,7 +273,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            </property>
            <property name="curves">
             <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:IWF9&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#aaff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:IWF1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff55ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QWF1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
             </stringlist>
            </property>
            <property name="autoRangeX">
@@ -301,7 +302,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <item>
             <widget class="QLabel" name="label_56">
              <property name="text">
-              <string>IQ Waveform CH 9 - Loopback</string>
+              <string>IQ Waveform CH 1</string>
              </property>
             </widget>
            </item>
