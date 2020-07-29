@@ -538,7 +538,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>Amplitude (raw)</string>
+        <string>Amplitude</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -928,7 +928,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string notr="true"/>
        </property>
        <property name="text">
-        <string>Mode Select</string>
+        <string>Mode Select (Pulse/CW)</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1052,7 +1052,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string notr="true"/>
        </property>
        <property name="text">
-        <string>Inverted Correction</string>
+        <string>Inverted Correctionn (Inverted/Normal)</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
