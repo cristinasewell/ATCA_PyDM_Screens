@@ -57,6 +57,9 @@
      <property name="channel" stdset="0">
       <string>ca://${DEVICE}:AMC_FPGAVERSION</string>
      </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::Hex</enum>
+     </property>
     </widget>
    </item>
    <item row="1" column="1">
@@ -82,7 +85,7 @@
       </font>
      </property>
      <property name="text">
-      <string>AMC FPGA VErsion</string>
+      <string>AMC FPGA Version</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
