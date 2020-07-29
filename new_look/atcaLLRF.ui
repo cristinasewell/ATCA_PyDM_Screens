@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1116</width>
-    <height>766</height>
+    <width>1154</width>
+    <height>792</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -172,8 +172,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1110</width>
-        <height>760</height>
+        <width>1148</width>
+        <height>786</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
@@ -328,7 +328,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               </property>
               <property name="filenames" stdset="0">
                <stringlist>
-                <string>settings.ui</string>
+                <string>converters_settings.ui</string>
                </stringlist>
               </property>
               <property name="openInNewWindow" stdset="0">
