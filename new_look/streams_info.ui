@@ -116,7 +116,7 @@ PyDMLabel {
      </property>
      <property name="minimumSize">
       <size>
-       <width>0</width>
+       <width>95</width>
        <height>20</height>
       </size>
      </property>
@@ -135,7 +135,19 @@ QComboBox::item:selected {
     background: rgb(85,225,255);
 }
 QComboBox {
-  background-color: rgb(85,225,255);
+  	background-color: rgb(183,243,255);
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+QComboBox::down-arrow {
+    image: url(../docs/_static/arrow.png);
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
 }</string>
      </property>
      <property name="channel" stdset="0">
@@ -297,7 +309,7 @@ QComboBox {
      </property>
      <property name="minimumSize">
       <size>
-       <width>0</width>
+       <width>95</width>
        <height>20</height>
       </size>
      </property>
@@ -316,7 +328,18 @@ QComboBox::item:selected {
     background: rgb(85,255,127);
 }
 QComboBox {
-  background-color: rgb(85,255,127);
+  	background-color: rgb(193,255,208);
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+QComboBox::down-arrow {
+    image: url(../docs/_static/arrow.png);
+}
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
 }</string>
      </property>
      <property name="channel" stdset="0">
@@ -478,7 +501,7 @@ QComboBox {
      </property>
      <property name="minimumSize">
       <size>
-       <width>0</width>
+       <width>95</width>
        <height>20</height>
       </size>
      </property>
@@ -497,7 +520,18 @@ QComboBox::item:selected {
     background: rgb(255,255,127);
 }
 QComboBox {
-  background-color: rgb(255,255,127);
+    background-color: rgb(255,255,205);
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+QComboBox::down-arrow {
+    image: url(../docs/_static/arrow.png);
+}
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
 }</string>
      </property>
      <property name="channel" stdset="0">
@@ -659,7 +693,7 @@ QComboBox {
      </property>
      <property name="minimumSize">
       <size>
-       <width>0</width>
+       <width>95</width>
        <height>20</height>
       </size>
      </property>
@@ -678,7 +712,18 @@ QComboBox::item:selected {
     background:  rgb(255,170,127);
 }
 QComboBox {
-  background-color:  rgb(255,170,127);
+    background-color:  rgb(255,219,201);
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+QComboBox::down-arrow {
+    image: url(../docs/_static/arrow.png);
+}
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
 }</string>
      </property>
      <property name="channel" stdset="0">

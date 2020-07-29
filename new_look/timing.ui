@@ -195,8 +195,35 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <verstretch>1</verstretch>
         </sizepolicy>
        </property>
+       <property name="minimumSize">
+        <size>
+         <width>95</width>
+         <height>22</height>
+        </size>
+       </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Color of the selected list item. */
+QComboBox::item:selected {
+    border: 1px solid transparent;
+    background: grey;
+}
+QComboBox {
+  	background-color: light grey;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+QComboBox::down-arrow {
+    image: url(../docs/_static/arrow.png);
+}
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:TCRB3:OUTPUTCONFIG</string>
@@ -211,6 +238,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <verstretch>1</verstretch>
         </sizepolicy>
        </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>22</height>
+        </size>
+       </property>
        <property name="text">
         <string>Black Plane (BP)</string>
        </property>
@@ -224,8 +257,35 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <verstretch>1</verstretch>
         </sizepolicy>
        </property>
+       <property name="minimumSize">
+        <size>
+         <width>95</width>
+         <height>22</height>
+        </size>
+       </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Color of the selected list item. */
+QComboBox::item:selected {
+    border: 1px solid transparent;
+    background: grey;
+}
+QComboBox {
+  	background-color: light grey;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+QComboBox::down-arrow {
+    image: url(../docs/_static/arrow.png);
+}
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:TCRB1:OUTPUTCONFIG</string>
@@ -240,8 +300,35 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <verstretch>1</verstretch>
         </sizepolicy>
        </property>
+       <property name="minimumSize">
+        <size>
+         <width>95</width>
+         <height>22</height>
+        </size>
+       </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Color of the selected list item. */
+QComboBox::item:selected {
+    border: 1px solid transparent;
+    background: grey;
+}
+QComboBox {
+  	background-color: light grey;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+QComboBox::down-arrow {
+    image: url(../docs/_static/arrow.png);
+}
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:TCRB0:OUTPUTCONFIG</string>
@@ -256,6 +343,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <verstretch>1</verstretch>
         </sizepolicy>
        </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>22</height>
+        </size>
+       </property>
        <property name="text">
         <string>RTM_OUT0</string>
        </property>
@@ -268,6 +361,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <horstretch>1</horstretch>
          <verstretch>1</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>22</height>
+        </size>
        </property>
        <property name="text">
         <string>FPGA</string>
@@ -282,8 +381,35 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <verstretch>1</verstretch>
         </sizepolicy>
        </property>
+       <property name="minimumSize">
+        <size>
+         <width>95</width>
+         <height>22</height>
+        </size>
+       </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Color of the selected list item. */
+QComboBox::item:selected {
+    border: 1px solid transparent;
+    background: grey;
+}
+QComboBox {
+  	background-color: light grey;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+QComboBox::down-arrow {
+    image: url(../docs/_static/arrow.png);
+}
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:TCRB2:OUTPUTCONFIG</string>
@@ -297,6 +423,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <horstretch>1</horstretch>
          <verstretch>1</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>22</height>
+        </size>
        </property>
        <property name="text">
         <string>RTM_OUT1</string>
