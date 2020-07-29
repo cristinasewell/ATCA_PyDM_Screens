@@ -315,7 +315,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               <string>Get Waveform</string>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:GETIQWF9</string>
+              <string>ca://${DEVICE}:GETIQWF1</string>
              </property>
             </widget>
            </item>
