@@ -7,11 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>672</width>
-    <height>248</height>
+    <height>263</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>TPR Channel Screen - ${DEVICE}</string>
   </property>
   <property name="styleSheet">
    <string notr="true">/* Background color of popup-list.*/ 

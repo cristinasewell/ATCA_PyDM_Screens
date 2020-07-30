@@ -34,7 +34,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Up Converter</string>
+   <string>Up Converter - ${DEVICE}</string>
   </property>
   <property name="styleSheet">
    <string notr="true"/>

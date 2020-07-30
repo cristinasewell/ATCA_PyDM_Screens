@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>IQ Waveform</string>
+   <string>IQ Waveform - ${DEVICE}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>

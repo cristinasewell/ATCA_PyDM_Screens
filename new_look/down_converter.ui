@@ -16,7 +16,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Down Converter - ${DEVICE}</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
