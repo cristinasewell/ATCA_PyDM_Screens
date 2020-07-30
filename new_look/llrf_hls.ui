@@ -370,6 +370,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          </item>
          <item row="1" column="1">
           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="toolTip">
             <string/>
            </property>
@@ -409,7 +415,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <item row="4" column="1">
           <widget class="QLabel" name="label_59">
            <property name="text">
-            <string>Complex Windows 1 for Diagnostics</string>
+            <string>Complex Windows 2 for Diagnostics</string>
            </property>
           </widget>
          </item>
@@ -468,7 +474,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <item row="2" column="1">
           <widget class="QLabel" name="label_58">
            <property name="text">
-            <string>Complex Window 1</string>
+            <string>Complex Window 1- for Diagnostics</string>
            </property>
           </widget>
          </item>
@@ -518,119 +524,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             <string>Average Window 2 for Diagnostics</string>
            </property>
           </widget>
-         </item>
-         <item row="7" column="1">
-          <layout class="QVBoxLayout" name="verticalLayout">
-           <item>
-            <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="text">
-              <string>Complex Windows</string>
-             </property>
-             <property name="filenames" stdset="0">
-              <stringlist>
-               <string>complex_waveforms.ui</string>
-               <string>complex_waveforms.ui</string>
-               <string>complex_waveforms.ui</string>
-               <string>complex_waveforms.ui</string>
-               <string>complex_waveforms.ui</string>
-               <string>complex_waveforms.ui</string>
-               <string>complex_waveforms.ui</string>
-               <string>complex_waveforms.ui</string>
-               <string>complex_waveforms.ui</string>
-               <string>complex_waveforms.ui</string>
-              </stringlist>
-             </property>
-             <property name="titles" stdset="0">
-              <stringlist>
-               <string>Complex Window - CH 0</string>
-               <string>Complex Window - CH 1</string>
-               <string>Complex Window - CH 3</string>
-               <string>Complex Window - CH 4</string>
-               <string>Complex Window - CH 5</string>
-               <string>Complex Window - CH 6</string>
-               <string>Complex Window - CH 7</string>
-               <string>Complex Window - CH 8</string>
-               <string>Complex Window - CH 9</string>
-              </stringlist>
-             </property>
-             <property name="macros" stdset="0">
-              <stringlist>
-               <string>{&quot;N&quot;:&quot;0&quot;}</string>
-               <string>{&quot;N&quot;:&quot;1&quot;}</string>
-               <string>{&quot;N&quot;:&quot;2&quot;}</string>
-               <string>{&quot;N&quot;:&quot;3&quot;}</string>
-               <string>{&quot;N&quot;:&quot;4&quot;}</string>
-               <string>{&quot;N&quot;:&quot;5&quot;}</string>
-               <string>{&quot;N&quot;:&quot;6&quot;}</string>
-               <string>{&quot;N&quot;:&quot;7&quot;}</string>
-               <string>{&quot;N&quot;:&quot;8&quot;}</string>
-               <string>{&quot;N&quot;:&quot;9&quot;}</string>
-              </stringlist>
-             </property>
-             <property name="openInNewWindow" stdset="0">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="text">
-              <string>Average Windows</string>
-             </property>
-             <property name="filenames" stdset="0">
-              <stringlist>
-               <string>average_waveforms.ui</string>
-               <string>average_waveforms.ui</string>
-               <string>average_waveforms.ui</string>
-               <string>average_waveforms.ui</string>
-               <string>average_waveforms.ui</string>
-               <string>average_waveforms.ui</string>
-               <string>average_waveforms.ui</string>
-               <string>average_waveforms.ui</string>
-               <string>average_waveforms.ui</string>
-               <string>average_waveforms.ui</string>
-              </stringlist>
-             </property>
-             <property name="titles" stdset="0">
-              <stringlist>
-               <string>Average Window - CH 0</string>
-               <string>Average Window - CH 1</string>
-               <string>Average Window - CH 2</string>
-               <string>Average Window - CH 3</string>
-               <string>Average Window - CH 4</string>
-               <string>Average Window - CH 5</string>
-               <string>Average Window - CH 6</string>
-               <string>Average Window - CH 7</string>
-               <string>Average Window - CH 8</string>
-               <string>Average Window - CH 9</string>
-              </stringlist>
-             </property>
-             <property name="macros" stdset="0">
-              <stringlist>
-               <string>{&quot;N&quot;:&quot;0&quot;}</string>
-               <string>{&quot;N&quot;:&quot;1&quot;}</string>
-               <string>{&quot;N&quot;:&quot;2&quot;}</string>
-               <string>{&quot;N&quot;:&quot;3&quot;}</string>
-               <string>{&quot;N&quot;:&quot;4&quot;}</string>
-               <string>{&quot;N&quot;:&quot;5&quot;}</string>
-               <string>{&quot;N&quot;:&quot;6&quot;}</string>
-               <string>{&quot;N&quot;:&quot;7&quot;}</string>
-               <string>{&quot;N&quot;:&quot;8&quot;}</string>
-               <string>{&quot;N&quot;:&quot;9&quot;}</string>
-              </stringlist>
-             </property>
-             <property name="openInNewWindow" stdset="0">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-          </layout>
          </item>
         </layout>
        </item>
