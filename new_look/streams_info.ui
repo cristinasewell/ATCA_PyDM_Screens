@@ -14,30 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QPushButton {
-    background-color: rgb(133,152,159);
-    border-color: rgb(206,213,216) rgb(57,96,73) rgb(57,96,73) rgb(206,213,216);
-    border-style: outset;
-    border-radius: 1px;
-    border-width: 2px; 
-    padding: 3px;
-}
-QPushButton:hover {
-   background-color: rgb(113,122,129);
-}
-QPushButton:pressed {
-    background-color: rgb(178,190,194);
-    border-style: inset;
-    border-width: 2px;
-	border-color: rgb(112,134,142) rgb(229,233,235) rgb(239,233,235) rgb(112,134,142);
-}
-QPushButton:checked{
-    background-color: rgb(178,190,194);
-    border-style: inset;
-    border-width: 2px;
-	border-color:  rgb(112,134,142) rgb(229,233,235) rgb(239,233,235) rgb(112,134,142);
-}
-QLineEdit {
+   <string notr="true">QLineEdit {
   background-color: rgb(218,223,230);
   border-color: rgb(66,77,96);
   border-style: inset;
@@ -116,7 +93,7 @@ PyDMLabel {
      </property>
      <property name="minimumSize">
       <size>
-       <width>0</width>
+       <width>95</width>
        <height>20</height>
       </size>
      </property>
@@ -135,8 +112,18 @@ QComboBox::item:selected {
     background: rgb(85,225,255);
 }
 QComboBox {
-  background-color: rgb(85,225,255);
+  	background-color: rgb(183,243,255);
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
 }</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>12</width>
+       <height>12</height>
+      </size>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSEL0</string>
@@ -297,7 +284,7 @@ QComboBox {
      </property>
      <property name="minimumSize">
       <size>
-       <width>0</width>
+       <width>95</width>
        <height>20</height>
       </size>
      </property>
@@ -316,8 +303,18 @@ QComboBox::item:selected {
     background: rgb(85,255,127);
 }
 QComboBox {
-  background-color: rgb(85,255,127);
+  	background-color: rgb(193,255,208);
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
 }</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>12</width>
+       <height>12</height>
+      </size>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSEL1</string>
@@ -478,7 +475,7 @@ QComboBox {
      </property>
      <property name="minimumSize">
       <size>
-       <width>0</width>
+       <width>95</width>
        <height>20</height>
       </size>
      </property>
@@ -497,7 +494,11 @@ QComboBox::item:selected {
     background: rgb(255,255,127);
 }
 QComboBox {
-  background-color: rgb(255,255,127);
+    background-color: rgb(255,255,205);
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
 }</string>
      </property>
      <property name="channel" stdset="0">
@@ -659,7 +660,7 @@ QComboBox {
      </property>
      <property name="minimumSize">
       <size>
-       <width>0</width>
+       <width>95</width>
        <height>20</height>
       </size>
      </property>
@@ -678,7 +679,11 @@ QComboBox::item:selected {
     background:  rgb(255,170,127);
 }
 QComboBox {
-  background-color:  rgb(255,170,127);
+    background-color:  rgb(255,219,201);
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
 }</string>
      </property>
      <property name="channel" stdset="0">
