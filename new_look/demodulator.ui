@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>675</width>
-    <height>349</height>
+    <height>362</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -479,7 +479,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>F_IN_3</string>
+        <string>RF_IN_3</string>
        </property>
       </widget>
      </item>
