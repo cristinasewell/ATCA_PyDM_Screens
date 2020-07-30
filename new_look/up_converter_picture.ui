@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>495</width>
-    <height>157</height>
+    <width>1700</width>
+    <height>862</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -25,11 +25,33 @@
    </property>
    <item>
     <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>1</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
      <property name="filename" stdset="0">
       <string>../docs/_static/up_converter.PNG</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="PyDMDrawingImage" name="PyDMDrawingImage_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>1</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="filename" stdset="0">
+      <string>../docs/_static/gen2_upconverter.png</string>
      </property>
     </widget>
    </item>
