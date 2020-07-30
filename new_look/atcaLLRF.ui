@@ -331,23 +331,14 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <number>0</number>
               </property>
               <item>
-               <widget class="QLabel" name="label_5">
+               <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
                 <property name="font">
                  <font>
-                  <weight>75</weight>
-                  <bold>true</bold>
+                  <pointsize>9</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
                  </font>
                 </property>
-                <property name="text">
-                 <string>PLL LO Lock Status: </string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
                 <property name="toolTip">
                  <string/>
                 </property>
@@ -364,8 +355,13 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                 <property name="circles" stdset="0">
                  <bool>true</bool>
                 </property>
+                <property name="labelPosition" stdset="0">
+                 <enum>QTabWidget::West</enum>
+                </property>
                 <property name="labels" stdset="0">
-                 <stringlist/>
+                 <stringlist>
+                  <string>PLL LO Lock Status</string>
+                 </stringlist>
                 </property>
                </widget>
               </item>
@@ -432,22 +428,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <number>0</number>
               </property>
               <item>
-               <widget class="QLabel" name="label_6">
-                <property name="font">
-                 <font>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>PLL CLK Lock Status:</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
                <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
                 <property name="toolTip">
                  <string/>
@@ -469,10 +449,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  <bool>true</bool>
                 </property>
                 <property name="labelPosition" stdset="0">
-                 <enum>QTabWidget::East</enum>
+                 <enum>QTabWidget::West</enum>
                 </property>
                 <property name="labels" stdset="0">
-                 <stringlist/>
+                 <stringlist>
+                  <string>PLL CLK Lock Status</string>
+                 </stringlist>
                 </property>
                </widget>
               </item>
