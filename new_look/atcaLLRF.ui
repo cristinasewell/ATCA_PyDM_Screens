@@ -248,6 +248,19 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
              <number>0</number>
             </property>
             <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
              <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
               <property name="font">
                <font>
@@ -313,6 +326,52 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
              <number>0</number>
             </property>
             <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="font">
+                 <font>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>PLL LO Lock Status: </string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:LO_LOCKSTATUS</string>
+                </property>
+                <property name="offColor" stdset="0">
+                 <color>
+                  <red>255</red>
+                  <green>0</green>
+                  <blue>0</blue>
+                 </color>
+                </property>
+                <property name="circles" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="labels" stdset="0">
+                 <stringlist/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
              <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
               <property name="font">
                <font>
@@ -360,10 +419,20 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               </property>
              </widget>
             </item>
+           </layout>
+          </item>
+          <item row="1" column="2">
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <property name="topMargin">
+             <number>0</number>
+            </property>
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <property name="spacing">
+               <number>0</number>
+              </property>
               <item>
-               <widget class="QLabel" name="label_5">
+               <widget class="QLabel" name="label_6">
                 <property name="font">
                  <font>
                   <weight>75</weight>
@@ -371,17 +440,20 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </font>
                 </property>
                 <property name="text">
-                 <string>PLL LO Lock Status: </string>
+                 <string>PLL CLK Lock Status:</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+               <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
                 <property name="toolTip">
                  <string/>
                 </property>
                 <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:LO_LOCKSTATUS</string>
+                 <string>ca://${DEVICE}:CLOCK_LOCKSTATUS</string>
                 </property>
                 <property name="offColor" stdset="0">
                  <color>
@@ -390,25 +462,22 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                   <blue>0</blue>
                  </color>
                 </property>
+                <property name="orientation" stdset="0">
+                 <enum>Qt::Vertical</enum>
+                </property>
                 <property name="circles" stdset="0">
                  <bool>true</bool>
                 </property>
+                <property name="labelPosition" stdset="0">
+                 <enum>QTabWidget::East</enum>
+                </property>
                 <property name="labels" stdset="0">
-                 <stringlist>
-                  <string></string>
-                 </stringlist>
+                 <stringlist/>
                 </property>
                </widget>
               </item>
              </layout>
             </item>
-           </layout>
-          </item>
-          <item row="1" column="2">
-           <layout class="QVBoxLayout" name="verticalLayout_10">
-            <property name="topMargin">
-             <number>0</number>
-            </property>
             <item>
              <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
               <property name="font">
@@ -457,46 +526,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               </property>
              </widget>
             </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_5">
-              <item>
-               <widget class="QLabel" name="label_6">
-                <property name="font">
-                 <font>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>PLL CLK Lock Status:</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:CLOCK_LOCKSTATUS</string>
-                </property>
-                <property name="offColor" stdset="0">
-                 <color>
-                  <red>255</red>
-                  <green>0</green>
-                  <blue>0</blue>
-                 </color>
-                </property>
-                <property name="circles" stdset="0">
-                 <bool>true</bool>
-                </property>
-                <property name="labels" stdset="0">
-                 <stringlist/>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
            </layout>
           </item>
           <item row="1" column="4">
@@ -504,6 +533,19 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             <property name="topMargin">
              <number>0</number>
             </property>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
             <item>
              <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
               <property name="font">
