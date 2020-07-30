@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>LLRF HLS</string>
   </property>
   <property name="styleSheet">
    <string notr="true">/* Background color of popup-list.*/ 
@@ -273,8 +273,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            </property>
            <property name="curves">
             <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:IWF1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff55ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QWF1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:IWF${N}&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff55ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QWF${N}&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
             </stringlist>
            </property>
            <property name="autoRangeX">
@@ -418,6 +418,49 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             <stringlist>
              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
              <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>IQ Waveforms</string>
+           </property>
+           <property name="filenames" stdset="0">
+            <stringlist>
+             <string>iqwaveform.ui</string>
+            </stringlist>
+           </property>
+           <property name="titles" stdset="0">
+            <stringlist>
+             <string>IQ-Waveform - CH 0 </string>
+             <string>IQ-Waveform - CH 1</string>
+             <string>IQ-Waveform - CH 2</string>
+             <string>IQ-Waveform - CH 3</string>
+             <string>IQ-Waveform - CH 4</string>
+             <string>IQ-Waveform - CH 5</string>
+             <string>IQ-Waveform - CH 6</string>
+             <string>IQ-Waveform - CH 7</string>
+             <string>IQ-Waveform - CH 8</string>
+             <string>IQ-Waveform - CH 9</string>
+            </stringlist>
+           </property>
+           <property name="macros" stdset="0">
+            <stringlist>
+             <string>{&quot;N&quot;:&quot;0&quot;}</string>
+             <string>{&quot;N&quot;:&quot;1&quot;}</string>
+             <string>{&quot;N&quot;:&quot;2&quot;}</string>
+             <string>{&quot;N&quot;:&quot;3&quot;}</string>
+             <string>{&quot;N&quot;:&quot;4&quot;}</string>
+             <string>{&quot;N&quot;:&quot;5&quot;}</string>
+             <string>{&quot;N&quot;:&quot;6&quot;}</string>
+             <string>{&quot;N&quot;:&quot;7&quot;}</string>
+             <string>{&quot;N&quot;:&quot;8&quot;}</string>
+             <string>{&quot;N&quot;:&quot;9&quot;}</string>
             </stringlist>
            </property>
           </widget>
@@ -3787,6 +3830,11 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    <class>PyDMWaveformPlot</class>
    <extends>QGraphicsView</extends>
    <header>pydm.widgets.waveformplot</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
   </customwidget>
  </customwidgets>
  <resources/>
