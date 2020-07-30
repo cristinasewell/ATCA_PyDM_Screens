@@ -433,6 +433,15 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <property name="filenames" stdset="0">
             <stringlist>
              <string>iqwaveform.ui</string>
+             <string>iqwaveform.ui</string>
+             <string>iqwaveform.ui</string>
+             <string>iqwaveform.ui</string>
+             <string>iqwaveform.ui</string>
+             <string>iqwaveform.ui</string>
+             <string>iqwaveform.ui</string>
+             <string>iqwaveform.ui</string>
+             <string>iqwaveform.ui</string>
+             <string>iqwaveform.ui</string>
             </stringlist>
            </property>
            <property name="titles" stdset="0">
