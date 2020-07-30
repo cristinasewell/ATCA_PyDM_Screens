@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1700</width>
-    <height>862</height>
+    <width>985</width>
+    <height>624</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -20,9 +20,6 @@
    <string>Front Panel Up Converter</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
-   <property name="sizeConstraint">
-    <enum>QLayout::SetMaximumSize</enum>
-   </property>
    <item>
     <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
      <property name="sizePolicy">
@@ -36,6 +33,9 @@
      </property>
      <property name="filename" stdset="0">
       <string>../docs/_static/up_converter.PNG</string>
+     </property>
+     <property name="aspectRatioMode" stdset="0">
+      <enum>Qt::KeepAspectRatio</enum>
      </property>
     </widget>
    </item>
