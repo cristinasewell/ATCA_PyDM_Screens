@@ -198,68 +198,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </property>
       <layout class="QGridLayout" name="gridLayout_8">
        <item row="0" column="1" rowspan="6">
-        <layout class="QGridLayout" name="gridLayout_9" columnstretch="1,1">
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_54">
-           <property name="text">
-            <string>Average Window 1 for Diagnostics</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_4">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="curves">
-            <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:AVGWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffaaff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-            </stringlist>
-           </property>
-           <property name="autoRangeX">
-            <bool>false</bool>
-           </property>
-           <property name="maxXRange">
-            <double>4000.000000000000000</double>
-           </property>
-           <property name="autoRangeY">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_3">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="curves">
-            <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:AVGWND1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#aaffff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-            </stringlist>
-           </property>
-           <property name="autoRangeX">
-            <bool>false</bool>
-           </property>
-           <property name="maxXRange">
-            <double>4000.000000000000000</double>
-           </property>
-           <property name="autoRangeY">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
+        <layout class="QGridLayout" name="gridLayout_9" columnstretch="1,0">
          <item row="7" column="0">
           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot">
            <property name="sizePolicy">
@@ -271,10 +210,16 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <property name="toolTip">
             <string/>
            </property>
+           <property name="showXGrid">
+            <bool>true</bool>
+           </property>
+           <property name="showYGrid">
+            <bool>true</bool>
+           </property>
            <property name="curves">
             <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:IWF${N}&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff55ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QWF${N}&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:IWF1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff55ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QWF1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
             </stringlist>
            </property>
            <property name="autoRangeX">
@@ -294,131 +239,10 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            </property>
           </widget>
          </item>
-         <item row="6" column="0">
-          <layout class="QHBoxLayout" name="horizontalLayout">
-           <property name="topMargin">
-            <number>0</number>
-           </property>
-           <item>
-            <widget class="QLabel" name="label_56">
-             <property name="text">
-              <string>IQ Waveform CH 1</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="PyDMPushButton" name="PyDMPushButton">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="text">
-              <string>Get Waveform</string>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${DEVICE}:GETIQWF1</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item row="4" column="0">
-          <widget class="QLabel" name="label_55">
-           <property name="text">
-            <string>Average Window 2 for Diagnostics</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_53">
-           <property name="text">
-            <string>Average window 0 for Feedback</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="0">
-          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_2">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="curves">
-            <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:AVGWND2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-            </stringlist>
-           </property>
-           <property name="autoRangeX">
-            <bool>false</bool>
-           </property>
-           <property name="maxXRange">
-            <double>4000.000000000000000</double>
-           </property>
-           <property name="autoRangeY">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_5">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="curves">
-            <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-            </stringlist>
-           </property>
-          </widget>
-         </item>
          <item row="0" column="1">
           <widget class="QLabel" name="label_57">
            <property name="text">
             <string>Complex Window 0</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLabel" name="label_58">
-           <property name="text">
-            <string>Complex Window 1</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="QLabel" name="label_59">
-           <property name="text">
-            <string>Complex Windows 1 for Diagnostics</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_6">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="curves">
-            <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-            </stringlist>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="1">
-          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_7">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="curves">
-            <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-            </stringlist>
            </property>
           </widget>
          </item>
@@ -476,6 +300,337 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             <bool>true</bool>
            </property>
           </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showXGrid">
+            <bool>true</bool>
+           </property>
+           <property name="showYGrid">
+            <bool>true</bool>
+           </property>
+           <property name="curves">
+            <stringlist>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:AVGWND1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#aaffff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+            </stringlist>
+           </property>
+           <property name="autoRangeX">
+            <bool>false</bool>
+           </property>
+           <property name="maxXRange">
+            <double>4000.000000000000000</double>
+           </property>
+           <property name="autoRangeY">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_53">
+           <property name="text">
+            <string>Average window 0 for Feedback</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_56">
+             <property name="text">
+              <string>IQ Waveform CH 1</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="PyDMPushButton" name="PyDMPushButton">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>Get Waveform</string>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${DEVICE}:GETIQWF1</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="1">
+          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_5">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showXGrid">
+            <bool>true</bool>
+           </property>
+           <property name="showYGrid">
+            <bool>true</bool>
+           </property>
+           <property name="curves">
+            <stringlist>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_6">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showXGrid">
+            <bool>true</bool>
+           </property>
+           <property name="showYGrid">
+            <bool>true</bool>
+           </property>
+           <property name="curves">
+            <stringlist>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="label_59">
+           <property name="text">
+            <string>Complex Windows 1 for Diagnostics</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_7">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showXGrid">
+            <bool>true</bool>
+           </property>
+           <property name="showYGrid">
+            <bool>true</bool>
+           </property>
+           <property name="curves">
+            <stringlist>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showXGrid">
+            <bool>true</bool>
+           </property>
+           <property name="showYGrid">
+            <bool>true</bool>
+           </property>
+           <property name="curves">
+            <stringlist>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:AVGWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffaaff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+            </stringlist>
+           </property>
+           <property name="autoRangeX">
+            <bool>false</bool>
+           </property>
+           <property name="maxXRange">
+            <double>4000.000000000000000</double>
+           </property>
+           <property name="autoRangeY">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_58">
+           <property name="text">
+            <string>Complex Window 1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showXGrid">
+            <bool>true</bool>
+           </property>
+           <property name="showYGrid">
+            <bool>true</bool>
+           </property>
+           <property name="curves">
+            <stringlist>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:AVGWND2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ffff7f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+            </stringlist>
+           </property>
+           <property name="autoRangeX">
+            <bool>false</bool>
+           </property>
+           <property name="maxXRange">
+            <double>4000.000000000000000</double>
+           </property>
+           <property name="autoRangeY">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_54">
+           <property name="text">
+            <string>Average Window 1 for Diagnostics</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_55">
+           <property name="text">
+            <string>Average Window 2 for Diagnostics</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>Complex Windows</string>
+             </property>
+             <property name="filenames" stdset="0">
+              <stringlist>
+               <string>complex_waveforms.ui</string>
+               <string>complex_waveforms.ui</string>
+               <string>complex_waveforms.ui</string>
+               <string>complex_waveforms.ui</string>
+               <string>complex_waveforms.ui</string>
+               <string>complex_waveforms.ui</string>
+               <string>complex_waveforms.ui</string>
+               <string>complex_waveforms.ui</string>
+               <string>complex_waveforms.ui</string>
+               <string>complex_waveforms.ui</string>
+              </stringlist>
+             </property>
+             <property name="titles" stdset="0">
+              <stringlist>
+               <string>Complex Window - CH 0</string>
+               <string>Complex Window - CH 1</string>
+               <string>Complex Window - CH 3</string>
+               <string>Complex Window - CH 4</string>
+               <string>Complex Window - CH 5</string>
+               <string>Complex Window - CH 6</string>
+               <string>Complex Window - CH 7</string>
+               <string>Complex Window - CH 8</string>
+               <string>Complex Window - CH 9</string>
+              </stringlist>
+             </property>
+             <property name="macros" stdset="0">
+              <stringlist>
+               <string>{&quot;N&quot;:&quot;0&quot;}</string>
+               <string>{&quot;N&quot;:&quot;1&quot;}</string>
+               <string>{&quot;N&quot;:&quot;2&quot;}</string>
+               <string>{&quot;N&quot;:&quot;3&quot;}</string>
+               <string>{&quot;N&quot;:&quot;4&quot;}</string>
+               <string>{&quot;N&quot;:&quot;5&quot;}</string>
+               <string>{&quot;N&quot;:&quot;6&quot;}</string>
+               <string>{&quot;N&quot;:&quot;7&quot;}</string>
+               <string>{&quot;N&quot;:&quot;8&quot;}</string>
+               <string>{&quot;N&quot;:&quot;9&quot;}</string>
+              </stringlist>
+             </property>
+             <property name="openInNewWindow" stdset="0">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>Average Windows</string>
+             </property>
+             <property name="filenames" stdset="0">
+              <stringlist>
+               <string>average_waveforms.ui</string>
+               <string>average_waveforms.ui</string>
+               <string>average_waveforms.ui</string>
+               <string>average_waveforms.ui</string>
+               <string>average_waveforms.ui</string>
+               <string>average_waveforms.ui</string>
+               <string>average_waveforms.ui</string>
+               <string>average_waveforms.ui</string>
+               <string>average_waveforms.ui</string>
+               <string>average_waveforms.ui</string>
+              </stringlist>
+             </property>
+             <property name="titles" stdset="0">
+              <stringlist>
+               <string>Average Window - CH 0</string>
+               <string>Average Window - CH 1</string>
+               <string>Average Window - CH 2</string>
+               <string>Average Window - CH 3</string>
+               <string>Average Window - CH 4</string>
+               <string>Average Window - CH 5</string>
+               <string>Average Window - CH 6</string>
+               <string>Average Window - CH 7</string>
+               <string>Average Window - CH 8</string>
+               <string>Average Window - CH 9</string>
+              </stringlist>
+             </property>
+             <property name="macros" stdset="0">
+              <stringlist>
+               <string>{&quot;N&quot;:&quot;0&quot;}</string>
+               <string>{&quot;N&quot;:&quot;1&quot;}</string>
+               <string>{&quot;N&quot;:&quot;2&quot;}</string>
+               <string>{&quot;N&quot;:&quot;3&quot;}</string>
+               <string>{&quot;N&quot;:&quot;4&quot;}</string>
+               <string>{&quot;N&quot;:&quot;5&quot;}</string>
+               <string>{&quot;N&quot;:&quot;6&quot;}</string>
+               <string>{&quot;N&quot;:&quot;7&quot;}</string>
+               <string>{&quot;N&quot;:&quot;8&quot;}</string>
+               <string>{&quot;N&quot;:&quot;9&quot;}</string>
+              </stringlist>
+             </property>
+             <property name="openInNewWindow" stdset="0">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
        </item>
