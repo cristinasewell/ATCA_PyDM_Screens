@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>675</width>
-    <height>349</height>
+    <height>362</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -219,8 +219,137 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    </item>
    <item>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="1">
-      <widget class="QLabel" name="label_14">
+     <item row="13" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_51">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_I10</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_48">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_AMPL8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_10">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_PHASERAW9</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_38">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_AMPL9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_24">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_PHASE8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_10">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_PHASE9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_9">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_PHASERAW8</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="6">
+      <widget class="PyDMLabel" name="PyDMLabel_62">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_Q9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_36">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_AMPLRAW8</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QLabel" name="label_19">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>1</horstretch>
@@ -234,76 +363,149 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>Phase (raw)</string>
+        <string>Set Q</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="label_15">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>1</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_12">
        <property name="font">
         <font>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="text">
-        <string>Phase (deg)</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
+        <string>RF_OUT_MON</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="3">
-      <widget class="QLabel" name="label_16">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>1</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Amplitude (raw)</string>
+     <item row="13" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_39">
+       <property name="toolTip">
+        <string/>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_AMPL10</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="4">
-      <widget class="QLabel" name="label_17">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>1</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Amplitude (norm)</string>
+     <item row="12" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_50">
+       <property name="toolTip">
+        <string/>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_I9</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_22">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_PHASE11</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="6">
+      <widget class="PyDMLabel" name="PyDMLabel_72">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_Q8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_60">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_I8</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_12">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_PHASERAW11</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_IN_3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="8">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_13">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_AMPL10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_14">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_PHASE9</string>
        </property>
       </widget>
      </item>
@@ -329,8 +531,34 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="0" column="6">
-      <widget class="QLabel" name="label_19">
+     <item row="14" column="8">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_21">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_AMPL11</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_22">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Down Converter</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_14">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>1</horstretch>
@@ -344,7 +572,267 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>Set Q</string>
+        <string>Phase (raw)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_27">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_AMPLRAW10</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_PHASE8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_11">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_PHASE10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_58">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_I11</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_16">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Amplitude (raw)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="8">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_17">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_AMPL9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>DC_IN_1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_17">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Amplitude (norm)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="8">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_20">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_AMPL8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_11">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_PHASERAW10</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_34">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_AMPLRAW11</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_12">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_PHASE11</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_15">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_PHASE10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="6">
+      <widget class="PyDMLabel" name="PyDMLabel_63">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_Q10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_46">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_AMPL11</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="6">
+      <widget class="PyDMLabel" name="PyDMLabel_70">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_ROT_Q11</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="8">
+      <widget class="QLabel" name="label_21">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Set Amplitude</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -373,8 +861,37 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="0" column="8">
-      <widget class="QLabel" name="label_21">
+     <item row="12" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_26">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:DMOD_AMPLRAW9</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>TRIG_MON</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_15">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>1</horstretch>
@@ -388,15 +905,15 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>Set Amplitude</string>
+        <string>Phase (deg)</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_3">
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_23">
        <property name="font">
         <font>
          <weight>75</weight>
@@ -404,133 +921,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>CH 0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASERAW0</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel_17">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASE0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_29">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPLRAW0</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_41">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPL0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="5">
-      <widget class="PyDMLabel" name="PyDMLabel_53">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_I0</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="6">
-      <widget class="PyDMLabel" name="PyDMLabel_65">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_Q0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="7">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_PHASE0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="8">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_AMPL0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_4">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>CH 1</string>
+        <string>Up Converter</string>
        </property>
       </widget>
      </item>
@@ -647,21 +1038,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label_5">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>CH 2</string>
-       </property>
-      </widget>
-     </item>
      <item row="3" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_3">
+      <widget class="PyDMLabel" name="PyDMLabel">
        <property name="toolTip">
         <string/>
        </property>
@@ -669,7 +1047,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASERAW2</string>
+        <string>ca://${DEVICE}:DMOD_PHASERAW0</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLabel::Hex</enum>
@@ -677,7 +1055,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </widget>
      </item>
      <item row="3" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel_19">
+      <widget class="PyDMLabel" name="PyDMLabel_17">
        <property name="toolTip">
         <string/>
        </property>
@@ -685,12 +1063,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASE2</string>
+        <string>ca://${DEVICE}:DMOD_PHASE0</string>
        </property>
       </widget>
      </item>
      <item row="3" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_31">
+      <widget class="PyDMLabel" name="PyDMLabel_29">
        <property name="toolTip">
         <string/>
        </property>
@@ -698,7 +1076,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPLRAW2</string>
+        <string>ca://${DEVICE}:DMOD_AMPLRAW0</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLabel::Hex</enum>
@@ -706,7 +1084,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </widget>
      </item>
      <item row="3" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_43">
+      <widget class="PyDMLabel" name="PyDMLabel_41">
        <property name="toolTip">
         <string/>
        </property>
@@ -714,12 +1092,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPL2</string>
+        <string>ca://${DEVICE}:DMOD_AMPL0</string>
        </property>
       </widget>
      </item>
      <item row="3" column="5">
-      <widget class="PyDMLabel" name="PyDMLabel_55">
+      <widget class="PyDMLabel" name="PyDMLabel_53">
        <property name="toolTip">
         <string/>
        </property>
@@ -727,7 +1105,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_I2</string>
+        <string>ca://${DEVICE}:DMOD_ROT_I0</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLabel::Hex</enum>
@@ -735,7 +1113,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </widget>
      </item>
      <item row="3" column="6">
-      <widget class="PyDMLabel" name="PyDMLabel_67">
+      <widget class="PyDMLabel" name="PyDMLabel_65">
        <property name="toolTip">
         <string/>
        </property>
@@ -743,12 +1121,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_Q2</string>
+        <string>ca://${DEVICE}:DMOD_ROT_Q0</string>
        </property>
       </widget>
      </item>
      <item row="3" column="7">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit">
        <property name="toolTip">
         <string/>
        </property>
@@ -756,12 +1134,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_PHASE2</string>
+        <string>ca://${DEVICE}:DMOD_ROT_PHASE0</string>
        </property>
       </widget>
      </item>
      <item row="3" column="8">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_24">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
        <property name="toolTip">
         <string/>
        </property>
@@ -769,20 +1147,33 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_AMPL2</string>
+        <string>ca://${DEVICE}:DMOD_ROT_AMPL0</string>
        </property>
       </widget>
      </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="label_6">
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_3">
        <property name="font">
         <font>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="text">
-        <string>CH 3</string>
+        <string>RF_IN_2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_IN_1</string>
        </property>
       </widget>
      </item>
@@ -899,21 +1290,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="label_7">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>CH 4</string>
-       </property>
-      </widget>
-     </item>
      <item row="5" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_5">
+      <widget class="PyDMLabel" name="PyDMLabel_3">
        <property name="toolTip">
         <string/>
        </property>
@@ -921,7 +1299,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASERAW4</string>
+        <string>ca://${DEVICE}:DMOD_PHASERAW2</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLabel::Hex</enum>
@@ -929,7 +1307,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </widget>
      </item>
      <item row="5" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel_21">
+      <widget class="PyDMLabel" name="PyDMLabel_19">
        <property name="toolTip">
         <string/>
        </property>
@@ -937,12 +1315,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASE4</string>
+        <string>ca://${DEVICE}:DMOD_PHASE2</string>
        </property>
       </widget>
      </item>
      <item row="5" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_33">
+      <widget class="PyDMLabel" name="PyDMLabel_31">
        <property name="toolTip">
         <string/>
        </property>
@@ -950,7 +1328,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPLRAW4</string>
+        <string>ca://${DEVICE}:DMOD_AMPLRAW2</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLabel::Hex</enum>
@@ -958,7 +1336,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </widget>
      </item>
      <item row="5" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_45">
+      <widget class="PyDMLabel" name="PyDMLabel_43">
        <property name="toolTip">
         <string/>
        </property>
@@ -966,12 +1344,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPL4</string>
+        <string>ca://${DEVICE}:DMOD_AMPL2</string>
        </property>
       </widget>
      </item>
      <item row="5" column="5">
-      <widget class="PyDMLabel" name="PyDMLabel_57">
+      <widget class="PyDMLabel" name="PyDMLabel_55">
        <property name="toolTip">
         <string/>
        </property>
@@ -979,7 +1357,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_I4</string>
+        <string>ca://${DEVICE}:DMOD_ROT_I2</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLabel::Hex</enum>
@@ -987,7 +1365,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </widget>
      </item>
      <item row="5" column="6">
-      <widget class="PyDMLabel" name="PyDMLabel_69">
+      <widget class="PyDMLabel" name="PyDMLabel_67">
        <property name="toolTip">
         <string/>
        </property>
@@ -995,12 +1373,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_Q4</string>
+        <string>ca://${DEVICE}:DMOD_ROT_Q2</string>
        </property>
       </widget>
      </item>
      <item row="5" column="7">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
        <property name="toolTip">
         <string/>
        </property>
@@ -1008,12 +1386,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_PHASE4</string>
+        <string>ca://${DEVICE}:DMOD_ROT_PHASE2</string>
        </property>
       </widget>
      </item>
      <item row="5" column="8">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_18">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_24">
        <property name="toolTip">
         <string/>
        </property>
@@ -1021,20 +1399,33 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_AMPL4</string>
+        <string>ca://${DEVICE}:DMOD_ROT_AMPL2</string>
        </property>
       </widget>
      </item>
-     <item row="6" column="0">
-      <widget class="QLabel" name="label_8">
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_6">
        <property name="font">
         <font>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="text">
-        <string>CH 5</string>
+        <string>RF_IN_3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_IN_4</string>
        </property>
       </widget>
      </item>
@@ -1151,21 +1542,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="7" column="0">
-      <widget class="QLabel" name="label_9">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>CH 6</string>
-       </property>
-      </widget>
-     </item>
      <item row="7" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_7">
+      <widget class="PyDMLabel" name="PyDMLabel_5">
        <property name="toolTip">
         <string/>
        </property>
@@ -1173,7 +1551,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASERAW6</string>
+        <string>ca://${DEVICE}:DMOD_PHASERAW4</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLabel::Hex</enum>
@@ -1181,7 +1559,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </widget>
      </item>
      <item row="7" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel_23">
+      <widget class="PyDMLabel" name="PyDMLabel_21">
        <property name="toolTip">
         <string/>
        </property>
@@ -1189,12 +1567,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASE6</string>
+        <string>ca://${DEVICE}:DMOD_PHASE4</string>
        </property>
       </widget>
      </item>
      <item row="7" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_35">
+      <widget class="PyDMLabel" name="PyDMLabel_33">
        <property name="toolTip">
         <string/>
        </property>
@@ -1202,7 +1580,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPLRAW6</string>
+        <string>ca://${DEVICE}:DMOD_AMPLRAW4</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLabel::Hex</enum>
@@ -1210,7 +1588,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </widget>
      </item>
      <item row="7" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_47">
+      <widget class="PyDMLabel" name="PyDMLabel_45">
        <property name="toolTip">
         <string/>
        </property>
@@ -1218,12 +1596,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPL6</string>
+        <string>ca://${DEVICE}:DMOD_AMPL4</string>
        </property>
       </widget>
      </item>
      <item row="7" column="5">
-      <widget class="PyDMLabel" name="PyDMLabel_59">
+      <widget class="PyDMLabel" name="PyDMLabel_57">
        <property name="toolTip">
         <string/>
        </property>
@@ -1231,7 +1609,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_I6</string>
+        <string>ca://${DEVICE}:DMOD_ROT_I4</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLabel::Hex</enum>
@@ -1239,7 +1617,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </widget>
      </item>
      <item row="7" column="6">
-      <widget class="PyDMLabel" name="PyDMLabel_71">
+      <widget class="PyDMLabel" name="PyDMLabel_69">
        <property name="toolTip">
         <string/>
        </property>
@@ -1247,12 +1625,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_Q6</string>
+        <string>ca://${DEVICE}:DMOD_ROT_Q4</string>
        </property>
       </widget>
      </item>
      <item row="7" column="7">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
        <property name="toolTip">
         <string/>
        </property>
@@ -1260,12 +1638,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_PHASE6</string>
+        <string>ca://${DEVICE}:DMOD_ROT_PHASE4</string>
        </property>
       </widget>
      </item>
      <item row="7" column="8">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_23">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_18">
        <property name="toolTip">
         <string/>
        </property>
@@ -1273,24 +1651,37 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_AMPL6</string>
+        <string>ca://${DEVICE}:DMOD_ROT_AMPL4</string>
        </property>
       </widget>
      </item>
-     <item row="8" column="0">
-      <widget class="QLabel" name="label_10">
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_8">
        <property name="font">
         <font>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="text">
-        <string>CH 7</string>
+        <string>RF_IN_5</string>
        </property>
       </widget>
      </item>
-     <item row="8" column="1">
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_IN_6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
       <widget class="PyDMLabel" name="PyDMLabel_8">
        <property name="toolTip">
         <string/>
@@ -1306,7 +1697,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="8" column="2">
+     <item row="9" column="2">
       <widget class="PyDMLabel" name="PyDMLabel_16">
        <property name="toolTip">
         <string/>
@@ -1319,7 +1710,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="8" column="3">
+     <item row="9" column="3">
       <widget class="PyDMLabel" name="PyDMLabel_28">
        <property name="toolTip">
         <string/>
@@ -1335,7 +1726,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="8" column="4">
+     <item row="9" column="4">
       <widget class="PyDMLabel" name="PyDMLabel_40">
        <property name="toolTip">
         <string/>
@@ -1348,7 +1739,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="8" column="5">
+     <item row="9" column="5">
       <widget class="PyDMLabel" name="PyDMLabel_52">
        <property name="toolTip">
         <string/>
@@ -1364,7 +1755,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="8" column="6">
+     <item row="9" column="6">
       <widget class="PyDMLabel" name="PyDMLabel_64">
        <property name="toolTip">
         <string/>
@@ -1377,7 +1768,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="8" column="7">
+     <item row="9" column="7">
       <widget class="PyDMLineEdit" name="PyDMLineEdit_8">
        <property name="toolTip">
         <string/>
@@ -1390,7 +1781,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="8" column="8">
+     <item row="9" column="8">
       <widget class="PyDMLineEdit" name="PyDMLineEdit_19">
        <property name="toolTip">
         <string/>
@@ -1403,147 +1794,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="9" column="0">
-      <widget class="QLabel" name="label_11">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>CH 8</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_9">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASERAW8</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel_24">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASE8</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_36">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPLRAW8</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_48">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPL8</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="5">
-      <widget class="PyDMLabel" name="PyDMLabel_60">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_I8</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="6">
-      <widget class="PyDMLabel" name="PyDMLabel_72">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_Q8</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="7">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_PHASE8</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="8">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_20">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_AMPL8</string>
-       </property>
-      </widget>
-     </item>
-     <item row="10" column="0">
-      <widget class="QLabel" name="label_12">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>CH 9</string>
-       </property>
-      </widget>
-     </item>
      <item row="10" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_10">
+      <widget class="PyDMLabel" name="PyDMLabel_7">
        <property name="toolTip">
         <string/>
        </property>
@@ -1551,7 +1803,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASERAW9</string>
+        <string>ca://${DEVICE}:DMOD_PHASERAW6</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLabel::Hex</enum>
@@ -1559,7 +1811,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </widget>
      </item>
      <item row="10" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel_14">
+      <widget class="PyDMLabel" name="PyDMLabel_23">
        <property name="toolTip">
         <string/>
        </property>
@@ -1567,12 +1819,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASE9</string>
+        <string>ca://${DEVICE}:DMOD_PHASE6</string>
        </property>
       </widget>
      </item>
      <item row="10" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_26">
+      <widget class="PyDMLabel" name="PyDMLabel_35">
        <property name="toolTip">
         <string/>
        </property>
@@ -1580,7 +1832,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPLRAW9</string>
+        <string>ca://${DEVICE}:DMOD_AMPLRAW6</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLabel::Hex</enum>
@@ -1588,7 +1840,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </widget>
      </item>
      <item row="10" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_38">
+      <widget class="PyDMLabel" name="PyDMLabel_47">
        <property name="toolTip">
         <string/>
        </property>
@@ -1596,12 +1848,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPL9</string>
+        <string>ca://${DEVICE}:DMOD_AMPL6</string>
        </property>
       </widget>
      </item>
      <item row="10" column="5">
-      <widget class="PyDMLabel" name="PyDMLabel_50">
+      <widget class="PyDMLabel" name="PyDMLabel_59">
        <property name="toolTip">
         <string/>
        </property>
@@ -1609,7 +1861,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_I9</string>
+        <string>ca://${DEVICE}:DMOD_ROT_I6</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLabel::Hex</enum>
@@ -1617,7 +1869,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </widget>
      </item>
      <item row="10" column="6">
-      <widget class="PyDMLabel" name="PyDMLabel_62">
+      <widget class="PyDMLabel" name="PyDMLabel_71">
        <property name="toolTip">
         <string/>
        </property>
@@ -1625,12 +1877,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_Q9</string>
+        <string>ca://${DEVICE}:DMOD_ROT_Q6</string>
        </property>
       </widget>
      </item>
      <item row="10" column="7">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_10">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_7">
        <property name="toolTip">
         <string/>
        </property>
@@ -1638,12 +1890,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_PHASE9</string>
+        <string>ca://${DEVICE}:DMOD_ROT_PHASE6</string>
        </property>
       </widget>
      </item>
      <item row="10" column="8">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_17">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_23">
        <property name="toolTip">
         <string/>
        </property>
@@ -1651,259 +1903,33 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_AMPL9</string>
+        <string>ca://${DEVICE}:DMOD_ROT_AMPL6</string>
        </property>
       </widget>
      </item>
-     <item row="11" column="0">
-      <widget class="QLabel" name="label_13">
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_10">
        <property name="font">
         <font>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="text">
-        <string>CH 10</string>
+        <string>RF_IN_1</string>
        </property>
       </widget>
      </item>
-     <item row="11" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_11">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASERAW10</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel_15">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASE10</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_27">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPLRAW10</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_39">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPL10</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="5">
-      <widget class="PyDMLabel" name="PyDMLabel_51">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_I10</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="6">
-      <widget class="PyDMLabel" name="PyDMLabel_63">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_Q10</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="7">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_11">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_PHASE10</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="8">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_13">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_AMPL10</string>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="0">
-      <widget class="QLabel" name="label_2">
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_9">
        <property name="font">
         <font>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="text">
-        <string>CH 11</string>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_12">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASERAW11</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel_22">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_PHASE11</string>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_34">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPLRAW11</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_46">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_AMPL11</string>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="5">
-      <widget class="PyDMLabel" name="PyDMLabel_58">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_I11</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="6">
-      <widget class="PyDMLabel" name="PyDMLabel_70">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_Q11</string>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="7">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_12">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_PHASE11</string>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="8">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_21">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:DMOD_ROT_AMPL11</string>
+        <string>RF_IN_2</string>
        </property>
       </widget>
      </item>
