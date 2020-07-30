@@ -1270,7 +1270,7 @@ QPushButton:hover{
                   <string>{&quot;MUX&quot;:&quot;1&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
-                  <string>streams_info.ui</string>
+                  <string>streams_info_upconverter.ui</string>
                  </property>
                 </widget>
                </item>
