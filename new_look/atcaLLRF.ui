@@ -216,16 +216,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           <property name="bottomMargin">
            <number>2</number>
           </property>
-          <item row="1" column="0">
-           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="filename" stdset="0">
-             <string>firmware_version.ui</string>
-            </property>
-           </widget>
-          </item>
           <item row="0" column="0" colspan="5">
            <widget class="PyDMLabel" name="PyDMLabel">
             <property name="font">
@@ -307,6 +297,16 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </item>
            </layout>
           </item>
+          <item row="1" column="0">
+           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="filename" stdset="0">
+             <string>firmware_version.ui</string>
+            </property>
+           </widget>
+          </item>
           <item row="1" column="1">
            <layout class="QVBoxLayout" name="verticalLayout_9">
             <property name="topMargin">
@@ -359,6 +359,48 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <bool>true</bool>
               </property>
              </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="font">
+                 <font>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>PLL LO Lock Status: </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:LO_LOCKSTATUS</string>
+                </property>
+                <property name="offColor" stdset="0">
+                 <color>
+                  <red>255</red>
+                  <green>0</green>
+                  <blue>0</blue>
+                 </color>
+                </property>
+                <property name="circles" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="labels" stdset="0">
+                 <stringlist>
+                  <string></string>
+                 </stringlist>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </item>
            </layout>
           </item>
@@ -414,6 +456,46 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <bool>true</bool>
               </property>
              </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="font">
+                 <font>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>PLL CLK Lock Status:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:CLOCK_LOCKSTATUS</string>
+                </property>
+                <property name="offColor" stdset="0">
+                 <color>
+                  <red>255</red>
+                  <green>0</green>
+                  <blue>0</blue>
+                 </color>
+                </property>
+                <property name="circles" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="labels" stdset="0">
+                 <stringlist/>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </item>
            </layout>
           </item>
@@ -528,6 +610,62 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
              </property>
              <item>
               <layout class="QGridLayout" name="gridLayout_2">
+               <item row="2" column="2">
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <item>
+                  <widget class="QLabel" name="label_3">
+                   <property name="text">
+                    <string>Trigger Daq:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="PyDMPushButton" name="PyDMPushButton">
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string>Trigger</string>
+                   </property>
+                   <property name="channel" stdset="0">
+                    <string>ca://${DEVICE}:DAQMUX0_TRGDAQ </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_5">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item row="0" column="0" rowspan="4">
+                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>1</horstretch>
+                   <verstretch>1</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                 <property name="macros" stdset="0">
+                  <string>{&quot;MUX&quot;:&quot;0&quot;}</string>
+                 </property>
+                 <property name="filename" stdset="0">
+                  <string>down_converter.ui</string>
+                 </property>
+                </widget>
+               </item>
                <item row="0" column="2">
                 <widget class="QLabel" name="label">
                  <property name="font">
@@ -540,6 +678,38 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="3" column="2">
+                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>1</horstretch>
+                   <verstretch>1</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                 <property name="macros" stdset="0">
+                  <string>{&quot;MUX&quot;:&quot;0&quot;}</string>
+                 </property>
+                 <property name="filename" stdset="0">
+                  <string>streams_info.ui</string>
                  </property>
                 </widget>
                </item>
@@ -579,94 +749,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </property>
                  <property name="openInNewWindow" stdset="0">
                   <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="0" rowspan="4">
-                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>1</horstretch>
-                   <verstretch>1</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="macros" stdset="0">
-                  <string>{&quot;MUX&quot;:&quot;0&quot;}</string>
-                 </property>
-                 <property name="filename" stdset="0">
-                  <string>down_converter.ui</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="2">
-                <layout class="QHBoxLayout" name="horizontalLayout_2">
-                 <item>
-                  <widget class="QLabel" name="label_3">
-                   <property name="text">
-                    <string>Trigger Daq:</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="PyDMPushButton" name="PyDMPushButton">
-                   <property name="toolTip">
-                    <string/>
-                   </property>
-                   <property name="text">
-                    <string>Trigger</string>
-                   </property>
-                   <property name="channel" stdset="0">
-                    <string>ca://${DEVICE}:DAQMUX0_TRGDAQ </string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <spacer name="horizontalSpacer_5">
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>40</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                </layout>
-               </item>
-               <item row="2" column="1">
-                <spacer name="horizontalSpacer_3">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>40</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-               <item row="3" column="2">
-                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>1</horstretch>
-                   <verstretch>1</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="macros" stdset="0">
-                  <string>{&quot;MUX&quot;:&quot;0&quot;}</string>
-                 </property>
-                 <property name="filename" stdset="0">
-                  <string>streams_info.ui</string>
                  </property>
                 </widget>
                </item>
@@ -1749,6 +1831,11 @@ QPushButton:hover{
    <class>PyDMWaveformPlot</class>
    <extends>QGraphicsView</extends>
    <header>pydm.widgets.waveformplot</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
   </customwidget>
   <customwidget>
    <class>PyDMEmbeddedDisplay</class>
