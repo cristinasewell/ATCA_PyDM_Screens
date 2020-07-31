@@ -374,14 +374,14 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>20</width>
-                  <height>20</height>
+                  <width>22</width>
+                  <height>22</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>20</width>
-                  <height>20</height>
+                  <width>22</width>
+                  <height>22</height>
                  </size>
                 </property>
                 <property name="font">
@@ -407,14 +407,19 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                   <blue>0</blue>
                  </color>
                 </property>
-                <property name="circles" stdset="0">
+                <property name="showLabels" stdset="0">
                  <bool>false</bool>
+                </property>
+                <property name="circles" stdset="0">
+                 <bool>true</bool>
                 </property>
                 <property name="labelPosition" stdset="0">
                  <enum>QTabWidget::West</enum>
                 </property>
                 <property name="labels" stdset="0">
-                 <stringlist/>
+                 <stringlist>
+                  <string></string>
+                 </stringlist>
                 </property>
                </widget>
               </item>
@@ -516,14 +521,14 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>20</width>
-                  <height>20</height>
+                  <width>22</width>
+                  <height>22</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>20</width>
-                  <height>20</height>
+                  <width>22</width>
+                  <height>24</height>
                  </size>
                 </property>
                 <property name="toolTip">
@@ -542,14 +547,19 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                 <property name="orientation" stdset="0">
                  <enum>Qt::Vertical</enum>
                 </property>
-                <property name="circles" stdset="0">
+                <property name="showLabels" stdset="0">
                  <bool>false</bool>
+                </property>
+                <property name="circles" stdset="0">
+                 <bool>true</bool>
                 </property>
                 <property name="labelPosition" stdset="0">
                  <enum>QTabWidget::West</enum>
                 </property>
                 <property name="labels" stdset="0">
-                 <stringlist/>
+                 <stringlist>
+                  <string></string>
+                 </stringlist>
                 </property>
                </widget>
               </item>
