@@ -939,7 +939,7 @@ Power</string>
                <string>Pulse ID:</string>
               </property>
               <property name="alignment">
-               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
               </property>
              </widget>
             </item>
@@ -959,6 +959,9 @@ Power</string>
               </property>
               <property name="toolTip">
                <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${RTM}:RTM_WFPULSEID</string>
@@ -1149,7 +1152,7 @@ Power</string>
             <property name="minimumSize">
              <size>
               <width>0</width>
-              <height>80</height>
+              <height>135</height>
              </size>
             </property>
             <property name="toolTip">
@@ -1320,7 +1323,7 @@ Power</string>
             <property name="minimumSize">
              <size>
               <width>0</width>
-              <height>80</height>
+              <height>135</height>
              </size>
             </property>
             <property name="toolTip">
@@ -1551,7 +1554,7 @@ Voltage</string>
             <property name="minimumSize">
              <size>
               <width>0</width>
-              <height>0</height>
+              <height>135</height>
              </size>
             </property>
             <property name="maximumSize">
