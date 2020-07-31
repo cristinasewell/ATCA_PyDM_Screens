@@ -1139,7 +1139,7 @@ Power</string>
            </layout>
           </item>
           <item row="5" column="3">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_10">
+           <widget class="PyDMWaveformPlot" name="beam_voltage_waveform">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>1</horstretch>
@@ -1310,7 +1310,7 @@ Power</string>
            </layout>
           </item>
           <item row="7" column="3">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_15">
+           <widget class="PyDMWaveformPlot" name="rf_power_waveform">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
               <horstretch>1</horstretch>
@@ -1541,7 +1541,7 @@ Voltage</string>
            </widget>
           </item>
           <item row="3" column="3">
-           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_5">
+           <widget class="PyDMWaveformPlot" name="beam_current_waveform">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>1</horstretch>

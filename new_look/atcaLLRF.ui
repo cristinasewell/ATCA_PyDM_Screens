@@ -649,7 +649,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               </property>
               <property name="filenames" stdset="0">
                <stringlist>
-                <string>rtm.ui</string>
+                <string>rtm.py</string>
                </stringlist>
               </property>
               <property name="openInNewWindow" stdset="0">
