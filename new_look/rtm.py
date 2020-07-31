@@ -23,15 +23,9 @@ class Rtm(Display):
         self.ui.beam_current_waveform.plotItem.getViewBox().setAutoVisible()
         self.ui.beam_voltage_waveform.plotItem.getViewBox().setAutoVisible()
         self.ui.rf_power_waveform.plotItem.getViewBox().setAutoVisible()
-        self.ui.beam_current_waveform.plotItem.getViewBox().setAutoPan(False, True)
-        self.ui.beam_voltage_waveform.plotItem.getViewBox().setAutoPan(False, True)
-        self.ui.rf_power_waveform.plotItem.getViewBox().setAutoPan(False, True)
-
-        #pg.ViewBox.updateAutoRange
-        #self.ui.beam_voltage_waveform.plotItem.getViewBox().setAutoRange(padding=0.2)
-        #logger.info(self.ui.beam_current_waveform.pltItem.y_address())
-        #self.waveformPlotBay1.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
-
+        #self.ui.beam_current_waveform.plotItem.getViewBox().setAutoPan(False, True)
+        #self.ui.beam_voltage_waveform.plotItem.getViewBox().setAutoPan(False, True)
+        #self.ui.rf_power_waveform.plotItem.getViewBox().setAutoPan(False, True)
 
     def ui_filename(self):
         return 'rtm.ui'
