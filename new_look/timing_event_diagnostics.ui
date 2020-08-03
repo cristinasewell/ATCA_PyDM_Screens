@@ -106,24 +106,6 @@ PyDMLabel {
      </property>
     </widget>
    </item>
-   <item row="1" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL0_EVCODE  </string>
-     </property>
-    </widget>
-   </item>
    <item row="1" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_2">
      <property name="font">
@@ -164,24 +146,6 @@ PyDMLabel {
     <widget class="QLabel" name="label_2">
      <property name="text">
       <string>Event Select 1</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_4">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL1_EVCODE  </string>
      </property>
     </widget>
    </item>
@@ -238,24 +202,6 @@ PyDMLabel {
      </property>
     </widget>
    </item>
-   <item row="3" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_5">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL2_EVCODE  </string>
-     </property>
-    </widget>
-   </item>
    <item row="3" column="2">
     <widget class="PyDMPushButton" name="PyDMPushButton_3">
      <property name="toolTip">
@@ -306,24 +252,6 @@ PyDMLabel {
     <widget class="QLabel" name="label_4">
      <property name="text">
       <string>Event Select 3</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_6">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL3_EVCODE  </string>
      </property>
     </widget>
    </item>
@@ -380,24 +308,6 @@ PyDMLabel {
      </property>
     </widget>
    </item>
-   <item row="5" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_7">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL4_EVCODE  </string>
-     </property>
-    </widget>
-   </item>
    <item row="5" column="2">
     <widget class="PyDMPushButton" name="PyDMPushButton_5">
      <property name="toolTip">
@@ -448,24 +358,6 @@ PyDMLabel {
     <widget class="QLabel" name="label_6">
      <property name="text">
       <string>Event Select 5</string>
-     </property>
-    </widget>
-   </item>
-   <item row="6" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_8">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL5_EVCODE  </string>
      </property>
     </widget>
    </item>
@@ -522,24 +414,6 @@ PyDMLabel {
      </property>
     </widget>
    </item>
-   <item row="7" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_9">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL6_EVCODE  </string>
-     </property>
-    </widget>
-   </item>
    <item row="7" column="2">
     <widget class="PyDMPushButton" name="PyDMPushButton_7">
      <property name="toolTip">
@@ -590,24 +464,6 @@ PyDMLabel {
     <widget class="QLabel" name="label_8">
      <property name="text">
       <string>Event Select 7</string>
-     </property>
-    </widget>
-   </item>
-   <item row="8" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_10">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL7_EVCODE  </string>
      </property>
     </widget>
    </item>
@@ -664,24 +520,6 @@ PyDMLabel {
      </property>
     </widget>
    </item>
-   <item row="9" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_11">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL8_EVCODE  </string>
-     </property>
-    </widget>
-   </item>
    <item row="9" column="2">
     <widget class="PyDMPushButton" name="PyDMPushButton_9">
      <property name="toolTip">
@@ -732,24 +570,6 @@ PyDMLabel {
     <widget class="QLabel" name="label_10">
      <property name="text">
       <string>Event Select 9</string>
-     </property>
-    </widget>
-   </item>
-   <item row="10" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_12">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL9_EVCODE  </string>
      </property>
     </widget>
    </item>
@@ -806,24 +626,6 @@ PyDMLabel {
      </property>
     </widget>
    </item>
-   <item row="11" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_13">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL10_EVCODE  </string>
-     </property>
-    </widget>
-   </item>
    <item row="11" column="2">
     <widget class="PyDMPushButton" name="PyDMPushButton_11">
      <property name="toolTip">
@@ -874,24 +676,6 @@ PyDMLabel {
     <widget class="QLabel" name="label_12">
      <property name="text">
       <string>Event Select 11</string>
-     </property>
-    </widget>
-   </item>
-   <item row="12" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_14">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL11_EVCODE  </string>
      </property>
     </widget>
    </item>
@@ -948,24 +732,6 @@ PyDMLabel {
      </property>
     </widget>
    </item>
-   <item row="13" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_15">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL12_EVCODE  </string>
-     </property>
-    </widget>
-   </item>
    <item row="13" column="2">
     <widget class="PyDMPushButton" name="PyDMPushButton_13">
      <property name="toolTip">
@@ -1016,24 +782,6 @@ PyDMLabel {
     <widget class="QLabel" name="label_14">
      <property name="text">
       <string>Event Select 13</string>
-     </property>
-    </widget>
-   </item>
-   <item row="14" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_16">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL13_EVCODE  </string>
      </property>
     </widget>
    </item>
@@ -1090,24 +838,6 @@ PyDMLabel {
      </property>
     </widget>
    </item>
-   <item row="15" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_17">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL14_EVCODE  </string>
-     </property>
-    </widget>
-   </item>
    <item row="15" column="2">
     <widget class="PyDMPushButton" name="PyDMPushButton_15">
      <property name="toolTip">
@@ -1158,24 +888,6 @@ PyDMLabel {
     <widget class="QLabel" name="label_16">
      <property name="text">
       <string>Event Select 15</string>
-     </property>
-    </widget>
-   </item>
-   <item row="16" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_18">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL15_EVCODE  </string>
      </property>
     </widget>
    </item>
@@ -1235,6 +947,166 @@ PyDMLabel {
      </property>
     </widget>
    </item>
+   <item row="1" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL0_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL1_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL2_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL3_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL4_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL5_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_7">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL6_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_8">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL7_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL8_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_10">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL9_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_11">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL10_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_12">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL11_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_13">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL12_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_14">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL13_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL14_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_16">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL15_EVCODE  </string>
+     </property>
+    </widget>
+   </item>
   </layout>
  </widget>
  <customwidgets>
@@ -1242,6 +1114,11 @@ PyDMLabel {
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
    <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
   </customwidget>
   <customwidget>
    <class>PyDMPushButton</class>
