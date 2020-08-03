@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>458</width>
-    <height>474</height>
+    <height>492</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -108,6 +108,11 @@ PyDMLabel {
    </item>
    <item row="1" column="1">
     <widget class="PyDMLabel" name="PyDMLabel">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -121,6 +126,11 @@ PyDMLabel {
    </item>
    <item row="1" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_2">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -134,6 +144,11 @@ PyDMLabel {
    </item>
    <item row="1" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_3">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -154,6 +169,11 @@ PyDMLabel {
    </item>
    <item row="2" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_4">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -177,6 +197,11 @@ PyDMLabel {
    </item>
    <item row="2" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_32">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -190,6 +215,11 @@ PyDMLabel {
    </item>
    <item row="2" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_47">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -210,6 +240,11 @@ PyDMLabel {
    </item>
    <item row="3" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_5">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -233,6 +268,11 @@ PyDMLabel {
    </item>
    <item row="3" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_23">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -246,6 +286,11 @@ PyDMLabel {
    </item>
    <item row="3" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_38">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -266,6 +311,11 @@ PyDMLabel {
    </item>
    <item row="4" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_6">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -289,6 +339,11 @@ PyDMLabel {
    </item>
    <item row="4" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_30">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -302,6 +357,11 @@ PyDMLabel {
    </item>
    <item row="4" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_45">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -322,6 +382,11 @@ PyDMLabel {
    </item>
    <item row="5" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_7">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -345,6 +410,11 @@ PyDMLabel {
    </item>
    <item row="5" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_26">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -358,6 +428,11 @@ PyDMLabel {
    </item>
    <item row="5" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_41">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -378,6 +453,11 @@ PyDMLabel {
    </item>
    <item row="6" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_8">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -401,6 +481,11 @@ PyDMLabel {
    </item>
    <item row="6" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_27">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -414,6 +499,11 @@ PyDMLabel {
    </item>
    <item row="6" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_42">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -434,6 +524,11 @@ PyDMLabel {
    </item>
    <item row="7" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_9">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -457,6 +552,11 @@ PyDMLabel {
    </item>
    <item row="7" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_25">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -470,6 +570,11 @@ PyDMLabel {
    </item>
    <item row="7" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_40">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -490,6 +595,11 @@ PyDMLabel {
    </item>
    <item row="8" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_10">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -513,6 +623,11 @@ PyDMLabel {
    </item>
    <item row="8" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_19">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -526,6 +641,11 @@ PyDMLabel {
    </item>
    <item row="8" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_34">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -546,6 +666,11 @@ PyDMLabel {
    </item>
    <item row="9" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_11">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -569,6 +694,11 @@ PyDMLabel {
    </item>
    <item row="9" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_20">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -582,6 +712,11 @@ PyDMLabel {
    </item>
    <item row="9" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_35">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -602,6 +737,11 @@ PyDMLabel {
    </item>
    <item row="10" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_12">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -625,6 +765,11 @@ PyDMLabel {
    </item>
    <item row="10" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_31">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -638,6 +783,11 @@ PyDMLabel {
    </item>
    <item row="10" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_46">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -658,6 +808,11 @@ PyDMLabel {
    </item>
    <item row="11" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_13">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -681,6 +836,11 @@ PyDMLabel {
    </item>
    <item row="11" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_28">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -694,6 +854,11 @@ PyDMLabel {
    </item>
    <item row="11" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_43">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -714,6 +879,11 @@ PyDMLabel {
    </item>
    <item row="12" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_14">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -737,6 +907,11 @@ PyDMLabel {
    </item>
    <item row="12" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_21">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -750,6 +925,11 @@ PyDMLabel {
    </item>
    <item row="12" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_36">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -770,6 +950,11 @@ PyDMLabel {
    </item>
    <item row="13" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_15">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -793,6 +978,11 @@ PyDMLabel {
    </item>
    <item row="13" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_33">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -806,6 +996,11 @@ PyDMLabel {
    </item>
    <item row="13" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_48">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -826,6 +1021,11 @@ PyDMLabel {
    </item>
    <item row="14" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_16">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -849,6 +1049,11 @@ PyDMLabel {
    </item>
    <item row="14" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_29">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -862,6 +1067,11 @@ PyDMLabel {
    </item>
    <item row="14" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_44">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -882,6 +1092,11 @@ PyDMLabel {
    </item>
    <item row="15" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_17">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -905,6 +1120,11 @@ PyDMLabel {
    </item>
    <item row="15" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_22">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -918,6 +1138,11 @@ PyDMLabel {
    </item>
    <item row="15" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_37">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -938,6 +1163,11 @@ PyDMLabel {
    </item>
    <item row="16" column="1">
     <widget class="PyDMLabel" name="PyDMLabel_18">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -961,6 +1191,11 @@ PyDMLabel {
    </item>
    <item row="16" column="3">
     <widget class="PyDMLabel" name="PyDMLabel_24">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -974,6 +1209,11 @@ PyDMLabel {
    </item>
    <item row="16" column="4">
     <widget class="PyDMLabel" name="PyDMLabel_39">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -986,30 +1226,12 @@ PyDMLabel {
     </widget>
    </item>
    <item row="1" column="2">
-    <widget class="PyDMEnumButton" name="PyDMEnumButton">
+    <widget class="PyDMPushButton" name="PyDMPushButton">
      <property name="toolTip">
       <string/>
      </property>
      <property name="channel" stdset="0">
       <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:SOFTEVSEL0_ENABLE</string>
-     </property>
-     <property name="marginTop" stdset="0">
-      <number>0</number>
-     </property>
-     <property name="marginBottom" stdset="0">
-      <number>0</number>
-     </property>
-     <property name="marginLeft" stdset="0">
-      <number>0</number>
-     </property>
-     <property name="marginRight" stdset="0">
-      <number>0</number>
-     </property>
-     <property name="horizontalSpacing" stdset="0">
-      <number>0</number>
-     </property>
-     <property name="verticalSpacing" stdset="0">
-      <number>0</number>
      </property>
     </widget>
    </item>
@@ -1020,11 +1242,6 @@ PyDMLabel {
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
    <header>pydm.widgets.label</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMEnumButton</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.enum_button</header>
   </customwidget>
   <customwidget>
    <class>PyDMPushButton</class>
