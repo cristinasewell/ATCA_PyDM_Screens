@@ -23,9 +23,12 @@ class AverageWindow(Display):
         self.end_edit_line_setup()
         self.start_edit_line_setup()
         self.ui.write_pb.clicked.connect(self.write_to_pv)
+        self.ui.draw_window_pb.connect(self.plot_data)
         self.imaginary_curves = None
         self.real_curves = None
         logger.info(macros)
+        self.pv_size = 4096
+        self.win = []
 
     def define_complex_curves(self):
        # try:
@@ -96,7 +99,7 @@ class AverageWindow(Display):
         """
         if self.ui.start_line_edit.text():
             str_value = str(self.ui.start_line_edit.text())
-            self.start = float(str_value)
+            self.start = int(str_value)
 
     def end_on_return_pressed(self):
         """
@@ -105,7 +108,7 @@ class AverageWindow(Display):
         """
         if self.ui.end_line_edit.text():
             str_value = str(self.ui.end_line_edit.text())
-            self.end = float(str_value)
+            self.end = int(str_value)
     
     def validate_input(self, to_validate):
         # validate +- values, up to 12 chars for now, and up to 6 values after the .
@@ -117,9 +120,9 @@ class AverageWindow(Display):
         pass
 
     def plot_data(self):
-       # y_values = [20, 40, 60]
-       # self.ui.average_window_wf.plotItem.getViewBox().addCurve(y_values)
-        pass
+        self.win = [0]*self.start + [1]*(self.end-self.start) + [0]*(self.pv_size-self.end)
+        self.ui.average_window_wf.plot(self.win)
+
 
     def write_to_pv(self, checked):
         write_message = QMessageBox.question(
@@ -131,7 +134,9 @@ class AverageWindow(Display):
             pass
     
     def write(self):
-        self.plot_data()
+        #self.plot_data()
+        pass
+
         logger.info("Writing to PV.....")
 
 

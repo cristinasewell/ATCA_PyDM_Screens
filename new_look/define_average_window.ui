@@ -93,6 +93,9 @@
      <property name="text">
       <string>Write</string>
      </property>
+     <property name="channel" stdset="0">
+      <string>ca://SIOC:B084:RFTEST:0:ICPXWND0.DESC</string>
+     </property>
     </widget>
    </item>
    <item row="1" column="1" colspan="2">
@@ -106,17 +109,32 @@
     <widget class="QComboBox" name="comboBox">
      <item>
       <property name="text">
-       <string>Complex Window 0</string>
+       <string>Complex Component Window 0</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Complex Window 1</string>
+       <string>Complex Component Window 1</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Complex Window 2</string>
+       <string>Complex Component Window 2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Real Component Window 0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Real Component Window 1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Real Component Window 2</string>
       </property>
      </item>
     </widget>
@@ -145,6 +163,16 @@
     <widget class="PyDMLabel" name="PyDMLabel">
      <property name="toolTip">
       <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QPushButton" name="draw_window_pb">
+     <property name="text">
+      <string>Draw Window</string>
      </property>
     </widget>
    </item>
