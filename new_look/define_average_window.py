@@ -10,7 +10,6 @@ import re
 from qtpy.QtCore import QRegExp
 from qtpy.QtGui import QRegExpValidator, QDoubleValidator
 from qtpy.QtWidgets import QMessageBox
-#from qtpy.QtCore import Qt, QTimer, Slot, QSize, QLibraryInfo
 
 logger = logging.getLogger(__name__)
 
@@ -24,6 +23,56 @@ class AverageWindow(Display):
         self.end_edit_line_setup()
         self.start_edit_line_setup()
         self.ui.write_pb.clicked.connect(self.write_to_pv)
+        self.imaginary_curves = None
+        self.real_curves = None
+        logger.info(macros)
+
+    def define_complex_curves(self):
+       # try:
+        device = self._macros['DEVICE']
+    #    if device:
+        ioc = "ca://{}:".format(device)
+        # avg window[0..2]
+        # cmplx window[0..2]
+        channels = [0, 1, 2]
+        # 2 colors, one for imaginary one for real part
+        colors = ["#55ffff", "#55ff7f"]
+        imaginary_curves = {}
+        real_curves = {}
+
+        # real windows
+        for ch in channels:  
+            y_channel = "{}ICPXWND{}".format(
+                ioc, ch)
+            name = "ICPXWND{}".format(ch)
+
+            real_curves[ch] = {
+                "y_channel": y_channel,
+                "x_channel": None,
+                "name": name,
+                "color": colors[0]
+            }
+        self.real_curves = real_curves
+        # imaginary windows
+        for ch in channels:  
+            y_channel = "{}QCPXWND{}".format(
+                ioc, ch)
+            name = "QCPXWND{}".format(ch)
+
+            imaginary_curves[ch] = {
+                "y_channel": y_channel,
+                "x_channel": None,
+                "name": name,
+                "color": colors[1]
+            }
+        self.imaginary_curves = imaginary_curves
+        return imaginary_curves, real_curves
+       # except:
+        #    self.ui.error_label.setText("Something went wrong with the macro??...")
+        #    logger.error("something went wrong...")
+            #logger.error("You need to define a DEVICE macro ioc  - ex: -m 'DEVICE=MY_IOC' ")
+            #sys.exit(1)
+            # disble a button here - dissable the write button?
 
     def start_edit_line_setup(self):
         self.ui.start_line_edit.returnPressed.connect(self.start_on_return_pressed)
@@ -84,7 +133,7 @@ class AverageWindow(Display):
     def write(self):
         self.plot_data()
         logger.info("Writing to PV.....")
-        pass
+
 
     def ui_filename(self):
         return 'define_average_window.ui'

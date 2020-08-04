@@ -6,157 +6,149 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>371</height>
+    <width>485</width>
+    <height>443</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Define Average Window - ${DEVICE}</string>
   </property>
-  <widget class="QLabel" name="start_label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>20</y>
-     <width>45</width>
-     <height>12</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Start</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="stop_label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>40</y>
-     <width>45</width>
-     <height>12</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>End</string>
-   </property>
-  </widget>
-  <widget class="PyDMWaveformPlot" name="average_window_wf">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>90</y>
-     <width>381</width>
-     <height>231</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>20</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>PV Window Size</string>
-   </property>
-  </widget>
-  <widget class="PyDMLabel" name="PyDMLabel">
-   <property name="geometry">
-    <rect>
-     <x>310</x>
-     <y>20</y>
-     <width>50</width>
-     <height>12</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>350</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Write to PV: </string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="start_line_edit">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>10</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="placeholderText">
-    <string>Enter start value</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="end_line_edit">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>40</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="placeholderText">
-    <string>Enter end value</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="error_label">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>70</y>
-     <width>361</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <italic>true</italic>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLabel{color: red;}</string>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="PyDMPushButton" name="write_pb">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>340</y>
-     <width>101</width>
-     <height>18</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{background-color: #bc5f6a }</string>
-   </property>
-   <property name="text">
-    <string>Write</string>
-   </property>
-  </widget>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="5" column="0" colspan="5">
+    <widget class="PyDMWaveformPlot" name="average_window_wf">
+     <property name="toolTip">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="stop_label">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>End</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="2">
+    <widget class="QLineEdit" name="end_line_edit">
+     <property name="placeholderText">
+      <string>Enter end value</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QLabel" name="label_2">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Write to PV: </string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="5">
+    <widget class="QLabel" name="error_label">
+     <property name="font">
+      <font>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{color: red;}</string>
+     </property>
+     <property name="text">
+      <string>Warnings or errors here....</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="start_label">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Start</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2" colspan="2">
+    <widget class="PyDMPushButton" name="write_pb">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color: #bc5f6a }</string>
+     </property>
+     <property name="text">
+      <string>Write</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QLineEdit" name="start_line_edit">
+     <property name="placeholderText">
+      <string>Enter start value</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2">
+    <widget class="QComboBox" name="comboBox">
+     <item>
+      <property name="text">
+       <string>Complex Window 0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Complex Window 1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Complex Window 2</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Choose a PV: </string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>PV Window Size</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="PyDMLabel" name="PyDMLabel">
+     <property name="toolTip">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <customwidgets>
   <customwidget>
