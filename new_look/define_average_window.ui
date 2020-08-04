@@ -19,6 +19,22 @@
      <property name="toolTip">
       <string/>
      </property>
+     <property name="showXGrid">
+      <bool>true</bool>
+     </property>
+     <property name="showYGrid">
+      <bool>true</bool>
+     </property>
+     <property name="axisColor">
+      <color>
+       <red>204</red>
+       <green>204</green>
+       <blue>204</blue>
+      </color>
+     </property>
+     <property name="showRightAxis">
+      <bool>true</bool>
+     </property>
     </widget>
    </item>
    <item row="3" column="0">
@@ -65,7 +81,7 @@
       <string notr="true">QLabel{color: red;}</string>
      </property>
      <property name="text">
-      <string>Warnings or errors here....</string>
+      <string/>
      </property>
     </widget>
    </item>
@@ -160,12 +176,12 @@
     </widget>
    </item>
    <item row="0" column="4">
-    <widget class="PyDMLabel" name="PyDMLabel">
+    <widget class="PyDMLabel" name="get_pv_size_label">
      <property name="toolTip">
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string/>
+      <string>ca://SIOC:B084:RFTEST:0:ICPXWND0.NELM</string>
      </property>
     </widget>
    </item>

@@ -7,6 +7,10 @@ import pyqtgraph as pg
 import epics
 import re
 
+import numpy as np
+from qtpy import QtCore, QtWidgets, QtGui
+from pydm.widgets.pushbutton import PyDMPushButton
+
 from qtpy.QtCore import QRegExp
 from qtpy.QtGui import QRegExpValidator, QDoubleValidator
 from qtpy.QtWidgets import QMessageBox
@@ -23,7 +27,7 @@ class AverageWindow(Display):
         self.end_edit_line_setup()
         self.start_edit_line_setup()
         self.ui.write_pb.clicked.connect(self.write_to_pv)
-        self.ui.draw_window_pb.connect(self.plot_data)
+        self.ui.draw_window_pb.clicked.connect(self.plot_data)
         self.imaginary_curves = None
         self.real_curves = None
         logger.info(macros)
@@ -88,9 +92,11 @@ class AverageWindow(Display):
     def start_on_text_changed(self):
         self.ui.start_line_edit.setValidator(self.validate_input(self.ui.start_line_edit))
         #self.ui.start_line_edit.setStyleSheet("QLineEdit { border: red }")
+        self.ui.error_label.setText("")
 
     def end_on_text_changed(self):
         self.ui.end_line_edit.setValidator(self.validate_input(self.ui.end_line_edit))
+        self.ui.error_label.setText("")
 
     def start_on_return_pressed(self):
         """
@@ -119,10 +125,34 @@ class AverageWindow(Display):
         #self.ui.average_window_wf.plotItem.getViewBox().setYRange(start, stop, padding=0)
         pass
 
-    def plot_data(self):
-        self.win = [0]*self.start + [1]*(self.end-self.start) + [0]*(self.pv_size-self.end)
-        self.ui.average_window_wf.plot(self.win)
+    def get_current_start(self):
+        start = None
+        str_value = str(self.ui.start_line_edit.text())
+        if str_value:
+            start = int(str_value)
+        return start
 
+    def get_current_end(self):
+        end = None
+        str_value = str(self.ui.end_line_edit.text())
+        if str_value:
+            end = int(str_value)
+        return end
+
+    def plot_data(self):
+        start = self.get_current_start()
+        end = self.get_current_end()
+        self.ui.average_window_wf.clear()
+
+        pen = pg.mkPen(color=(153,255,153))
+
+        if end and start:
+            logger.info(type(end))
+            logger.info(type(start))
+            self.win = [0]*start + [1]*(end-start) + [0]*(self.pv_size-end)
+            self.ui.average_window_wf.plot(self.win, pen=pen)
+        else:
+            self.ui.error_label.setText("You must define start and end values..")
 
     def write_to_pv(self, checked):
         write_message = QMessageBox.question(
@@ -142,3 +172,20 @@ class AverageWindow(Display):
 
     def ui_filename(self):
         return 'define_average_window.ui'
+
+# app = QtWidgets.QApplication([])
+# class WaveformButton(PyDMPushButton):
+#     @property
+#     def pressValue(self):
+#         return self._pressValue
+#     @pressValue.setter
+#     def pressValue(self, value):
+#         self._pressValue = value
+#     def sendValue(self):
+#         self.send_value_signal[np.ndarray].emit(self.pressValue)
+# widget = WaveformButton()
+# widget.channel = 'ca://MTEST:Waveform'
+# wave = np.ones(10)
+# widget.pressValue = wave
+# #widget.show()
+# #app.exec_()
