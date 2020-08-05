@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>548</width>
+    <width>562</width>
     <height>430</height>
    </rect>
   </property>
@@ -582,7 +582,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>REF Ch Select</string>
+        <string>REF Demod Ch Select</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>

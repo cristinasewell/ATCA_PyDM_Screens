@@ -555,7 +555,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>Reference Select</string>
+        <string>Reference Demod Ch Select</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
