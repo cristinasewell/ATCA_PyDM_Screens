@@ -221,20 +221,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             <property name="bottomMargin">
              <number>2</number>
             </property>
-            <item row="0" column="0">
-             <spacer name="verticalSpacer">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>40</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item row="4" column="0">
+            <item row="3" column="0">
              <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
               <property name="toolTip">
                <string/>
@@ -247,7 +234,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               </property>
              </widget>
             </item>
-            <item row="2" column="0">
+            <item row="1" column="0">
              <widget class="PyDMPushButton" name="PyDMPushButton">
               <property name="toolTip">
                <string/>
@@ -275,7 +262,20 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               </property>
              </widget>
             </item>
-            <item row="3" column="0">
+            <item row="0" column="0">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="0">
              <widget class="QLabel" name="label_24">
               <property name="styleSheet">
                <string notr="true"/>
@@ -285,40 +285,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               </property>
               <property name="alignment">
                <set>Qt::AlignBottom|Qt::AlignHCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="PyDMEnumButton" name="PyDMEnumButton">
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${RTM}:RTM_CLEARFAULT</string>
-              </property>
-              <property name="marginTop" stdset="0">
-               <number>0</number>
-              </property>
-              <property name="marginBottom" stdset="0">
-               <number>0</number>
-              </property>
-              <property name="marginLeft" stdset="0">
-               <number>0</number>
-              </property>
-              <property name="marginRight" stdset="0">
-               <number>0</number>
-              </property>
-              <property name="horizontalSpacing" stdset="0">
-               <number>0</number>
-              </property>
-              <property name="verticalSpacing" stdset="0">
-               <number>0</number>
               </property>
              </widget>
             </item>
@@ -2663,11 +2629,6 @@ Current</string>
    <class>PyDMLineEdit</class>
    <extends>QLineEdit</extends>
    <header>pydm.widgets.line_edit</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMEnumButton</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.enum_button</header>
   </customwidget>
   <customwidget>
    <class>PyDMPushButton</class>

@@ -942,40 +942,6 @@
      </item>
     </layout>
    </item>
-   <item row="1" column="0">
-    <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${RTM}:FAULTSEQ_RESET</string>
-     </property>
-     <property name="marginTop" stdset="0">
-      <number>0</number>
-     </property>
-     <property name="marginBottom" stdset="0">
-      <number>0</number>
-     </property>
-     <property name="marginLeft" stdset="0">
-      <number>0</number>
-     </property>
-     <property name="marginRight" stdset="0">
-      <number>0</number>
-     </property>
-     <property name="horizontalSpacing" stdset="0">
-      <number>0</number>
-     </property>
-     <property name="verticalSpacing" stdset="0">
-      <number>0</number>
-     </property>
-    </widget>
-   </item>
   </layout>
  </widget>
  <customwidgets>
