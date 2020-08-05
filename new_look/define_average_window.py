@@ -70,24 +70,27 @@ class AverageWindow(Display):
         ioc = 'ca://SIOC:B084:RFTEST:0:ICPXWND0'
         # avg window[0..2]
         # cmplx window[0..2]
-        channels = [0, 1, 2]
+        channels = [0, 1, 2, 3, 4, 5]
         # 2 colors, one for imaginary one for real part
-        colors = ["#55ffff", "#55ff7f"]
-        imaginary_curves = {}
-        real_curves = {}
+        colors = ["#55ffff", "#55ffff", "#55ffff", "#55ff7f", "#55ff7f","#55ff7f"]
+        iq = ['I', 'I' 'Q']
+        curves = {}
+        iq = ['I', 'Q']
 
-        # real windows
-        for ch in channels:  
-            y_channel = "{}ICPXWND{}".format(
-                ioc, ch)
-            name = "ICPXWND{}".format(ch)
+        self._curves = {}
+        for i_q, pv in enumerate(iq):
+            real_curves = {}
+            for ch in channels:  
+                y_channel = "{}:{}CPXWND{}".format(
+                    ioc, i_q, ch)
+                name = "{}CPXWND{}".format(i_q, ch)
 
-            real_curves[ch] = {
-                "y_channel": y_channel,
-                "x_channel": None,
-                "name": name,
-                "color": colors[0]
-            }
+                real_curves[ch] = {
+                    "y_channel": y_channel,
+                    "x_channel": None,
+                    "name": name,
+                    "color": colors[ch]
+                }
         self.real_curves = real_curves
         # imaginary windows
         for ch in channels:  
