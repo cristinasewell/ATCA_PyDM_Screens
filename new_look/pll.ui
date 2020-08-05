@@ -1167,6 +1167,9 @@ QComboBox {
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:LO_LOCKCNTRESET</string>
        </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
       </widget>
      </item>
      <item row="2" column="0">
@@ -1298,6 +1301,9 @@ QComboBox {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:CLOCK_LOCKCNTRESET</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
        </property>
       </widget>
      </item>
