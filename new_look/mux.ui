@@ -2823,6 +2823,9 @@
                   <property name="channel" stdset="0">
                    <string>ca://${DEVICE}:WFENG${ENG}_INIT</string>
                   </property>
+                  <property name="pressValue" stdset="0">
+                   <string>1</string>
+                  </property>
                  </widget>
                 </item>
                 <item>
