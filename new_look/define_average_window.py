@@ -114,8 +114,8 @@ class AverageWindow(Display):
             cb_imm_items = [3,4,5]
 
             for idx, index_cb in enumerate(cb_real_items):
-                if self.ui.window_select_cb.currentIndex() == idx:
-                    logger.info('index: {}'.format(idx))
+                if self.ui.window_select_cb.currentIndex() == index_cb:
+                    logger.info('index: {}'.format(index_cb))
                     curve = real_curves.get(idx)
                     curve.update(style)
                     ch = json.dumps(curve)
@@ -124,8 +124,8 @@ class AverageWindow(Display):
                     logger.info('plotting curve: {}'.format(curve))
 
             for idx, index_cb in enumerate(cb_imm_items):
-                if self.ui.window_select_cb.currentIndex() == idx:
-                    logger.info('index: {}'.format(idx))
+                if self.ui.window_select_cb.currentIndex() == index_cb:
+                    logger.info('index: {}'.format(index_cb))
                     curve = imm_curves.get(idx)
                     curve.update(style)
                     ch = json.dumps(curve)
