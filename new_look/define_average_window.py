@@ -27,12 +27,12 @@ class AverageWindow(Display):
         self.end_edit_line_setup()
         self.start_edit_line_setup()
         self.setup_ui()
-        self.imaginary_curves = None
-        self.real_curves = None
+        self.complex_curves = None
         self.pv_size = 4096
         self.win = []
         self.current_window_selection = None
         self.waveform_button_setup()
+        self.define_complex_curves()
 
         self.pv_combo_box_selection = {
             0: 'I Window 0 - ICPXWND0',
@@ -56,62 +56,83 @@ class AverageWindow(Display):
         self.ui.button_layout.addWidget(self.waveform_button)
         self.waveform_button.clicked.connect(self.write_to_pv)
 
-
     def setup_ui(self):
         self.ui.draw_window_pb.clicked.connect(self.plot_data)
+        self.ui.get_waveform_pb.clicked.connect(self.handle_show_curvs)
         self.ui.window_select_cb.currentIndexChanged.connect(
             self.window_selection_changed)
 
     def define_complex_curves(self):
-       # try:
-        device = self._macros['DEVICE']
-    #    if device:
-        #ioc = "ca://{}:".format(device)
-        ioc = 'ca://SIOC:B084:RFTEST:0:ICPXWND0'
-        # avg window[0..2]
-        # cmplx window[0..2]
-        channels = [0, 1, 2, 3, 4, 5]
-        # 2 colors, one for imaginary one for real part
-        colors = ["#55ffff", "#55ffff", "#55ffff", "#55ff7f", "#55ff7f","#55ff7f"]
-        iq = ['I', 'I' 'Q']
-        curves = {}
-        iq = ['I', 'Q']
+        try:
+            device = self._macros['DEVICE']
+            if device:
+                ioc = "ca://{}:".format(device)
+                iq = [0, 1]
+                iq_label = 'I', 'Q'
 
-        self._curves = {}
-        for i_q, pv in enumerate(iq):
-            real_curves = {}
-            for ch in channels:  
-                y_channel = "{}:{}CPXWND{}".format(
-                    ioc, i_q, ch)
-                name = "{}CPXWND{}".format(i_q, ch)
+                # avg window[0..2]
+                # cmplx window[0..2]
+                channels = [0, 1, 2]
+                colors = ["#55ffff", "#55ffff", "#55ffff"]
 
-                real_curves[ch] = {
-                    "y_channel": y_channel,
-                    "x_channel": None,
-                    "name": name,
-                    "color": colors[ch]
-                }
-        self.real_curves = real_curves
-        # imaginary windows
-        for ch in channels:  
-            y_channel = "{}QCPXWND{}".format(
-                ioc, ch)
-            name = "QCPXWND{}".format(ch)
+                self.complex_curves = {}
+                
+                for i_q, pv in enumerate(iq):
+                    curves = {}
+                    for ch in channels:  
+                        y_channel = "{}:{}CPXWND{}".format(
+                            ioc, iq_label[i_q], ch)
+                        name = "{}CPXWND{}".format(iq_label[i_q], ch)
 
-            imaginary_curves[ch] = {
-                "y_channel": y_channel,
-                "x_channel": None,
-                "name": name,
-                "color": colors[1]
-            }
-        self.imaginary_curves = imaginary_curves
-        return imaginary_curves, real_curves
-       # except:
-        #    self.ui.error_label.setText("Something went wrong with the macro??...")
-        #    logger.error("something went wrong...")
-            #logger.error("You need to define a DEVICE macro ioc  - ex: -m 'DEVICE=MY_IOC' ")
+                        curves[ch] = {
+                            "y_channel": y_channel,
+                            "x_channel": None,
+                            "name": name,
+                            "color": colors[ch]
+                        }
+                    self.complex_curves[i_q] = curves
+            logger.debug(self.complex_curves)
+        except:
+            self.ui.error_label.setText("Something went wrong with the macro??...")
+            logger.error("You need to define a DEVICE macro ioc  - ex: -m 'DEVICE=MY_IOC' ")
             #sys.exit(1)
             # disble a button here - dissable the write button?
+
+    def handle_show_curvs(self):
+        curves = []
+        self.ui.average_window_wf.clear()
+        if self.complex_curves:
+            real_curves = self.complex_curves[0]
+            imm_curves = self.complex_curves[1]
+
+            style = {
+                "lineStyle": 1, "lineWidth": 1, "symbol": 0,
+                "symbolSize": 4, "redraw_mode": 2
+            }
+
+            cb_real_items = [0,1,2]
+            cb_imm_items = [3,4,5]
+
+            for idx, index_cb in enumerate(cb_real_items):
+                if self.ui.window_select_cb.currentIndex() == idx:
+                    logger.info('index: {}'.format(idx))
+                    curve = real_curves.get(idx)
+                    curve.update(style)
+                    ch = json.dumps(curve)
+                    curves.append(ch)
+                    self.average_window_wf.setCurves(curves)
+                    logger.info('plotting curve: {}'.format(curve))
+
+            for idx, index_cb in enumerate(cb_imm_items):
+                if self.ui.window_select_cb.currentIndex() == idx:
+                    logger.info('index: {}'.format(idx))
+                    curve = imm_curves.get(idx)
+                    curve.update(style)
+                    ch = json.dumps(curve)
+                    curves.append(ch)
+                    self.average_window_wf.setCurves(curves)
+                    logger.info('plotting curve: {}'.format(curve))
+            
 
     def start_edit_line_setup(self):
        # self.ui.start_line_edit.returnPressed.connect(self.start_on_return_pressed)
@@ -131,9 +152,6 @@ class AverageWindow(Display):
         self.ui.error_label.setText("")
     
     def validate_input(self, to_validate):
-        # validate +- values, up to 12 chars for now, and up to 6 values after the .
-        #reg_ex = QRegExp("^[+-]?[0-9]{1,12}(?:\.[0-9]{1,6})?$")
-        #return QRegExpValidator(reg_ex, to_validate)
         # use QIntValidator
         return QIntValidator(to_validate)
 
@@ -164,6 +182,7 @@ class AverageWindow(Display):
         index = self.ui.window_select_cb.currentIndex()
         text_label = self.pv_combo_box_selection[index]
         self.ui.display_pv_label.setText("Current PV: {}".format(text_label))
+        self.ui.average_window_wf.clear()
 
     def plot_data(self):
         start = self.get_current_start()
@@ -192,7 +211,8 @@ class AverageWindow(Display):
     
     def write(self):
         logger.info("Writing to PV.....")
-        wave = np.ones(10) #sends a ndarray of ones
+      #  wave = np.ones(10) #sends a ndarray of ones
+        wave = np.array(self.win)
         waveform_button.pressValue = wave
 
     def ui_filename(self):
