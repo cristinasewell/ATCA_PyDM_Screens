@@ -12,7 +12,7 @@ from qtpy import QtCore, QtWidgets, QtGui
 from pydm.widgets.pushbutton import PyDMPushButton
 
 from qtpy.QtCore import QRegExp
-from qtpy.QtGui import QRegExpValidator, QDoubleValidator
+from qtpy.QtGui import QRegExpValidator, QIntValidator
 from qtpy.QtWidgets import QMessageBox
 
 logger = logging.getLogger(__name__)
@@ -118,8 +118,11 @@ class AverageWindow(Display):
     
     def validate_input(self, to_validate):
         # validate +- values, up to 12 chars for now, and up to 6 values after the .
-        reg_ex = QRegExp("^[+-]?[0-9]{1,12}(?:\.[0-9]{1,6})?$")
-        return QRegExpValidator(reg_ex, to_validate)
+        #reg_ex = QRegExp("^[+-]?[0-9]{1,12}(?:\.[0-9]{1,6})?$")
+        #return QRegExpValidator(reg_ex, to_validate)
+        # use QIntValidator
+        return QIntValidator(to_validate)
+
 
     def set_window_size(self, start, stop):
         #self.ui.average_window_wf.plotItem.getViewBox().setYRange(start, stop, padding=0)
@@ -138,6 +141,14 @@ class AverageWindow(Display):
         if str_value:
             end = int(str_value)
         return end
+    
+    def get_pv_size(self):
+        size = None
+        str_size = str(self.ui.get_pv_size_label.text())
+        if str_size:
+            size =  int(str_size)
+            self.pv_size = size
+        return size
 
     def plot_data(self):
         start = self.get_current_start()
@@ -149,7 +160,7 @@ class AverageWindow(Display):
         if end and start:
             logger.info(type(end))
             logger.info(type(start))
-            self.win = [0]*start + [1]*(end-start) + [0]*(self.pv_size-end)
+            self.win = [0]*start + [1]*(end - start) + [0]*(self.pv_size - end)
             self.ui.average_window_wf.plot(self.win, pen=pen)
         else:
             self.ui.error_label.setText("You must define start and end values..")

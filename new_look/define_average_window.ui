@@ -48,6 +48,9 @@
      <property name="text">
       <string>End</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
     </widget>
    </item>
    <item row="3" column="1" colspan="2">
@@ -95,6 +98,9 @@
      </property>
      <property name="text">
       <string>Start</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
    </item>
@@ -166,12 +172,24 @@
      <property name="text">
       <string>Choose a PV: </string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
     </widget>
    </item>
    <item row="0" column="3">
     <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="text">
-      <string>PV Window Size</string>
+      <string>PV Window Size:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
    </item>
@@ -181,7 +199,7 @@
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://SIOC:B084:RFTEST:0:ICPXWND0.NELM</string>
+      <string>ca://${DEVICE}:${IQ}CPXWND${N}.NELM</string>
      </property>
     </widget>
    </item>
