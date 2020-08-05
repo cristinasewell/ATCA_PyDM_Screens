@@ -235,6 +235,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               <property name="channel" stdset="0">
                <string>ca://${RTM}:RTM_CLEARFAULT</string>
               </property>
+              <property name="pressValue" stdset="0">
+               <string>1</string>
+              </property>
              </widget>
             </item>
             <item row="2" column="0">
