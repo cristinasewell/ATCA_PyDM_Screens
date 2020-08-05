@@ -564,36 +564,6 @@ QComboBox {
        </property>
        <item>
         <property name="text">
-         <string>UpCnv:RF_IN_2</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>UpCnv:RF_IN_1</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>UpCnv:RF_IN_4</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>UpCnv:RF_IN_3</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>UpCnv:RF_IN_6</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>UpCnv:RF_IN_5</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
          <string>DwnCnv:RF_IN_2</string>
         </property>
        </item>
@@ -604,7 +574,52 @@ QComboBox {
        </item>
        <item>
         <property name="text">
+         <string>DwnCnv:RF_IN_4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
          <string>DwnCnv:RF_IN_3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_OUT_MON</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:TRIG_MON</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:DC_IN_1</string>
         </property>
        </item>
       </widget>
@@ -805,36 +820,6 @@ QComboBox {
        </property>
        <item>
         <property name="text">
-         <string>UpCnv:RF_IN_2</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>UpCnv:RF_IN_1</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>UpCnv:RF_IN_4</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>UpCnv:RF_IN_3</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>UpCnv:RF_IN_6</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>UpCnv:RF_IN_5</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
          <string>DwnCnv:RF_IN_2</string>
         </property>
        </item>
@@ -845,7 +830,52 @@ QComboBox {
        </item>
        <item>
         <property name="text">
+         <string>DwnCnv:RF_IN_4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
          <string>DwnCnv:RF_IN_3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_OUT_MON</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:TRIG_MON</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:DC_IN_1</string>
         </property>
        </item>
       </widget>
