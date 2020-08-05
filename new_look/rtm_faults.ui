@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>967</width>
+    <width>971</width>
     <height>137</height>
    </rect>
   </property>
@@ -14,37 +14,6 @@
    <string>RTM Faults - ${DEVICE}</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
-    <widget class="PyDMPushButton" name="PyDMPushButton_2">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Maximum">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>94</width>
-       <height>24</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>RESET</string>
-     </property>
-     <property name="autoDefault">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${RTM}:FAULTSEQ_RESET</string>
-     </property>
-     <property name="pressValue" stdset="0">
-      <string>1</string>
-     </property>
-    </widget>
-   </item>
    <item row="0" column="1" rowspan="2">
     <layout class="QHBoxLayout" name="horizontalLayout">
      <property name="spacing">
@@ -575,34 +544,6 @@
      </item>
     </layout>
    </item>
-   <item row="1" column="0" rowspan="2">
-    <widget class="PyDMPushButton" name="PyDMPushButton">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>Clear Fault</string>
-     </property>
-     <property name="checkable">
-      <bool>false</bool>
-     </property>
-     <property name="autoRepeat">
-      <bool>false</bool>
-     </property>
-     <property name="autoDefault">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${RTM}:FAULTSEQ_RESET</string>
-     </property>
-     <property name="pressValue" stdset="0">
-      <string>1</string>
-     </property>
-    </widget>
-   </item>
    <item row="2" column="1">
     <layout class="QHBoxLayout" name="horizontalLayout_4">
      <property name="leftMargin">
@@ -957,6 +898,37 @@
       </layout>
      </item>
     </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="PyDMPushButton" name="PyDMPushButton_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>94</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>RESET</string>
+     </property>
+     <property name="autoDefault">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${RTM}:FAULTSEQ_RESET</string>
+     </property>
+     <property name="pressValue" stdset="0">
+      <string>1</string>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>
