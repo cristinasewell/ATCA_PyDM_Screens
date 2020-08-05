@@ -188,28 +188,71 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    <property name="verticalSpacing">
     <number>14</number>
    </property>
-   <item row="7" column="2" rowspan="2">
-    <spacer name="verticalSpacer">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
+   <item row="5" column="1" rowspan="4">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <property name="leftMargin">
+      <number>2</number>
      </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>69</height>
-      </size>
+     <property name="topMargin">
+      <number>2</number>
      </property>
-    </spacer>
-   </item>
-   <item row="2" column="0" colspan="3">
-    <widget class="Line" name="line">
-     <property name="lineWidth">
-      <number>4</number>
+     <property name="rightMargin">
+      <number>2</number>
      </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+     <property name="bottomMargin">
+      <number>2</number>
      </property>
-    </widget>
+     <item>
+      <widget class="QLabel" name="label_24">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>USR DAC Control Mux</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMEnumButton" name="PyDMEnumButton_5">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:USER_DACMUX</string>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="marginTop" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginBottom" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginLeft" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginRight" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </item>
    <item row="0" column="0">
     <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -257,83 +300,28 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
     </layout>
    </item>
-   <item row="8" column="0">
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <property name="leftMargin">
-      <number>2</number>
+   <item row="2" column="0" colspan="3">
+    <widget class="Line" name="line">
+     <property name="lineWidth">
+      <number>4</number>
      </property>
-     <property name="topMargin">
-      <number>2</number>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
      </property>
-     <property name="rightMargin">
-      <number>2</number>
+    </widget>
+   </item>
+   <item row="7" column="2" rowspan="2">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
      </property>
-     <property name="bottomMargin">
-      <number>2</number>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>69</height>
+      </size>
      </property>
-     <item>
-      <widget class="QLabel" name="label_23">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>CLK DAC Control Mux</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="PyDMEnumButton" name="PyDMEnumButton_4">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>40</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{font: 8px;}</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_DACMUX</string>
-       </property>
-       <property name="orientation" stdset="0">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="marginTop" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginBottom" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginLeft" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginRight" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="horizontalSpacing" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="verticalSpacing" stdset="0">
-        <number>0</number>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    </spacer>
    </item>
    <item row="6" column="2">
     <layout class="QHBoxLayout" name="horizontalLayout">
@@ -406,8 +394,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      <property name="verticalSpacing">
       <number>4</number>
      </property>
-     <item row="2" column="6">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+     <item row="3" column="5">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_8">
        <property name="toolTip">
         <string/>
        </property>
@@ -415,12 +403,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_PLLSETPHASE</string>
+        <string>ca://${DEVICE}:CLOCK_DAC</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_16">
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_19">
        <property name="font">
         <font>
          <weight>75</weight>
@@ -428,11 +416,56 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>LO PLL</string>
+        <string>Polarity</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="2" column="4">
+     <item row="3" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:CLOCK_KP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QLabel" name="label_21">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Phase Set</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LO_KP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
       <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
@@ -478,21 +511,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="1" column="2">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_KI</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_17">
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_16">
        <property name="font">
         <font>
          <weight>75</weight>
@@ -500,12 +520,12 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>CLK PLL</string>
+        <string>LO PLL</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="4">
-      <widget class="QLabel" name="label_19">
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_13">
        <property name="font">
         <font>
          <weight>75</weight>
@@ -513,7 +533,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>Polarity</string>
+        <string>KI</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -521,15 +541,87 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </widget>
      </item>
      <item row="1" column="3">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
        <property name="toolTip">
         <string/>
        </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
+       <property name="styleSheet">
+        <string notr="true">/* Color of the selected list item. */
+QComboBox::item:selected {
+    border: 1px solid transparent;
+    background: rgb(85,225,255);
+}
+QComboBox {
+  	background-color: #a6c2ce;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:LO_REFSELECT</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_18">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Reference Demod Channel Select</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
@@ -543,106 +635,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:LO_PLLSETPHASE</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="3">
-      <widget class="QLabel" name="label_18">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Reference Demod Ch Select</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="5">
-      <widget class="QLabel" name="label_20">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>DAC Set</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="5">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_7">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_DAC</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="5">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_8">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_DAC</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="6">
-      <widget class="QLabel" name="label_21">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Phase Set</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="2">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_KI</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="3">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_REFSELECT</string>
        </property>
       </widget>
      </item>
@@ -692,32 +684,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_KP</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_KP</string>
-       </property>
-      </widget>
-     </item>
      <item row="0" column="1">
       <widget class="QLabel" name="label_12">
        <property name="font">
@@ -734,8 +700,60 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="label_13">
+     <item row="1" column="5">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_7">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LO_DAC</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:CLOCK_KI</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LO_KI</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:CLOCK_PLLSETPHASE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QLabel" name="label_20">
        <property name="font">
         <font>
          <weight>75</weight>
@@ -743,14 +761,106 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </font>
        </property>
        <property name="text">
-        <string>KI</string>
+        <string>DAC Set</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_17">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>CLK PLL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Color of the selected list item. */
+QComboBox::item:selected {
+    border: 1px solid transparent;
+    background: rgb(85,225,255);
+}
+QComboBox {
+  	background-color: #a6c2ce;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:CLOCK_REFSELECT</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
     </layout>
+   </item>
+   <item row="4" column="0" colspan="3">
+    <widget class="Line" name="line_2">
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
    </item>
    <item row="1" column="0" colspan="3">
     <layout class="QGridLayout" name="gridLayout">
@@ -1163,6 +1273,84 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
     </layout>
    </item>
+   <item row="8" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="rightMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_23">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>CLK DAC Control Mux</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMEnumButton" name="PyDMEnumButton_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:CLOCK_DACMUX</string>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="marginTop" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginBottom" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginLeft" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginRight" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
    <item row="5" column="0" rowspan="3">
     <layout class="QVBoxLayout" name="verticalLayout">
      <property name="leftMargin">
@@ -1241,72 +1429,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
     </layout>
    </item>
-   <item row="5" column="1" rowspan="4">
-    <layout class="QVBoxLayout" name="verticalLayout_3">
-     <property name="leftMargin">
-      <number>2</number>
-     </property>
-     <property name="topMargin">
-      <number>2</number>
-     </property>
-     <property name="rightMargin">
-      <number>2</number>
-     </property>
-     <property name="bottomMargin">
-      <number>2</number>
-     </property>
-     <item>
-      <widget class="QLabel" name="label_24">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>USR DAC Control Mux</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="PyDMEnumButton" name="PyDMEnumButton_5">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{font: 8px;}</string>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:USER_DACMUX</string>
-       </property>
-       <property name="orientation" stdset="0">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="marginTop" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginBottom" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginLeft" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="marginRight" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="horizontalSpacing" stdset="0">
-        <number>0</number>
-       </property>
-       <property name="verticalSpacing" stdset="0">
-        <number>0</number>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
    <item row="5" column="2">
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <property name="spacing">
@@ -1361,16 +1483,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      </item>
     </layout>
    </item>
-   <item row="4" column="0" colspan="3">
-    <widget class="Line" name="line_2">
-     <property name="lineWidth">
-      <number>3</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-   </item>
   </layout>
  </widget>
  <customwidgets>
@@ -1393,6 +1505,11 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    <class>PyDMPushButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEnumComboBox</class>
+   <extends>QComboBox</extends>
+   <header>pydm.widgets.enum_combo_box</header>
   </customwidget>
  </customwidgets>
  <resources/>
