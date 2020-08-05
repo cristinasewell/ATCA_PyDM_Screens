@@ -262,7 +262,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string>ca://${RTM}:RTM_CLEARFAULT</string>
               </property>
               <property name="pressValue" stdset="0">
-               <string>1</string>
+               <string>0</string>
               </property>
              </widget>
             </item>
