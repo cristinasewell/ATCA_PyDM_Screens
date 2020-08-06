@@ -58,7 +58,7 @@ class AverageWindow(Display):
 
     def setup_ui(self):
         self.ui.draw_window_pb.clicked.connect(self.plot_data)
-        self.ui.get_waveform_pb.clicked.connect(self.handle_show_curvs)
+        self.ui.get_waveform_pb.clicked.connect(self.handle_show_curves)
         self.ui.window_select_cb.currentIndexChanged.connect(
             self.window_selection_changed)
 
@@ -102,12 +102,11 @@ class AverageWindow(Display):
             real_curves = self.complex_curves[0]
             imm_curves = self.complex_curves[1]
     
-        y_channels_real = [s["y_channel"] for i, s in real_curves.items()]
-        y_channels_imm = [s["y_channel"] for i, s in imm_curves.items()]
-        self.pvs = y_channels_real + y_channels_imm
-        logger.debug(self.pvs)
+            y_channels_real = [s["y_channel"] for i, s in real_curves.items()]
+            y_channels_imm = [s["y_channel"] for i, s in imm_curves.items()]
+            self.pvs = y_channels_real + y_channels_imm
 
-    def handle_show_curvs(self):
+    def handle_show_curves(self):
         curves = []
         self.ui.average_window_wf.clear()
         if self.complex_curves:
@@ -191,7 +190,6 @@ class AverageWindow(Display):
         text_label = self.pv_combo_box_selection[index]
         self.ui.display_pv_label.setText("Current PV: {}".format(text_label))
         self.ui.average_window_wf.clear()
-        self.current_pv = self.pvs[index]
 
     def plot_data(self):
         start = self.get_current_start()
@@ -217,12 +215,15 @@ class AverageWindow(Display):
     
     def write(self):
         logger.info("Writing to PV.....")
+        if self.pvs:
+            logger.info('current PV: {}'.format(self.pvs))
         if self.win:
-            self.waveform_button.channel = self.current_pv
+            index = self.ui.window_select_cb.currentIndex()
+            self.waveform_button.channel = self.pvs[index]
             wave = np.array(self.win)
             self.waveform_button.pressValue = wave
         else:
-            self.ui.error_label.setText("You must define a window first.")
+             self.ui.error_label.setText("You must define a window first.")
 
     def ui_filename(self):
         return 'define_average_window.ui'
