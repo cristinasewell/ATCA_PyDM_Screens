@@ -6,9 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1175</width>
+    <width>1180</width>
     <height>792</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1180</width>
+    <height>780</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>ATCA_LLRF - ${DEVICE}</string>
@@ -172,7 +184,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1169</width>
+        <width>1174</width>
         <height>786</height>
        </rect>
       </property>
