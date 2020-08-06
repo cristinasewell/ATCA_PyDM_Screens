@@ -75,7 +75,11 @@ class AverageWindow(Display):
                             "x_channel": None,
                             "name": name,
                             "color": colors[i_q],
-                            "style": style,
+                            "lineStyle": 1,
+                            "lineWidth": 1,
+                            "symbol": 0,
+                            "symbolSize": 4,
+                            "redraw_mode": 2
                             }
                     self._curves[i_q] = curves
                 logger.info(self._curves)
@@ -108,7 +112,6 @@ class AverageWindow(Display):
             self.waveform_button.pressValue = wave
         else:
             self.ui.error_label.setText("You must define a window first.")
-
 
 
     def start_edit_line_setup(self):
