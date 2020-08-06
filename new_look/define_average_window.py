@@ -3,6 +3,7 @@ import json
 import logging
 import pyqtgraph as pg
 from functools import partial
+import scipy.signal.windows
 
 import numpy as np
 from pydm.widgets.pushbutton import PyDMPushButton
@@ -36,7 +37,7 @@ class AverageWindow(Display):
 
     def setup_ui(self):
         self.ui.draw_window_pb.clicked.connect(self.plot_data)
-        self.ui.get_waveform_pb.clicked.connect(self.handle_show_curves)
+       # self.ui.get_waveform_pb.clicked.connect(self.handle_show_curves)
 
     def define_complex_curves(self):
         try:
@@ -148,28 +149,40 @@ class AverageWindow(Display):
         start = None
         str_value = str(self.ui.start_line_edit.text())
         if str_value:
-            start = int(str_value)
+            try:
+                start = int(str_value)
+            except ValueError:
+                logger.error('Could not convert to int')
         return start
 
     def get_current_i_end(self):
         end = None
         str_value = str(self.ui.end_line_edit.text())
         if str_value:
-            end = int(str_value)
+            try:
+                end = int(str_value)
+            except ValueError:
+                logger.error('Could not convert to int')
         return end
 
     def get_current_q_start(self):
         start = None
         str_value = str(self.ui.start_line_edit_q.text())
         if str_value:
-            start = int(str_value)
+            try:
+                start = int(str_value)
+            except ValueError:
+                logger.error('Could not convert to int')
         return start
 
     def get_current_q_end(self):
         end = None
         str_value = str(self.ui.end_line_edit_q.text())
         if str_value:
-            end = int(str_value)
+            try:
+                end = int(str_value)
+            except ValueError:
+                logger.error('Could not convert to int')
         return end
 
     def get_i_pv_size(self):
@@ -177,8 +190,11 @@ class AverageWindow(Display):
         str_size = str(self.ui.get_pv_size_i.text())
         logger.debug('size-----: {}'.format(str_size))
         if str_size:
-            size = int(str_size)
-            logger.debug("Pv window size: {}".format(size))
+            try:
+                size = int(str_size)
+                logger.debug("Pv window size: {}".format(size))
+            except ValueError:
+                logger.error('Could not convert to int')
         return size
 
     def get_q_pv_size(self):
@@ -186,8 +202,11 @@ class AverageWindow(Display):
         str_size = str(self.ui.get_pv_size_q.text())
         logger.debug('size-----: {}'.format(str_size))
         if str_size:
-            size = int(str_size)
-            logger.debug("Pv window size: {}".format(size))
+            try:
+                size = int(str_size)
+                logger.debug("Pv window size: {}".format(size))
+            except:
+                logger.error('Could not convert to int')
         return size
 
     def plot_data(self):
@@ -211,7 +230,7 @@ class AverageWindow(Display):
         if i_end and i_start and i_size:
             if (i_start >= i_end) or (i_end >= i_size):
                 self.ui.error_label.setText(
-                    "Not a valid window size."
+                    "Not a valid I window size."
                     "Please make sure the start < end, or end < pv_size"
                      )
             else:
@@ -221,15 +240,15 @@ class AverageWindow(Display):
                 self.i_win = [0]*i_start + [1]*(i_end - i_start) + [0]*(i_size - i_end)
                 self._curve_i = self.i_win
                 self.ui.average_window_wf.plot(self.i_win, pen=i_pen)
-        else:
-            self.ui.error_label.setText(
-                "You must define start & end values"
-                " and you need a PV Window Size")
+        # else:
+        #     self.ui.error_label.setText(
+        #         "You must define start & end values"
+        #         " and you need a PV Window Size")
 
-        if q_end and q_start and q_size:
+        elif q_end and q_start and q_size:
             if (q_start >= q_end) or (q_end >= q_size):
                 self.ui.error_label.setText(
-                    "Not a valid window size."
+                    "Not a valid Q window size."
                     "Please make sure the start < end, or end < pv_size"
                      )
             else:

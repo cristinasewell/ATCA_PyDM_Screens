@@ -222,35 +222,6 @@ PyDMLabel {
      </property>
     </widget>
    </item>
-   <item row="7" column="3">
-    <widget class="QLabel" name="label_4">
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="midLineWidth">
-      <number>0</number>
-     </property>
-     <property name="text">
-      <string>Plot PV: </string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="7" column="4" colspan="2">
-    <widget class="QPushButton" name="get_waveform_pb">
-     <property name="styleSheet">
-      <string notr="true">QPushButton{background-color: #85b8c8 }</string>
-     </property>
-     <property name="text">
-      <string>Plot</string>
-     </property>
-    </widget>
-   </item>
    <item row="7" column="1">
     <layout class="QVBoxLayout" name="button_layout"/>
    </item>
