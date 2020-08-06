@@ -57,7 +57,7 @@ class AverageWindow(Display):
                 for i_q, pv in enumerate(iq):
                     curves = {}
                     y_channel = "{}{}CPXWND{}".format(
-                        ioc, iq_label[i_q], number
+                        ioc, iq_label[i_q], str(number)
                     )
                     name = "{}CPXWND{}".format(
                         iq_label[i_q], number)

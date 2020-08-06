@@ -317,7 +317,7 @@ PyDMLabel {
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${DEVICE}:IQCPXWND${N}.NELM</string>
+      <string>ca://${DEVICE}:ICPXWND${N}.NELM</string>
      </property>
     </widget>
    </item>
