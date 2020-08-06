@@ -221,6 +221,19 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             <property name="bottomMargin">
              <number>2</number>
             </property>
+            <item row="3" column="0">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:RTM_STATUS_HEX</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLineEdit::Hex</enum>
+              </property>
+             </widget>
+            </item>
             <item row="1" column="0">
              <widget class="PyDMPushButton" name="PyDMPushButton">
               <property name="toolTip">
@@ -232,34 +245,20 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               <property name="text">
                <string>Clear Fault</string>
               </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+              <property name="autoRepeat">
+               <bool>false</bool>
+              </property>
+              <property name="autoDefault">
+               <bool>true</bool>
+              </property>
               <property name="channel" stdset="0">
                <string>ca://${RTM}:RTM_CLEARFAULT</string>
               </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="label_24">
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>RTM Staus Hex</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignBottom|Qt::AlignHCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0">
-             <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${RTM}:RTM_STATUS_HEX</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLineEdit::Hex</enum>
+              <property name="pressValue" stdset="0">
+               <string>1</string>
               </property>
              </widget>
             </item>
@@ -275,6 +274,19 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                </size>
               </property>
              </spacer>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_24">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>RTM Staus Hex</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>

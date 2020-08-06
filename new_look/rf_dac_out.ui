@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>548</width>
+    <width>583</width>
     <height>430</height>
    </rect>
   </property>
@@ -479,6 +479,192 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
      <property name="verticalSpacing">
       <number>7</number>
      </property>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Reference 0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_8">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:REF_AMPL0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Amplitude (norm)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:REF_PHASERAW1</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_5">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:REF_PHASE1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_4">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:REF_PHASE0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Reference 1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_9">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:REF_AMPL1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:REF_PHASERAW0</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_6">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:REF_AMPLRAW0</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_7">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:REF_AMPLRAW1</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QLabel" name="label_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Reference Demod Channel Select</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
      <item row="0" column="1">
       <widget class="QLabel" name="label_4">
        <property name="sizePolicy">
@@ -545,216 +731,172 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
       </widget>
      </item>
-     <item row="0" column="4">
-      <widget class="QLabel" name="label_7">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>1</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Amplitude (norm)</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="5">
-      <widget class="QLabel" name="label_8">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>1</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>REF Ch Select</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Reference 0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_2">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:REF_PHASERAW0</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel_4">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:REF_PHASE0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_6">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:REF_AMPLRAW0</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_8">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:REF_AMPL0</string>
-       </property>
-      </widget>
-     </item>
      <item row="1" column="5">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
        <property name="toolTip">
         <string/>
        </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
+       <property name="styleSheet">
+        <string notr="true">/* Color of the selected list item. */
+QComboBox::item:selected {
+    border: 1px solid transparent;
+    background: rgb(85,225,255);
+}
+QComboBox {
+  	background-color: #a6c2ce;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:REF_SELECT0</string>
        </property>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_OUT_MON</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:TRIG_MON</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:DC_IN_1</string>
+        </property>
+       </item>
       </widget>
      </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Reference 1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_3">
+     <item row="4" column="5">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
        <property name="toolTip">
         <string/>
        </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:REF_PHASERAW1</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel_5">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:REF_PHASE1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_7">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:REF_AMPLRAW1</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_9">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:REF_AMPL1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="5">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
+       <property name="styleSheet">
+        <string notr="true">/* Color of the selected list item. */
+QComboBox::item:selected {
+    border: 1px solid transparent;
+    background: rgb(85,225,255);
+}
+QComboBox {
+  	background-color: #a6c2ce;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:REF_SELECT1</string>
        </property>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DwnCnv:RF_IN_5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_IN_3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:RF_OUT_MON</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UpCnv:TRIG_MON</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UPCnv:DC_IN_1</string>
+        </property>
+       </item>
       </widget>
      </item>
     </layout>
@@ -1124,6 +1266,11 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
    <class>PyDMEnumButton</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.enum_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEnumComboBox</class>
+   <extends>QComboBox</extends>
+   <header>pydm.widgets.enum_combo_box</header>
   </customwidget>
  </customwidgets>
  <resources/>
