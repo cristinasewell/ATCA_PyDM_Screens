@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>295</width>
+    <width>335</width>
     <height>122</height>
    </rect>
   </property>
@@ -93,7 +93,7 @@ PyDMLabel {
      </property>
      <property name="minimumSize">
       <size>
-       <width>95</width>
+       <width>165</width>
        <height>20</height>
       </size>
      </property>
