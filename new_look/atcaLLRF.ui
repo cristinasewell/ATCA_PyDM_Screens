@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -19,7 +19,7 @@
   <property name="minimumSize">
    <size>
     <width>1180</width>
-    <height>780</height>
+    <height>0</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -750,7 +750,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               <number>2</number>
              </property>
              <item>
-              <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0,0,0" columnstretch="1,0,2">
+              <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0" columnstretch="1,0,2">
                <item row="1" column="0" rowspan="3">
                 <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
                  <property name="sizePolicy">
