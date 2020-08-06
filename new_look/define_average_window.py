@@ -99,12 +99,12 @@ class AverageWindow(Display):
         self.ui.button_layout.addWidget(self.imm_button)
         # send a value of 0 for i and 1 for q
         # to determine what pv should be sent
-        #self.real_button.clicked.connect(partial(self.write_to_pv, 0))
-        #self.imm_button.clicked.connect(partial(self.write_to_pv, 1))
+        self.real_button.clicked.connect(partial(self.write_to_pv, 0))
+        self.imm_button.clicked.connect(partial(self.write_to_pv, 1))
         #self.real_button.released.connect(partial(self.write_to_pv, 0))
         #self.imm_button.released.connect(partial(self.write_to_pv, 1))
-        self.real_button.pressed.connect(self.write_i_pv)
-        self.imm_button.pressed.connect(self.write_q_pv)
+       # self.real_button.pressed.connect(self.write_i_pv)
+       # self.imm_button.pressed.connect(self.write_q_pv)
 
         real_curve = self._curves[0]    
         i_pv = real_curve["y_channel"]
@@ -214,8 +214,12 @@ class AverageWindow(Display):
                     "Please make sure the start < end, or end < pv_size"
                      )
             else:
+                # set all the q_start spaces with 0s
+                # set all (q_end - q_start) with 1s
+                # set all (q_size - q_end) with 0s
                 self.i_win = [0]*i_start + [1]*(i_end - i_start) + [0]*(i_size - i_end)
                 self._curve_i = self.i_win
+                logger.info(self._curve_i)
                 self.ui.average_window_wf.plot(self.i_win, pen=i_pen)
               #  m = pg.transformToArray()[:2]
                 #logger.info('the window.......'.format(self.i_win))
@@ -229,6 +233,9 @@ class AverageWindow(Display):
                     "Please make sure the start < end, or end < pv_size"
                      )
             else:
+                # set all the q_start spaces with 0s
+                # set all (q_end - q_start) with 1s
+                # set all (q_size - q_end) with 0s
                 self.q_win = [0]*q_start + [1]*(q_end - q_start) + [0]*(q_size - q_end)
                 self._curve_q = self.q_win
                 self.ui.average_window_wf.plot(self.q_win, pen=q_pen)
@@ -257,11 +264,7 @@ class AverageWindow(Display):
                 pass
     
     def write_i_pv(self):
-        #real_curve = self._curves[0]    
-       # i_pv = real_curve["y_channel"]
-        #logger.info(i_pv)
         if self._curve_i:
-           # self.ui.real_button.channel = i_pv
             i_wave = np.array(self._curve_i)
             logger.info('I ARRAY: {}'.format(i_wave))
             #self.real_button.releaseValue = i_wave
@@ -271,10 +274,7 @@ class AverageWindow(Display):
         logger.info("Writing to PV.....")
 
     def write_q_pv(self):
-        #imm_curve = self._curves[1]
-        #q_pv = imm_curve["y_channel"]
         if self._curve_q:
-           # self.imm_button.channel = q_pv
             q_wave = np.array(self.q_win)
             logger.info('Q ARRAY: {}'.format(q_wave))
             #self.imm_button.releaseValue = q_wave
