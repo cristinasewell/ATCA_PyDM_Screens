@@ -223,7 +223,8 @@ class AverageWindow(Display):
                 self.ui.average_window_wf.plot(self.i_win, pen=i_pen)
         else:
             self.ui.error_label.setText(
-                "You must define start and end values for I..")
+                "You must define start & end values"
+                " and you need a PV Window Size")
 
         if q_end and q_start and q_size:
             if (q_start >= q_end) or (q_end >= q_size):
@@ -240,7 +241,8 @@ class AverageWindow(Display):
                 self.ui.average_window_wf.plot(self.q_win, pen=q_pen)
         else:
             self.ui.error_label.setText(
-                "You must define start and end values for Q..")
+                "You must define start & end values"
+                " and you need a PV Window Size")
 
     def write_to_pv(self, n):
         # n == 0 -> real pv
