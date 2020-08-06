@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1154</width>
+    <width>1175</width>
     <height>792</height>
    </rect>
   </property>
@@ -172,7 +172,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1148</width>
+        <width>1169</width>
         <height>786</height>
        </rect>
       </property>
@@ -738,7 +738,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               <number>2</number>
              </property>
              <item>
-              <layout class="QGridLayout" name="gridLayout_2">
+              <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0">
                <item row="2" column="2">
                 <layout class="QHBoxLayout" name="horizontalLayout_2">
                  <item>
@@ -750,11 +750,17 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </item>
                  <item>
                   <widget class="PyDMPushButton" name="PyDMPushButton">
+                   <property name="minimumSize">
+                    <size>
+                     <width>55</width>
+                     <height>0</height>
+                    </size>
+                   </property>
                    <property name="toolTip">
                     <string/>
                    </property>
                    <property name="text">
-                    <string>Trigger</string>
+                    <string>Trigger </string>
                    </property>
                    <property name="channel" stdset="0">
                     <string>ca://${DEVICE}:DAQMUX0_TRGDAQ </string>
@@ -810,6 +816,31 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </property>
                 </widget>
                </item>
+               <item row="3" column="2">
+                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>1</horstretch>
+                   <verstretch>1</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>280</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                 <property name="macros" stdset="0">
+                  <string>{&quot;MUX&quot;:&quot;0&quot;}</string>
+                 </property>
+                 <property name="filename" stdset="0">
+                  <string>streams_info.ui</string>
+                 </property>
+                </widget>
+               </item>
                <item row="2" column="1">
                 <spacer name="horizontalSpacer_3">
                  <property name="orientation">
@@ -823,63 +854,74 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </property>
                 </spacer>
                </item>
-               <item row="3" column="2">
-                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>1</horstretch>
-                   <verstretch>1</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="macros" stdset="0">
-                  <string>{&quot;MUX&quot;:&quot;0&quot;}</string>
-                 </property>
-                 <property name="filename" stdset="0">
-                  <string>streams_info.ui</string>
-                 </property>
-                </widget>
-               </item>
                <item row="1" column="2">
-                <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_5">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                   <horstretch>1</horstretch>
-                   <verstretch>1</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>Down Converter Front Panel Image</string>
-                 </property>
-                 <property name="autoDefault">
-                  <bool>false</bool>
-                 </property>
-                 <property name="default">
-                  <bool>false</bool>
-                 </property>
-                 <property name="flat">
-                  <bool>false</bool>
-                 </property>
-                 <property name="filenames" stdset="0">
-                  <stringlist>
-                   <string>down_converter_picture.ui</string>
-                  </stringlist>
-                 </property>
-                 <property name="titles" stdset="0">
-                  <stringlist/>
-                 </property>
-                 <property name="openInNewWindow" stdset="0">
-                  <bool>true</bool>
-                 </property>
-                </widget>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_5">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>1</horstretch>
+                     <verstretch>1</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>Down Converter Front Panel Image</string>
+                   </property>
+                   <property name="autoDefault">
+                    <bool>false</bool>
+                   </property>
+                   <property name="default">
+                    <bool>false</bool>
+                   </property>
+                   <property name="flat">
+                    <bool>false</bool>
+                   </property>
+                   <property name="filenames" stdset="0">
+                    <stringlist>
+                     <string>down_converter_picture.ui</string>
+                    </stringlist>
+                   </property>
+                   <property name="titles" stdset="0">
+                    <stringlist/>
+                   </property>
+                   <property name="openInNewWindow" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_6">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
                </item>
               </layout>
              </item>
@@ -1392,6 +1434,12 @@ QPushButton:hover{
                  </item>
                  <item>
                   <widget class="PyDMPushButton" name="PyDMPushButton_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>55</width>
+                     <height>0</height>
+                    </size>
+                   </property>
                    <property name="toolTip">
                     <string/>
                    </property>
@@ -1417,33 +1465,6 @@ QPushButton:hover{
                   </spacer>
                  </item>
                 </layout>
-               </item>
-               <item row="1" column="2">
-                <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_6">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                   <horstretch>1</horstretch>
-                   <verstretch>1</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>Up Converter Front Panel Image</string>
-                 </property>
-                 <property name="filenames" stdset="0">
-                  <stringlist>
-                   <string>up_converter_picture.ui</string>
-                  </stringlist>
-                 </property>
-                 <property name="openInNewWindow" stdset="0">
-                  <bool>true</bool>
-                 </property>
-                </widget>
                </item>
                <item row="0" column="2">
                 <widget class="QLabel" name="label_2">
@@ -1474,6 +1495,12 @@ QPushButton:hover{
                    <verstretch>1</verstretch>
                   </sizepolicy>
                  </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>280</width>
+                   <height>0</height>
+                  </size>
+                 </property>
                  <property name="toolTip">
                   <string/>
                  </property>
@@ -1484,6 +1511,63 @@ QPushButton:hover{
                   <string>streams_info_upconverter.ui</string>
                  </property>
                 </widget>
+               </item>
+               <item row="1" column="2">
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <spacer name="horizontalSpacer_7">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_6">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>1</horstretch>
+                     <verstretch>1</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>Up Converter Front Panel Image</string>
+                   </property>
+                   <property name="filenames" stdset="0">
+                    <stringlist>
+                     <string>up_converter_picture.ui</string>
+                    </stringlist>
+                   </property>
+                   <property name="openInNewWindow" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_8">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
                </item>
               </layout>
              </item>
