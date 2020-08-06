@@ -215,7 +215,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <property name="lineWidth">
           <number>9</number>
          </property>
-         <layout class="QGridLayout" name="gridLayout">
+         <layout class="QGridLayout" name="gridLayout" columnstretch="0,0,0,0,0,0">
           <property name="leftMargin">
            <number>2</number>
           </property>
@@ -228,7 +228,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           <property name="bottomMargin">
            <number>2</number>
           </property>
-          <item row="0" column="0" colspan="5">
+          <item row="0" column="0" colspan="6">
            <widget class="PyDMLabel" name="PyDMLabel">
             <property name="font">
              <font>
@@ -254,74 +254,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
            </widget>
           </item>
-          <item row="1" column="3">
-           <layout class="QVBoxLayout" name="verticalLayout_11">
-            <property name="topMargin">
-             <number>0</number>
-            </property>
-            <item>
-             <spacer name="verticalSpacer">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>40</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>JESD Diagnostics</string>
-              </property>
-              <property name="filenames" stdset="0">
-               <stringlist>
-                <string>jesd.ui</string>
-               </stringlist>
-              </property>
-              <property name="openInNewWindow" stdset="0">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_9">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>PLLs</string>
-              </property>
-              <property name="filenames" stdset="0">
-               <stringlist>
-                <string>pll.ui</string>
-               </stringlist>
-              </property>
-              <property name="openInNewWindow" stdset="0">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
           <item row="1" column="0">
            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
             <property name="toolTip">
@@ -332,167 +264,243 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
-           <layout class="QVBoxLayout" name="verticalLayout_9">
-            <property name="topMargin">
-             <number>0</number>
-            </property>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,0">
+          <item row="1" column="1" colspan="5">
+           <layout class="QGridLayout" name="gridLayout_8">
+            <item row="1" column="0">
+             <layout class="QVBoxLayout" name="verticalLayout_13">
               <property name="spacing">
-               <number>10</number>
-              </property>
-              <property name="leftMargin">
-               <number>2</number>
-              </property>
-              <property name="topMargin">
-               <number>2</number>
+               <number>6</number>
               </property>
               <property name="rightMargin">
-               <number>2</number>
-              </property>
-              <property name="bottomMargin">
-               <number>2</number>
+               <number>0</number>
               </property>
               <item>
-               <widget class="QLabel" name="label_5">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="font">
-                 <font>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>PLL LO Lock Status:</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>22</width>
-                  <height>22</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>22</width>
-                  <height>22</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>9</pointsize>
-                  <weight>50</weight>
-                  <bold>false</bold>
-                 </font>
-                </property>
-                <property name="toolTip">
-                 <string/>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:LO_LOCKSTATUS</string>
-                </property>
-                <property name="offColor" stdset="0">
-                 <color>
-                  <red>255</red>
-                  <green>0</green>
-                  <blue>0</blue>
-                 </color>
-                </property>
-                <property name="showLabels" stdset="0">
-                 <bool>false</bool>
-                </property>
-                <property name="circles" stdset="0">
-                 <bool>true</bool>
-                </property>
-                <property name="labelPosition" stdset="0">
-                 <enum>QTabWidget::West</enum>
-                </property>
-                <property name="labels" stdset="0">
-                 <stringlist>
-                  <string></string>
-                 </stringlist>
-                </property>
-               </widget>
+               <layout class="QHBoxLayout" name="horizontalLayout_8">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_11">
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
+                    <property name="font">
+                     <font>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>JESD Diagnostics</string>
+                    </property>
+                    <property name="filenames" stdset="0">
+                     <stringlist>
+                      <string>jesd.ui</string>
+                     </stringlist>
+                    </property>
+                    <property name="openInNewWindow" stdset="0">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_9">
+                    <property name="font">
+                     <font>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>PLLs</string>
+                    </property>
+                    <property name="filenames" stdset="0">
+                     <stringlist>
+                      <string>pll.ui</string>
+                     </stringlist>
+                    </property>
+                    <property name="openInNewWindow" stdset="0">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+                    <property name="font">
+                     <font>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>Timing</string>
+                    </property>
+                    <property name="filenames" stdset="0">
+                     <stringlist>
+                      <string>time.ui</string>
+                     </stringlist>
+                    </property>
+                    <property name="openInNewWindow" stdset="0">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_8">
+                    <property name="font">
+                     <font>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>Demodulator</string>
+                    </property>
+                    <property name="filenames" stdset="0">
+                     <stringlist>
+                      <string>demodulator.ui</string>
+                     </stringlist>
+                    </property>
+                    <property name="openInNewWindow" stdset="0">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_9">
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+                    <property name="font">
+                     <font>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>DaqMux Settings Setup</string>
+                    </property>
+                    <property name="filenames" stdset="0">
+                     <stringlist>
+                      <string>converters_settings.ui</string>
+                     </stringlist>
+                    </property>
+                    <property name="openInNewWindow" stdset="0">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_7">
+                    <property name="font">
+                     <font>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>RF DAC Out</string>
+                    </property>
+                    <property name="filenames" stdset="0">
+                     <stringlist>
+                      <string>rf_dac_out.ui</string>
+                     </stringlist>
+                    </property>
+                    <property name="openInNewWindow" stdset="0">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_12">
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
+                    <property name="font">
+                     <font>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>RF Interlock RTM</string>
+                    </property>
+                    <property name="filenames" stdset="0">
+                     <stringlist>
+                      <string>rtm.ui</string>
+                     </stringlist>
+                    </property>
+                    <property name="openInNewWindow" stdset="0">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_10">
+                    <property name="font">
+                     <font>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="toolTip">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>LLRF HLS</string>
+                    </property>
+                    <property name="filenames" stdset="0">
+                     <stringlist>
+                      <string>llrf_hls.ui</string>
+                     </stringlist>
+                    </property>
+                    <property name="openInNewWindow" stdset="0">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
               </item>
              </layout>
             </item>
-            <item>
-             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>DaqMux Settings Setup</string>
-              </property>
-              <property name="filenames" stdset="0">
-               <stringlist>
-                <string>converters_settings.ui</string>
-               </stringlist>
-              </property>
-              <property name="openInNewWindow" stdset="0">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_7">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>RF DAC Out</string>
-              </property>
-              <property name="filenames" stdset="0">
-               <stringlist>
-                <string>rf_dac_out.ui</string>
-               </stringlist>
-              </property>
-              <property name="openInNewWindow" stdset="0">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="1" column="2">
-           <layout class="QVBoxLayout" name="verticalLayout_10">
-            <property name="topMargin">
-             <number>0</number>
-            </property>
-            <item>
+            <item row="0" column="0">
              <layout class="QHBoxLayout" name="horizontalLayout_5">
               <property name="spacing">
                <number>10</number>
@@ -507,191 +515,192 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <number>2</number>
               </property>
               <item>
-               <widget class="QLabel" name="label_6">
-                <property name="font">
-                 <font>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                  <underline>false</underline>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>PLL CLK Lock Status:</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-               </widget>
+               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                <item>
+                 <widget class="QLabel" name="label_6">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                    <underline>false</underline>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>PLL CLK Lock Status:</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>22</width>
+                    <height>22</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>22</width>
+                    <height>24</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${DEVICE}:CLOCK_LOCKSTATUS</string>
+                  </property>
+                  <property name="offColor" stdset="0">
+                   <color>
+                    <red>255</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                   </color>
+                  </property>
+                  <property name="orientation" stdset="0">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="showLabels" stdset="0">
+                   <bool>false</bool>
+                  </property>
+                  <property name="circles" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="labelPosition" stdset="0">
+                   <enum>QTabWidget::West</enum>
+                  </property>
+                  <property name="labels" stdset="0">
+                   <stringlist>
+                    <string></string>
+                   </stringlist>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
               </item>
               <item>
-               <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
+               <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,0,0">
+                <property name="spacing">
+                 <number>10</number>
                 </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>22</width>
-                  <height>22</height>
-                 </size>
+                <property name="leftMargin">
+                 <number>2</number>
                 </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>22</width>
-                  <height>24</height>
-                 </size>
+                <property name="topMargin">
+                 <number>2</number>
                 </property>
-                <property name="toolTip">
-                 <string/>
+                <property name="rightMargin">
+                 <number>2</number>
                 </property>
-                <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:CLOCK_LOCKSTATUS</string>
+                <property name="bottomMargin">
+                 <number>2</number>
                 </property>
-                <property name="offColor" stdset="0">
-                 <color>
-                  <red>255</red>
-                  <green>0</green>
-                  <blue>0</blue>
-                 </color>
-                </property>
-                <property name="orientation" stdset="0">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="showLabels" stdset="0">
-                 <bool>false</bool>
-                </property>
-                <property name="circles" stdset="0">
-                 <bool>true</bool>
-                </property>
-                <property name="labelPosition" stdset="0">
-                 <enum>QTabWidget::West</enum>
-                </property>
-                <property name="labels" stdset="0">
-                 <stringlist>
-                  <string></string>
-                 </stringlist>
-                </property>
-               </widget>
+                <item>
+                 <widget class="QLabel" name="label_5">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>PLL LO Lock Status:</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>22</width>
+                    <height>22</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>22</width>
+                    <height>22</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${DEVICE}:LO_LOCKSTATUS</string>
+                  </property>
+                  <property name="offColor" stdset="0">
+                   <color>
+                    <red>255</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                   </color>
+                  </property>
+                  <property name="showLabels" stdset="0">
+                   <bool>false</bool>
+                  </property>
+                  <property name="circles" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="labelPosition" stdset="0">
+                   <enum>QTabWidget::West</enum>
+                  </property>
+                  <property name="labels" stdset="0">
+                   <stringlist>
+                    <string></string>
+                   </stringlist>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_9">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
               </item>
              </layout>
-            </item>
-            <item>
-             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>Timing</string>
-              </property>
-              <property name="filenames" stdset="0">
-               <stringlist>
-                <string>time.ui</string>
-               </stringlist>
-              </property>
-              <property name="openInNewWindow" stdset="0">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_8">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>Demodulator</string>
-              </property>
-              <property name="filenames" stdset="0">
-               <stringlist>
-                <string>demodulator.ui</string>
-               </stringlist>
-              </property>
-              <property name="openInNewWindow" stdset="0">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="1" column="4">
-           <layout class="QVBoxLayout" name="verticalLayout_12">
-            <property name="topMargin">
-             <number>0</number>
-            </property>
-            <item>
-             <spacer name="verticalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>40</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>RF Interlock RTM</string>
-              </property>
-              <property name="filenames" stdset="0">
-               <stringlist>
-                <string>rtm.ui</string>
-               </stringlist>
-              </property>
-              <property name="openInNewWindow" stdset="0">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_10">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>LLRF HLS</string>
-              </property>
-              <property name="filenames" stdset="0">
-               <stringlist>
-                <string>llrf_hls.ui</string>
-               </stringlist>
-              </property>
-              <property name="openInNewWindow" stdset="0">
-               <bool>true</bool>
-              </property>
-             </widget>
             </item>
            </layout>
           </item>
@@ -750,7 +759,60 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               <number>2</number>
              </property>
              <item>
-              <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0" columnstretch="1,0,2">
+              <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0" columnstretch="1,0,0">
+               <item row="0" column="0" colspan="3">
+                <widget class="QLabel" name="label">
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Down Converter</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="2">
+                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>1</horstretch>
+                   <verstretch>1</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>280</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                 <property name="macros" stdset="0">
+                  <string>{&quot;MUX&quot;:&quot;0&quot;}</string>
+                 </property>
+                 <property name="filename" stdset="0">
+                  <string>streams_info.ui</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
                <item row="1" column="0" rowspan="3">
                 <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
                  <property name="sizePolicy">
@@ -769,19 +831,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                   <string>down_converter.ui</string>
                  </property>
                 </widget>
-               </item>
-               <item row="2" column="1">
-                <spacer name="horizontalSpacer_3">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>40</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
                </item>
                <item row="2" column="2">
                 <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -825,31 +874,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                   </spacer>
                  </item>
                 </layout>
-               </item>
-               <item row="3" column="2">
-                <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>1</horstretch>
-                   <verstretch>1</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>280</width>
-                   <height>0</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="macros" stdset="0">
-                  <string>{&quot;MUX&quot;:&quot;0&quot;}</string>
-                 </property>
-                 <property name="filename" stdset="0">
-                  <string>streams_info.ui</string>
-                 </property>
-                </widget>
                </item>
                <item row="1" column="2">
                 <layout class="QHBoxLayout" name="horizontalLayout_6">
@@ -919,21 +943,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                   </spacer>
                  </item>
                 </layout>
-               </item>
-               <item row="0" column="0" colspan="3">
-                <widget class="QLabel" name="label">
-                 <property name="font">
-                  <font>
-                   <pointsize>12</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Down Converter</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
                </item>
               </layout>
              </item>
