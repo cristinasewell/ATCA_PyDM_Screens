@@ -159,7 +159,7 @@
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Attenuators</string>
+      <string>Att.</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -237,7 +237,7 @@
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Temperatures</string>
+      <string>Temp.</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
