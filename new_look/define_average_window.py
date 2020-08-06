@@ -31,6 +31,9 @@ class AverageWindow(Display):
         self._i_pv = None
         self._q_pv = None
 
+        self._curve_i = None
+        self._curve_q = None
+
         self.waveform_buttons_setup()
 
     def setup_ui(self):
@@ -70,13 +73,6 @@ class AverageWindow(Display):
                             "redraw_mode": 2
                             }
                     self._curves[i_q] = curves
-
-                real_curve = self._curves[0]
-                imm_curve = self._curves[1]
-                self._i_pv = real_curve["y_channel"]
-                self._q_pv = imm_curve["y_channel"]
-                logger.info(self._i_pv)
-                logger.info(self._q_pv)
         except:
             self.ui.error_label.setText("Something went wrong with the macro??...")
             logger.error("You need to define a DEVICE macro ioc  - ex: -m 'DEVICE=MY_IOC' ")
@@ -107,8 +103,16 @@ class AverageWindow(Display):
         #self.imm_button.clicked.connect(partial(self.write_to_pv, 1))
         #self.real_button.released.connect(partial(self.write_to_pv, 0))
         #self.imm_button.released.connect(partial(self.write_to_pv, 1))
-        self.real_button.released.connect(self.write_i_pv)
-        self.imm_button.released.connect(self.write_q_pv)
+        self.real_button.pressed.connect(self.write_i_pv)
+        self.imm_button.pressed.connect(self.write_q_pv)
+
+        real_curve = self._curves[0]    
+        i_pv = real_curve["y_channel"]
+        self.ui.real_button.channel = i_pv
+
+        imm_curve = self._curves[1]
+        q_pv = imm_curve["y_channel"]
+        self.imm_button.channel = q_pv
 
     def edit_line_setup(self):
         self.ui.start_line_edit.textChanged.connect(self.start_on_text_changed)
@@ -211,7 +215,10 @@ class AverageWindow(Display):
                      )
             else:
                 self.i_win = [0]*i_start + [1]*(i_end - i_start) + [0]*(i_size - i_end)
+                self._curve_i = self.i_win
                 self.ui.average_window_wf.plot(self.i_win, pen=i_pen)
+              #  m = pg.transformToArray()[:2]
+                #logger.info('the window.......'.format(self.i_win))
         else:
             self.ui.error_label.setText("You must define start and end values for I..")
 
@@ -223,7 +230,9 @@ class AverageWindow(Display):
                      )
             else:
                 self.q_win = [0]*q_start + [1]*(q_end - q_start) + [0]*(q_size - q_end)
+                self._curve_q = self.q_win
                 self.ui.average_window_wf.plot(self.q_win, pen=q_pen)
+                logger.info('the window.......'.format(self.q_win))
         else:
             self.ui.error_label.setText("You must define start and end values for Q..")
 
@@ -248,9 +257,12 @@ class AverageWindow(Display):
                 pass
     
     def write_i_pv(self):
-        if self._i_pv and self.i_win:
-            self.ui.real_button.channel = self._i_pv
-            i_wave = np.array(self.i_win)
+        #real_curve = self._curves[0]    
+       # i_pv = real_curve["y_channel"]
+        #logger.info(i_pv)
+        if self._curve_i:
+           # self.ui.real_button.channel = i_pv
+            i_wave = np.array(self._curve_i)
             logger.info('I ARRAY: {}'.format(i_wave))
             #self.real_button.releaseValue = i_wave
             self.ui.real_button.send_value_signal[np.ndarray].emit(i_wave)
@@ -259,8 +271,10 @@ class AverageWindow(Display):
         logger.info("Writing to PV.....")
 
     def write_q_pv(self):
-        if self._q_pv and self.q_win:
-            self.imm_button.channel = self._q_pv
+        #imm_curve = self._curves[1]
+        #q_pv = imm_curve["y_channel"]
+        if self._curve_q:
+           # self.imm_button.channel = q_pv
             q_wave = np.array(self.q_win)
             logger.info('Q ARRAY: {}'.format(q_wave))
             #self.imm_button.releaseValue = q_wave
