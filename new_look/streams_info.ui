@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>295</width>
+    <width>335</width>
     <height>122</height>
    </rect>
   </property>
@@ -25,7 +25,7 @@ PyDMLabel {
 }
 </string>
   </property>
-  <layout class="QGridLayout" name="gridLayout" columnminimumwidth="0,0,0,0">
+  <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
     <number>4</number>
    </property>
@@ -38,16 +38,22 @@ PyDMLabel {
    <property name="bottomMargin">
     <number>4</number>
    </property>
-   <item row="0" column="0">
-    <widget class="QLabel" name="label">
-     <property name="styleSheet">
-      <string notr="true">QLabel {
-  background-color: rgb(85,225,255);
-}
-</string>
+   <item row="2" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_3">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
      </property>
      <property name="text">
-      <string>Stream Ch 0</string>
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSELSTR2</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::String</enum>
      </property>
     </widget>
    </item>
@@ -71,29 +77,16 @@ PyDMLabel {
     </widget>
    </item>
    <item row="0" column="2">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="0" column="3">
     <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_3">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
      <property name="minimumSize">
       <size>
-       <width>95</width>
+       <width>165</width>
        <height>20</height>
       </size>
      </property>
@@ -140,32 +133,32 @@ QComboBox {
      </item>
      <item>
       <property name="text">
-       <string>2: ADC0 [F Panel: RF IN 2]</string>
+       <string>2: RF IN 2: ADC0 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>3: ADC1 [F Panel: RF IN 1]</string>
+       <string>3: RF IN 1: ADC1 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>4: ADC2 [F Panel: RF IN 4]</string>
+       <string>4: RF IN 4: ADC2 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>5: ADC3 [F Panel: RF IN 3]</string>
+       <string>5: RF IN 3: ADC3 (FP) </string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>6: ADC4 [F Panel: RF IN 6]</string>
+       <string>6: RF IN 6: ADC4 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>7: ADC5 [F Panel: RF IN 5]</string>
+       <string>7: RF IN 5: ADC5 (FP)</string>
       </property>
      </item>
      <item>
@@ -175,17 +168,17 @@ QComboBox {
      </item>
      <item>
       <property name="text">
-       <string>9: DAC0 [LO PLL DAC]</string>
+       <string>9: LO PLL DAC: DAC0</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>10: DAC1 [CLK PLL DAC]</string>
+       <string>10: CLK PLL DAC: DAC1 </string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>11: DAC2 [F Panel: DAC OUT]</string>
+       <string>11: DAC OUT: DAC2 (FP)</string>
       </property>
      </item>
      <item>
@@ -210,12 +203,12 @@ QComboBox {
      </item>
      <item>
       <property name="text">
-       <string>16:DBG0</string>
+       <string>16: DBG0</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>17:DBG1</string>
+       <string>17: DBG1</string>
       </property>
      </item>
      <item>
@@ -242,40 +235,20 @@ QComboBox {
      </property>
     </widget>
    </item>
-   <item row="1" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_2">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+  background-color: rgb(255,170,127);
+}</string>
      </property>
      <property name="text">
-      <string/>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSELSTR1</string>
-     </property>
-     <property name="displayFormat" stdset="0">
-      <enum>PyDMLabel::String</enum>
+      <string>Stream Ch 3</string>
      </property>
     </widget>
    </item>
-   <item row="1" column="2">
-    <spacer name="horizontalSpacer_2">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="1" column="3">
-    <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
+   <item row="2" column="2">
+    <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
        <horstretch>0</horstretch>
@@ -300,24 +273,18 @@ QComboBox {
       <string notr="true">/* Color of the selected list item. */
 QComboBox::item:selected {
     border: 1px solid transparent;
-    background: rgb(85,255,127);
+    background: rgb(255,255,127);
 }
 QComboBox {
-  	background-color: rgb(193,255,208);
+    background-color: rgb(255,255,205);
     border: 1px solid black;
     border-radius: 3px;
     padding: 1px 18px 1px 3px;
     min-width: 6em;
 }</string>
      </property>
-     <property name="iconSize">
-      <size>
-       <width>12</width>
-       <height>12</height>
-      </size>
-     </property>
      <property name="channel" stdset="0">
-      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSEL1</string>
+      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSEL2</string>
      </property>
      <item>
       <property name="text">
@@ -331,32 +298,32 @@ QComboBox {
      </item>
      <item>
       <property name="text">
-       <string>2: ADC0 [F Panel: RF IN 2]</string>
+       <string>2: RF IN 2: ADC0 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>3: ADC1 [F Panel: RF IN 1]</string>
+       <string>3: RF IN 1: ADC1 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>4: ADC2 [F Panel: RF IN 4]</string>
+       <string>4: RF IN 4: ADC2 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>5: ADC3 [F Panel: RF IN 3]</string>
+       <string>5: RF IN 3: ADC3 (FP) </string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>6: ADC4 [F Panel: RF IN 6]</string>
+       <string>6: RF IN 6: ADC4 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>7: ADC5 [F Panel: RF IN 5]</string>
+       <string>7: RF IN 5: ADC5 (FP)</string>
       </property>
      </item>
      <item>
@@ -366,17 +333,17 @@ QComboBox {
      </item>
      <item>
       <property name="text">
-       <string>9: DAC0 [LO PLL DAC]</string>
+       <string>9: LO PLL DAC: DAC0</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>10: DAC1 [CLK PLL DAC]</string>
+       <string>10: CLK PLL DAC: DAC1 </string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>11: DAC2 [F Panel: DAC OUT]</string>
+       <string>11: DAC OUT: DAC2 (FP)</string>
       </property>
      </item>
      <item>
@@ -433,8 +400,8 @@ QComboBox {
      </property>
     </widget>
    </item>
-   <item row="2" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_3">
+   <item row="3" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_4">
      <property name="toolTip">
       <string/>
      </property>
@@ -445,28 +412,47 @@ QComboBox {
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSELSTR2</string>
+      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSELSTR3</string>
      </property>
      <property name="displayFormat" stdset="0">
       <enum>PyDMLabel::String</enum>
      </property>
     </widget>
    </item>
-   <item row="2" column="2">
-    <spacer name="horizontalSpacer_3">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+   <item row="1" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_2">
+     <property name="toolTip">
+      <string/>
      </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>20</height>
-      </size>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
      </property>
-    </spacer>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSELSTR1</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::String</enum>
+     </property>
+    </widget>
    </item>
-   <item row="2" column="3">
-    <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+  background-color: rgb(85,225,255);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Stream Ch 0</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
        <horstretch>0</horstretch>
@@ -491,18 +477,24 @@ QComboBox {
       <string notr="true">/* Color of the selected list item. */
 QComboBox::item:selected {
     border: 1px solid transparent;
-    background: rgb(255,255,127);
+    background: rgb(85,255,127);
 }
 QComboBox {
-    background-color: rgb(255,255,205);
+  	background-color: rgb(193,255,208);
     border: 1px solid black;
     border-radius: 3px;
     padding: 1px 18px 1px 3px;
     min-width: 6em;
 }</string>
      </property>
+     <property name="iconSize">
+      <size>
+       <width>12</width>
+       <height>12</height>
+      </size>
+     </property>
      <property name="channel" stdset="0">
-      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSEL2</string>
+      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSEL1</string>
      </property>
      <item>
       <property name="text">
@@ -516,32 +508,32 @@ QComboBox {
      </item>
      <item>
       <property name="text">
-       <string>2: ADC0 [F Panel: RF IN 2]</string>
+       <string>2: RF IN 2: ADC0 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>3: ADC1 [F Panel: RF IN 1]</string>
+       <string>3: RF IN 1: ADC1 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>4: ADC2 [F Panel: RF IN 4]</string>
+       <string>4: RF IN 4: ADC2 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>5: ADC3 [F Panel: RF IN 3]</string>
+       <string>5: RF IN 3: ADC3 (FP) </string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>6: ADC4 [F Panel: RF IN 6]</string>
+       <string>6: RF IN 6: ADC4 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>7: ADC5 [F Panel: RF IN 5]</string>
+       <string>7: RF IN 5: ADC5 (FP)</string>
       </property>
      </item>
      <item>
@@ -551,17 +543,17 @@ QComboBox {
      </item>
      <item>
       <property name="text">
-       <string>9: DAC0 [LO PLL DAC]</string>
+       <string>9: LO PLL DAC: DAC0</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>10: DAC1 [CLK PLL DAC]</string>
+       <string>10: CLK PLL DAC: DAC1 </string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>11: DAC2 [F Panel: DAC OUT]</string>
+       <string>11: DAC OUT: DAC2 (FP)</string>
       </property>
      </item>
      <item>
@@ -586,12 +578,12 @@ QComboBox {
      </item>
      <item>
       <property name="text">
-       <string>16:DBG0</string>
+       <string>16: DBG0</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>17:DBG1</string>
+       <string>17: DBG1</string>
       </property>
      </item>
      <item>
@@ -606,51 +598,7 @@ QComboBox {
      </item>
     </widget>
    </item>
-   <item row="3" column="0">
-    <widget class="QLabel" name="label_4">
-     <property name="styleSheet">
-      <string notr="true">QLabel {
-  background-color: rgb(255,170,127);
-}</string>
-     </property>
-     <property name="text">
-      <string>Stream Ch 3</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_4">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSELSTR3</string>
-     </property>
-     <property name="displayFormat" stdset="0">
-      <enum>PyDMLabel::String</enum>
-     </property>
-    </widget>
-   </item>
    <item row="3" column="2">
-    <spacer name="horizontalSpacer_4">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="3" column="3">
     <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_4">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
@@ -701,32 +649,32 @@ QComboBox {
      </item>
      <item>
       <property name="text">
-       <string>2: ADC0 [F Panel: RF IN 2]</string>
+       <string>2: RF IN 2: ADC0 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>3: ADC1 [F Panel: RF IN 1]</string>
+       <string>3: RF IN 1: ADC1 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>4: ADC2 [F Panel: RF IN 4]</string>
+       <string>4: RF IN 4: ADC2 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>5: ADC3 [F Panel: RF IN 3]</string>
+       <string>5: RF IN 3: ADC3 (FP) </string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>6: ADC4 [F Panel: RF IN 6]</string>
+       <string>6: RF IN 6: ADC4 (FP)</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>7: ADC5 [F Panel: RF IN 5]</string>
+       <string>7: RF IN 5: ADC5 (FP)</string>
       </property>
      </item>
      <item>
@@ -736,17 +684,17 @@ QComboBox {
      </item>
      <item>
       <property name="text">
-       <string>9: DAC0 [LO PLL DAC]</string>
+       <string>9: LO PLL DAC: DAC0</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>10: DAC1 [CLK PLL DAC]</string>
+       <string>10: CLK PLL DAC: DAC1 </string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>11: DAC2 [F Panel: DAC OUT]</string>
+       <string>11: DAC OUT: DAC2 (FP)</string>
       </property>
      </item>
      <item>
