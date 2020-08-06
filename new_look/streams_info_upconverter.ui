@@ -13,6 +13,18 @@
   <property name="windowTitle">
    <string>Up Converter Mux Select - ${DEVICE}</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit {
+  background-color: rgb(218,223,230);
+  border-color: rgb(66,77,96);
+  border-style: inset;
+  border-width: 2px 1px 1px 2px;
+}
+PyDMLabel {
+  background-color: rgb(189,197,205);
+}
+</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <widget class="QLabel" name="label">
@@ -27,10 +39,25 @@
      </property>
     </widget>
    </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+  background-color: rgb(255,255,127);
+}</string>
+     </property>
+     <property name="text">
+      <string>Stream Ch 2</string>
+     </property>
+    </widget>
+   </item>
    <item row="0" column="1">
     <widget class="PyDMLabel" name="PyDMLabel">
      <property name="toolTip">
       <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
      </property>
      <property name="frameShape">
       <enum>QFrame::NoFrame</enum>
@@ -47,22 +74,9 @@
     </widget>
    </item>
    <item row="0" column="2">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>41</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="0" column="3">
     <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_3">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
@@ -206,51 +220,7 @@ QComboBox {
      </item>
     </widget>
    </item>
-   <item row="1" column="0">
-    <widget class="QLabel" name="label_2">
-     <property name="styleSheet">
-      <string notr="true">QLabel {
-  background-color: rgb(85,255,127);
-}</string>
-     </property>
-     <property name="text">
-      <string>Stream Ch 1</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_2">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSELSTR1</string>
-     </property>
-     <property name="displayFormat" stdset="0">
-      <enum>PyDMLabel::String</enum>
-     </property>
-    </widget>
-   </item>
    <item row="1" column="2">
-    <spacer name="horizontalSpacer_2">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>41</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="1" column="3">
     <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_4">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
@@ -397,51 +367,7 @@ QComboBox {
      </item>
     </widget>
    </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="label_3">
-     <property name="styleSheet">
-      <string notr="true">QLabel{
-  background-color: rgb(255,255,127);
-}</string>
-     </property>
-     <property name="text">
-      <string>Stream Ch 2</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_3">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSELSTR2</string>
-     </property>
-     <property name="displayFormat" stdset="0">
-      <enum>PyDMLabel::String</enum>
-     </property>
-    </widget>
-   </item>
    <item row="2" column="2">
-    <spacer name="horizontalSpacer_3">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>41</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="2" column="3">
     <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_5">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
@@ -588,15 +514,41 @@ QComboBox {
      </item>
     </widget>
    </item>
-   <item row="3" column="0">
-    <widget class="QLabel" name="label_4">
-     <property name="styleSheet">
-      <string notr="true">QLabel {
-  background-color: rgb(255,170,127);
-}</string>
+   <item row="2" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_3">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
      </property>
      <property name="text">
-      <string>Stream Ch 3</string>
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSELSTR2</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::String</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_2">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEVICE}:DAQMUX${MUX}_INPMUXSELSTR1</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::String</enum>
      </property>
     </widget>
    </item>
@@ -619,20 +571,19 @@ QComboBox {
      </property>
     </widget>
    </item>
-   <item row="3" column="2">
-    <spacer name="horizontalSpacer_4">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+  background-color: rgb(255,170,127);
+}</string>
      </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>41</width>
-       <height>20</height>
-      </size>
+     <property name="text">
+      <string>Stream Ch 3</string>
      </property>
-    </spacer>
+    </widget>
    </item>
-   <item row="3" column="3">
+   <item row="3" column="2">
     <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_6">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
@@ -777,6 +728,18 @@ QComboBox {
        <string>19: DBG3</string>
       </property>
      </item>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+  background-color: rgb(85,255,127);
+}</string>
+     </property>
+     <property name="text">
+      <string>Stream Ch 1</string>
+     </property>
     </widget>
    </item>
   </layout>
