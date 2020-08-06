@@ -24,15 +24,19 @@ class AverageWindow(Display):
         self._macros = macros
         self.start = None
         self.end = None
+        self.setup_ui()
+        self.define_complex_curves()
+        self.setup_pvs()
         self.end_edit_line_setup()
         self.start_edit_line_setup()
-        self.setup_ui()
         self.complex_curves = None
         self.pv_size = 4096
         self.win = []
+        self.pvs = []
+        self.current_pv = None
         self.current_window_selection = None
         self.waveform_button_setup()
-        self.define_complex_curves()
+
 
         self.pv_combo_box_selection = {
             0: 'I Window 0 - ICPXWND0',
@@ -47,10 +51,6 @@ class AverageWindow(Display):
 
     def waveform_button_setup(self):
         self.waveform_button = WaveformButton()
-        # this will change based on the channel ....
-        self.waveform_button.channel = 'ca://SIOC:B084:RFTEST:0:ICPXWND0'
-       # wave = np.ones(10) #sends a ndarray of ones
-       # waveform_button.pressValue = wave
         self.waveform_button.setStyleSheet("background-color: #bc5f6a")
         self.waveform_button.setText("Write")
         self.ui.button_layout.addWidget(self.waveform_button)
@@ -97,6 +97,15 @@ class AverageWindow(Display):
             logger.error("You need to define a DEVICE macro ioc  - ex: -m 'DEVICE=MY_IOC' ")
             #sys.exit(1)
             # disble a button here - dissable the write button?
+    def setup_pvs(self):
+        if self.complex_curves:
+            real_curves = self.complex_curves[0]
+            imm_curves = self.complex_curves[1]
+    
+        y_channels_real = [s["y_channel"] for i, s in real_curves.items()]
+        y_channels_imm = [s["y_channel"] for i, s in imm_curves.items()]
+        self.pvs = y_channels_real + y_channels_imm
+        logger.debug(self.pvs)
 
     def handle_show_curvs(self):
         curves = []
@@ -121,7 +130,7 @@ class AverageWindow(Display):
                     ch = json.dumps(curve)
                     curves.append(ch)
                     self.average_window_wf.setCurves(curves)
-                    logger.info('plotting curve: {}'.format(curve))
+                    logger.debug('plotting curve: {}'.format(curve))
 
             for idx, index_cb in enumerate(cb_imm_items):
                 if self.ui.window_select_cb.currentIndex() == index_cb:
@@ -131,8 +140,7 @@ class AverageWindow(Display):
                     ch = json.dumps(curve)
                     curves.append(ch)
                     self.average_window_wf.setCurves(curves)
-                    logger.info('plotting curve: {}'.format(curve))
-            
+                    logger.debug('plotting curve: {}'.format(curve))
 
     def start_edit_line_setup(self):
        # self.ui.start_line_edit.returnPressed.connect(self.start_on_return_pressed)
@@ -183,6 +191,7 @@ class AverageWindow(Display):
         text_label = self.pv_combo_box_selection[index]
         self.ui.display_pv_label.setText("Current PV: {}".format(text_label))
         self.ui.average_window_wf.clear()
+        self.current_pv = self.pvs[index]
 
     def plot_data(self):
         start = self.get_current_start()
@@ -192,10 +201,7 @@ class AverageWindow(Display):
         pen = pg.mkPen(color=(153,255,153))
 
         if end and start:
-            logger.info(type(end))
-            logger.info(type(start))
             self.win = [0]*start + [1]*(end - start) + [0]*(self.pv_size - end)
-            logger.info(type(self.win))
             self.ui.average_window_wf.plot(self.win, pen=pen)
         else:
             self.ui.error_label.setText("You must define start and end values..")
@@ -211,9 +217,12 @@ class AverageWindow(Display):
     
     def write(self):
         logger.info("Writing to PV.....")
-      #  wave = np.ones(10) #sends a ndarray of ones
-        wave = np.array(self.win)
-        waveform_button.pressValue = wave
+        if self.win:
+            self.waveform_button.channel = self.current_pv
+            wave = np.array(self.win)
+            self.waveform_button.pressValue = wave
+        else:
+            self.ui.error_label.setText("You must define a window first.")
 
     def ui_filename(self):
         return 'define_average_window.ui'
