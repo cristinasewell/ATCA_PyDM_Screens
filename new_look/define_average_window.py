@@ -5,6 +5,7 @@ import sys
 import pyqtgraph as pg
 import epics
 import re
+from functools import partial
 
 import numpy as np
 from qtpy import QtCore, QtWidgets, QtGui
@@ -19,23 +20,18 @@ class AverageWindow(Display):
     def __init__(self, parent=None, args=None, macros=None, ui_filename=None):
         super(AverageWindow, self).__init__(parent=parent, args=args, macros=macros)
         self._macros = macros
-        self.start = None
-        self.end = None
+
         self._curves = {}
         self.define_complex_curves()
         self.setup_ui()
+        self.edit_line_setup()
 
-        self.end_edit_line_setup()
-        self.start_edit_line_setup()
-        self.complex_curves = None
-        self.pv_size = 4096
-        self.win = []
-        self.pv = None
-        self.curve = None
-        self.current_pv = None
-        self.current_window_selection = None
-        self.waveform_button_setup()
+        self.i_win = []
+        self.q_win = []
+        self._i_pv = None
+        self._q_pv = None
 
+        self.waveform_buttons_setup()
 
     def setup_ui(self):
         self.ui.draw_window_pb.clicked.connect(self.plot_data)
@@ -51,7 +47,7 @@ class AverageWindow(Display):
 
                 iq = [0, 1]
                 iq_label =['I', 'Q']
-                colors = ["#55ffff", "#5500ff"]
+                colors = ["#ff557f", "#5500ff"]
 
                 self._curves = {}
                 for i_q, pv in enumerate(iq):
@@ -61,14 +57,6 @@ class AverageWindow(Display):
                     )
                     name = "{}CPXWND{}".format(
                         iq_label[i_q], number)
-                
-                    style = {
-                            "lineStyle": 1,
-                            "lineWidth": 1,
-                            "symbol": 0,
-                            "symbolSize": 4,
-                            "redraw_mode": 2
-                            }
 
                     curves = {
                             "y_channel": y_channel,
@@ -82,7 +70,13 @@ class AverageWindow(Display):
                             "redraw_mode": 2
                             }
                     self._curves[i_q] = curves
-                logger.info(self._curves)
+
+                real_curve = self._curves[0]
+                imm_curve = self._curves[1]
+                self._i_pv = real_curve["y_channel"]
+                self._q_pv = imm_curve["y_channel"]
+                logger.info(self._i_pv)
+                logger.info(self._q_pv)
         except:
             self.ui.error_label.setText("Something went wrong with the macro??...")
             logger.error("You need to define a DEVICE macro ioc  - ex: -m 'DEVICE=MY_IOC' ")
@@ -98,95 +92,181 @@ class AverageWindow(Display):
                 logger.info('plotting curve: {}'.format(c_pv))
             self.average_window_wf.setCurves(curves)
 
-    def waveform_button_setup(self):
-        self.waveform_button = WaveformButton()
-        self.waveform_button.setStyleSheet("background-color: #bc5f6a")
-        self.waveform_button.setText("Write")
-        self.ui.button_layout.addWidget(self.waveform_button)
-        self.waveform_button.clicked.connect(self.write_to_pv)
+    def waveform_buttons_setup(self):
+        self.real_button = PyDMPushButton() #WaveformButton()
+        self.imm_button = PyDMPushButton() #WaveformButton()
+        self.real_button.setStyleSheet("background-color: #bc5f6a")
+        self.imm_button.setStyleSheet("background-color: #bc5f6a")
+        self.real_button.setText("Write I PV")
+        self.imm_button.setText("Write Q PV")
+        self.ui.button_layout.addWidget(self.real_button)
+        self.ui.button_layout.addWidget(self.imm_button)
+        # send a value of 0 for i and 1 for q
+        # to determine what pv should be sent
+        #self.real_button.clicked.connect(partial(self.write_to_pv, 0))
+        #self.imm_button.clicked.connect(partial(self.write_to_pv, 1))
+        #self.real_button.released.connect(partial(self.write_to_pv, 0))
+        #self.imm_button.released.connect(partial(self.write_to_pv, 1))
+        self.real_button.released.connect(self.write_i_pv)
+        self.imm_button.released.connect(self.write_q_pv)
 
-        if self.pv:
-            self.waveform_button.channel = self.pv
-            logger.info(self.pv)
-            wave = np.array(self.win)
-            self.waveform_button.pressValue = wave
-        else:
-            self.ui.error_label.setText("You must define a window first.")
-
-
-    def start_edit_line_setup(self):
-       # self.ui.start_line_edit.returnPressed.connect(self.start_on_return_pressed)
+    def edit_line_setup(self):
         self.ui.start_line_edit.textChanged.connect(self.start_on_text_changed)
-
-    def end_edit_line_setup(self):
-       # self.ui.end_line_edit.returnPressed.connect(self.end_on_return_pressed)
         self.ui.end_line_edit.textChanged.connect(self.end_on_text_changed)
+        self.ui.start_line_edit_q.textChanged.connect(self.start_on_text_changed_q)
+        self.ui.end_line_edit_q.textChanged.connect(self.end_on_text_changed_q)
 
     def start_on_text_changed(self):
         self.ui.start_line_edit.setValidator(self.validate_input(self.ui.start_line_edit))
-        #self.ui.start_line_edit.setStyleSheet("QLineEdit { border: red }")
         self.ui.error_label.setText("")
 
     def end_on_text_changed(self):
         self.ui.end_line_edit.setValidator(self.validate_input(self.ui.end_line_edit))
         self.ui.error_label.setText("")
+
+    def start_on_text_changed_q(self):
+        self.ui.start_line_edit_q.setValidator(self.validate_input(self.ui.start_line_edit_q))
+        self.ui.error_label.setText("")
+
+    def end_on_text_changed_q(self):
+        self.ui.end_line_edit_q.setValidator(self.validate_input(self.ui.end_line_edit_q))
+        self.ui.error_label.setText("")
     
     def validate_input(self, to_validate):
         # use QIntValidator
+        # might need more validation here?
         return QIntValidator(to_validate)
 
-    def get_current_start(self):
+    def get_current_i_start(self):
         start = None
         str_value = str(self.ui.start_line_edit.text())
         if str_value:
             start = int(str_value)
         return start
 
-    def get_current_end(self):
+    def get_current_i_end(self):
         end = None
         str_value = str(self.ui.end_line_edit.text())
         if str_value:
             end = int(str_value)
         return end
+
+    def get_current_q_start(self):
+        start = None
+        str_value = str(self.ui.start_line_edit_q.text())
+        if str_value:
+            start = int(str_value)
+        return start
+
+    def get_current_q_end(self):
+        end = None
+        str_value = str(self.ui.end_line_edit_q.text())
+        if str_value:
+            end = int(str_value)
+        return end
     
-    def get_pv_size(self):
+    def get_i_pv_size(self):
         size = None
-        str_size = str(self.ui.get_pv_size_label.text())
+        str_size = str(self.ui.get_pv_size_i.text())
+        logger.info('size-----: {}'.format(str_size))
         if str_size:
             size =  int(str_size)
-            self.pv_size = size
+            logger.info("Pv window size: {}".format(size))
+        return size
+    
+    def get_q_pv_size(self):
+        size = None
+        str_size = str(self.ui.get_pv_size_q.text())
+        logger.info('size-----: {}'.format(str_size))
+        if str_size:
+            size =  int(str_size)
             logger.info("Pv window size: {}".format(size))
         return size
 
-    def window_selection_changed(self):
-        index = self.ui.window_select_cb.currentIndex()
-        text_label = self.pv_combo_box_selection[index]
-        self.ui.display_pv_label.setText("Current PV: {}".format(text_label))
-        self.ui.average_window_wf.clear()
-
     def plot_data(self):
-        start = self.get_current_start()
-        end = self.get_current_end()
+        i_start = self.get_current_i_start()
+        i_end = self.get_current_i_end()
+        i_size = self.get_i_pv_size()
+        i_size = 4096
+
+        logger.info('I start: {}, end: {}'.format(i_start, i_end))
+
+        q_start = self.get_current_q_start()
+        q_end = self.get_current_q_end()
+        q_size = self.get_q_pv_size()
+        q_size = 4096
+
+        logger.info('Q start: {}, end: {}'.format(q_start, q_end))
+
         self.ui.average_window_wf.clear()
 
-        pen = pg.mkPen(color=(153,255,153))
+        i_pen = pg.mkPen(color=(255,85,127))
+        q_pen = pg.mkPen(color=(85,0,255))
 
-        if end and start:
-            self.win = [0]*start + [1]*(end - start) + [0]*(self.pv_size - end)
-            self.ui.average_window_wf.plot(self.win, pen=pen)
+        if i_end and i_start and i_size:
+            if (i_start >= i_end) or (i_end >= i_size):
+                self.ui.error_label.setText(
+                    "Not a valid window size."
+                    "Please make sure the start < end, or end < pv_size"
+                     )
+            else:
+                self.i_win = [0]*i_start + [1]*(i_end - i_start) + [0]*(i_size - i_end)
+                self.ui.average_window_wf.plot(self.i_win, pen=i_pen)
         else:
-            self.ui.error_label.setText("You must define start and end values..")
+            self.ui.error_label.setText("You must define start and end values for I..")
 
-    def write_to_pv(self, checked):
-        write_message = QMessageBox.question(
-            self, ' Writing PV?', 'Write to PV?',
-            QMessageBox.Yes | QMessageBox.No)
-        if write_message == QMessageBox.Yes:
-            self.write()
+        if q_end and q_start and q_size:
+            if (q_start >= q_end) or (q_end >= q_size):
+                self.ui.error_label.setText(
+                    "Not a valid window size."
+                    "Please make sure the start < end, or end < pv_size"
+                     )
+            else:
+                self.q_win = [0]*q_start + [1]*(q_end - q_start) + [0]*(q_size - q_end)
+                self.ui.average_window_wf.plot(self.q_win, pen=q_pen)
         else:
-            pass
+            self.ui.error_label.setText("You must define start and end values for Q..")
+
+    def write_to_pv(self, n):
+        # n == 0 -> real pv
+        if n == 0:
+            write_message = QMessageBox.question(
+                self, ' Writing I PV?', 'Write to I PV?',
+                QMessageBox.Yes | QMessageBox.No)
+            if write_message == QMessageBox.Yes:
+                self.write_i_pv()
+            else:
+                pass
+        # n == 1 -> imm pv
+        elif n == 1:
+            write_message = QMessageBox.question(
+                self, ' Writing Q PV?', 'Write to Q PV?',
+                QMessageBox.Yes | QMessageBox.No)
+            if write_message == QMessageBox.Yes:
+                self.write_q_pv()
+            else:
+                pass
     
-    def write(self):
+    def write_i_pv(self):
+        if self._i_pv and self.i_win:
+            self.ui.real_button.channel = self._i_pv
+            i_wave = np.array(self.i_win)
+            logger.info('I ARRAY: {}'.format(i_wave))
+            #self.real_button.releaseValue = i_wave
+            self.ui.real_button.send_value_signal[np.ndarray].emit(i_wave)
+        else:
+            self.ui.error_label.setText("You must define a window first.")
+        logger.info("Writing to PV.....")
+
+    def write_q_pv(self):
+        if self._q_pv and self.q_win:
+            self.imm_button.channel = self._q_pv
+            q_wave = np.array(self.q_win)
+            logger.info('Q ARRAY: {}'.format(q_wave))
+            #self.imm_button.releaseValue = q_wave
+            self.ui.imm_button.send_value_signal[np.ndarray].emit(q_wave)
+        else:
+            self.ui.error_label.setText("You must define a window first.")
         logger.info("Writing to PV.....")
 
 
@@ -194,17 +274,29 @@ class AverageWindow(Display):
         return 'define_average_window.ui'
 
 
-class WaveformButton(PyDMPushButton):
-    """
-    Button to allow sending a ndarray to a PV
-    """
-    @property
-    def pressValue(self):
-        return self._pressValue
+# class WaveformButton(PyDMPushButton):
+#     """
+#     Button to allow sending a ndarray to a PV
+#     """
+#     @property
+#     def pressValue(self):
+#         return self._pressValue
 
-    @pressValue.setter
-    def pressValue(self, value):
-        self._pressValue = value
+#     @pressValue.setter
+#     def pressValue(self, value):
+#         self._pressValue = value
+    
+#     @property
+#     def releaseValue(self):
+#         return self._releaseValue
 
-    def sendValue(self):
-        self.send_value_signal[np.ndarray].emit(self.pressValue)
+#     @releaseValue.setter
+#     def releaseValue(self, value):
+#         self._releaseValue = value
+
+#     def sendValue(self):
+#         self.send_value_signal[np.ndarray].emit(self.releaseValue)
+
+   # def button_released():
+   #     my_button.send_value_signal[np.ndarray].emit(self.releaseValue)
+
