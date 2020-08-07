@@ -14,30 +14,7 @@
    <string>Define Average Window - ${DEVICE}</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QPushButton {
-    background-color: rgb(136,157,162);
-    border-color: rgb(212,228,233) rgb(50,88,100) rgb(50,88,100) rgb(212,228,233);
-    border-style: outset;
-    border-radius: 1px;
-    border-width: 2px; 
-    padding: 4px;
-}
-QPushButton:hover {
-   background-color: rgb(106,127,132);
-}
-QPushButton:pressed {
-    background-color: rgb(208,229,232);
-    border-style: inset;
-    border-width: 2px;
-	border-color: rgb(50,88,100) rgb(212,228,233) rgb(212,228,233) rgb(50,88,100);
-}
-QPushButton:checked{
-    background-color: rgb(208,229,232);
-    border-style: inset;
-    border-width: 2px;
-	border-color:  rgb(112,134,142) rgb(229,233,235) rgb(239,233,235) rgb(112,134,142);
-}
-QLineEdit {
+   <string notr="true">QLineEdit {
   background-color: rgb(218,223,230);
   border-color: rgb(66,77,96);
   border-style: inset;
@@ -246,6 +223,31 @@ PyDMLabel {
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(136,157,162);
+    border-color: rgb(212,228,233) rgb(50,88,100) rgb(50,88,100) rgb(212,228,233);
+    border-style: outset;
+    border-radius: 1px;
+    border-width: 2px; 
+    padding: 4px;
+}
+QPushButton:hover {
+   background-color: rgb(106,127,132);
+}
+QPushButton:pressed {
+    background-color: rgb(208,229,232);
+    border-style: inset;
+    border-width: 2px;
+	border-color: rgb(50,88,100) rgb(212,228,233) rgb(212,228,233) rgb(50,88,100);
+}
+QPushButton:checked{
+    background-color: rgb(208,229,232);
+    border-style: inset;
+    border-width: 2px;
+	border-color:  rgb(112,134,142) rgb(229,233,235) rgb(239,233,235) rgb(112,134,142);
+}</string>
        </property>
        <property name="text">
         <string>Draw Windows</string>

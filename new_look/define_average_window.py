@@ -92,8 +92,58 @@ class AverageWindow(Display):
     def waveform_buttons_setup(self):
         self.real_button = PyDMPushButton()
         self.imm_button = PyDMPushButton()
-        self.real_button.setStyleSheet("background-color: #bc5f6a")
-        self.imm_button.setStyleSheet("background-color: #bc5f6a")
+
+        self.real_button.setStyleSheet("""
+            QPushButton
+            {
+                background-color: #FF7596;
+                border-color:
+                rgb(225,185,202) rgb(176,0,42) rgb(176,0,42) rgb(255,185,202);
+                border-style: outset;
+                border-radius: 1px;
+                border-width: 2px;
+                padding: 4px;
+                color: black;
+            }
+            QPushButton:hover
+            {
+                background-color: rgb(204,0,49);
+            }
+            QPushButton:pressed
+            {
+                background-color: rgb(225,185,202)
+                border-style: inset;
+                border-width: 2px;
+                border-color:
+                rgb(176,0,42) rgb(225,185,202) rgb(225,185,202) rgb(176,0,42);
+            }
+            """)
+        self.imm_button.setStyleSheet("""
+            QPushButton
+            {
+                background-color: #732DFF;
+                border-color:
+                rgb(224,209,255) rgb(37,0,112) rgb(37,0,112) rgb(224,209,255);
+                border-style: outset;
+                border-radius: 1px;
+                border-width: 2px;
+                padding: 4px;
+                color: black;
+            }
+            QPushButton:hover
+            {
+                background-color: rgb(77,0,230);
+            }
+            QPushButton:pressed
+            {
+                background-color: rgb(224,209,255)
+                border-style: inset;
+                border-width: 2px;
+                border-color:
+                rgb(37,0,112) rgb(224,209,255) rgb(224,209,255) rgb(37,0,112);
+            }
+            """)
+
         self.real_button.setText("Write I PV")
         self.imm_button.setText("Write Q PV")
         self.ui.button_layout.addWidget(self.real_button)
@@ -249,8 +299,8 @@ class AverageWindow(Display):
         if i_is_valid:
             if (i_start >= i_end and not is_i_zeros) or (i_end >= i_size):
                 self.ui.error_label.setText(
-                    "Not a valid I window size. "
-                    "Please make sure the start < end, or end < pv_size"
+                    "Not a valid I window size. Please make sure"
+                    " the start < end, or end < pv_size, or both zeros"
                      )
             else:
                 # set all the q_start spaces with 0s
@@ -263,8 +313,8 @@ class AverageWindow(Display):
         if q_is_valid:
             if (q_start >= q_end and not is_q_zeros) or (q_end >= q_size):
                 self.ui.error_label.setText(
-                    "Not a valid Q window size."
-                    "Please make sure the start < end, or end < pv_size"
+                    "Not a valid Q window size. Please make sure "
+                    " the start < end, or end < pv_size, or both zeros"
                      )
             else:
                 # set all the q_start spaces with 0s
