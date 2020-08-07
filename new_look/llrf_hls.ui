@@ -347,6 +347,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                <string>{&quot;N&quot;:&quot;1&quot;}</string>
               </stringlist>
              </property>
+             <property name="openInNewWindow" stdset="0">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
           </layout>
@@ -504,6 +507,9 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               <stringlist>
                <string>{&quot;N&quot;:&quot;2&quot;}</string>
               </stringlist>
+             </property>
+             <property name="openInNewWindow" stdset="0">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
