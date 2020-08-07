@@ -107,7 +107,7 @@ class AverageWindow(Display):
             }
             QPushButton:hover
             {
-                background-color: rgb(204,0,49);
+                background-color: rgb(255,87,127);
             }
             QPushButton:pressed
             {
