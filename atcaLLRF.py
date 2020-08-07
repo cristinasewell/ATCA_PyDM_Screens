@@ -1,5 +1,4 @@
 from pydm import Display
-from os import path
 import json
 import logging
 import sys
@@ -18,10 +17,12 @@ class Scope(Display):
         self.setup_curve_selection_mode()
 
         try:
-            device = self._macros["DEVICE"]
+            self._macros["DEVICE"]
         except:
-             logger.error("Please provide a valid macro for the IOC - ex: 'DEVICE=MY_IOC' ")
-             sys.exit(1)
+            logger.error(
+                "Please provide a valid macro "
+                "for the IOC, ex: 'DEVICE=MY_IOC'")
+            sys.exit(1)
 
     def define_curves(self):
         try:
@@ -50,7 +51,8 @@ class Scope(Display):
 
                     self._curves[b_i] = bay_data
         except:
-            logger.error("You need to define a DEVICE macro ioc  - ex: -m 'DEVICE=MY_IOC' ")
+            logger.error(
+                "You need to define a DEVICE macro, ex: -m 'DEVICE=MY_IOC' ")
             sys.exit(1)
 
     def handle_show_curve_bay0(self):
@@ -108,18 +110,28 @@ class Scope(Display):
                     ch = json.dumps(curve)
                     b1_curves.append(ch)
             self.waveformPlotBay1.setCurves(b1_curves)
-    
+
     def setup_curve_selection_mode(self):
-        self.waveform0Ch0.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
-        self.waveform0Ch1.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
-        self.waveform0Ch2.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
-        self.waveform0Ch3.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
-        self.waveform1Ch0.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
-        self.waveform1Ch1.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
-        self.waveform1Ch2.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
-        self.waveform1Ch3.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
-        self.waveformPlotBay0.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
-        self.waveformPlotBay1.plotItem.getViewBox().setMouseMode(pg.ViewBox.RectMode)
+        self.waveform0Ch0.plotItem.getViewBox().setMouseMode(
+            pg.ViewBox.RectMode)
+        self.waveform0Ch1.plotItem.getViewBox().setMouseMode(
+            pg.ViewBox.RectMode)
+        self.waveform0Ch2.plotItem.getViewBox().setMouseMode(
+            pg.ViewBox.RectMode)
+        self.waveform0Ch3.plotItem.getViewBox().setMouseMode(
+            pg.ViewBox.RectMode)
+        self.waveform1Ch0.plotItem.getViewBox().setMouseMode(
+            pg.ViewBox.RectMode)
+        self.waveform1Ch1.plotItem.getViewBox().setMouseMode(
+            pg.ViewBox.RectMode)
+        self.waveform1Ch2.plotItem.getViewBox().setMouseMode(
+            pg.ViewBox.RectMode)
+        self.waveform1Ch3.plotItem.getViewBox().setMouseMode(
+            pg.ViewBox.RectMode)
+        self.waveformPlotBay0.plotItem.getViewBox().setMouseMode(
+            pg.ViewBox.RectMode)
+        self.waveformPlotBay1.plotItem.getViewBox().setMouseMode(
+            pg.ViewBox.RectMode)
 
     def setup_ui(self):
         # bay 0
@@ -139,4 +151,4 @@ class Scope(Display):
         self.ui.bay1Mode1_rb.clicked.connect(self.handle_show_curve_bay1)
 
     def ui_filename(self):
-        return 'scope.ui'
+        return 'atcaLLRF.ui'

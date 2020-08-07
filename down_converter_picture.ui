@@ -6,30 +6,30 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1202</width>
-    <height>348</height>
+    <width>499</width>
+    <height>163</height>
    </rect>
   </property>
-  <property name="sizePolicy">
-   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-    <horstretch>0</horstretch>
-    <verstretch>0</verstretch>
-   </sizepolicy>
-  </property>
   <property name="windowTitle">
-   <string>Front Panel Up Converter</string>
+   <string>Front Panel Down Converter - ${DEVICE}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="sizeConstraint">
-    <enum>QLayout::SetMaximumSize</enum>
+    <enum>QLayout::SetFixedSize</enum>
    </property>
    <item>
     <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
      <property name="filename" stdset="0">
-      <string>docs/_static/up_converter.PNG</string>
+      <string>docs/_static/down_converter.PNG</string>
      </property>
     </widget>
    </item>
