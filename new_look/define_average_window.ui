@@ -134,6 +134,28 @@ PyDMLabel {
        <property name="showRightAxis">
         <bool>true</bool>
        </property>
+       <property name="title" stdset="0">
+        <string>I/Q windows preview</string>
+       </property>
+       <property name="xLabels">
+        <stringlist>
+         <string>Time</string>
+        </stringlist>
+       </property>
+       <property name="yLabels">
+        <stringlist>
+         <string>Amplitude</string>
+        </stringlist>
+       </property>
+       <property name="showLegend">
+        <bool>true</bool>
+       </property>
+       <property name="curves">
+        <stringlist>
+         <string>{&quot;y_channel&quot;: null, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;I&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+         <string>{&quot;y_channel&quot;: null, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;Q&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+        </stringlist>
+       </property>
       </widget>
      </item>
      <item row="1" column="2">
