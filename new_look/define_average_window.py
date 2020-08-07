@@ -300,7 +300,7 @@ class AverageWindow(Display):
             if (i_start >= i_end and not is_i_zeros) or (i_end >= i_size):
                 self.ui.error_label.setText(
                     "Not a valid I window size. Please make sure"
-                    " the start < end, or end < pv_size, or both zeros"
+                    " the start < end, and end < pv_size, or both zeros"
                      )
             else:
                 # set all the q_start spaces with 0s
@@ -314,7 +314,7 @@ class AverageWindow(Display):
             if (q_start >= q_end and not is_q_zeros) or (q_end >= q_size):
                 self.ui.error_label.setText(
                     "Not a valid Q window size. Please make sure "
-                    " the start < end, or end < pv_size, or both zeros"
+                    " the start < end, and end < pv_size, or both zeros"
                      )
             else:
                 # set all the q_start spaces with 0s
@@ -326,8 +326,7 @@ class AverageWindow(Display):
 
         if not (i_is_valid or q_is_valid):
             self.ui.error_label.setText(
-                "You must define start & end values"
-                " and you need a PV Window Size")
+                "You must define start & end values")
 
     def write_to_pv(self, n):
         # n == 0 -> real pv
