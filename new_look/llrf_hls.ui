@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1265</width>
-    <height>722</height>
+    <width>1600</width>
+    <height>850</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -192,8 +192,8 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1253</width>
-        <height>710</height>
+        <width>1588</width>
+        <height>838</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_8">
