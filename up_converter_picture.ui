@@ -38,7 +38,7 @@
       <string/>
      </property>
      <property name="filename" stdset="0">
-      <string>../docs/_static/up_converter.PNG</string>
+      <string>docs/_static/up_converter.PNG</string>
      </property>
      <property name="aspectRatioMode" stdset="0">
       <enum>Qt::KeepAspectRatio</enum>
@@ -57,7 +57,7 @@
       <string/>
      </property>
      <property name="filename" stdset="0">
-      <string>../docs/_static/gen2_upconverter.png</string>
+      <string>docs/_static/gen2_upconverter.png</string>
      </property>
     </widget>
    </item>
