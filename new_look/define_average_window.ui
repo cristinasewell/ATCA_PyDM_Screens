@@ -42,21 +42,6 @@ PyDMLabel {
      <property name="bottomMargin">
       <number>10</number>
      </property>
-     <item row="8" column="1" colspan="3">
-      <widget class="QLabel" name="error_label">
-       <property name="font">
-        <font>
-         <italic>true</italic>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{color: red;}</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
      <item row="1" column="1">
       <widget class="QLabel" name="start_label">
        <property name="font">
@@ -321,6 +306,24 @@ QPushButton:checked{
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="5">
+      <widget class="QLabel" name="error_label">
+       <property name="font">
+        <font>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{color: red;}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
