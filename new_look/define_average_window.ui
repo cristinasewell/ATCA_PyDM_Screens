@@ -42,6 +42,87 @@ PyDMLabel {
      <property name="bottomMargin">
       <number>0</number>
      </property>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="start_line_edit">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="placeholderText">
+        <string>Enter start value</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Write to PV: </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="PyDMLabel" name="get_pv_size_i">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:ICPXWND${N}.NELM</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="stop_label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>End</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="start_line_edit_q">
+       <property name="placeholderText">
+        <string>Enter start value </string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1" colspan="3">
+      <layout class="QHBoxLayout" name="button_layout"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Size</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
      <item row="1" column="1">
       <widget class="QLabel" name="start_label">
        <property name="font">
@@ -58,55 +139,33 @@ PyDMLabel {
        </property>
       </widget>
      </item>
-     <item row="3" column="1">
-      <widget class="QLineEdit" name="start_line_edit">
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="end_line_edit">
        <property name="styleSheet">
         <string notr="true"/>
        </property>
        <property name="placeholderText">
-        <string>Enter start value</string>
+        <string>Enter end value</string>
        </property>
       </widget>
      </item>
-     <item row="10" column="0">
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
+     <item row="4" column="3">
+      <widget class="PyDMLabel" name="get_pv_size_q">
+       <property name="toolTip">
+        <string/>
        </property>
        <property name="text">
-        <string>Write to PV: </string>
+        <string/>
        </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:QCPXWND${N}.NELM</string>
        </property>
       </widget>
      </item>
-     <item row="4" column="1">
-      <widget class="QLineEdit" name="start_line_edit_q">
+     <item row="4" column="2">
+      <widget class="QLineEdit" name="end_line_edit_q">
        <property name="placeholderText">
-        <string>Enter start value </string>
-       </property>
-      </widget>
-     </item>
-     <item row="10" column="1" colspan="3">
-      <layout class="QHBoxLayout" name="button_layout"/>
-     </item>
-     <item row="1" column="2">
-      <widget class="QLabel" name="stop_label">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>End</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
+        <string>Enter end value </string>
        </property>
       </widget>
      </item>
@@ -126,120 +185,7 @@ PyDMLabel {
        </property>
       </widget>
      </item>
-     <item row="1" column="3">
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Size</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="2">
-      <widget class="QLineEdit" name="end_line_edit_q">
-       <property name="placeholderText">
-        <string>Enter end value </string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="3">
-      <widget class="PyDMLabel" name="get_pv_size_i">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:ICPXWND${N}.NELM</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="3">
-      <widget class="PyDMLabel" name="get_pv_size_q">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:QCPXWND${N}.NELM</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>I Window</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="2">
-      <widget class="QLineEdit" name="end_line_edit">
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="placeholderText">
-        <string>Enter end value</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="4" rowspan="2">
-      <widget class="QPushButton" name="draw_window_pb">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
-    background-color: rgb(136,157,162);
-    border-color: rgb(212,228,233) rgb(50,88,100) rgb(50,88,100) rgb(212,228,233);
-    border-style: outset;
-    border-radius: 1px;
-    border-width: 2px; 
-    padding: 4px;
-}
-QPushButton:hover {
-   background-color: rgb(106,127,132);
-}
-QPushButton:pressed {
-    background-color: rgb(208,229,232);
-    border-style: inset;
-    border-width: 2px;
-	border-color: rgb(50,88,100) rgb(212,228,233) rgb(212,228,233) rgb(50,88,100);
-}
-QPushButton:checked{
-    background-color: rgb(208,229,232);
-    border-style: inset;
-    border-width: 2px;
-	border-color:  rgb(112,134,142) rgb(229,233,235) rgb(239,233,235) rgb(112,134,142);
-}</string>
-       </property>
-       <property name="text">
-        <string>Draw Windows</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="0" colspan="5">
+     <item row="8" column="0" colspan="5">
       <widget class="PyDMWaveformPlot" name="average_window_wf">
        <property name="minimumSize">
         <size>
@@ -290,6 +236,60 @@ QPushButton:checked{
        </property>
       </widget>
      </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>I Window</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4" rowspan="2">
+      <widget class="QPushButton" name="draw_window_pb">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(136,157,162);
+    border-color: rgb(212,228,233) rgb(50,88,100) rgb(50,88,100) rgb(212,228,233);
+    border-style: outset;
+    border-radius: 1px;
+    border-width: 2px; 
+    padding: 4px;
+}
+QPushButton:hover {
+   background-color: rgb(106,127,132);
+}
+QPushButton:pressed {
+    background-color: rgb(208,229,232);
+    border-style: inset;
+    border-width: 2px;
+	border-color: rgb(50,88,100) rgb(212,228,233) rgb(212,228,233) rgb(50,88,100);
+}
+QPushButton:checked{
+    background-color: rgb(208,229,232);
+    border-style: inset;
+    border-width: 2px;
+	border-color:  rgb(112,134,142) rgb(229,233,235) rgb(239,233,235) rgb(112,134,142);
+}</string>
+       </property>
+       <property name="text">
+        <string>Draw Windows</string>
+       </property>
+      </widget>
+     </item>
      <item row="0" column="0" colspan="5">
       <widget class="QLabel" name="display_pv_label">
        <property name="font">
@@ -306,36 +306,6 @@ QPushButton:checked{
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="0" colspan="5">
-      <widget class="QLabel" name="error_label">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <italic>true</italic>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{color: red;}</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
        </property>
       </widget>
      </item>

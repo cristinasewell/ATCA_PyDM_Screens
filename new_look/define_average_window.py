@@ -74,8 +74,10 @@ class AverageWindow(Display):
                             }
                     self._curves[i_q] = curves
         except:
-            self.ui.error_label.setText(
-                "Something went wrong with the macro??...")
+            QMessageBox.critical(self,
+                "Error",
+                "Something went wrong with the macro??..."
+                )
             logger.error(
                 "You need to define a DEVICE macro ioc (-m 'DEVICE=MY_IOC')")
 
@@ -174,22 +176,18 @@ class AverageWindow(Display):
     def start_on_text_changed(self):
         self.ui.start_line_edit.setValidator(
             self.validate_input(self.ui.start_line_edit))
-        self.ui.error_label.setText("")
 
     def end_on_text_changed(self):
         self.ui.end_line_edit.setValidator(
             self.validate_input(self.ui.end_line_edit))
-        self.ui.error_label.setText("")
 
     def start_on_text_changed_q(self):
         self.ui.start_line_edit_q.setValidator(
             self.validate_input(self.ui.start_line_edit_q))
-        self.ui.error_label.setText("")
 
     def end_on_text_changed_q(self):
         self.ui.end_line_edit_q.setValidator(
             self.validate_input(self.ui.end_line_edit_q))
-        self.ui.error_label.setText("")
 
     def validate_input(self, to_validate):
         # use QIntValidator
@@ -298,7 +296,8 @@ class AverageWindow(Display):
 
         if i_is_valid:
             if (i_start >= i_end and not is_i_zeros) or (i_end >= i_size):
-                self.ui.error_label.setText(
+                QMessageBox.critical(self,
+                    "Invalid Window Dimensions",
                     "Not a valid I window size. Please make sure"
                     " the start < end, and end < pv_size, or both zeros"
                      )
@@ -312,9 +311,10 @@ class AverageWindow(Display):
 
         if q_is_valid:
             if (q_start >= q_end and not is_q_zeros) or (q_end >= q_size):
-                self.ui.error_label.setText(
+                QMessageBox.critical(self,
+                    "Invalid Window Dimensions",
                     "Not a valid Q window size. Please make sure "
-                    " the start < end, and end < pv_size, or both zeros"
+                    "the start < end, and end < pv_size, or both zeros"
                      )
             else:
                 # set all the q_start spaces with 0s
@@ -325,8 +325,10 @@ class AverageWindow(Display):
                 self.ui.average_window_wf.plot(self.q_win, pen=q_pen)
 
         if not (i_is_valid or q_is_valid):
-            self.ui.error_label.setText(
-                "You must define start & end values")
+            QMessageBox.critical(self,
+                "Invalid Window Dimensions",
+                "You must define start & end values"
+                )
 
     def write_to_pv(self, n):
         # n == 0 -> real pv
@@ -355,7 +357,10 @@ class AverageWindow(Display):
             # self.real_button.releaseValue = i_wave
             self.ui.real_button.send_value_signal[np.ndarray].emit(i_wave)
         else:
-            self.ui.error_label.setText("You must define a window first.")
+            QMessageBox.critical(self,
+                "Invalid Window Dimensions",
+                "You must define a window first."
+                )
         logger.debug("Writing to PV.....")
 
     def write_q_pv(self):
@@ -365,7 +370,10 @@ class AverageWindow(Display):
             # self.imm_button.releaseValue = q_wave
             self.ui.imm_button.send_value_signal[np.ndarray].emit(q_wave)
         else:
-            self.ui.error_label.setText("You must define a window first.")
+            QMessageBox.critical(self,
+                "Invalid Window Dimensions",
+                "You must define a window first."
+                )
         logger.debug("Writing to PV.....")
 
     def ui_filename(self):
