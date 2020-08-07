@@ -6,46 +6,140 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>549</width>
-    <height>368</height>
+    <width>636</width>
+    <height>440</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>IQ Waveform - ${DEVICE}</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+   <property name="spacing">
+    <number>6</number>
+   </property>
+   <property name="leftMargin">
+    <number>6</number>
+   </property>
+   <property name="topMargin">
+    <number>6</number>
+   </property>
+   <property name="rightMargin">
+    <number>6</number>
+   </property>
+   <property name="bottomMargin">
+    <number>6</number>
+   </property>
    <item>
-    <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot">
-     <property name="toolTip">
-      <string/>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="leftMargin">
+      <number>0</number>
      </property>
-     <property name="showXGrid">
-      <bool>true</bool>
+     <property name="topMargin">
+      <number>0</number>
      </property>
-     <property name="showYGrid">
-      <bool>true</bool>
+     <property name="rightMargin">
+      <number>0</number>
      </property>
-     <property name="axisColor">
-      <color>
-       <red>222</red>
-       <green>222</green>
-       <blue>222</blue>
-      </color>
+     <property name="bottomMargin">
+      <number>0</number>
      </property>
-     <property name="title" stdset="0">
-      <string>IQ Waveform - CH ${N}</string>
-     </property>
-     <property name="curves">
-      <stringlist>
-       <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:IWF${N}&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-       <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QWF${N}&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-      </stringlist>
-     </property>
-    </widget>
+     <item>
+      <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="showXGrid">
+        <bool>true</bool>
+       </property>
+       <property name="showYGrid">
+        <bool>true</bool>
+       </property>
+       <property name="axisColor">
+        <color>
+         <red>222</red>
+         <green>222</green>
+         <blue>222</blue>
+        </color>
+       </property>
+       <property name="title" stdset="0">
+        <string>IQ Waveform - CH ${N}</string>
+       </property>
+       <property name="curves">
+        <stringlist>
+         <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:IWF${N}&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+         <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QWF${N}&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+        </stringlist>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="PyDMPushButton" name="PyDMPushButton">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>Get waveforms</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:GETIQWF</string>
+         </property>
+         <property name="pressValue" stdset="0">
+          <string>1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </item>
   </layout>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
+  </customwidget>
   <customwidget>
    <class>PyDMWaveformPlot</class>
    <extends>QGraphicsView</extends>
