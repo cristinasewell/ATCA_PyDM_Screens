@@ -111,7 +111,7 @@ class AverageWindow(Display):
             }
             QPushButton:pressed
             {
-                background-color: rgb(225,185,202)
+                background-color: rgb(225,185,202);
                 border-style: inset;
                 border-width: 2px;
                 border-color:
@@ -136,11 +136,11 @@ class AverageWindow(Display):
             }
             QPushButton:pressed
             {
-                background-color: rgb(224,209,255)
+                background-color: rgb(224,209,255);
                 border-style: inset;
                 border-width: 2px;
                 border-color:
-                rgb(37,0,112) rgb(224,209,255) rgb(224,209,255) rgb(37,0,112);
+                rgb(37,0,112) rgb(204,189,235) rgb(204,189,235) rgb(37,0,112);
             }
             """)
 
