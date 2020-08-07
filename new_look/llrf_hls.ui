@@ -245,6 +245,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            </item>
            <item>
             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+             <property name="minimumSize">
+              <size>
+               <width>140</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>140</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <property name="toolTip">
               <string/>
              </property>
@@ -307,6 +319,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            </item>
            <item>
             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
+             <property name="minimumSize">
+              <size>
+               <width>140</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>140</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <property name="toolTip">
               <string/>
              </property>
@@ -453,6 +477,18 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            </item>
            <item>
             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
+             <property name="minimumSize">
+              <size>
+               <width>140</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>140</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <property name="toolTip">
               <string/>
              </property>
