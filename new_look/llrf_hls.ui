@@ -239,7 +239,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <item>
             <widget class="QLabel" name="label_57">
              <property name="text">
-              <string>Complex Window 0</string>
+              <string>Complex Windows 0 - for Feedback</string>
              </property>
             </widget>
            </item>
@@ -301,7 +301,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <item>
             <widget class="QLabel" name="label_58">
              <property name="text">
-              <string>Complex Window 1- for Diagnostics</string>
+              <string>Complex Windows 1- for Diagnostics</string>
              </property>
             </widget>
            </item>
