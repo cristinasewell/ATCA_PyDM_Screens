@@ -222,7 +222,7 @@ PyDMLabel {
         </font>
        </property>
        <property name="text">
-        <string>I WIndow</string>
+        <string>I Window</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
