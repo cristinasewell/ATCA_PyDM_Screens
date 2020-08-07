@@ -213,12 +213,20 @@ class AverageWindow(Display):
         i_start = self.get_current_i_start()
         i_end = self.get_current_i_end()
         i_size = self.get_i_pv_size()
+        i_is_valid = False
+
+        if i_start and i_end and i_size:
+            i_is_valid = True
 
         logger.debug('I start: {}, end: {}'.format(i_start, i_end))
 
         q_start = self.get_current_q_start()
         q_end = self.get_current_q_end()
         q_size = self.get_q_pv_size()
+        q_is_valid = False
+
+        if q_start and q_end and q_size:
+            q_is_valid = True
 
         logger.debug('Q start: {}, end: {}'.format(q_start, q_end))
 
@@ -227,10 +235,10 @@ class AverageWindow(Display):
         i_pen = pg.mkPen(color=(255, 85, 127))
         q_pen = pg.mkPen(color=(85, 0, 255))
 
-        if i_end and i_start and i_size:
+        if i_is_valid:
             if (i_start >= i_end) or (i_end >= i_size):
                 self.ui.error_label.setText(
-                    "Not a valid I window size."
+                    "Not a valid I window size. "
                     "Please make sure the start < end, or end < pv_size"
                      )
             else:
@@ -240,12 +248,8 @@ class AverageWindow(Display):
                 self.i_win = [0]*i_start + [1]*(i_end - i_start) + [0]*(i_size - i_end)
                 self._curve_i = self.i_win
                 self.ui.average_window_wf.plot(self.i_win, pen=i_pen)
-        # else:
-        #     self.ui.error_label.setText(
-        #         "You must define start & end values"
-        #         " and you need a PV Window Size")
 
-        elif q_end and q_start and q_size:
+        if q_is_valid:
             if (q_start >= q_end) or (q_end >= q_size):
                 self.ui.error_label.setText(
                     "Not a valid Q window size."
@@ -258,7 +262,7 @@ class AverageWindow(Display):
                 self.q_win = [0]*q_start + [1]*(q_end - q_start) + [0]*(q_size - q_end)
                 self._curve_q = self.q_win
                 self.ui.average_window_wf.plot(self.q_win, pen=q_pen)
-        else:
+        if not (i_is_valid and q_is_valid):
             self.ui.error_label.setText(
                 "You must define start & end values"
                 " and you need a PV Window Size")
