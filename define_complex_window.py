@@ -383,4 +383,4 @@ class AverageWindow(Display):
         logger.debug("Writing to PV.....")
 
     def ui_filename(self):
-        return 'define_average_window.ui'
+        return 'define_complex_window.ui'

@@ -258,7 +258,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
              </property>
              <property name="filenames" stdset="0">
               <stringlist>
-               <string>define_average_window.py</string>
+               <string>define_complex_window.py</string>
               </stringlist>
              </property>
              <property name="macros" stdset="0">
@@ -332,7 +332,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
              </property>
              <property name="filenames" stdset="0">
               <stringlist>
-               <string>define_average_window.py</string>
+               <string>define_complex_window.py</string>
               </stringlist>
              </property>
              <property name="macros" stdset="0">
@@ -493,7 +493,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
              </property>
              <property name="filenames" stdset="0">
               <stringlist>
-               <string>define_average_window.py</string>
+               <string>define_complex_window.py</string>
               </stringlist>
              </property>
              <property name="macros" stdset="0">
@@ -551,7 +551,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
              </property>
              <property name="filenames" stdset="0">
               <stringlist>
-               <string>define_average_window.py</string>
+               <string>define_complex_window.py</string>
               </stringlist>
              </property>
              <property name="macros" stdset="0">
