@@ -42,10 +42,16 @@ class AverageWindow(Display):
 
     def define_complex_curves(self):
         try:
+            # These 2 macros must always be defined
             device = self._macros['DEVICE']
-            number = self._macros['N']
+            record = self._macros['R']
+            # This macro is optional
+            if 'N' in self._macros.keys():
+                number = self._macros['N']
+            else:
+                number = ''
 
-            if device and number:
+            if device and record:
                 ioc = "ca://{}:".format(device)
 
                 iq = [0, 1]
@@ -55,11 +61,11 @@ class AverageWindow(Display):
                 self._curves = {}
                 for i_q, pv in enumerate(iq):
                     curves = {}
-                    y_channel = "{}{}CPXWND{}".format(
-                        ioc, iq_label[i_q], str(number)
+                    y_channel = "{}{}{}{}".format(
+                        ioc, iq_label[i_q], record, str(number)
                     )
-                    name = "{}CPXWND{}".format(
-                        iq_label[i_q], number)
+                    name = "{}{}{}".format(
+                        iq_label[i_q], record, number)
 
                     curves = {
                             "y_channel": y_channel,
