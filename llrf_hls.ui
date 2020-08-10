@@ -467,7 +467,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <item>
             <widget class="QLabel" name="label_59">
              <property name="text">
-              <string>Complex Windows 2 for Diagnostics</string>
+              <string>Complex Windows 2 - for Diagnostics</string>
              </property>
             </widget>
            </item>

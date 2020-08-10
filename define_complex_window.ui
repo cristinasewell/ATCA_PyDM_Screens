@@ -302,7 +302,7 @@ QPushButton:checked{
         <string notr="true">QLabel{color: #034b61}</string>
        </property>
        <property name="text">
-        <string>Complex Windows ${N}</string>
+        <string>Complex Window ${N}</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
