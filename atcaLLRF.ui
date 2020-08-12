@@ -807,7 +807,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </property>
                  <property name="sizeHint" stdset="0">
                   <size>
-                   <width>40</width>
+                   <width>10</width>
                    <height>20</height>
                   </size>
                  </property>
@@ -1425,7 +1425,7 @@ QPushButton:hover{
                  </property>
                  <property name="sizeHint" stdset="0">
                   <size>
-                   <width>40</width>
+                   <width>10</width>
                    <height>20</height>
                   </size>
                  </property>
