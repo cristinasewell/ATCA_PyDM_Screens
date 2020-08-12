@@ -79,6 +79,22 @@
      </property>
     </widget>
    </item>
+   <item row="5" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEVICE}:UPC_ATTEN2</string>
+     </property>
+    </widget>
+   </item>
    <item row="5" column="2">
     <widget class="PyDMLabel" name="PyDMLabel_4">
      <property name="font">
@@ -154,6 +170,38 @@
      </property>
      <property name="text">
       <string>RF IN 1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_13">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEVICE}:UPC_ATTEN1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_12">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEVICE}:UPC_ATTEN0</string>
      </property>
     </widget>
    </item>
@@ -265,6 +313,22 @@
      </property>
     </widget>
    </item>
+   <item row="4" column="1">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEVICE}:UPC_ATTEN3</string>
+     </property>
+    </widget>
+   </item>
    <item row="4" column="0">
     <widget class="QLabel" name="label_22">
      <property name="font">
@@ -295,82 +359,6 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="1">
-    <widget class="PyDMSpinbox" name="PyDMSpinbox">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="singleStep">
-      <double>0.500000000000000</double>
-     </property>
-     <property name="showUnits" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEVICE}:UPC_ATTEN0</string>
-     </property>
-     <property name="showStepExponent" stdset="0">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="1">
-    <widget class="PyDMSpinbox" name="PyDMSpinbox_2">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="singleStep">
-      <double>0.500000000000000</double>
-     </property>
-     <property name="showUnits" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEVICE}:UPC_ATTEN1</string>
-     </property>
-     <property name="showStepExponent" stdset="0">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="1">
-    <widget class="PyDMSpinbox" name="PyDMSpinbox_3">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="singleStep">
-      <double>0.500000000000000</double>
-     </property>
-     <property name="showUnits" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEVICE}:UPC_ATTEN3</string>
-     </property>
-     <property name="showStepExponent" stdset="0">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="1">
-    <widget class="PyDMSpinbox" name="PyDMSpinbox_4">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="singleStep">
-      <double>0.500000000000000</double>
-     </property>
-     <property name="showUnits" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEVICE}:UPC_ATTEN2</string>
-     </property>
-     <property name="showStepExponent" stdset="0">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </item>
   </layout>
  </widget>
  <customwidgets>
@@ -380,9 +368,9 @@
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMSpinbox</class>
-   <extends>QDoubleSpinBox</extends>
-   <header>pydm.widgets.spinbox</header>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
   </customwidget>
  </customwidgets>
  <resources/>
