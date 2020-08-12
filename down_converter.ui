@@ -50,6 +50,9 @@
      <property name="styleSheet">
       <string notr="true"/>
      </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
      <property name="channel" stdset="0">
       <string>ca://${DEVICE}:DNC_ATTEN3</string>
      </property>
@@ -67,6 +70,9 @@
      </property>
      <property name="styleSheet">
       <string notr="true"/>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${DEVICE}:DNC_ATTEN5</string>
@@ -287,6 +293,9 @@
      <property name="styleSheet">
       <string notr="true"/>
      </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
      <property name="channel" stdset="0">
       <string>ca://${DEVICE}:DNC_ATTEN2</string>
      </property>
@@ -305,6 +314,9 @@
      <property name="styleSheet">
       <string notr="true"/>
      </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
      <property name="channel" stdset="0">
       <string>ca://${DEVICE}:DNC_ATTEN1</string>
      </property>
@@ -322,6 +334,9 @@
      </property>
      <property name="styleSheet">
       <string notr="true"/>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${DEVICE}:DNC_ATTEN4</string>
@@ -367,6 +382,9 @@
      </property>
      <property name="styleSheet">
       <string notr="true"/>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${DEVICE}:DNC_ATTEN0</string>
