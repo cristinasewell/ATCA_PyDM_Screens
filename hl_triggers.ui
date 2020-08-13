@@ -76,7 +76,13 @@
          <property name="minimumSize">
           <size>
            <width>100</width>
-           <height>0</height>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
           </size>
          </property>
          <property name="toolTip">
@@ -95,11 +101,20 @@
          <property name="minimumSize">
           <size>
            <width>100</width>
-           <height>0</height>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
           </size>
          </property>
          <property name="toolTip">
           <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
