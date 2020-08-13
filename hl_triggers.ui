@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Triggers - ${DEVICE}</string>
+   <string>High Level Triggers - ${DEVICE}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -306,7 +306,7 @@
         <enum>QFrame::Box</enum>
        </property>
        <property name="macros" stdset="0">
-        <string>{SYS=&quot;LLRF&quot;}</string>
+        <string>{&quot;SYS&quot;:&quot;LLRF&quot;}</string>
        </property>
        <property name="filename" stdset="0">
         <string>hl_triggers_sys.ui</string>
@@ -322,7 +322,7 @@
         <enum>QFrame::Box</enum>
        </property>
        <property name="macros" stdset="0">
-        <string>{SYS=&quot;MOD&quot;}</string>
+        <string>{&quot;SYS&quot;:&quot;MOD&quot;}</string>
        </property>
        <property name="filename" stdset="0">
         <string>hl_triggers_sys.ui</string>
@@ -338,7 +338,7 @@
         <enum>QFrame::Box</enum>
        </property>
        <property name="macros" stdset="0">
-        <string>{SYS=&quot;RTM&quot;}</string>
+        <string>{&quot;SYS&quot;:&quot;RTM&quot;}</string>
        </property>
        <property name="filename" stdset="0">
         <string>hl_triggers_sys.ui</string>
@@ -354,7 +354,7 @@
         <enum>QFrame::Box</enum>
        </property>
        <property name="macros" stdset="0">
-        <string>{SYS=&quot;SSSB&quot;}</string>
+        <string>{&quot;SYS&quot;:&quot;SSSB&quot;}</string>
        </property>
        <property name="filename" stdset="0">
         <string>hl_triggers_sys.ui</string>
