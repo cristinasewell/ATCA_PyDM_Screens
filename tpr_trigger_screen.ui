@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>694</width>
-    <height>233</height>
+    <width>635</width>
+    <height>201</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -39,62 +39,7 @@
      <property name="verticalSpacing">
       <number>12</number>
      </property>
-     <item row="4" column="4">
-      <widget class="QLabel" name="label_7">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>LCLS2 Delay (nsec)</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="5">
-      <widget class="QLabel" name="label_9">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>LCLS2 Width (nsec)</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="5">
-      <widget class="QLabel" name="label_8">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>LCLS1 Width (nsec)</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="5">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>1</horstretch>
-         <verstretch>1</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS0_TWID</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="3">
+     <item row="3" column="3">
       <widget class="QLabel" name="label_3">
        <property name="font">
         <font>
@@ -105,39 +50,13 @@
        <property name="text">
         <string>LCLS2</string>
        </property>
-      </widget>
-     </item>
-     <item row="0" column="4">
-      <widget class="QLabel" name="label_6">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>LCLS1 Delay (nsec)</string>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
        </property>
       </widget>
      </item>
-     <item row="2" column="4">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>1</horstretch>
-         <verstretch>1</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS0_TDES</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="3">
-      <widget class="PyDMEnumButton" name="PyDMEnumButton">
+     <item row="4" column="3">
+      <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -157,7 +76,7 @@
         <string notr="true">QPushButton{font: 8px;}</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS0_TCTL </string>
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}</string>
        </property>
        <property name="orientation" stdset="0">
         <enum>Qt::Horizontal</enum>
@@ -182,44 +101,8 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-         <horstretch>1</horstretch>
-         <verstretch>1</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SOURCE</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="4">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS2_TDES</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_TPOL</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="3">
-      <widget class="QLabel" name="label_2">
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_5">
        <property name="font">
         <font>
          <weight>75</weight>
@@ -227,11 +110,30 @@
         </font>
        </property>
        <property name="text">
-        <string>LCLS1</string>
+        <string>Polarity</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
      </item>
-     <item row="2" column="0">
+     <item row="3" column="5">
+      <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>LCLS2 Width (nsec)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
       <widget class="QLabel" name="label_4">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -253,7 +155,97 @@
        </property>
       </widget>
      </item>
-     <item row="5" column="5">
+     <item row="3" column="4">
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>LCLS2 Delay (nsec)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SOURCE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>LCLS1 Delay (nsec)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS0_TWID</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS2_TDES</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>LCLS1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="5">
       <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
        <property name="toolTip">
         <string/>
@@ -263,7 +255,7 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="2">
+     <item row="1" column="2">
       <spacer name="horizontalSpacer_2">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -276,21 +268,24 @@
        </property>
       </spacer>
      </item>
-     <item row="3" column="3">
-      <spacer name="horizontalSpacer">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+     <item row="1" column="4">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
        </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
+       <property name="toolTip">
+        <string/>
        </property>
-      </spacer>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS0_TDES</string>
+       </property>
+      </widget>
      </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="label_5">
+     <item row="0" column="5">
+      <widget class="QLabel" name="label_8">
        <property name="font">
         <font>
          <weight>75</weight>
@@ -298,15 +293,25 @@
         </font>
        </property>
        <property name="text">
-        <string>Polarity</string>
+        <string>LCLS1 Width (nsec)</string>
        </property>
        <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
        </property>
       </widget>
      </item>
-     <item row="5" column="3">
-      <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
+     <item row="4" column="1">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_TPOL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="PyDMEnumButton" name="PyDMEnumButton">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -326,7 +331,7 @@
         <string notr="true">QPushButton{font: 8px;}</string>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}</string>
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG${NN}_SYS0_TCTL </string>
        </property>
        <property name="orientation" stdset="0">
         <enum>Qt::Horizontal</enum>
