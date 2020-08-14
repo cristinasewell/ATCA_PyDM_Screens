@@ -76,9 +76,6 @@
        </property>
        <item>
         <widget class="QFrame" name="frame_3">
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
          <property name="frameShape">
           <enum>QFrame::WinPanel</enum>
          </property>
@@ -110,11 +107,6 @@
             </property>
             <property name="toolTip">
              <string/>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">PyDMLabel {
-  background-color: rgb(229,229,231);
-}</string>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -680,7 +672,7 @@
                  </property>
                  <property name="sizeHint" stdset="0">
                   <size>
-                   <width>40</width>
+                   <width>10</width>
                    <height>20</height>
                   </size>
                  </property>
@@ -1298,7 +1290,7 @@ QPushButton:hover{
                  </property>
                  <property name="sizeHint" stdset="0">
                   <size>
-                   <width>40</width>
+                   <width>10</width>
                    <height>20</height>
                   </size>
                  </property>
@@ -1942,11 +1934,6 @@ QPushButton:hover{
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMPushButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.pushbutton</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMWaveformPlot</class>
    <extends>QGraphicsView</extends>
    <header>pydm.widgets.waveformplot</header>
@@ -1960,6 +1947,11 @@ QPushButton:hover{
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>

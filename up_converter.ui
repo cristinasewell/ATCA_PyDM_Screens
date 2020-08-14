@@ -7,26 +7,8 @@
     <x>0</x>
     <y>0</y>
     <width>283</width>
-    <height>171</height>
+    <height>186</height>
    </rect>
-  </property>
-  <property name="sizePolicy">
-   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-    <horstretch>0</horstretch>
-    <verstretch>0</verstretch>
-   </sizepolicy>
-  </property>
-  <property name="minimumSize">
-   <size>
-    <width>0</width>
-    <height>0</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>581</width>
-    <height>700</height>
-   </size>
   </property>
   <property name="font">
    <font>
@@ -35,9 +17,6 @@
   </property>
   <property name="windowTitle">
    <string>Up Converter - ${DEVICE}</string>
-  </property>
-  <property name="styleSheet">
-   <string notr="true"/>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
@@ -81,11 +60,19 @@
    </item>
    <item row="5" column="1">
     <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
      <property name="styleSheet">
       <string notr="true"/>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${DEVICE}:UPC_ATTEN2</string>
@@ -172,11 +159,19 @@
    </item>
    <item row="3" column="1">
     <widget class="PyDMLineEdit" name="PyDMLineEdit_13">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
      <property name="styleSheet">
       <string notr="true"/>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${DEVICE}:UPC_ATTEN1</string>
@@ -185,11 +180,19 @@
    </item>
    <item row="2" column="1">
     <widget class="PyDMLineEdit" name="PyDMLineEdit_12">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
      <property name="styleSheet">
       <string notr="true"/>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${DEVICE}:UPC_ATTEN0</string>
@@ -306,11 +309,19 @@
    </item>
    <item row="4" column="1">
     <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
      <property name="styleSheet">
       <string notr="true"/>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${DEVICE}:UPC_ATTEN3</string>
