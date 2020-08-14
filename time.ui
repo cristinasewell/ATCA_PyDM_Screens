@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>619</width>
-    <height>654</height>
+    <height>786</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -78,13 +78,21 @@ PyDMLabel {
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="3" column="0" colspan="3">
-    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+   <item row="0" column="1">
+    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
      <property name="toolTip">
       <string/>
      </property>
-     <property name="filename" stdset="0">
-      <string>tpr.ui</string>
+     <property name="text">
+      <string>Timing Pattern Diagnostics</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>timing_pattern_diagnostics.ui</string>
+      </stringlist>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
      </property>
     </widget>
    </item>
@@ -112,24 +120,6 @@ PyDMLabel {
      </property>
     </widget>
    </item>
-   <item row="0" column="1">
-    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>Timing Pattern Diagnostics</string>
-     </property>
-     <property name="filenames" stdset="0">
-      <stringlist>
-       <string>timing_pattern_diagnostics.ui</string>
-      </stringlist>
-     </property>
-     <property name="openInNewWindow" stdset="0">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
    <item row="0" column="0" rowspan="3">
     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
      <property name="toolTip">
@@ -137,6 +127,16 @@ PyDMLabel {
      </property>
      <property name="filename" stdset="0">
       <string>timing.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="3">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="filename" stdset="0">
+      <string>tpr.ui</string>
      </property>
     </widget>
    </item>

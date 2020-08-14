@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>247</width>
-    <height>146</height>
+    <width>282</width>
+    <height>162</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -102,7 +102,7 @@ PyDMLabel {
        </property>
        <property name="minimumSize">
         <size>
-         <width>95</width>
+         <width>119</width>
          <height>22</height>
         </size>
        </property>
@@ -157,7 +157,7 @@ QComboBox {
        </property>
        <property name="minimumSize">
         <size>
-         <width>95</width>
+         <width>119</width>
          <height>22</height>
         </size>
        </property>
@@ -193,7 +193,7 @@ QComboBox {
        </property>
        <property name="minimumSize">
         <size>
-         <width>95</width>
+         <width>119</width>
          <height>22</height>
         </size>
        </property>
@@ -267,7 +267,7 @@ QComboBox {
        </property>
        <property name="minimumSize">
         <size>
-         <width>95</width>
+         <width>119</width>
          <height>22</height>
         </size>
        </property>
