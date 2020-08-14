@@ -580,9 +580,6 @@
        <property name="toolTip">
         <string/>
        </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:REF_SELECT0</string>
        </property>
@@ -652,9 +649,6 @@
       <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
        <property name="toolTip">
         <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:REF_SELECT1</string>

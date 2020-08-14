@@ -25,9 +25,6 @@
   <property name="windowTitle">
    <string>ATCA_LLRF - ${DEVICE}</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true"/>
-  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="leftMargin">
     <number>2</number>

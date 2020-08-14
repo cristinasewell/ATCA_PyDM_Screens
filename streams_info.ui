@@ -13,9 +13,6 @@
   <property name="windowTitle">
    <string>Down Converter MuxSelect - ${DEVICE}</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true"/>
-  </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
     <number>4</number>
@@ -77,7 +74,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>95</width>
+       <width>119</width>
        <height>20</height>
       </size>
      </property>
@@ -248,7 +245,7 @@ QComboBox {
      </property>
      <property name="minimumSize">
       <size>
-       <width>95</width>
+       <width>119</width>
        <height>20</height>
       </size>
      </property>
@@ -452,7 +449,7 @@ QComboBox {
      </property>
      <property name="minimumSize">
       <size>
-       <width>95</width>
+       <width>119</width>
        <height>20</height>
       </size>
      </property>
@@ -599,7 +596,7 @@ QComboBox {
      </property>
      <property name="minimumSize">
       <size>
-       <width>95</width>
+       <width>119</width>
        <height>20</height>
       </size>
      </property>

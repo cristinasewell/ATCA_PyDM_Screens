@@ -13,9 +13,6 @@
   <property name="windowTitle">
    <string>Converters Settings - ${DEVICE}</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true"/>
-  </property>
   <layout class="QGridLayout" name="gridLayout" rowstretch="0,1">
    <property name="leftMargin">
     <number>4</number>

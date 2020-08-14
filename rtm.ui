@@ -19,9 +19,6 @@
   <property name="windowTitle">
    <string>RTM - ${DEVICE}</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true"/>
-  </property>
   <layout class="QVBoxLayout" name="verticalLayout_6">
    <item>
     <widget class="QScrollArea" name="scrollArea">

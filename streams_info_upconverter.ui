@@ -7,14 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>331</width>
-    <height>122</height>
+    <height>134</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Up Converter Mux Select - ${DEVICE}</string>
-  </property>
-  <property name="styleSheet">
-   <string notr="true"/>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
@@ -74,7 +71,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>95</width>
+       <width>119</width>
        <height>20</height>
       </size>
      </property>
@@ -221,7 +218,7 @@ QComboBox {
      </property>
      <property name="minimumSize">
       <size>
-       <width>95</width>
+       <width>119</width>
        <height>20</height>
       </size>
      </property>
@@ -368,7 +365,7 @@ QComboBox {
      </property>
      <property name="minimumSize">
       <size>
-       <width>95</width>
+       <width>119</width>
        <height>20</height>
       </size>
      </property>
@@ -584,7 +581,7 @@ QComboBox {
      </property>
      <property name="minimumSize">
       <size>
-       <width>95</width>
+       <width>119</width>
        <height>20</height>
       </size>
      </property>
