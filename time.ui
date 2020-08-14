@@ -6,28 +6,121 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>486</width>
-    <height>770</height>
+    <width>619</width>
+    <height>786</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>1</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>Timing - ${DEVICE}</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">/* Background color of popup-list.*/
+QComboBox QListView{
+    background-color:white;
+    border:1px solid gray;
+}
+/* Needed to complete the rule set. */
+QComboBox::item:alternate {
+    background: white;
+}
+/* Color of the selected list item. */
+QComboBox::item:selected {
+    border: 1px solid transparent;
+    background: #d1ede1;
+}
+/* Indicator will shine through the label text if you don't make it hidden. */
+QComboBox::indicator{
+    background-color:transparent;
+    selection-background-color:transparent;
+    color:transparent;
+    selection-color:transparent;
+}
+QPushButton {
+    background-color: rgb(136,157,162);
+    border-color: rgb(212,228,233) rgb(50,88,100) rgb(50,88,100) rgb(212,228,233);
+    border-style: outset;
+    border-radius: 1px;
+    border-width: 2px;
+    padding: 4px;
+}
+QPushButton:hover {
+   background-color: rgb(106,127,132);
+}
+QPushButton:pressed {
+    background-color: rgb(208,229,232);
+    border-style: inset;
+    border-width: 2px;
+	border-color: rgb(50,88,100) rgb(212,228,233) rgb(212,228,233) rgb(50,88,100);
+}
+QPushButton:checked{
+    background-color: rgb(208,229,232);
+    border-style: inset;
+    border-width: 2px;
+	border-color:  rgb(112,134,142) rgb(229,233,235) rgb(239,233,235) rgb(112,134,142);
+}
+QLineEdit {
+  background-color: rgb(218,223,230);
+  border-color: rgb(66,77,96);
+  border-style: inset;
+  border-width: 2px 1px 1px 2px;
+}
+QLineEdit:hover {
+ background-color: rgb(198,203,210)
+}
+PyDMLabel {
+  background-color: rgb(189,197,205);
+}</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="1" column="0">
-    <spacer name="verticalSpacer">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
+   <item row="0" column="1">
+    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+     <property name="toolTip">
+      <string/>
      </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>40</height>
-      </size>
+     <property name="text">
+      <string>Timing Pattern Diagnostics</string>
      </property>
-    </spacer>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>timing_pattern_diagnostics.ui</string>
+      </stringlist>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
    </item>
-   <item row="0" column="0">
+   <item row="1" column="1">
+    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Timing Event Diagnostics</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>timing_event_diagnostics.ui</string>
+      </stringlist>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" rowspan="3">
     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
      <property name="toolTip">
       <string/>
@@ -37,7 +130,7 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="0" colspan="5">
+   <item row="3" column="0" colspan="3">
     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
      <property name="toolTip">
       <string/>
@@ -46,19 +139,6 @@
       <string>tpr.ui</string>
      </property>
     </widget>
-   </item>
-   <item row="0" column="1">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>40</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
    </item>
    <item row="0" column="2">
     <layout class="QVBoxLayout" name="verticalLayout">
