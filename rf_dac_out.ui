@@ -580,20 +580,6 @@
        <property name="toolTip">
         <string/>
        </property>
-       <property name="styleSheet">
-        <string notr="true">/* Color of the selected list item. */
-QComboBox::item:selected {
-    border: 1px solid transparent;
-    background: rgb(85,225,255);
-}
-QComboBox {
-  	background-color: #a6c2ce;
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 1px 18px 1px 3px;
-    min-width: 6em;
-}</string>
-       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:REF_SELECT0</string>
        </property>
@@ -663,20 +649,6 @@ QComboBox {
       <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
        <property name="toolTip">
         <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">/* Color of the selected list item. */
-QComboBox::item:selected {
-    border: 1px solid transparent;
-    background: rgb(85,225,255);
-}
-QComboBox {
-  	background-color: #a6c2ce;
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 1px 18px 1px 3px;
-    min-width: 6em;
-}</string>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:REF_SELECT1</string>

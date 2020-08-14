@@ -13,64 +13,6 @@
   <property name="windowTitle">
    <string>Timing Crossbar Switches - ${DEVICE}</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">/* Background color of popup-list.*/ 
-QComboBox QListView{
-    background-color:white;
-    border:1px solid gray;
-}
-/* Needed to complete the rule set. */
-QComboBox::item:alternate {
-    background: white;
-}
-/* Color of the selected list item. */
-QComboBox::item:selected {
-    border: 1px solid transparent;
-    background: #d1ede1;
-}
-/* Indicator will shine through the label text if you don't make it hidden. */
-QComboBox::indicator{
-    background-color:transparent;
-    selection-background-color:transparent;
-    color:transparent;
-    selection-color:transparent;
-}
-QPushButton {
-    background-color: rgb(136,157,162);
-    border-color: rgb(212,228,233) rgb(50,88,100) rgb(50,88,100) rgb(212,228,233);
-    border-style: outset;
-    border-radius: 1px;
-    border-width: 2px; 
-    padding: 4px;
-}
-QPushButton:hover {
-   background-color: rgb(106,127,132);
-}
-QPushButton:pressed {
-    background-color: rgb(208,229,232);
-    border-style: inset;
-    border-width: 2px;
-	border-color: rgb(50,88,100) rgb(212,228,233) rgb(212,228,233) rgb(50,88,100);
-}
-QPushButton:checked{
-    background-color: rgb(208,229,232);
-    border-style: inset;
-    border-width: 2px;
-	border-color:  rgb(112,134,142) rgb(229,233,235) rgb(239,233,235) rgb(112,134,142);
-}
-QLineEdit {
-  background-color: rgb(218,223,230);
-  border-color: rgb(66,77,96);
-  border-style: inset;
-  border-width: 2px 1px 1px 2px;
-}
-QLineEdit:hover {
- background-color: rgb(198,203,210)
-}
-PyDMLabel {
-  background-color: rgb(189,197,205);
-}</string>
-  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="label">
