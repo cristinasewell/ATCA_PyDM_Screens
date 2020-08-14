@@ -2904,7 +2904,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
            <item>
             <widget class="QLabel" name="label_53">
              <property name="text">
-              <string>Baseband Complex Window</string>
+              <string>Baseband I/Q Drive Waveforms</string>
              </property>
             </widget>
            </item>
