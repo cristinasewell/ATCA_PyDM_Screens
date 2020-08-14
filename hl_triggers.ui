@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>848</width>
-    <height>516</height>
+    <width>818</width>
+    <height>490</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -170,8 +170,14 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>90</width>
+           <width>60</width>
            <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>60</width>
+           <height>16777215</height>
           </size>
          </property>
          <property name="font">
@@ -189,6 +195,9 @@
          <property name="alignment">
           <set>Qt::AlignCenter</set>
          </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="4">
@@ -203,6 +212,12 @@
           <size>
            <width>80</width>
            <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
           </size>
          </property>
          <property name="font">
@@ -220,6 +235,9 @@
          <property name="alignment">
           <set>Qt::AlignCenter</set>
          </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="3">
@@ -232,8 +250,14 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>160</width>
+           <width>150</width>
            <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
           </size>
          </property>
          <property name="font">
@@ -251,6 +275,9 @@
          <property name="alignment">
           <set>Qt::AlignCenter</set>
          </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="2">
@@ -265,6 +292,12 @@
           <size>
            <width>150</width>
            <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
           </size>
          </property>
          <property name="font">
@@ -282,6 +315,9 @@
          <property name="alignment">
           <set>Qt::AlignCenter</set>
          </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="5">
@@ -294,8 +330,14 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>110</width>
+           <width>60</width>
            <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>60</width>
+           <height>16777215</height>
           </size>
          </property>
          <property name="font">
@@ -313,6 +355,9 @@
          <property name="alignment">
           <set>Qt::AlignCenter</set>
          </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="1">
@@ -329,6 +374,12 @@
            <height>0</height>
           </size>
          </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
+          </size>
+         </property>
          <property name="font">
           <font>
            <weight>75</weight>
@@ -343,6 +394,9 @@
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
