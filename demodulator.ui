@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>675</width>
-    <height>362</height>
+    <width>891</width>
+    <height>498</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -231,7 +231,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_ROT_I10</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -260,7 +260,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_PHASERAW9</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -315,7 +315,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_PHASERAW8</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -344,7 +344,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_AMPLRAW8</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -408,7 +408,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_ROT_I9</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -450,7 +450,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_ROT_I8</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -466,7 +466,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_PHASERAW11</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -591,7 +591,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_AMPLRAW10</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -633,7 +633,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_ROT_I11</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -732,7 +732,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_PHASERAW10</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -748,7 +748,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_AMPLRAW11</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -873,7 +873,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_AMPLRAW9</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -937,7 +937,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_PHASERAW1</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -966,7 +966,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_AMPLRAW1</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -995,7 +995,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_ROT_I1</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1050,7 +1050,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_PHASERAW0</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1079,7 +1079,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_AMPLRAW0</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1108,7 +1108,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_ROT_I0</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1189,7 +1189,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_PHASERAW3</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1218,7 +1218,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_AMPLRAW3</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1247,7 +1247,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_ROT_I3</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1302,7 +1302,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_PHASERAW2</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1331,7 +1331,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_AMPLRAW2</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1360,7 +1360,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_ROT_I2</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1441,7 +1441,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_PHASERAW5</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1470,7 +1470,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_AMPLRAW5</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1499,7 +1499,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_ROT_I5</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1554,7 +1554,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_PHASERAW4</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1583,7 +1583,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_AMPLRAW4</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1612,7 +1612,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_ROT_I4</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1693,7 +1693,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_PHASERAW7</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1722,7 +1722,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_AMPLRAW7</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1751,7 +1751,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_ROT_I7</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1806,7 +1806,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_PHASERAW6</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1835,7 +1835,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_AMPLRAW6</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
@@ -1864,7 +1864,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         <string>ca://${DEVICE}:DMOD_ROT_I6</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::Default</enum>
        </property>
       </widget>
      </item>
