@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>619</width>
-    <height>786</height>
+    <width>560</width>
+    <height>834</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -78,59 +78,7 @@ PyDMLabel {
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="1">
-    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>Timing Pattern Diagnostics</string>
-     </property>
-     <property name="filenames" stdset="0">
-      <stringlist>
-       <string>timing_pattern_diagnostics.ui</string>
-      </stringlist>
-     </property>
-     <property name="openInNewWindow" stdset="0">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="1">
-    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>Timing Event Diagnostics</string>
-     </property>
-     <property name="filenames" stdset="0">
-      <stringlist>
-       <string>timing_event_diagnostics.ui</string>
-      </stringlist>
-     </property>
-     <property name="openInNewWindow" stdset="0">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="0" rowspan="3">
-    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="filename" stdset="0">
-      <string>timing.ui</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="0" colspan="3">
+   <item row="4" column="0" colspan="3">
     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
      <property name="toolTip">
       <string/>
@@ -142,48 +90,65 @@ PyDMLabel {
    </item>
    <item row="0" column="2">
     <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
      <property name="leftMargin">
       <number>0</number>
      </property>
-     <item>
-      <widget class="QLabel" name="label">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>High Level PVs</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
      <item>
       <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
        <property name="toolTip">
         <string/>
        </property>
        <property name="text">
-        <string>Triggers</string>
+        <string>High Level Triggers</string>
        </property>
        <property name="filenames" stdset="0">
         <stringlist>
          <string>hl_triggers.ui</string>
+        </stringlist>
+       </property>
+       <property name="openInNewWindow" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Timing Pattern Diagnostics</string>
+       </property>
+       <property name="filenames" stdset="0">
+        <stringlist>
+         <string>timing_pattern_diagnostics.ui</string>
+        </stringlist>
+       </property>
+       <property name="openInNewWindow" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Timing Event Diagnostics</string>
+       </property>
+       <property name="filenames" stdset="0">
+        <stringlist>
+         <string>timing_event_diagnostics.ui</string>
         </stringlist>
        </property>
        <property name="openInNewWindow" stdset="0">
@@ -205,6 +170,55 @@ PyDMLabel {
       </spacer>
      </item>
     </layout>
+   </item>
+   <item row="0" column="1">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="0" rowspan="3">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="filename" stdset="0">
+      <string>timing.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
    </item>
   </layout>
  </widget>
