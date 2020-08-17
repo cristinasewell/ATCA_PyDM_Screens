@@ -274,6 +274,9 @@
        <property name="toolTip">
         <string/>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:${SYS}_STDBY_EVCODE</string>
        </property>
@@ -394,6 +397,9 @@
        </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEVICE}:${SYS}_ACCEL_EVCODE</string>
