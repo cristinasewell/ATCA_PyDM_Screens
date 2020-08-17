@@ -2539,10 +2539,13 @@
            <property name="showYGrid">
             <bool>true</bool>
            </property>
+           <property name="showLegend">
+            <bool>true</bool>
+           </property>
            <property name="curves">
             <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;I&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND1&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;Q&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
             </stringlist>
            </property>
           </widget>
@@ -2610,10 +2613,13 @@
            <property name="showYGrid">
             <bool>true</bool>
            </property>
+           <property name="showLegend">
+            <bool>true</bool>
+           </property>
            <property name="curves">
             <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;I&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND2&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;Q&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
             </stringlist>
            </property>
           </widget>
@@ -2739,10 +2745,13 @@
            <property name="showYGrid">
             <bool>true</bool>
            </property>
+           <property name="showLegend">
+            <bool>true</bool>
+           </property>
            <property name="curves">
             <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:IBL&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QBL&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:IBL&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;I&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QBL&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;Q&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
             </stringlist>
            </property>
           </widget>
@@ -2813,10 +2822,13 @@
            <property name="showYGrid">
             <bool>true</bool>
            </property>
+           <property name="showLegend">
+            <bool>true</bool>
+           </property>
            <property name="curves">
             <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;I&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;Q&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
             </stringlist>
            </property>
           </widget>
