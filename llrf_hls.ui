@@ -3457,7 +3457,7 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T1:PDES</string>
+            <string>ca://${DEVICE}:PDES01</string>
            </property>
           </widget>
          </item>
@@ -3961,7 +3961,7 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T1:AREQ</string>
+            <string>ca://${DEVICE}:ADES01</string>
            </property>
           </widget>
          </item>
@@ -4039,7 +4039,7 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T2:PDES</string>
+            <string>ca://${DEVICE}:PDES02</string>
            </property>
           </widget>
          </item>
@@ -4052,7 +4052,7 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T3:PDES</string>
+            <string>ca://${DEVICE}:PDES03</string>
            </property>
           </widget>
          </item>
@@ -4065,7 +4065,7 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T4:PDES</string>
+            <string>ca://${DEVICE}:PDES04</string>
            </property>
           </widget>
          </item>
@@ -4078,7 +4078,7 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T5:PDES</string>
+            <string>ca://${DEVICE}:PDES05</string>
            </property>
           </widget>
          </item>
@@ -4091,7 +4091,7 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T6:PDES</string>
+            <string>ca://${DEVICE}:PDES06</string>
            </property>
           </widget>
          </item>
@@ -4169,7 +4169,7 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T2:AREQ</string>
+            <string>ca://${DEVICE}:ADES02</string>
            </property>
           </widget>
          </item>
@@ -4182,7 +4182,7 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T3:AREQ</string>
+            <string>ca://${DEVICE}:ADES03</string>
            </property>
           </widget>
          </item>
@@ -4195,7 +4195,7 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T4:AREQ</string>
+            <string>ca://${DEVICE}:ADES04</string>
            </property>
           </widget>
          </item>
@@ -4208,7 +4208,7 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T5:AREQ</string>
+            <string>ca://${DEVICE}:ADES05</string>
            </property>
           </widget>
          </item>
@@ -4221,7 +4221,7 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T6:AREQ</string>
+            <string>ca://${DEVICE}:ADES06</string>
            </property>
           </widget>
          </item>
