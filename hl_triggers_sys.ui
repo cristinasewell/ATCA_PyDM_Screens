@@ -46,13 +46,7 @@
        <property name="minimumSize">
         <size>
          <width>100</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>20</height>
+         <height>0</height>
         </size>
        </property>
        <property name="toolTip">
@@ -170,7 +164,7 @@
         <bool>true</bool>
        </property>
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -249,13 +243,7 @@
        <property name="minimumSize">
         <size>
          <width>100</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>20</height>
+         <height>0</height>
         </size>
        </property>
        <property name="toolTip">
@@ -345,16 +333,16 @@
        <property name="enabled">
         <bool>true</bool>
        </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="minimumSize">
         <size>
          <width>100</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>20</height>
+         <height>0</height>
         </size>
        </property>
        <property name="toolTip">
@@ -373,13 +361,7 @@
        <property name="minimumSize">
         <size>
          <width>100</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>20</height>
+         <height>0</height>
         </size>
        </property>
        <property name="toolTip">
