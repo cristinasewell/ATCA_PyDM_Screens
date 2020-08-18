@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>905</width>
+    <width>760</width>
     <height>603</height>
    </rect>
   </property>
@@ -627,8 +627,8 @@
      <property name="spacing">
       <number>7</number>
      </property>
-     <item row="2" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_6">
+     <item row="1" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_3">
        <property name="toolTip">
         <string/>
        </property>
@@ -636,15 +636,28 @@
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_AMPLRAW</string>
+        <string>ca://${DEVICE}:LO_PHASE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_13">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LO_LOSSSTATUS</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::String</enum>
        </property>
       </widget>
      </item>
-     <item row="2" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_8">
+     <item row="2" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_14">
        <property name="toolTip">
         <string/>
        </property>
@@ -652,12 +665,15 @@
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_AMPL</string>
+        <string>ca://${DEVICE}:CLOCK_LOSSSTATUS</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
        </property>
       </widget>
      </item>
-     <item row="0" column="3">
-      <widget class="QLabel" name="label_4">
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_7">
        <property name="font">
         <font>
          <weight>75</weight>
@@ -665,23 +681,10 @@
         </font>
        </property>
        <property name="text">
-        <string>Amplitude</string>
+        <string>Lock Counter</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_10">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>CLK PLL</string>
        </property>
       </widget>
      </item>
@@ -698,39 +701,7 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Phase (raw)</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_5">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_AMPLRAW</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="4">
+     <item row="0" column="2">
       <widget class="QLabel" name="label_5">
        <property name="font">
         <font>
@@ -746,7 +717,7 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="6">
+     <item row="2" column="4">
       <widget class="PyDMLabel" name="PyDMLabel_12">
        <property name="toolTip">
         <string/>
@@ -759,24 +730,8 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="6">
-      <widget class="QLabel" name="label_7">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Lock Counter</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="5">
-      <widget class="PyDMLabel" name="PyDMLabel_9">
+     <item row="1" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_11">
        <property name="toolTip">
         <string/>
        </property>
@@ -784,14 +739,11 @@
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_LOCKSTATUS</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::String</enum>
+        <string>ca://${DEVICE}:LO_LOCKCNT</string>
        </property>
       </widget>
      </item>
-     <item row="2" column="8">
+     <item row="2" column="6">
       <widget class="PyDMPushButton" name="PyDMPushButton_2">
        <property name="toolTip">
         <string/>
@@ -810,8 +762,8 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="4">
-      <widget class="PyDMLabel" name="PyDMLabel_7">
+     <item row="2" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_8">
        <property name="toolTip">
         <string/>
        </property>
@@ -819,117 +771,11 @@
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_AMPL</string>
+        <string>ca://${DEVICE}:CLOCK_AMPL</string>
        </property>
       </widget>
      </item>
-     <item row="2" column="7">
-      <widget class="PyDMLabel" name="PyDMLabel_14">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_LOSSSTATUS</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::String</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Phase (deg)</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel_3">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_PHASE</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="5">
-      <widget class="PyDMLabel" name="PyDMLabel_10">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_LOCKSTATUS</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::String</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="6">
-      <widget class="PyDMLabel" name="PyDMLabel_11">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_LOCKCNT</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="7">
-      <widget class="PyDMLabel" name="PyDMLabel_13">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_LOSSSTATUS</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::String</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_2">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:CLOCK_PHASERAW</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="5">
+     <item row="0" column="3">
       <widget class="QLabel" name="label_6">
        <property name="font">
         <font>
@@ -945,42 +791,7 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="7">
-      <widget class="QLabel" name="label_8">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Loss of Singal Status</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="8">
-      <widget class="PyDMPushButton" name="PyDMPushButton">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>Reset</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_LOCKCNTRESET</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="8">
+     <item row="0" column="6">
       <widget class="QLabel" name="label_11">
        <property name="font">
         <font>
@@ -996,7 +807,49 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="2">
+     <item row="1" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_9">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LO_LOCKSTATUS</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>CLK PLL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_7">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LO_AMPL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
       <widget class="PyDMLabel" name="PyDMLabel_4">
        <property name="toolTip">
         <string/>
@@ -1009,8 +862,8 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel">
+     <item row="2" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_10">
        <property name="toolTip">
         <string/>
        </property>
@@ -1018,10 +871,61 @@
         <set>Qt::AlignCenter</set>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEVICE}:LO_PHASERAW</string>
+        <string>ca://${DEVICE}:CLOCK_LOCKSTATUS</string>
        </property>
        <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::Hex</enum>
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Phase (deg)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Loss of Singal Status</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6">
+      <widget class="PyDMPushButton" name="PyDMPushButton">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Reset</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEVICE}:LO_LOCKCNTRESET</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
        </property>
       </widget>
      </item>
