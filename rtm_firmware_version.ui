@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>434</width>
+    <width>436</width>
     <height>154</height>
    </rect>
   </property>
@@ -173,6 +173,12 @@
      </item>
      <item row="3" column="3">
       <widget class="PyDMLabel" name="PyDMLabel_8">
+       <property name="maximumSize">
+        <size>
+         <width>160</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
