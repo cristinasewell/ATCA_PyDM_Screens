@@ -2847,656 +2847,8 @@
        </item>
        <item row="5" column="0">
         <layout class="QGridLayout" name="gridLayout_2">
-         <item row="2" column="8">
-          <widget class="PyDMLabel" name="PyDMLabel_95">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:AREF02</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="0">
-          <widget class="QLabel" name="label_25">
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>TS 6</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="7">
-          <widget class="PyDMLabel" name="PyDMLabel_86">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PREF05</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="7">
-          <widget class="PyDMLabel" name="PyDMLabel_89">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PREF02</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="4">
-          <widget class="PyDMLabel" name="PyDMLabel_71">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:AACT02</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="14">
-          <widget class="QLabel" name="label_64">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>AREQ</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="8">
-          <widget class="PyDMLabel" name="PyDMLabel_92">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:AREF05</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="5">
-          <widget class="PyDMLabel" name="PyDMLabel_75">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PSET04</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLabel" name="label_26">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>PDES</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="3">
-          <widget class="PyDMLabel" name="PyDMLabel_64">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PACT04</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="5">
-          <widget class="PyDMLabel" name="PyDMLabel_78">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PSET06</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="4">
-          <widget class="PyDMLabel" name="PyDMLabel_67">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:AACT01</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="6">
-          <widget class="PyDMLabel" name="PyDMLabel_83">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:ASET02</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="11">
-          <widget class="QLabel" name="label_56">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>PDES</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="9" rowspan="6">
-          <widget class="PyDMLabel" name="PyDMLabel_99">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PDES</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="3">
-          <widget class="PyDMLabel" name="PyDMLabel_66">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PACT06</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="13">
-          <widget class="PyDMLabel" name="PyDMLabel_103">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T1:AREQ_OFFSET</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_33">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PDES03</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="4">
-          <widget class="QLabel" name="label_29">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>AACT</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="5">
-          <widget class="PyDMLabel" name="PyDMLabel_76">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PSET03</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="2">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_39">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:ADES03</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="6">
-          <widget class="QLabel" name="label_31">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>ASET</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="5">
-          <widget class="PyDMLabel" name="PyDMLabel_77">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PSET02</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="0">
-          <widget class="QLabel" name="label_23">
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>TS 4</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="5">
-          <widget class="QLabel" name="label_30">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>PSET</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="2">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_41">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:ADES01</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="9">
-          <widget class="QLabel" name="label_54">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>PDES</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="4">
-          <widget class="PyDMLabel" name="PyDMLabel_69">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:AACT04</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="7">
-          <widget class="PyDMLabel" name="PyDMLabel_87">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PREF04</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="6">
-          <widget class="PyDMLabel" name="PyDMLabel_82">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:ASET03</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="2">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_42">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:ADES05</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="3">
-          <widget class="PyDMLabel" name="PyDMLabel_65">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PACT05</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="8">
-          <widget class="PyDMLabel" name="PyDMLabel_94">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:AREF03</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="3">
-          <widget class="PyDMLabel" name="PyDMLabel_63">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PACT03</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <widget class="QLabel" name="label_27">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>ADES</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="13">
-          <widget class="QLabel" name="label_63">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>AOFF</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="6">
-          <widget class="PyDMLabel" name="PyDMLabel_84">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:ASET06</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="8">
-          <widget class="PyDMLabel" name="PyDMLabel_93">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:AREF04</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="2">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_37">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:ADES02</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="8">
-          <widget class="PyDMLabel" name="PyDMLabel_96">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:AREF06</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="11">
-          <widget class="PyDMLabel" name="PyDMLabel_101">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PDES01</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="12">
-          <widget class="QLabel" name="label_62">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>AREQ</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
          <item row="6" column="4">
-          <widget class="PyDMLabel" name="PyDMLabel_72">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_63">
            <property name="toolTip">
             <string/>
            </property>
@@ -3504,46 +2856,7 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:AACT06</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="4">
-          <widget class="PyDMLabel" name="PyDMLabel_68">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:AACT05</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="6">
-          <widget class="PyDMLabel" name="PyDMLabel_79">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:ASET01</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QLabel" name="label_22">
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>TS 3</string>
+            <string>ca://${DEVICE}:T6:AREQ_OFFSET</string>
            </property>
           </widget>
          </item>
@@ -3560,38 +2873,12 @@
            </property>
           </widget>
          </item>
-         <item row="5" column="6">
-          <widget class="PyDMLabel" name="PyDMLabel_80">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:ASET05</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="2">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_40">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:ADES06</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="1">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_35">
+         <item row="1" column="1" rowspan="6">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_41">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
-             <verstretch>1</verstretch>
+             <verstretch>0</verstretch>
             </sizepolicy>
            </property>
            <property name="toolTip">
@@ -3601,11 +2888,69 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PDES05</string>
+            <string>ca://${DEVICE}:PDES</string>
            </property>
           </widget>
          </item>
-         <item row="3" column="7">
+         <item row="2" column="5">
+          <widget class="PyDMLabel" name="PyDMLabel_152">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:PDES02</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_55">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:T3:PDES_OFFSET</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_59">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:T2:AREQ_OFFSET</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3" rowspan="6">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_53">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:AREQ</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="11">
           <widget class="PyDMLabel" name="PyDMLabel_88">
            <property name="toolTip">
             <string/>
@@ -3618,8 +2963,8 @@
            </property>
           </widget>
          </item>
-         <item row="4" column="6">
-          <widget class="PyDMLabel" name="PyDMLabel_81">
+         <item row="3" column="7">
+          <widget class="PyDMLabel" name="PyDMLabel_63">
            <property name="toolTip">
             <string/>
            </property>
@@ -3627,12 +2972,34 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:ASET04</string>
+            <string>ca://${DEVICE}:PACT03</string>
            </property>
           </widget>
          </item>
-         <item row="1" column="12" rowspan="6">
-          <widget class="PyDMLabel" name="PyDMLabel_102">
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_54">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>PREQ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="9">
+          <widget class="PyDMLabel" name="PyDMLabel_78">
            <property name="toolTip">
             <string/>
            </property>
@@ -3640,11 +3007,76 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:AREQ</string>
+            <string>ca://${DEVICE}:PSET06</string>
            </property>
           </widget>
          </item>
-         <item row="1" column="7">
+         <item row="1" column="9">
+          <widget class="PyDMLabel" name="PyDMLabel_73">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:PSET01</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_23">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>TS 4</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="11">
+          <widget class="PyDMLabel" name="PyDMLabel_90">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:PREF06</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="12">
+          <widget class="PyDMLabel" name="PyDMLabel_94">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:AREF03</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="8">
+          <widget class="PyDMLabel" name="PyDMLabel_70">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:AACT03</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="11">
           <widget class="PyDMLabel" name="PyDMLabel_85">
            <property name="toolTip">
             <string/>
@@ -3657,14 +3089,8 @@
            </property>
           </widget>
          </item>
-         <item row="6" column="1">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_36">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
+         <item row="1" column="12">
+          <widget class="PyDMLabel" name="PyDMLabel_91">
            <property name="toolTip">
             <string/>
            </property>
@@ -3672,11 +3098,37 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PDES06</string>
+            <string>ca://${DEVICE}:AREF01</string>
            </property>
           </widget>
          </item>
-         <item row="0" column="7">
+         <item row="6" column="2">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_58">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:T6:PDES_OFFSET</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="8">
+          <widget class="PyDMLabel" name="PyDMLabel_67">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:AACT01</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="11">
           <widget class="QLabel" name="label_32">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -3698,14 +3150,8 @@
            </property>
           </widget>
          </item>
-         <item row="1" column="1">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_31">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
+         <item row="5" column="8">
+          <widget class="PyDMLabel" name="PyDMLabel_68">
            <property name="toolTip">
             <string/>
            </property>
@@ -3713,11 +3159,98 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PDES01</string>
+            <string>ca://${DEVICE}:AACT05</string>
            </property>
           </widget>
          </item>
-         <item row="0" column="3">
+         <item row="4" column="7">
+          <widget class="PyDMLabel" name="PyDMLabel_64">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:PACT04</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="10">
+          <widget class="PyDMLabel" name="PyDMLabel_83">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:ASET02</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="label_63">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>AOFF</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="8">
+          <widget class="PyDMLabel" name="PyDMLabel_71">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:AACT02</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="9">
+          <widget class="PyDMLabel" name="PyDMLabel_77">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:PSET02</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_54">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:T2:PDES_OFFSET</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="7">
           <widget class="QLabel" name="label_28">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -3739,21 +3272,8 @@
            </property>
           </widget>
          </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="label_20">
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>TS 1</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="2">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_38">
+         <item row="1" column="7">
+          <widget class="PyDMLabel" name="PyDMLabel_61">
            <property name="toolTip">
             <string/>
            </property>
@@ -3761,12 +3281,12 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:ADES04</string>
+            <string>ca://${DEVICE}:PACT01</string>
            </property>
           </widget>
          </item>
-         <item row="1" column="8">
-          <widget class="PyDMLabel" name="PyDMLabel_91">
+         <item row="4" column="9">
+          <widget class="PyDMLabel" name="PyDMLabel_75">
            <property name="toolTip">
             <string/>
            </property>
@@ -3774,30 +3294,11 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:AREF01</string>
+            <string>ca://${DEVICE}:PSET04</string>
            </property>
           </widget>
          </item>
-         <item row="2" column="1">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_32">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PDES02</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="5">
+         <item row="5" column="9">
           <widget class="PyDMLabel" name="PyDMLabel_74">
            <property name="toolTip">
             <string/>
@@ -3810,8 +3311,21 @@
            </property>
           </widget>
          </item>
-         <item row="1" column="10">
-          <widget class="PyDMLabel" name="PyDMLabel_100">
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_21">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>TS 2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="12">
+          <widget class="PyDMLabel" name="PyDMLabel_93">
            <property name="toolTip">
             <string/>
            </property>
@@ -3819,11 +3333,37 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T1:PDES_OFFSET</string>
+            <string>ca://${DEVICE}:AREF04</string>
            </property>
           </widget>
          </item>
-         <item row="0" column="10">
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_22">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>TS 3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="5">
+          <widget class="PyDMLabel" name="PyDMLabel_155">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:PDES05</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
           <widget class="QLabel" name="label_55">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -3845,14 +3385,8 @@
            </property>
           </widget>
          </item>
-         <item row="4" column="1">
-          <widget class="PyDMLineEdit" name="PyDMLineEdit_34">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
-           </property>
+         <item row="6" column="12">
+          <widget class="PyDMLabel" name="PyDMLabel_96">
            <property name="toolTip">
             <string/>
            </property>
@@ -3860,12 +3394,12 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PDES04</string>
+            <string>ca://${DEVICE}:AREF06</string>
            </property>
           </widget>
          </item>
-         <item row="3" column="4">
-          <widget class="PyDMLabel" name="PyDMLabel_70">
+         <item row="3" column="10">
+          <widget class="PyDMLabel" name="PyDMLabel_82">
            <property name="toolTip">
             <string/>
            </property>
@@ -3873,12 +3407,64 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:AACT03</string>
+            <string>ca://${DEVICE}:ASET03</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="5">
+          <widget class="PyDMLabel" name="PyDMLabel_101">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:PDES01</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="11">
+          <widget class="PyDMLabel" name="PyDMLabel_86">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:PREF05</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="10">
+          <widget class="PyDMLabel" name="PyDMLabel_79">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:ASET01</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="4">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_61">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:T4:AREQ_OFFSET</string>
            </property>
           </widget>
          </item>
          <item row="6" column="7">
-          <widget class="PyDMLabel" name="PyDMLabel_90">
+          <widget class="PyDMLabel" name="PyDMLabel_66">
            <property name="toolTip">
             <string/>
            </property>
@@ -3886,11 +3472,277 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PREF06</string>
+            <string>ca://${DEVICE}:PACT06</string>
            </property>
           </widget>
          </item>
-         <item row="2" column="3">
+         <item row="5" column="2">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_57">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:T5:PDES_OFFSET</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="9">
+          <widget class="PyDMLabel" name="PyDMLabel_76">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:PSET03</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="11">
+          <widget class="PyDMLabel" name="PyDMLabel_89">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:PREF02</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="10">
+          <widget class="PyDMLabel" name="PyDMLabel_84">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:ASET06</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_56">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:T4:PDES_OFFSET</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QLabel" name="label_56">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>PDES</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_25">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>TS 6</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="10">
+          <widget class="PyDMLabel" name="PyDMLabel_81">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:ASET04</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="8">
+          <widget class="QLabel" name="label_29">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>AACT</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="8">
+          <widget class="PyDMLabel" name="PyDMLabel_72">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:AACT06</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_62">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>AREQ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="9">
+          <widget class="QLabel" name="label_30">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>PSET</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="12">
+          <widget class="PyDMLabel" name="PyDMLabel_95">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:AREF02</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="12">
+          <widget class="PyDMLabel" name="PyDMLabel_92">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:AREF05</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="10">
+          <widget class="QLabel" name="label_31">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>ASET</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="8">
+          <widget class="PyDMLabel" name="PyDMLabel_69">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:AACT04</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="11">
+          <widget class="PyDMLabel" name="PyDMLabel_87">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:PREF04</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="7">
           <widget class="PyDMLabel" name="PyDMLabel_62">
            <property name="toolTip">
             <string/>
@@ -3903,8 +3755,34 @@
            </property>
           </widget>
          </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_21">
+         <item row="5" column="10">
+          <widget class="PyDMLabel" name="PyDMLabel_80">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:ASET05</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_39">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:T1:AREQ_OFFSET</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_20">
            <property name="font">
             <font>
              <weight>75</weight>
@@ -3912,12 +3790,12 @@
             </font>
            </property>
            <property name="text">
-            <string>TS 2</string>
+            <string>TS 1</string>
            </property>
           </widget>
          </item>
-         <item row="1" column="3">
-          <widget class="PyDMLabel" name="PyDMLabel_61">
+         <item row="3" column="4">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_60">
            <property name="toolTip">
             <string/>
            </property>
@@ -3925,12 +3803,12 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PACT01</string>
+            <string>ca://${DEVICE}:T3:AREQ_OFFSET</string>
            </property>
           </widget>
          </item>
-         <item row="1" column="5">
-          <widget class="PyDMLabel" name="PyDMLabel_73">
+         <item row="5" column="7">
+          <widget class="PyDMLabel" name="PyDMLabel_65">
            <property name="toolTip">
             <string/>
            </property>
@@ -3938,11 +3816,24 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PSET01</string>
+            <string>ca://${DEVICE}:PACT05</string>
            </property>
           </widget>
          </item>
-         <item row="0" column="8">
+         <item row="1" column="2">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_37">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${DEVICE}:T1:PDES_OFFSET</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="12">
           <widget class="QLabel" name="label_33">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -3964,8 +3855,8 @@
            </property>
           </widget>
          </item>
-         <item row="1" column="14">
-          <widget class="PyDMLabel" name="PyDMLabel_104">
+         <item row="5" column="4">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_62">
            <property name="toolTip">
             <string/>
            </property>
@@ -3973,89 +3864,11 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:ADES01</string>
+            <string>ca://${DEVICE}:T5:AREQ_OFFSET</string>
            </property>
           </widget>
          </item>
-         <item row="2" column="10">
-          <widget class="PyDMLabel" name="PyDMLabel_147">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T2:PDES_OFFSET</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="10">
-          <widget class="PyDMLabel" name="PyDMLabel_148">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T3:PDES_OFFSET</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="10">
-          <widget class="PyDMLabel" name="PyDMLabel_149">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T4:PDES_OFFSET</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="10">
-          <widget class="PyDMLabel" name="PyDMLabel_150">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T5:PDES_OFFSET</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="10">
-          <widget class="PyDMLabel" name="PyDMLabel_151">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T6:PDES_OFFSET</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="11">
-          <widget class="PyDMLabel" name="PyDMLabel_152">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PDES02</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="11">
+         <item row="3" column="5">
           <widget class="PyDMLabel" name="PyDMLabel_153">
            <property name="toolTip">
             <string/>
@@ -4068,7 +3881,7 @@
            </property>
           </widget>
          </item>
-         <item row="4" column="11">
+         <item row="4" column="5">
           <widget class="PyDMLabel" name="PyDMLabel_154">
            <property name="toolTip">
             <string/>
@@ -4081,20 +3894,7 @@
            </property>
           </widget>
          </item>
-         <item row="5" column="11">
-          <widget class="PyDMLabel" name="PyDMLabel_155">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:PDES05</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="11">
+         <item row="6" column="5">
           <widget class="PyDMLabel" name="PyDMLabel_156">
            <property name="toolTip">
             <string/>
@@ -4107,8 +3907,30 @@
            </property>
           </widget>
          </item>
-         <item row="2" column="13">
-          <widget class="PyDMLabel" name="PyDMLabel_157">
+         <item row="0" column="6">
+          <widget class="QLabel" name="label_64">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>AREQ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="6">
+          <widget class="PyDMLabel" name="PyDMLabel_104">
            <property name="toolTip">
             <string/>
            </property>
@@ -4116,63 +3938,11 @@
             <set>Qt::AlignCenter</set>
            </property>
            <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T2:AREQ_OFFSET</string>
+            <string>ca://${DEVICE}:ADES01</string>
            </property>
           </widget>
          </item>
-         <item row="3" column="13">
-          <widget class="PyDMLabel" name="PyDMLabel_158">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T3:AREQ_OFFSET</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="13">
-          <widget class="PyDMLabel" name="PyDMLabel_159">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T4:AREQ_OFFSET</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="13">
-          <widget class="PyDMLabel" name="PyDMLabel_160">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T5:AREQ_OFFSET</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="13">
-          <widget class="PyDMLabel" name="PyDMLabel_161">
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="channel" stdset="0">
-            <string>ca://${DEVICE}:T6:AREQ_OFFSET</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="14">
+         <item row="2" column="6">
           <widget class="PyDMLabel" name="PyDMLabel_162">
            <property name="toolTip">
             <string/>
@@ -4185,7 +3955,7 @@
            </property>
           </widget>
          </item>
-         <item row="3" column="14">
+         <item row="3" column="6">
           <widget class="PyDMLabel" name="PyDMLabel_163">
            <property name="toolTip">
             <string/>
@@ -4198,7 +3968,7 @@
            </property>
           </widget>
          </item>
-         <item row="4" column="14">
+         <item row="4" column="6">
           <widget class="PyDMLabel" name="PyDMLabel_164">
            <property name="toolTip">
             <string/>
@@ -4211,7 +3981,7 @@
            </property>
           </widget>
          </item>
-         <item row="5" column="14">
+         <item row="5" column="6">
           <widget class="PyDMLabel" name="PyDMLabel_165">
            <property name="toolTip">
             <string/>
@@ -4224,7 +3994,7 @@
            </property>
           </widget>
          </item>
-         <item row="6" column="14">
+         <item row="6" column="6">
           <widget class="PyDMLabel" name="PyDMLabel_166">
            <property name="toolTip">
             <string/>
