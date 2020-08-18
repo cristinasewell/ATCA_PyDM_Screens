@@ -330,7 +330,7 @@
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${RTM}:BC_ILK_RAW</string>
+               <string>ca://${RTM}:BC_ILK_RAW_SLOW</string>
               </property>
              </widget>
             </item>
@@ -382,7 +382,7 @@
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${RTM}:BV_ILK_RAW</string>
+               <string>ca://${RTM}:BV_ILK_RAW_SLOW</string>
               </property>
              </widget>
             </item>
@@ -408,7 +408,7 @@
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${RTM}:RE_ILK_RAW</string>
+               <string>ca://${RTM}:RE_ILK_RAW_SLOW</string>
               </property>
              </widget>
             </item>
@@ -843,7 +843,7 @@ Power</string>
                <string/>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${RTM}:RTM_WFPULSEID</string>
+               <string>ca://${RTM}:RTM_WFPULSEID_SLOW</string>
               </property>
              </widget>
             </item>
