@@ -506,7 +506,7 @@
                <bool>true</bool>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${RTM}:BC_ILK</string>
+               <string>ca://${RTM}:BC_ILK_SLOW</string>
               </property>
              </widget>
             </item>
@@ -519,7 +519,7 @@
                <bool>true</bool>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${RTM}:BV_ILK</string>
+               <string>ca://${RTM}:BV_ILK_SLOW</string>
               </property>
              </widget>
             </item>
@@ -532,7 +532,7 @@
                <bool>true</bool>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${RTM}:RE_ILK</string>
+               <string>ca://${RTM}:RE_ILK_SLOW</string>
               </property>
              </widget>
             </item>
