@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1278</width>
+    <width>1455</width>
     <height>900</height>
    </rect>
   </property>
@@ -36,7 +36,7 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1252</width>
+        <width>1429</width>
         <height>874</height>
        </rect>
       </property>
@@ -308,6 +308,139 @@
             <property name="bottomMargin">
              <number>2</number>
             </property>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_31">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>1</horstretch>
+                <verstretch>1</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Reflected Power:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_27">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Current Threshold</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_23">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:BC_ILK_SLOW</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="PyDMLabel" name="PyDMLabel_6">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:BV_ILK_RAW_SLOW</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QLabel" name="label_25">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Set Threshold (raw)</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="4">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:SET_BV_ILK_RAW</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_25">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:RE_ILK_SLOW</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="PyDMLabel" name="PyDMLabel_5">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:BC_ILK_RAW_SLOW</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_24">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:BV_ILK_SLOW</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="4">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:SET_RE_ILK_RAW</string>
+              </property>
+             </widget>
+            </item>
             <item row="2" column="0">
              <widget class="QLabel" name="label_30">
               <property name="sizePolicy">
@@ -321,42 +454,6 @@
               </property>
               <property name="text">
                <string>Beam Voltage:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="PyDMLabel" name="PyDMLabel_5">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${RTM}:BC_ILK_RAW_SLOW</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QLabel" name="label_26">
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>Current Threshold</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="2">
-             <widget class="QLabel" name="label_25">
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>Set Threshold</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
               </property>
              </widget>
             </item>
@@ -376,111 +473,94 @@
               </property>
              </widget>
             </item>
-            <item row="2" column="1">
-             <widget class="PyDMLabel" name="PyDMLabel_6">
+            <item row="1" column="4">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit">
               <property name="toolTip">
                <string/>
               </property>
-              <property name="channel" stdset="0">
-               <string>ca://${RTM}:BV_ILK_RAW_SLOW</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0">
-             <widget class="QLabel" name="label_31">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                <horstretch>1</horstretch>
-                <verstretch>1</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>Reflected Power:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
-             <widget class="PyDMLabel" name="PyDMLabel_7">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${RTM}:RE_ILK_RAW_SLOW</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="2">
-             <widget class="PyDMLabel" name="PyDMLabel_20">
-              <property name="enabled">
+              <property name="showUnits" stdset="0">
                <bool>true</bool>
-              </property>
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>24</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${RTM}:SET_BC_ILK_RAW</string>
               </property>
              </widget>
             </item>
-            <item row="2" column="2">
-             <widget class="PyDMLabel" name="PyDMLabel_21">
-              <property name="enabled">
-               <bool>true</bool>
+            <item row="0" column="3">
+             <widget class="QLabel" name="label_26">
+              <property name="styleSheet">
+               <string notr="true"/>
               </property>
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
+              <property name="text">
+               <string>Current Threshold (raw)</string>
               </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>24</height>
-               </size>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
               </property>
+             </widget>
+            </item>
+            <item row="3" column="3">
+             <widget class="PyDMLabel" name="PyDMLabel_7">
               <property name="toolTip">
                <string/>
               </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
               <property name="channel" stdset="0">
-               <string>ca://${RTM}:SET_BV_ILK_RAW</string>
+               <string>ca://${RTM}:RE_ILK_RAW_SLOW</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="label_28">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Set Threshold</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:SET_BC_ILK</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${RTM}:SET_BV_ILK</string>
               </property>
              </widget>
             </item>
             <item row="3" column="2">
-             <widget class="PyDMLabel" name="PyDMLabel_22">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>24</height>
-               </size>
-              </property>
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
               <property name="toolTip">
                <string/>
               </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
               <property name="channel" stdset="0">
-               <string>ca://${RTM}:SET_RE_ILK_RAW</string>
+               <string>ca://${RTM}:SET_RE_ILK</string>
               </property>
              </widget>
             </item>
