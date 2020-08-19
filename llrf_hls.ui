@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1934</width>
-    <height>1394</height>
+    <height>1463</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -37,7 +37,7 @@
         <x>0</x>
         <y>0</y>
         <width>1922</width>
-        <height>1449</height>
+        <height>1451</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_8">
@@ -894,54 +894,31 @@
        </item>
        <item row="0" column="1" rowspan="8">
         <layout class="QGridLayout" name="gridLayout_9" columnstretch="0,0">
-         <item row="7" column="0">
-          <layout class="QHBoxLayout" name="horizontalLayout_5">
-           <property name="topMargin">
-            <number>0</number>
+         <item row="11" column="0">
+          <spacer name="verticalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
            </property>
-           <item>
-            <widget class="QLabel" name="label_59">
-             <property name="text">
-              <string>Diagnostics Complex Window 2</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
-             <property name="minimumSize">
-              <size>
-               <width>100</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>100</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="text">
-              <string>Define</string>
-             </property>
-             <property name="filenames" stdset="0">
-              <stringlist>
-               <string>define_complex_window.py</string>
-              </stringlist>
-             </property>
-             <property name="macros" stdset="0">
-              <stringlist>
-               <string>{&quot;TITLE&quot;:&quot;Baseband Complex Window&quot;, &quot;R&quot;:&quot;BL&quot;, &quot;N&quot;:&quot;&quot;}</string>
-              </stringlist>
-             </property>
-             <property name="openInNewWindow" stdset="0">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-          </layout>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="10" column="0">
+          <spacer name="verticalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
          </item>
          <item row="5" column="0">
           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_6">
@@ -971,17 +948,20 @@
            </property>
           </widget>
          </item>
-         <item row="1" column="1">
-          <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item row="1" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
            <item>
-            <widget class="QLabel" name="label_53">
+            <widget class="QLabel" name="label_57">
              <property name="text">
-              <string>Baseband I/Q Drive Waveforms</string>
+              <string>Feedback Complex Window</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_5">
+            <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
              <property name="minimumSize">
               <size>
                <width>100</width>
@@ -1016,6 +996,19 @@
             </widget>
            </item>
           </layout>
+         </item>
+         <item row="12" column="0">
+          <spacer name="verticalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
          </item>
          <item row="8" column="0">
           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_7">
@@ -1100,20 +1093,143 @@
            </property>
           </widget>
          </item>
-         <item row="1" column="0">
-          <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item row="2" column="0">
+          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>1</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showXGrid">
+            <bool>true</bool>
+           </property>
+           <property name="showYGrid">
+            <bool>true</bool>
+           </property>
+           <property name="showLegend">
+            <bool>true</bool>
+           </property>
+           <property name="curves">
+            <stringlist>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;I&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;Q&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
            <property name="topMargin">
             <number>0</number>
            </property>
            <item>
-            <widget class="QLabel" name="label_57">
+            <widget class="QLabel" name="label_59">
              <property name="text">
-              <string>Feedback Complex Window</string>
+              <string>Diagnostics Complex Window 2</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+            <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>Define</string>
+             </property>
+             <property name="filenames" stdset="0">
+              <stringlist>
+               <string>define_complex_window.py</string>
+              </stringlist>
+             </property>
+             <property name="macros" stdset="0">
+              <stringlist>
+               <string>{&quot;TITLE&quot;:&quot;Baseband Complex Window&quot;, &quot;R&quot;:&quot;BL&quot;, &quot;N&quot;:&quot;&quot;}</string>
+              </stringlist>
+             </property>
+             <property name="openInNewWindow" stdset="0">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="4" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_58">
+             <property name="text">
+              <string>Diagnostics Complex Window 1</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>Define</string>
+             </property>
+             <property name="filenames" stdset="0">
+              <stringlist>
+               <string>define_complex_window.py</string>
+              </stringlist>
+             </property>
+             <property name="macros" stdset="0">
+              <stringlist>
+               <string>{&quot;TITLE&quot;:&quot;Baseband Complex Window&quot;, &quot;R&quot;:&quot;BL&quot;, &quot;N&quot;:&quot;&quot;}</string>
+              </stringlist>
+             </property>
+             <property name="openInNewWindow" stdset="0">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_53">
+             <property name="text">
+              <string>Baseband I/Q Drive Waveforms</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_5">
              <property name="minimumSize">
               <size>
                <width>100</width>
@@ -1177,82 +1293,18 @@
            </property>
           </widget>
          </item>
-         <item row="4" column="0">
-          <layout class="QHBoxLayout" name="horizontalLayout_4">
-           <property name="topMargin">
-            <number>0</number>
+         <item row="9" column="0">
+          <spacer name="verticalSpacer_9">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
            </property>
-           <item>
-            <widget class="QLabel" name="label_58">
-             <property name="text">
-              <string>Diagnostics Complex Window 1</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
-             <property name="minimumSize">
-              <size>
-               <width>100</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>100</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="text">
-              <string>Define</string>
-             </property>
-             <property name="filenames" stdset="0">
-              <stringlist>
-               <string>define_complex_window.py</string>
-              </stringlist>
-             </property>
-             <property name="macros" stdset="0">
-              <stringlist>
-               <string>{&quot;TITLE&quot;:&quot;Baseband Complex Window&quot;, &quot;R&quot;:&quot;BL&quot;, &quot;N&quot;:&quot;&quot;}</string>
-              </stringlist>
-             </property>
-             <property name="openInNewWindow" stdset="0">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item row="2" column="0">
-          <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_5">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>1</horstretch>
-             <verstretch>1</verstretch>
-            </sizepolicy>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
            </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="showXGrid">
-            <bool>true</bool>
-           </property>
-           <property name="showYGrid">
-            <bool>true</bool>
-           </property>
-           <property name="showLegend">
-            <bool>true</bool>
-           </property>
-           <property name="curves">
-            <stringlist>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:ICPXWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;I&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-             <string>{&quot;y_channel&quot;: &quot;ca://${DEVICE}:QCPXWND0&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;Q&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-            </stringlist>
-           </property>
-          </widget>
+          </spacer>
          </item>
         </layout>
        </item>
@@ -4243,6 +4295,12 @@
          </item>
          <item row="15" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_105">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="toolTip">
             <string/>
            </property>
@@ -4256,6 +4314,12 @@
          </item>
          <item row="16" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_106">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="toolTip">
             <string/>
            </property>
@@ -4269,6 +4333,12 @@
          </item>
          <item row="17" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_107">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="toolTip">
             <string/>
            </property>
@@ -4282,6 +4352,12 @@
          </item>
          <item row="18" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_108">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="toolTip">
             <string/>
            </property>
@@ -4295,6 +4371,12 @@
          </item>
          <item row="19" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_109">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="toolTip">
             <string/>
            </property>
@@ -4308,6 +4390,12 @@
          </item>
          <item row="20" column="1">
           <widget class="PyDMLabel" name="PyDMLabel_110">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="toolTip">
             <string/>
            </property>
