@@ -37,7 +37,7 @@
         <x>0</x>
         <y>0</y>
         <width>1922</width>
-        <height>1221</height>
+        <height>1254</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_8">
@@ -802,10 +802,13 @@
                  </font>
                 </property>
                 <property name="text">
-                 <string>Peak Voltage Conversion Factor (kV/Count)</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Beam Peak Voltage &lt;/p&gt;&lt;p&gt;Conversion Factor(kV/Count)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
                 </property>
                </widget>
               </item>
@@ -3708,7 +3711,7 @@
             </font>
            </property>
            <property name="text">
-            <string>Peak Voltage (kV)</string>
+            <string>Beam Peak Voltage (kV)</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
