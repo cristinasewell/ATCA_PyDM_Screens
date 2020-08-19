@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1012</width>
-    <height>1261</height>
+    <width>1023</width>
+    <height>1266</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,8 +36,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1000</width>
-        <height>1301</height>
+        <width>1011</width>
+        <height>1254</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_8">
@@ -3992,19 +3992,6 @@ Conversion Factor(kV/Count)</string>
           </widget>
          </item>
         </layout>
-       </item>
-       <item row="7" column="0">
-        <spacer name="verticalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
        </item>
        <item row="3" column="0">
         <widget class="Line" name="line">
