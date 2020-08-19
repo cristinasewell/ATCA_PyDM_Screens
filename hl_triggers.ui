@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>812</width>
-    <height>519</height>
+    <height>619</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,7 +15,7 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,0,0,0,0">
+    <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,0,0,0,0,0">
      <property name="spacing">
       <number>0</number>
      </property>
@@ -168,6 +168,12 @@
      </item>
      <item>
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_5">
+       <property name="minimumSize">
+        <size>
+         <width>749</width>
+         <height>0</height>
+        </size>
+       </property>
        <property name="maximumSize">
         <size>
          <width>16777215</width>
@@ -192,7 +198,7 @@
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
        <property name="minimumSize">
         <size>
-         <width>729</width>
+         <width>749</width>
          <height>0</height>
         </size>
        </property>
@@ -214,7 +220,7 @@
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
        <property name="minimumSize">
         <size>
-         <width>729</width>
+         <width>749</width>
          <height>0</height>
         </size>
        </property>
@@ -236,7 +242,7 @@
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
        <property name="minimumSize">
         <size>
-         <width>729</width>
+         <width>749</width>
          <height>0</height>
         </size>
        </property>
@@ -258,7 +264,7 @@
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
        <property name="minimumSize">
         <size>
-         <width>729</width>
+         <width>749</width>
          <height>0</height>
         </size>
        </property>
@@ -270,6 +276,28 @@
        </property>
        <property name="macros" stdset="0">
         <string>{&quot;SYS&quot;:&quot;SSSB&quot;}</string>
+       </property>
+       <property name="filename" stdset="0">
+        <string>hl_triggers_sys.ui</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_6">
+       <property name="minimumSize">
+        <size>
+         <width>749</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="macros" stdset="0">
+        <string>{&quot;SYS&quot;:&quot;DAQMUX&quot;}</string>
        </property>
        <property name="filename" stdset="0">
         <string>hl_triggers_sys.ui</string>
