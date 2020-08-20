@@ -54,17 +54,20 @@
         </widget>
        </item>
        <item>
-        <widget class="PyDMLabel" name="PyDMLabel">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>100</width>
-           <height>20</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>100</width>
-           <height>20</height>
+           <height>0</height>
           </size>
          </property>
          <property name="toolTip">
@@ -111,24 +114,24 @@
         </widget>
        </item>
        <item>
-        <widget class="PyDMLabel" name="PyDMLabel_2">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>100</width>
-           <height>20</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>100</width>
-           <height>20</height>
+           <height>0</height>
           </size>
          </property>
          <property name="toolTip">
           <string/>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -310,14 +313,14 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMLabel</class>
-   <extends>QLabel</extends>
-   <header>pydm.widgets.label</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
   </customwidget>
  </customwidgets>
  <resources/>
