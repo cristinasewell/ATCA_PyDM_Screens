@@ -1313,7 +1313,7 @@ Conversion Factor(kV/Count)</string>
             </font>
            </property>
            <property name="text">
-            <string>AREQ</string>
+            <string>ADES</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
