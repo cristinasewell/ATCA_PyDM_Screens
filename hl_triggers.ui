@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>812</width>
-    <height>619</height>
+    <height>662</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,41 +20,12 @@
       <number>0</number>
      </property>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <property name="topMargin">
-        <number>0</number>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="bottomMargin">
+        <number>10</number>
        </property>
-       <item>
-        <spacer name="horizontalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="font">
-          <font>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>Accel Delay (nsec)</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="PyDMLineEdit" name="PyDMLineEdit">
+       <item row="1" column="1">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -81,24 +52,21 @@
          </property>
         </widget>
        </item>
-       <item>
-        <spacer name="horizontalSpacer_4">
+       <item row="0" column="5" rowspan="2">
+        <spacer name="horizontalSpacer_5">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
          <property name="sizeHint" stdset="0">
           <size>
-           <width>20</width>
-           <height>10</height>
+           <width>40</width>
+           <height>20</height>
           </size>
          </property>
         </spacer>
        </item>
-       <item>
-        <widget class="QLabel" name="label_2">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_4">
          <property name="font">
           <font>
            <weight>75</weight>
@@ -106,15 +74,15 @@
           </font>
          </property>
          <property name="text">
-          <string>STDBY Delay (nsec)</string>
+          <string>Accel Delay (nsec)</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <item row="1" column="4">
+        <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -141,8 +109,40 @@
          </property>
         </widget>
        </item>
-       <item>
-        <spacer name="horizontalSpacer_3">
+       <item row="1" column="3">
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>STDBY Delay (nsec)</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Trigger Mode</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <spacer name="horizontalSpacer_6">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
@@ -153,6 +153,52 @@
           </size>
          </property>
         </spacer>
+       </item>
+       <item row="0" column="1" colspan="4">
+        <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{font: 8px;}</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:MODECFG</string>
+         </property>
+         <property name="orientation" stdset="0">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="marginTop" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="marginBottom" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="marginLeft" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="marginRight" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="horizontalSpacing" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="verticalSpacing" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
@@ -316,6 +362,11 @@
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEnumButton</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.enum_button</header>
   </customwidget>
   <customwidget>
    <class>PyDMLineEdit</class>
